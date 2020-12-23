@@ -6,12 +6,11 @@ div.post-single-heading {
   }
 
   h5 {
-    color: $colors_gold_primary;
+    color: red;
     @include apercu_bold;
     font-size: 0.75em;
 
     &.cp-location {
-      color: $colors_green_leaf1;
       @include moret_regular;
       font-size: 1.15em;
       margin-bottom: 0.9em;
@@ -23,13 +22,11 @@ div.post-single-heading {
   }
 
   p.cp-date {
-    color: $colors_green_primary;
     margin-top: 2em;
     @include apercu_medium;
     font-size: 0.9em;
 
     &.small {
-      color: $colors_blue_secondary;
       margin-top: 1em;
       font-size: 0.75em;
     }
@@ -127,21 +124,6 @@ div.post-body {
 }
 
 div.related-posts {
-  background: $colors_grey_tertiary;
-
-  .section-pressreleases {
-    padding-bottom: 5em;
-  }
-
-  .section-pressreleases a.press-release {
-    border-bottom: 1px solid $colors_grey_primary;
-
-    &:hover {
-      background-color: $colors_grey_secondary;
-      @include transition_default;
-    }
-  }
-
   h5 {
     font-size: 1.5em;
     margin: 1.5em;

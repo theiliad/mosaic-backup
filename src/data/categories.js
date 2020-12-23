@@ -1,10 +1,14 @@
 export default {
+  'case-studies': {
+    'content-strategy': {
+      en: 'Content & strategy',
+      fr: 'Stratege',
+    },
+  },
   thinking: {
-	  thoughtLeadership: {
-		  title: {
-			en: "Thought Leadership",
-			fr: "Lorem ip"
-		  }
-	  }
-  }
+    thoughtLeadership: {
+      en: 'Thought Leadership',
+      fr: 'Lorem ip',
+    },
+  },
 }

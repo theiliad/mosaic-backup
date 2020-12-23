@@ -7,11 +7,9 @@ import MDX from '@mdx-js/runtime'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
-class BlogPostTemplate extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+import YouTube from 'react-youtube'
 
+class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
     const { frontmatter } = post
@@ -20,7 +18,7 @@ class BlogPostTemplate extends React.Component {
     const { data } = this.props
     const posts = data.allMdx.edges
 
-    return (
+	return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={frontmatter.title}
@@ -39,6 +37,7 @@ class BlogPostTemplate extends React.Component {
             </div>
           </div>
         </div>
+
         <div className="container">
           <div className="post-body content">
             <div className="columns post-single ui-grid">
@@ -47,16 +46,26 @@ class BlogPostTemplate extends React.Component {
                   <MDXRenderer>{post.frontmatter.bodyFR}</MDXRenderer>
                 </MDXProvider> */}
 
-                <MDX>
-                  {post.frontmatter.bodyFR}
-                </MDX>
+                <MDX>{post.frontmatter.bodyFR}</MDX>
               </div>
             </div>
           </div>
         </div>
 
+        <YouTube
+          videoId={post.frontmatter.videoID}
+          opts={{
+            height: '390',
+            width: '640',
+            playerVars: {
+              // https://developers.google.com/youtube/player_parameters
+              autoplay: 1,
+            },
+          }}
+        />
+
         <div className="pages-index related-posts">
-          <div className="section-pressreleases">
+          <div>
             <div className="container">
               <div className="aligncenter">
                 <h5>You may also be interested in</h5>
@@ -107,6 +116,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         bodyEN
         bodyFR
+        videoID
       }
       body
     }

@@ -34,15 +34,18 @@ export function LanguageProvider({ children }) {
 }
 
 // get text according to id & current language
-export function Text({ tid }) {
+export function Text({ tid, variations }) {
   const languageContext = useContext(LanguageContext)
 
-  return (
-    <>
-      {get(
-        languageContext.dictionary,
-        `${tid}.${languageContext.userLanguage}`
-      ) || tid}
-    </>
-  )
+  let text
+  if (tid) {
+    return get(
+      languageContext.dictionary,
+      `${tid}.${languageContext.userLanguage}`
+    )
+  } else if (variations) {
+    return variations[languageContext.userLanguage]
+  }
+
+  return tid
 }

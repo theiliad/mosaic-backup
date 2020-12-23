@@ -6,25 +6,11 @@ $colors_blue_dark: #021d49;
 
 $colors_grey_light: #e8eceb;
 
-$colors_blue_secondary: #667394;
-$colors_blue_tertiary: #def1f5;
-$colors_blue_photo: #d8e5e8;
-$colors_blue_royal: #6176ab;
+$colors_red_primary: #D50057;
 
-$colors_green_primary: #53a377;
-$colors_green_tertiary: #d5f0e1;
-$colors_green_leaf: #f1faf5;
-$colors_green_leaf1: #46a472;
-
-$colors_gold_primary: #aa8f67;
-$colors_gold_secondary: #cfb082;
-$colors_gold_earth: #fbfaf6;
-$colors_gold_earth_4: #f5f1e8;
 $colors_grey_primary: #eee5da;
 $colors_grey_secondary: #f5f3ed;
 $colors_grey_tertiary: #fbf9f6;
-
-$colors_red_primary: #ff8374;
 
 @mixin transition_default {
   transition: all 0.2s ease-out;
@@ -84,12 +70,12 @@ strong {
 }
 
 a {
-  color: $colors_gold_primary;
+//   color: $colors_gold_primary;
   @include transition_default;
   @include Roobert_Medium;
 
   &:hover {
-    // TODO - color: red; 
+    // TODO - color: red;
     @include transition_default;
   }
 }
@@ -145,7 +131,7 @@ p a:hover {
 }
 
 .text-link {
-  color: $colors_gold_primary;
+//   color: $colors_gold_primary;
 
   svg {
     vertical-align: middle;

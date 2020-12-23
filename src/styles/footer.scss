@@ -1,6 +1,5 @@
 div.footer_cta {
   padding: 4em 0;
-  background: $colors_green_tertiary;
 
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -51,16 +50,13 @@ footer {
       font-size: 1em;
       @include apercu_regular;
       min-width: 0;
-      color: $colors_gold_secondary;
 
       &:focus {
-        color: $colors_gold_secondary;
       }
     }
 
     button {
       background: transparent;
-      color: $colors_gold_secondary;
       outline: none;
       border: none;
       padding-right: 0;
@@ -87,10 +83,7 @@ footer {
       @include apercu_medium;
 
       &:hover {
-        color: $colors_gold_secondary;
-
         svg {
-          color: $colors_gold_secondary;
         }
       }
 
@@ -144,11 +137,11 @@ footer {
     div.right-links {
       display: inline-flex;
       flex-direction: row-reverse;
-	  font-size: 0.7em;
-	  
-	  @media screen and (max-width: 768px) {
-		font-size: 0.9em;
-	  }
+      font-size: 0.7em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.9em;
+      }
 
       div {
         padding-right: 2em;

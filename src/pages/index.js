@@ -30,14 +30,18 @@ class BlogIndex extends React.Component {
     const { data } = this.props
 
     const siteTitle = data.site.siteMetadata.title
-    // const pressReleases =
-    //   data.allMdx.group.find(
-    //     group => get(group, 'edges[0].node.frontmatter.posttype') === 'press'
-    //   ).edges || []
-    // const mediaPosts =
-    //   data.allMdx.group.find(
-    //     group => get(group, 'edges[0].node.frontmatter.posttype') === 'media'
-    //   ).edges || []
+
+    const caseStudies =
+      data.allMdx.group.find(
+        group =>
+          get(group, 'edges[0].node.frontmatter.posttype') === 'case-study'
+      ).edges || []
+
+    if (caseStudies.length < 4) {
+      for (let i = 0; i < 3; i++) {
+        caseStudies.push(caseStudies[0])
+      }
+    }
 
     const isBrowser = typeof window !== `undefined`
 
@@ -90,38 +94,57 @@ class BlogIndex extends React.Component {
           </div>
           <div className="section-cases">
             <div className="container">
-              {chunk([2, 1, 1, 2], 2).map(cases => (
+              {chunk(caseStudies, 2).map(cases => (
                 <div
                   className="columns is-multiline"
                   style={{ marginBottom: '4em' }}
                 >
-                  {cases.map(cS => (
+                  {cases.map(({ node }, i) => (
                     <div
                       className="column is-6"
                       style={{ alignSelf: 'flex-end' }}
                     >
-                      <img
-                        src={cS === 1 ? DEMO_1 : DEMO_2}
-                        style={{ width: '100%' }}
-                      />
+                      <Link to={node.fields.slug}>
+                        <img
+                          src={i === 1 ? DEMO_1 : DEMO_2}
+                          style={{ width: '100%' }}
+                        />
+                      </Link>
                     </div>
                   ))}
 
-                  {cases.map(cS => (
+                  {cases.map(({ node }) => (
                     <div
                       className="column is-6"
                       style={{ alignSelf: 'flex-end' }}
                     >
-                      <div className="columns">
-                        <div className="column is-8">
-                          <p>Loblaw Companies Limited —</p>
-                          <p>National Kickoff</p>
-                        </div>
+                      <Link to={node.fields.slug}>
+                        <div className="columns">
+                          <div className="column is-8">
+                            <p>
+                              <Text
+                                variations={{
+                                  en: node.frontmatter.titleEN,
+                                  fr: node.frontmatter.titleFR,
+                                }}
+                              />
+                            </p>
+                            {/* <p>National Kickoff</p> */}
+                          </div>
 
-                        <div className="column is-4">
-                          Assisted Selling & Training
+                          <div className="column is-4">
+                            <p className="cp-category">
+                              <Text
+                                variations={
+                                  CATEGORIES['case-studies'][
+                                    node.frontmatter.category
+                                  ]
+                                }
+                              />
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -330,8 +353,10 @@ export const pageQuery = graphql`
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               titleEN
+              titleFR
               posttype
               descriptionEN
+              category
             }
           }
         }
