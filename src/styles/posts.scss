@@ -1,0 +1,153 @@
+div.post-single-heading {
+  padding: 10em 0 0 0;
+
+  h1 {
+    font-size: 3em !important;
+  }
+
+  h5 {
+    color: $colors_gold_primary;
+    @include apercu_bold;
+    font-size: 0.75em;
+
+    &.cp-location {
+      color: $colors_green_leaf1;
+      @include moret_regular;
+      font-size: 1.15em;
+      margin-bottom: 0.9em;
+    }
+  }
+
+  p.cp-desc {
+    margin: 0.8em 0;
+  }
+
+  p.cp-date {
+    color: $colors_green_primary;
+    margin-top: 2em;
+    @include apercu_medium;
+    font-size: 0.9em;
+
+    &.small {
+      color: $colors_blue_secondary;
+      margin-top: 1em;
+      font-size: 0.75em;
+    }
+
+    &.cp-large {
+      font-size: 0.85em;
+    }
+  }
+}
+
+div.columns.post-single.featured-image.ui-grid.post-html-img {
+  margin-top: 4em;
+}
+
+div.post-body {
+  font-size: 1em;
+  line-height: 2em;
+  margin-top: 4em;
+  margin-bottom: 7em;
+  color: $colors_blue_primary;
+
+  a.cp-apply {
+    padding: 1.5em;
+    padding-right: 1.25em;
+    margin-top: 1em;
+  }
+
+  hr {
+    height: 1px;
+    width: 64px;
+    margin: 1em auto 2.5em auto;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  strong {
+    @include apercu_bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1em;
+    color: $colors_blue_primary;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin-top: 1.2em;
+  }
+
+  ol {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+
+  div.columns.ui-grid:not(:first-child) {
+    &.post-html-p {
+      margin: 1em auto;
+    }
+
+    &.post-html-img {
+      margin: 1em auto;
+    }
+  }
+
+  div.share {
+    display: table;
+    margin: auto;
+    margin-top: 6em;
+
+    button {
+      @include moret_regular;
+      color: $colors_blue_primary;
+      border: none;
+      margin-right: 0.2em;
+      font-size: 1.25em;
+      @include transition_default;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: $colors_grey_secondary;
+      }
+
+      svg {
+        margin-right: 0.4em;
+      }
+    }
+  }
+}
+
+div.related-posts {
+  background: $colors_grey_tertiary;
+
+  .section-pressreleases {
+    padding-bottom: 5em;
+  }
+
+  .section-pressreleases a.press-release {
+    border-bottom: 1px solid $colors_grey_primary;
+
+    &:hover {
+      background-color: $colors_grey_secondary;
+      @include transition_default;
+    }
+  }
+
+  h5 {
+    font-size: 1.5em;
+    margin: 1.5em;
+
+    &.no-margin {
+      margin: 0;
+    }
+  }
+}

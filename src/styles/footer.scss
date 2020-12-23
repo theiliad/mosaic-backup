@@ -1,0 +1,162 @@
+div.footer_cta {
+  padding: 4em 0;
+  background: $colors_green_tertiary;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  p.cp-title {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    color: $colors_blue_primary;
+    @include moret_regular;
+  }
+}
+
+footer {
+  background: $colors_blue_primary;
+  color: white;
+  padding: 6em 0 0 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 3.5em 0 0 0;
+  }
+
+  div.footer_signup {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+
+    ::-webkit-input-placeholder {
+      /* Edge */
+      color: white;
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: white;
+    }
+
+    ::placeholder {
+      color: white;
+    }
+
+    input {
+      flex-grow: 1;
+      background: transparent;
+      outline: none;
+      border: none;
+      padding: 1.2em 0;
+      font-size: 1em;
+      @include apercu_regular;
+      min-width: 0;
+      color: $colors_gold_secondary;
+
+      &:focus {
+        color: $colors_gold_secondary;
+      }
+    }
+
+    button {
+      background: transparent;
+      color: $colors_gold_secondary;
+      outline: none;
+      border: none;
+      padding-right: 0;
+      cursor: pointer;
+      font-size: 1em;
+      @include apercu_medium;
+      @include transition_default;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  svg {
+    color: white;
+  }
+
+  div.links {
+    font-size: 0.7em;
+
+    a {
+      color: white;
+      @include apercu_medium;
+
+      &:hover {
+        color: $colors_gold_secondary;
+
+        svg {
+          color: $colors_gold_secondary;
+        }
+      }
+
+      svg {
+        vertical-align: middle;
+        margin-top: -0.2em;
+        margin-right: 1em;
+      }
+    }
+
+    ul {
+      li {
+        margin-bottom: 0.75em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p.links-header {
+      margin-bottom: 1em;
+      color: white;
+      opacity: 0.56;
+      @include apercu_bold;
+      text-transform: uppercase;
+    }
+  }
+
+  div.bottom-links {
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 2em;
+      text-align: center;
+
+      div.column.is-narrow {
+        padding-bottom: 0;
+      }
+
+      div.column.right-links {
+        margin-bottom: 2em;
+      }
+    }
+
+    img {
+      width: 7em;
+    }
+
+    div.right-links {
+      display: inline-flex;
+      flex-direction: row-reverse;
+	  font-size: 0.7em;
+	  
+	  @media screen and (max-width: 768px) {
+		font-size: 0.9em;
+	  }
+
+      div {
+        padding-right: 2em;
+
+        &.last {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

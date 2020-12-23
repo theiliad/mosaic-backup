@@ -1,0 +1,57 @@
+div.app-wrapper {
+  div.app-container {
+    position: relative;
+    transition: all .2s ease-in-out;
+
+    div.overlay {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 100;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+    }
+
+    &.sidenav-open {
+      // transform: translateX(-16.875em);
+      transition: all .2s ease-in-out;
+
+      div.overlay {
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+}
+
+div.container {
+  width: 100%;
+  padding-right: 4em;
+  padding-left: 4em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: unset !important;
+}
+
+// Phone
+@media (max-width: 768px) {
+  div.container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+// Cap at 1520
+@media (min-width: 1521px) {
+  div.container {
+    width: 1520px;
+  }
+}

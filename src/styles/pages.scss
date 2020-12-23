@@ -1,0 +1,147 @@
+$slider_arrow_size: 1.5;
+
+@mixin section_padding {
+  padding: 7em 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 4em 0;
+  }
+}
+
+div.page-single {
+  padding: 12em 0 0 0;
+
+  h1 {
+    font-size: 4em !important;
+  }
+}
+
+div.pages-index {
+  h3 {
+    font-size: 2em;
+  }
+
+  p.secondary {
+    @include Roobert_Medium;
+    font-weight: 500;
+    color: $colors_blue_secondary;
+    font-size: 1em;
+  }
+
+  p.color_secondary {
+    color: $colors_green_primary;
+    @include Roobert_Medium;
+  }
+
+  p.tertiary {
+    @include Roobert_Medium;
+  }
+
+  a.text-link {
+    display: inline-table;
+    font-size: 0.88em;
+    @include Roobert_Medium;
+    margin-top: 0.85em;
+  }
+
+  div.section-why {
+    @include section_padding;
+  }
+
+  div.section-cases {
+    @include section_padding;
+  }
+
+  div.section-writeup {
+    background: $colors_grey_light;
+  }
+
+  div.section-writeup,
+  .section-writeup2 {
+    @include section_padding;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      color: $colors_blue_dark;
+    }
+
+    a.button {
+      margin-top: 1.5em;
+    }
+  }
+
+  div.section-partners {
+    @include section_padding;
+	padding-top: 0;
+	
+	h3 {
+		margin-bottom: 2em;
+	}
+
+    @mixin white-gradient {
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    $animationSpeed: 40s;
+
+    // Animation
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+
+    // Styling
+    .slider {
+      background: white;
+      //   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+      height: 100px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+
+      &::before,
+      &::after {
+        @include white-gradient;
+        content: '';
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+      }
+
+      &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+
+      &::before {
+        left: 0;
+        top: 0;
+      }
+
+      .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+      }
+
+      .slide {
+        height: 100px;
+        width: 250px;
+      }
+    }
+  }
+}

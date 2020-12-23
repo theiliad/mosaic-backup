@@ -1,0 +1,54 @@
+.header_extension {
+  @media (max-width: 768px) {
+    padding: 6em 0 0 0;
+  }
+
+  .heading_lg {
+    font-size: 2.4em !important;
+    padding-top: 1em;
+
+    @media (min-width: 768px) {
+      font-size: 2.6em !important;
+    }
+
+    @media (min-width: 880px) {
+      font-size: 2.8em !important;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 3.8em !important;
+    }
+
+    @media screen and (min-width: 768px) and (max-height: 900px) {
+      font-size: 2.6em !important;
+    }
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-top: 1.3em;
+  }
+
+  &.home {
+    background: $colors_blue_primary;
+
+    div.bg {
+      @media screen and (min-width: 768px) {
+        position: relative;
+		height: 100vh;
+		max-height: 650px;
+
+        div.cp-hero {
+          position: absolute;
+          bottom: 4em;
+          left: 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &.no_bg {
+    padding: 10em 0 8em 0;
+  }
+}
