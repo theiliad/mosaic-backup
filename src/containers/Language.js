@@ -39,13 +39,13 @@ export function Text({ tid, variations }) {
 
   let text
   if (tid) {
-    return get(
+    text = get(
       languageContext.dictionary,
       `${tid}.${languageContext.userLanguage}`
     )
   } else if (variations) {
-    return variations[languageContext.userLanguage]
+    text = variations[languageContext.userLanguage]
   }
 
-  return tid
+  return text || tid || ""
 }
