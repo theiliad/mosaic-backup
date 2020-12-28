@@ -47,8 +47,8 @@ div.pages-index {
   }
 
   div.section-cases {
-	@include section_padding;
-	padding-top: 0;
+    @include section_padding;
+    padding-top: 0;
 
     div.cp-wide {
       display: table;
@@ -92,11 +92,11 @@ div.pages-index {
     }
 
     div.column.is-mobile {
-	  margin-bottom: 1.5em;
-	  
-	  &:last-child {
-		  margin-bottom: 0;
-	  }
+      margin-bottom: 1.5em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     p.cp-company {
@@ -209,6 +209,77 @@ div.pages-index {
         height: 100px;
         width: 250px;
       }
+    }
+  }
+}
+
+div.pages-thinking {
+  .section-thinking {
+    a {
+      color: $colors_blue_primary;
+    }
+
+    img {
+      margin-bottom: 1em;
+    }
+
+    p.cp-title {
+    }
+
+    span.cp-play {
+      padding-right: 0;
+
+      a {
+        color: #fff;
+        @include Roobert_SemiBold;
+
+        span {
+          position: relative;
+          display: inline-block;
+          width: 1.4em;
+          height: 1.4em;
+          border-radius: 50%;
+          border: 2px solid $colors_blue_primary;
+          //   margin-top: -0.15em;
+          background: $colors_blue_primary;
+          vertical-align: middle;
+
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 53.5%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        &:hover {
+          text-decoration: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    span.cp-category {
+      font-size: 0.75em;
+      padding: 0.1em 0.7em 0.35em 0.7em;
+      border: 1px solid $colors_blue_primary;
+      border-radius: 3em;
+    }
+
+    span.cp-date {
+      padding-left: 0;
+
+      span {
+        font-size: 0.75em;
+      }
+    }
+
+    a.cp-load-more {
+      color: $colors_orange_primary;
+      font-size: 2em;
+      display: table;
+      margin: auto;
+      padding: 3.5em 0;
     }
   }
 }

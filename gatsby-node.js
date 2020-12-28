@@ -8,6 +8,8 @@ const getNodePrefix = postType => {
     prefix = 'news'
   } else if (postType === 'case-study') {
     prefix = 'case-studies'
+  } else if (postType === 'thinking') {
+    prefix = 'thinking'
   }
 
   return prefix
@@ -81,9 +83,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
 
-	const postType = node.frontmatter.posttype
-	const prefix = getNodePrefix(postType)
-console.log("prefix + value", prefix + value)
+    const postType = node.frontmatter.posttype
+    const prefix = getNodePrefix(postType)
+
+    console.log('prefix + value', prefix + value)
+
     createNodeField({
       name: `slug`,
       node,

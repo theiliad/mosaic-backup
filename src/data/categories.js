@@ -6,9 +6,13 @@ export default {
     },
   },
   thinking: {
-    thoughtLeadership: {
+    'thought-leadership': {
       en: 'Thought Leadership',
       fr: 'Lorem ip',
+    },
+    'one-eighty': {
+      en: 'OneEighty',
+      fr: '180',
     },
   },
 }

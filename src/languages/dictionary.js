@@ -29,6 +29,20 @@ export default {
       fr: 'Play étude de cas',
     },
   },
+  thinking: {
+    title: {
+      en: 'Thinking',
+      fr: 'En pensant',
+    },
+    loadMore: {
+      en: 'Load more',
+      fr: 'Charger plus',
+	},
+	pastSession: {
+		en: "Past session",
+		fr: "Session passée"
+	}
+  },
   pages: {
     index: {
       title: {
