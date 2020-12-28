@@ -4,6 +4,9 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
+// Locale
+import { Text, TextDate } from '../containers/Language'
+
 class News extends React.Component {
   render() {
     const { data } = this.props
@@ -18,7 +21,7 @@ class News extends React.Component {
           <div className="header_extension news">
             <div class="bg">
               <div className="container">
-                <h1 class="primary heading_lg aligncenter">
+                <h1 class="primary heading_lg">
                   <span>News</span>
                 </h1>
               </div>
@@ -32,27 +35,25 @@ class News extends React.Component {
           image="https://mosaic.com/img/logo/share.jpg"
         />
 
-        <div className="pages-index">
+        <div className="pages-news">
           <div className="section-news">
             <div className="container">
-              <div className="columns post-single ui-grid">
-                <div className="column is-10">
-                  {posts.map(({ node }) => (
-                    <Link
-                      to={`news${node.fields.slug}`}
-                      className="press-release columns"
-                    >
-                      <p className="column is-9 cp-title">
-                        {node.frontmatter.titleEN}
-                      </p>
+              {posts.map(({ node }) => (
+                <Link to={node.fields.slug} className="press-release columns">
+                  <p className="column is-9 cp-title">
+                    <Text
+                      variations={{
+                        en: node.frontmatter.titleEN,
+                        fr: node.frontmatter.titleFR,
+                      }}
+                    />
+                  </p>
 
-                      <p className="column is-3 cp-date">
-                        {node.frontmatter.date}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+                  <p className="column is-3 cp-date">
+                    <TextDate string={node.frontmatter.date} />
+                  </p>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -81,7 +82,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date
             titleEN
             titleFR
           }
