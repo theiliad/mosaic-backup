@@ -5,6 +5,7 @@ $colors_blue_primary: #1226aa;
 $colors_blue_dark: #021d49;
 
 $colors_grey_light: #e8eceb;
+$colors_grey_dark: #677792;
 
 $colors_red_primary: #d50057;
 
@@ -48,6 +49,8 @@ body {
   font-stretch: normal;
   overflow-x: hidden;
   overflow-y: hidden;
+  margin-bottom: 28em;
+  transition: background-color 1s ease;
 }
 
 h1,

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { Link } from 'gatsby'
 
 import '../styles/styles.scss'
@@ -145,14 +145,21 @@ class Header extends React.Component {
 export const Footer = props => (
   <>
     <footer>
-      <div className="container">
-        <div>Hello</div>
+      <div className="footer-content">
+        <div className="container">
+          <h6>
+            Looking to drive conversion? <a href="#">Let's chat</a>
+          </h6>
 
-        <div className="columns bottom-links is-vcentered">
-          <div className="column is-narrow">Instagram</div>
-
-          <div className="column right-links">
-            <div className="last">© Mosaic 2020</div>
+          <div className="bottom-links">
+            <div className="container">
+              <div className="columns is-vcentered">
+                <div className="column is-narrow">Instagram</div>
+                <div className="column right-links">
+                  <div className="last">© Mosaic 2020</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -186,6 +193,63 @@ const Layout = props => {
   }
 
   const { userLanguage, changeUserLanguage } = useContext(LanguageContext)
+
+  const isBottom = el =>
+    getVerticalCenterPositionOfElement(el) <= window.innerHeight
+
+  useEffect(() => {
+    document.addEventListener('scroll', trackScrolling)
+
+    // returned function will be called on component unmount
+    return () => {
+      document.removeEventListener('scroll', trackScrolling)
+      document.body.style.backgroundColor = '#fff'
+    }
+  }, [])
+
+  const trackScrolling = () => {
+    handlePageBGColor()
+  }
+
+  const getVerticalCenterPositionOfElement = element =>
+    element.getBoundingClientRect().bottom -
+    (element.getBoundingClientRect().bottom -
+      element.getBoundingClientRect().top) /
+      2
+
+  const handlePageBGColor = () => {
+    const { backgroundColorsOnScroll } = props
+
+    if (backgroundColorsOnScroll) {
+      const divsWithBackgroundColors = Object.keys(
+        backgroundColorsOnScroll
+      ).map(divID => ({
+        color: backgroundColorsOnScroll[divID],
+        element: document.getElementById(divID),
+      }))
+      const scrolledElements = divsWithBackgroundColors.filter(div =>
+        isBottom(div.element)
+      )
+
+      if (scrolledElements.length > 0) {
+        const matchingElement = scrolledElements[scrolledElements.length - 1]
+
+        const verticalCenterOfElement = getVerticalCenterPositionOfElement(
+          matchingElement.element
+        )
+
+        if (verticalCenterOfElement < 0) {
+          document.body.style.backgroundColor = '#fff'
+          return
+        }
+
+        const secondaryColor = matchingElement.color || 'black'
+        document.body.style.backgroundColor = secondaryColor
+      } else {
+        document.body.style.backgroundColor = '#fff'
+      }
+    }
+  }
 
   return (
     <div className="app-wrapper">

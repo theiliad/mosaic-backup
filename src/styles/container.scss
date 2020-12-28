@@ -1,10 +1,12 @@
 div.app-wrapper {
+  box-shadow: 0 0 100px 20px #000;
+
   div.app-container {
     position: relative;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     div.overlay {
-      content: " ";
+      content: ' ';
       position: absolute;
       top: 0;
       left: 0;
@@ -16,17 +18,17 @@ div.app-wrapper {
       visibility: hidden;
       z-index: 100;
       cursor: pointer;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
 
     &.sidenav-open {
       // transform: translateX(-16.875em);
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       div.overlay {
         opacity: 1;
         visibility: visible;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
     }
   }

@@ -47,10 +47,33 @@ div.pages-index {
   }
 
   div.section-cases {
-    @include section_padding;
+	@include section_padding;
+	padding-top: 0;
+
+    div.cp-wide {
+      display: table;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    div.cp-mobile {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: table;
+      }
+    }
 
     div.columns {
+      font-size: 0.9em;
+
       div.column {
+        &.cp-photo {
+          padding-bottom: 0;
+        }
+
         a {
           color: $colors_blue_dark;
           width: 100%;
@@ -59,13 +82,40 @@ div.pages-index {
       }
     }
 
+    div.columns.is-mobile,
+    div.column.is-mobile {
+      font-size: 1em;
+
+      img {
+        margin-bottom: 1em;
+      }
+    }
+
+    div.column.is-mobile {
+	  margin-bottom: 1.5em;
+	  
+	  &:last-child {
+		  margin-bottom: 0;
+	  }
+    }
+
+    p.cp-company {
+      font-size: 0.8em;
+      color: $colors_grey_dark;
+    }
+
     p.cp-category {
       color: $colors_red_primary;
+      font-size: 0.8em;
     }
   }
 
   div.section-writeup {
-    background: $colors_grey_light;
+    @media screen and (max-width: 768px) {
+      div.columns {
+        flex-direction: column;
+      }
+    }
   }
 
   div.section-writeup,
@@ -82,6 +132,12 @@ div.pages-index {
 
     a.button {
       margin-top: 1.5em;
+    }
+
+    @media screen and (max-width: 768px) {
+      img {
+        margin-bottom: 1em;
+      }
     }
   }
 
@@ -115,7 +171,6 @@ div.pages-index {
 
     // Styling
     .slider {
-      background: white;
       //   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
       height: 100px;
       margin: auto;
@@ -125,7 +180,7 @@ div.pages-index {
 
       &::before,
       &::after {
-        @include white-gradient;
+        // @include white-gradient;
         content: '';
         height: 100px;
         position: absolute;

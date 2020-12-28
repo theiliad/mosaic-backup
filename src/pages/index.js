@@ -45,21 +45,56 @@ class BlogIndex extends React.Component {
 
     const isBrowser = typeof window !== `undefined`
 
+    const CaseStudyMeta = ({ node, mobileVersion }) => (
+      <>
+        <div className={'columns' + (mobileVersion ? ' is-mobile' : '')}>
+          <div className="column is-8">
+            <p className="cp-company">{node.frontmatter.companyName}</p>
+
+            <p>
+              <Text
+                variations={{
+                  en: node.frontmatter.titleEN,
+                  fr: node.frontmatter.titleFR,
+                }}
+              />
+            </p>
+          </div>
+
+          <div className="column is-4">
+            <p className="cp-category">
+              <Text
+                variations={
+                  CATEGORIES['case-studies'][node.frontmatter.category]
+                }
+              />
+            </p>
+          </div>
+        </div>
+      </>
+    )
+
     return (
       <Layout
         location={this.props.location}
         title={siteTitle}
+        backgroundColorsOnScroll={{
+          'home-writeup': '#e8eceb',
+          'home-writeup2': '#e8eceb',
+        }}
         HeaderExtension={
           <div className="header_extension home">
             <div className="bg">
-              <div className="container cp-hero">
-                <div className="columns is-vcentered">
-                  <div className="column is-6 aligncenter-mobile">
-                    <h1 className="primary heading_lg">
-                      <span>
-                        <Text tid="pages.index.title" />
-                      </span>
-                    </h1>
+              <div className="cp-hero">
+                <div className="container">
+                  <div className="columns is-vcentered">
+                    <div className="column is-6 aligncenter-mobile">
+                      <h1 className="primary heading_lg">
+                        <span>
+                          <Text tid="pages.index.title" />
+                        </span>
+                      </h1>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -93,7 +128,7 @@ class BlogIndex extends React.Component {
             </div>
           </div>
           <div className="section-cases">
-            <div className="container">
+            <div className="container cp-wide">
               {chunk(caseStudies, 2).map(cases => (
                 <div
                   className="columns is-multiline"
@@ -101,7 +136,7 @@ class BlogIndex extends React.Component {
                 >
                   {cases.map(({ node }, i) => (
                     <div
-                      className="column is-6"
+                      className="column is-6 cp-photo"
                       style={{ alignSelf: 'flex-end' }}
                     >
                       <Link to={node.fields.slug}>
@@ -119,40 +154,39 @@ class BlogIndex extends React.Component {
                       style={{ alignSelf: 'flex-end' }}
                     >
                       <Link to={node.fields.slug}>
-                        <div className="columns">
-                          <div className="column is-8">
-                            <p>
-                              <Text
-                                variations={{
-                                  en: node.frontmatter.titleEN,
-                                  fr: node.frontmatter.titleFR,
-                                }}
-                              />
-                            </p>
-                            {/* <p>National Kickoff</p> */}
-                          </div>
-
-                          <div className="column is-4">
-                            <p className="cp-category">
-                              <Text
-                                variations={
-                                  CATEGORIES['case-studies'][
-                                    node.frontmatter.category
-                                  ]
-                                }
-                              />
-                            </p>
-                          </div>
-                        </div>
+                        <CaseStudyMeta node={node} />
                       </Link>
                     </div>
                   ))}
                 </div>
               ))}
             </div>
+
+            <div className="container cp-mobile">
+              <div
+                className="columns is-multiline"
+                style={{ marginBottom: '4em' }}
+              >
+                {caseStudies.map(({ node }, i) => (
+                  <div
+                    className="column is-6 is-mobile"
+                    style={{ alignSelf: 'flex-end' }}
+                  >
+                    <Link to={node.fields.slug}>
+                      <img
+                        src={i % 2 === 0 ? DEMO_1 : DEMO_2}
+                        style={{ width: '100%' }}
+                      />
+
+                      <CaseStudyMeta node={node} mobileVersion={true} />
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
-          <div className="section-writeup">
+          <div className="section-writeup" id="home-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
@@ -178,7 +212,7 @@ class BlogIndex extends React.Component {
             </div>
           </div>
 
-          <div className="section-writeup2">
+          <div className="section-writeup2" id="home-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-1"></div>
@@ -191,7 +225,7 @@ class BlogIndex extends React.Component {
                     creativity from all angles.
                   </p>
 
-                  <a href="#" className="button">
+                  <a href="#" className="button light">
                     Visit OneEighty
                   </a>
                 </div>
@@ -354,6 +388,7 @@ export const pageQuery = graphql`
               date(formatString: "MMMM DD, YYYY")
               titleEN
               titleFR
+              companyName
               posttype
               descriptionEN
               category

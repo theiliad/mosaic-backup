@@ -49,7 +49,7 @@ function NewsPost(props) {
             <div className="columns post-single ui-grid">
               <div className="column is-10">
                 <h1 className="cp-title">
-                  <Text
+                  {frontmatter.companyName} - <Text
                     variations={{
                       en: frontmatter.titleEN,
                       fr: frontmatter.titleFR,
@@ -222,7 +222,8 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       frontmatter {
         titleEN
-        titleFR
+		titleFR
+		companyName
         date(formatString: "MMMM DD, YYYY")
         bodyEN
         bodyFR
