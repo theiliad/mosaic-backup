@@ -65,7 +65,6 @@ div.sidenav {
     div.links {
       max-height: calc(100vh - 7em);
       overflow-y: auto;
-      @include apercu_medium;
       margin-top: 2em;
 
       /* width */

@@ -23,6 +23,12 @@ export default {
       },
     },
   },
+  caseStudies: {
+    playButton: {
+      en: 'Play case study',
+      fr: 'Play étude de cas',
+    },
+  },
   pages: {
     index: {
       title: {

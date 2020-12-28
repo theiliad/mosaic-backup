@@ -9,7 +9,6 @@ div.footer_cta {
     font-size: 2.4em;
     line-height: 1.2em;
     color: $colors_blue_primary;
-    @include moret_regular;
   }
 }
 
@@ -48,7 +47,6 @@ footer {
       border: none;
       padding: 1.2em 0;
       font-size: 1em;
-      @include apercu_regular;
       min-width: 0;
 
       &:focus {
@@ -62,7 +60,6 @@ footer {
       padding-right: 0;
       cursor: pointer;
       font-size: 1em;
-      @include apercu_medium;
       @include transition_default;
 
       &:hover {
@@ -80,7 +77,6 @@ footer {
 
     a {
       color: white;
-      @include apercu_medium;
 
       &:hover {
         svg {
@@ -108,7 +104,6 @@ footer {
       margin-bottom: 1em;
       color: white;
       opacity: 0.56;
-      @include apercu_bold;
       text-transform: uppercase;
     }
   }
