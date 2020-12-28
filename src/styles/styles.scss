@@ -29,7 +29,6 @@ div.columns.ui-grid {
 
 html {
   font-size: 16px;
-  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,7 +40,7 @@ html {
 }
 
 body {
-  background: white;
+  background: $colors_white;
   color: $colors_midnight_primary;
   @include Roobert_Medium;
   font-weight: normal;
@@ -149,12 +148,18 @@ p a:hover {
 
 .button {
   &.primary {
-    color: white;
+    color: $colors_white;
     background: $colors_blue_primary;
   }
 
   &.light {
-    background: #fff;
+    color: $colors_midnight_primary;
+    background: $colors_white;
+
+    &:hover {
+      color: $colors_midnight_primary;
+      background: $colors_aqua_primary;
+    }
   }
 
   background-color: $colors_grey_light;
