@@ -46,14 +46,14 @@ div.container {
 // Phone
 @media (max-width: 768px) {
   div.container {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 
 // Cap at 1520
-@media (min-width: 1521px) {
-  div.container {
-    width: 1520px;
-  }
-}
+// @media (min-width: 1521px) {
+//  div.container {
+//    width: 1520px;
+//  }
+// }

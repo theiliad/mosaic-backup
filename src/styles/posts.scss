@@ -150,7 +150,7 @@ div.post {
       }
 
       &:hover {
-        background-color: $colors_grey_secondary;
+        background-color: $colors_blue_primary;
       }
 
       svg {
@@ -165,7 +165,7 @@ div.post {
 
     div.cp-bg {
       position: absolute;
-      background: $colors_blue_dark;
+      background: $colors_midnight_primary;
       width: 50%;
       height: 100%;
       left: 50%;
@@ -183,7 +183,7 @@ div.post {
 
       &.cp-text {
         position: relative;
-        background: $colors_blue_dark;
+        background: $colors_midnight_secondary;
 
         div.cp-texts {
           position: absolute;
