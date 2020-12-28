@@ -5,6 +5,10 @@ import DICTIONARY from '../languages/dictionary'
 
 import { get } from 'lodash-es'
 
+// date-fns
+import { format as dateFnsFormat } from 'date-fns'
+import { fr as frLocale } from 'date-fns/locale'
+
 // create the language context with default selected language
 export const LanguageContext = createContext({
   userLanguage: 'en',
@@ -47,5 +51,23 @@ export function Text({ tid, variations }) {
     text = variations[languageContext.userLanguage]
   }
 
-  return text || tid || ""
+  return text || tid || ''
+}
+
+// get text according to id & current language
+export function TextDate({ string, format, options }) {
+  const languageContext = useContext(LanguageContext)
+
+  let defaultOptions = {}
+  if (languageContext.userLanguage === 'fr') {
+    defaultOptions.locale = frLocale
+  }
+
+  const defaultFormat = "MMM dd yyyy"
+
+  return dateFnsFormat(
+    new Date(string),
+    format || defaultFormat,
+    options || defaultOptions
+  )
 }
