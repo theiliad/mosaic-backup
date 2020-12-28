@@ -1,17 +1,17 @@
 @charset "utf-8";
 @import '../../node_modules/bulma/bulma.sass';
 
-$colors_blue_primary: #1226aa;
-$colors_blue_dark: #021d49;
+$colors_midnight_primary: #021d49; // primary text
+$colors_midnight_secondary: #677792; // secondary text
 
-$colors_grey_light: #e8eceb;
-$colors_grey_dark: #677792;
+$colors_grey_dark: #bbc6c3; // borders when background is grey_light
+$colors_grey_light: #e8eceb; // borders when background is white, background
+$colors_white: #ffffff; // white
 
-$colors_red_primary: #d50057;
-
-$colors_grey_primary: #eee5da;
-$colors_grey_secondary: #f5f3ed;
-$colors_grey_tertiary: #fbf9f6;
+$colors_blue_primary: #1226aa; // links
+$colors_red_primary: #d50057; // labels
+$colors_orange_primary: #FF675D; // accents
+$colors_aqua_primary: #00BED6; // accents
 
 @mixin transition_default {
   transition: all 0.2s ease-out;
@@ -42,7 +42,7 @@ html {
 
 body {
   background: white;
-  color: $colors_blue_dark;
+  color: $colors_midnight_primary;
   @include Roobert_Medium;
   font-weight: normal;
   font-style: normal;
@@ -120,7 +120,7 @@ p a:hover {
 }
 
 .divider {
-  background: $colors_grey_secondary;
+  background: $colors_grey_dark;
   height: 1px;
   width: 100%;
 }
@@ -158,7 +158,7 @@ p a:hover {
   }
 
   background-color: $colors_grey_light;
-  color: $colors_blue_dark;
+  color: $colors_midnight_secondary;
   font-size: 0.85em;
   padding: 1.5em 2em;
   border-radius: 2em;

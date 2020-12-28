@@ -32,8 +32,8 @@ export default {
   pages: {
     index: {
       title: {
-        en: 'Hi, we’re Mosaic. We build brands in dimension.',
-        fr: 'Lorem ip',
+        en: 'We build brands in dimension.',
+        fr: 'Lorem ipsum',
       },
       why: {
         title: {
