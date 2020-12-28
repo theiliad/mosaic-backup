@@ -60,7 +60,7 @@ div.post-body {
   line-height: 2em;
   margin-top: 4em;
   margin-bottom: 7em;
-  color: $colors_blue_primary;
+  color: $colors_midnight_primary;
 
   a.cp-apply {
     padding: 1.5em;
@@ -161,7 +161,7 @@ div.post {
 
   div.next-project {
     position: relative;
-    color: #fff;
+    background: $colors_white;
 
     div.cp-bg {
       position: absolute;
@@ -173,7 +173,7 @@ div.post {
 
       &.white {
         left: 0;
-        background: #fff;
+        background: $colors_white;
       }
     }
 
@@ -183,7 +183,8 @@ div.post {
 
       &.cp-text {
         position: relative;
-        background: $colors_midnight_secondary;
+        color: $colors_white;
+        background: $colors_midnight_primary;
 
         div.cp-texts {
           position: absolute;

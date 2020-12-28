@@ -34,7 +34,7 @@ div.sidenav {
     text-align: right;
 
     a {
-      color: #fff;
+      color: $colors_white;
 
       svg {
         width: 24px;
@@ -89,7 +89,7 @@ div.sidenav {
 
       a {
         display: block;
-        color: #fff;
+        color: $colors_white;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;

@@ -20,7 +20,7 @@ footer {
   height: 28em;
   z-index: -1;
   background: $colors_blue_primary url("../img/matrix.svg") repeat;
-  color: #fff;
+  color: $colors_white;
   padding: 8em 0 0;
 
   @media screen and (max-width: 768px) {
@@ -41,13 +41,13 @@ footer {
     font-size: 2.2em;
 
     a {
-      color: #fff;
+      color: $colors_white;
       text-decoration: underline;
     }
   }
 
   svg {
-    color: white;
+    color: $colors_white;
   }
 
   div.bottom-links {
