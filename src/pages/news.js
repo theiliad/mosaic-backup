@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
+import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
 // Locale
@@ -16,7 +16,8 @@ class News extends React.Component {
     return (
       <Layout
         location={this.props.location}
-        title={siteTitle}
+		title={siteTitle}
+		logo={LOGO_OPTIONS.aquaBlue}
         HeaderExtension={
           <div className="header_extension news">
             <div class="bg">

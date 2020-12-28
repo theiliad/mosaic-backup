@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from '@mdx-js/react'
 import MDX from '@mdx-js/runtime'
 
-import Layout from '../components/Layout'
+import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
 import YouTube from 'react-youtube'
@@ -36,7 +36,7 @@ function NewsPost(props) {
   const [play, setPlay] = useState(false)
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout location={props.location} title={siteTitle} logo={LOGO_OPTIONS.orangeBlue}>
       <SEO
         title={frontmatter.title}
         image={`https://mosaic.com${frontmatter.shareImage ||

@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 
 import '../styles/styles.scss'
 
-import LOGO from '../img/logo/logo.png'
 import { FiArrowUpRight, FiArrowRight, FiChevronDown } from 'react-icons/fi'
 
 // Locale
@@ -20,6 +19,22 @@ import { StickyContainer, Sticky } from 'react-sticky'
 
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+
+// Logo options
+import LOGO from '../img/logo/logo.png'
+import LOGO_AQUA_BLUE from '../img/logo/aqua-blue.svg'
+import LOGO_DARK_BLUE from '../img/logo/blue-darkblue.svg'
+import LOGO_ORANGE_BLUE from '../img/logo/orange-blue.svg'
+import LOGO_WHITE_RED from '../img/logo/white-red.svg'
+import LOGO_WHITE from '../img/logo/white-transparent.svg'
+
+export const LOGO_OPTIONS = {
+  aquaBlue: LOGO_AQUA_BLUE,
+  darkBlue: LOGO_DARK_BLUE,
+  orangeBlue: LOGO_ORANGE_BLUE,
+  whiteRed: LOGO_WHITE_RED,
+  white: LOGO_WHITE,
+}
 
 class Header extends React.Component {
   state = {
@@ -92,7 +107,7 @@ class Header extends React.Component {
             >
               <div className="navbar-brand">
                 <Link className="navbar-item logo" to="/">
-                  <img src={LOGO} />
+                  <img src={props.logo || LOGO_WHITE} />
                 </Link>
 
                 <a
