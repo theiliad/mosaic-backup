@@ -19,6 +19,23 @@ import DEMO_2 from '../img/demo/2.jpg'
 import DEMO_3 from '../img/demo/3.jpg'
 import HOME_HERO from '../img/home/hero.jpg'
 
+// Partner logos
+import ANHEUSER_BUSCH from '../img/home/partners/anheuser-busch.svg'
+import DR_OETKER from '../img/home/partners/dr-oetker.svg'
+import GENERAL_MILLS from '../img/home/partners/general-mills.svg'
+import GOOGLE from '../img/home/partners/google.svg'
+import IG_WEALTH_MANAGEMENT from '../img/home/partners/ig-wealth-management.svg'
+import IMPOSSIBLE from '../img/home/partners/impossible.svg'
+import KRAFT_HEINZ from '../img/home/partners/kraft-heinz.svg'
+import LABATT from '../img/home/partners/labatt.svg'
+import LOBLAWS from '../img/home/partners/loblaws.svg'
+import MACKENZIE_INVESTMENTS from '../img/home/partners/mackenzie-investments.svg'
+import RBC from '../img/home/partners/rbc.svg'
+import SAMSUNG from '../img/home/partners/samsung.svg'
+import SHOPPERS_DRUG_MART from '../img/home/partners/shoppers-drug-mart.svg'
+import STARBUCKS from '../img/home/partners/starbucks.svg'
+import TISHMAN_SPEYER from '../img/home/partners/tishman-speyer.svg'
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -244,114 +261,94 @@ class BlogIndex extends React.Component {
               <div class="slide-track">
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={ANHEUSER_BUSCH}
+                    height="800"
+                    width="800"
+                    alt="Anheuser-Busch"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={DR_OETKER}                    
+                    alt="Dr. Oetker"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={GENERAL_MILLS}                    
+                    alt="General Mills"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={GOOGLE}                    
+                    alt="Google"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={IG_WEALTH_MANAGEMENT}                    
+                    alt="IG Wealth Management"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={IMPOSSIBLE}                    
+                    alt="Impossible"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={KRAFT_HEINZ}                    
+                    alt="Kraft Heinz"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={LABATT}                    
+                    alt="Labatt"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={LOBLAWS}                    
+                    alt="Loblaws"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={MACKENZIE_INVESTMENTS}                    
+                    alt="Mackenzie Investments"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={RBC}                    
+                    alt="RBC"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={SAMSUNG}                    
+                    alt="Samsung"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={SHOPPERS_DRUG_MART}                    
+                    alt="Shoppers Drug Mart"
                   />
                 </div>
                 <div class="slide">
                   <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-                    height="100"
-                    width="250"
-                    alt=""
+                    src={STARBUCKS}                    
+                    alt="Starbucks"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src={TISHMAN_SPEYER}                    
+                    alt="Tishman Speyer"
                   />
                 </div>
               </div>

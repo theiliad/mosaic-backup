@@ -185,8 +185,7 @@ div.pages-index {
 
     // Styling
     .slider {
-      //   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-      height: 100px;
+      height: 400px;
       margin: auto;
       overflow: hidden;
       position: relative;
@@ -196,9 +195,9 @@ div.pages-index {
       &::after {
         // @include white-gradient;
         content: '';
-        height: 100px;
         position: absolute;
-        width: 200px;
+        height: 400px;
+        width: 400px;
         z-index: 2;
       }
 
@@ -220,8 +219,8 @@ div.pages-index {
       }
 
       .slide {
-        height: 100px;
-        width: 250px;
+        height: 400px;
+        width: 400px;
       }
     }
   }
