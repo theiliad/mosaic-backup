@@ -146,11 +146,11 @@ div.pages-index {
 
 	&.scroll-focused {
 		p {
-			color: red;
+			color: $colors_white;
 		}
 
 		a.button {
-			background: violet;
+			background: $colors_white;
 		}
 	}
   }
