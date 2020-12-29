@@ -11,7 +11,6 @@ import CATEGORIES from '../data/categories'
 
 // Icons
 import { BsPlayFill } from 'react-icons/bs'
-import { RiArrowRightUpLine } from 'react-icons/ri'
 
 import Fade from 'react-reveal/Fade'
 
@@ -30,11 +29,13 @@ const ThinkingItem = ({ node, size }) => {
           <div className="cp-image">
             <img src={node.frontmatter.featuredImage} />
 
-            {node.frontmatter.link && (
-              <span>
-                <RiArrowRightUpLine />
-              </span>
-            )}
+            <svg
+              viewBox="0 0 800 1066.67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="800" height="1066.67" fill="#e8eceb" />
+            </svg>
           </div>
 
           <p className="cp-title">

@@ -4,26 +4,20 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
-import HOME_HERO from '../img/home/hero.jpg'
-
 // Locale
 import { Text } from '../containers/Language'
 
-// ICONS
-import { FiArrowRight } from 'react-icons/fi'
-import { RiArrowRightUpLine } from 'react-icons/ri'
-
+// Lodash
 import { get, chunk } from 'lodash-es'
 
 import CATEGORIES from '../data/categories'
 
-import Marquee from 'react-double-marquee'
-
-import LOGO from '../img/logo/logo.png'
-
+// Assets
+import LOGO_WHITE from '../img/logo/white-transparent.svg'
 import DEMO_1 from '../img/demo/1.jpg'
 import DEMO_2 from '../img/demo/2.jpg'
 import DEMO_3 from '../img/demo/3.jpg'
+import HOME_HERO from '../img/home/hero.jpg'
 
 class BlogIndex extends React.Component {
   render() {
@@ -79,7 +73,7 @@ class BlogIndex extends React.Component {
         location={this.props.location}
         title={siteTitle}
         backgroundColorsOnScroll={{
-          'home-writeup': '#e8eceb',
+          'home-writeup': 'navy',
           'home-writeup2': '#e8eceb',
         }}
         HeaderExtension={
@@ -89,6 +83,8 @@ class BlogIndex extends React.Component {
                 <div className="container">
                   <div className="columns is-vcentered">
                     <div className="column is-6 aligncenter-mobile">
+                      <img src={LOGO_WHITE} />
+
                       <h1 className="primary heading_lg">
                         <span>
                           <Text tid="pages.index.title" />

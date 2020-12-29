@@ -214,6 +214,7 @@ const Layout = props => {
 
   useEffect(() => {
     document.addEventListener('scroll', trackScrolling)
+    trackScrolling()
 
     // returned function will be called on component unmount
     return () => {
@@ -242,6 +243,11 @@ const Layout = props => {
         color: backgroundColorsOnScroll[divID],
         element: document.getElementById(divID),
       }))
+
+      divsWithBackgroundColors.forEach(div =>
+        div.element.classList.remove('scroll-focused')
+      )
+
       const scrolledElements = divsWithBackgroundColors.filter(div =>
         isBottom(div.element)
       )
@@ -260,6 +266,8 @@ const Layout = props => {
 
         const secondaryColor = matchingElement.color || 'black'
         document.body.style.backgroundColor = secondaryColor
+
+        matchingElement.element.classList.add('scroll-focused')
       } else {
         document.body.style.backgroundColor = '#fff'
       }

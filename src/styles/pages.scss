@@ -110,14 +110,6 @@ div.pages-index {
     }
   }
 
-  div.section-writeup {
-    @media screen and (max-width: 768px) {
-      div.columns {
-        flex-direction: column;
-      }
-    }
-  }
-
   div.section-writeup,
   .section-writeup2 {
     @include section_padding;
@@ -139,6 +131,28 @@ div.pages-index {
         margin-bottom: 1em;
       }
     }
+  }
+
+  div.section-writeup {
+    @media screen and (max-width: 768px) {
+      div.columns {
+        flex-direction: column;
+      }
+	}
+
+	p {
+		@include transition_default;
+	}
+
+	&.scroll-focused {
+		p {
+			color: red;
+		}
+
+		a.button {
+			background: violet;
+		}
+	}
   }
 
   div.section-partners {
