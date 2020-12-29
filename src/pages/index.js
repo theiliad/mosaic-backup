@@ -79,7 +79,7 @@ class BlogIndex extends React.Component {
         location={this.props.location}
         title={siteTitle}
         backgroundColorsOnScroll={{
-          'home-writeup': '#e8eceb',
+          'home-writeup': '#BBC6C3',
           'home-writeup2': '#e8eceb',
         }}
         HeaderExtension={
