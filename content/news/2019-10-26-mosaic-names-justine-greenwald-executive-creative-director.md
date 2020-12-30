@@ -1,10 +1,11 @@
 ---
 posttype: news
 titleEN: Mosaic Names Justine Greenwald Executive Creative Director
-titleFR: Dolor sit amet
-descriptionEN: Canada’s largest integrated marketing agency bolsters leadership team with addition of accomplished strategist and digital expert
-descriptionFR: Lorem ipsum
-date: 2020-10-26T20:35:33.876Z
+titleFR: FRFPO
+descriptionEN: Top brand activation agency bolsters leadership bench with addition of accomplished, multi-disciplined marketing executive
+descriptionFR: FRFPO
+date: 2019-10-26T20:35:33.876Z
+featuredImage: /img/news/justine-greenwald.jpg
 bodyEN: |-
   Mosaic announced today the addition of accomplished marketing executive Justine Greenwald as the agency's Executive Creative Director. Greenwald will lead award-winning teams of creatives and strategists to deliver game-changing experiences for top global brands. She will also play a key role in agency leadership and operations. Greenwald's hiring marks the addition of another talented woman to Mosaic's already strong bench of female-led experiential experts.
 
@@ -20,14 +21,5 @@ bodyEN: |-
 
   ![alt new]("https://avatars3.githubusercontent.com/u/14989804?s=32")
 bodyFR: |-
-  Bonjour
-
-  * onee
-  * twoo
-  * three
-
-
-  ```
-  wegewgwegewgewgwegwegweg
-  ```
+  FRFPO
 ---

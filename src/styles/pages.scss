@@ -326,9 +326,9 @@ div.pages-news {
 
     a.press-release {
       color: $colors_blue_primary;
-      font-size: 0.85em;
-	  padding: 1.4em;
-	  margin: 0;
+      font-size: 1.2em;
+	    padding: 1.4em 0;
+	    margin: 0;
       border-top: 1px solid $colors_grey_light;
       @include transition_default;
 
@@ -337,9 +337,12 @@ div.pages-news {
       }
 
       &:hover {
-        background-color: $colors_grey_light;
         @include transition_default;
-        box-shadow: 0 0 0 1px $colors_grey_light;
+        color: $colors_orange_primary;
+        text-decoration: underline;
+        
+        // background-color: $colors_grey_light;
+        // box-shadow: 0 0 0 1px $colors_grey_light;
       }
 
       //   p.column {
