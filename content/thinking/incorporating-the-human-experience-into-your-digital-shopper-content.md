@@ -6,9 +6,8 @@ date: 2020-04-14T03:14:12.599Z
 featuredImage: /img/thinking/incorporating-the-human-experience.jpg
 category: strategy
 author: Diana Allwein and Alexandra Plowman
+description: We find new ways to engage with the ever-changing online shopper. Attention to quality in brand storytelling.
 ---
-
-### We find new ways to engage with the ever-changing online shopper. Attention to quality in brand storytelling.
 
 The way shoppers engage online continues to become more fluid in terms of how they search for and purchase products. Now, more than ever, e-commerce is the new shopping normal and retailers are competing to offer the best optimized digital experiences and value. Black Friday 2019 was proof as shopping continued to shift from brick & mortar to the living room couch, with online spend hitting just over $7 billion, +23% vs prior year.
 

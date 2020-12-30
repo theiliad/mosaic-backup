@@ -6,9 +6,8 @@ date: 2019-06-11T03:14:12.599Z
 featuredImage: /img/thinking/the-show-must-go-on.jpg
 category: strategy
 author: Colette McLaughlin
+description: Webinar hosting and ideas for a live webinar or large-scale virtual event. Moving your event online due to coronavirus? See multimedia webinar hosting options.
 ---
-
-### Webinar hosting and ideas for a live webinar or large-scale virtual event. Moving your event online due to coronavirus? See multimedia webinar hosting options.
 
 It’s no secret that the spread of coronavirus has turned the marketing industry upside down. On the cusp of a traditionally busy season of conferences, mobile tours, and large-scale events like Coachella and SXSW, brands are re-evaluating their live events strategy - some turning to digitalevents with others choosing to cancel festivities altogether.  
 

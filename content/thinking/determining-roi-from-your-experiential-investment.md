@@ -6,9 +6,8 @@ date: 2019-08-28T03:14:12.599Z
 featuredImage: /img/thinking/determining-roi.jpg
 category: one-eighty
 author: Amelia Rowe, Sr. Director, Measurement & Insights
+description: Proving Return on Dollars Spent in Experiential Marketing
 ---
-
-### Proving Return on Dollars Spent in Experiential Marketing
 
 More and more, there is pressure on marketers to prove the return on their dollars spent in any given channel, and experiential is no exception. But unlike most other channels, there is no industry standard or widely agreed upon way to measure XM. There isn’t a standard CPM, GRP, CPC, or established ROAS that unanimously works. Instead, clients look for guidance and expertise from their agency partner. And luckily for us (and our clients!), we at Mosaic have spent the past several years building a department that focuses solely on measuring experiential activations, and ensuring we have the right expertise, tools, and measurement methodologies to deliver a clear picture of success regardless of type of activation, business goal, category, or target consumer.
 
@@ -21,4 +20,3 @@ When setting KPIs, we always strive to look across 3 pillars of measurement: 1) 
 Our goal is to ensure the measurement methodologies are seamlessly integrated into the go-to-market strategy and creative executions from the very beginning. And before we even step foot in field, we ensure all stakeholders are confidently aligned to the measurement plan, including KPIs and targets, methodologies, reporting templates and cadence.
 
 While measuring marketing effectiveness will forever be an evolving practice, we believe that laying a strong foundation and appreciation for measurement through our Measurement First™ philosophy has set us on a path to continue to innovate, challenge, and optimize with the ever-changing landscape that we operate within.
-

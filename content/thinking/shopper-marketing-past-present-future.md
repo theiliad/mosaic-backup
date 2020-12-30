@@ -6,9 +6,8 @@ date: 2019-11-22T03:14:12.599Z
 featuredImage: /img/thinking/shopper-marketing.jpg
 category: thinking
 author: Bill Rodi, VP, Shopper Marketing
+description: What is Shopper Marketing, and where did it come from? Read about the evolution of digital shopper marketing in this blog outlining the past, present and future of the always-on consumer.
 ---
-
-### What is Shopper Marketing, and where did it come from? Read about the evolution of digital shopper marketing in this blog outlining the past, present and future of the always-on consumer.
 
 Recently, I had the honor of contributing to a new college-level textbook and with their permission I’m sharing the excerpt with the broader marketing community via the Mosaic Journal.
 

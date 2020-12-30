@@ -6,9 +6,8 @@ date: 2020-04-21T03:14:12.599Z
 featuredImage: /img/thinking/introducing-the-out-of-home-office.jpg
 category: thought-leadership
 author:
+description: Zoom Backgrounds | Work From Home Tools | Zoom Avatars
 ---
-
-### Zoom Backgrounds | Work From Home Tools | Zoom Avatars
 
 Working from home comes with a whole lot of unexpected distractions - kids, cats, dogs and a whole lot of other things that might pull us away from our home office desk.
 

@@ -6,9 +6,8 @@ date: 2019-12-18T03:14:12.599Z
 featuredImage: /img/thinking/recruitment-processing-and-outsourcing.jpg
 category: one-eighty
 author: Marie-Pierre Huot & Julie Zitano
+description: Recruiting the highest performing employees in the digital age requires a recruitment team to seek new and innovative digital trends to incorporate into the talent acquisition process.
 ---
-
-### Recruiting the highest performing employees in the digital age requires a recruitment team to seek new and innovative digital trends to incorporate into the talent acquisition process.
 
 In today’s ultra-competitive labor market, attracting talent is not a one size fits all model. RPOs, Agencies and large Corporations are in the middle of the “war for talent”. With unemployment rates continuing to hold steady at almost record lows, the pool of available talent is tightening, and top tier applicants are expecting a level of ease in connecting with employers. Coupled with the need to operate with more speed and lower cost, it is imperative to operate a highly efficient talent acquisition model, with an emphasis on digital candidate connection.
 

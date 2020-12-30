@@ -6,9 +6,8 @@ date: 2020-04-23T03:14:12.599Z
 featuredImage: /img/thinking/engagement-marketing-best-practices.jpg
 category: thought-leadership
 author: Danielle Seaman
+description: In engagement marketing, brand tone is vital. Best practice in content and influencer marketing to engage customers with an authentic marketing voice.
 ---
-
-### In engagement marketing, brand tone is vital. Best practice in content and influencer marketing to engage customers with an authentic marketing voice.
 
 Content is having its moment, again. People have been consuming large amounts of it since the advent of the smartphone, and now due to the COVID crisis, are doing so at an unprecedented rate. On top of this, brands are starting to take Gen Z - the ultimate content consumers - seriously as a consumer group.
 
@@ -20,21 +19,21 @@ With channel algorithms constantly changing, cutting through the noise is key. L
 
 In 2019, the average American adult consumed just over [https://www.emarketer.com/content/us-time-spent-with-media-in-2019-has-plateaued-with-digital-making-up-losses-by-old-media](12 hours of media a day), mostly via digital channels. This number is set to grow exponentially now with consumers largely confined to their homes. Brands have a unique opportunity to cut through the clutter of the digital world and develop a deeper relationship with their audience. However, it must serve a purpose. The below pillars can provide general guidance around developing meaningful content.
 
-## 1. Entertain
+### 1. Entertain
 
 Whether from a brand or one of their partners, consumers want an escape. Tik Tok’s popularity is a great example. Leaning into the video app’s dance routines and challenges, Chipotle created the #GuacDance challenge for National Avocado Day, which became one of the most successful branded challenges in the U.S.
 
-## 2. Inspire
+### 2. Inspire
 
 Brands and influencers also have the power to inspire others through content. Most recently, Nike came out with its own take on how consumers can stay safe during the current global pandemic, and have used its partner athletes, including Serena Williams and Tiger Woods, to amplify that message:
 
-![Nike: Play inside, play for the world](/img/thinking/engagement-marketing-best-practices/nike.png)
+![Nike ad: Play inside, play for the world](/img/thinking/engagement-marketing-best-practices/nike-play-inside.png)
 
-## 3. Bring Value
+### 3. Bring Value
 
 Consumers are also looking for content that will improve their lifestyle. For example, our client Michelob ULTRA is bringing fitness to consumers living rooms by teaming up with fitness studios that have had to close as a result of the COVID crisis. Instructors teach a class and host a happy hour, and attendees donate to a virtual tip jar, which helps participating studios support their staff during this time.
 
-![Michelob Ultra: Movement](/img/thinking/engagement-marketing-best-practices/michelob.png)
+![Michelob Ultra ad: Movement](/img/thinking/engagement-marketing-best-practices/michelob-ultra-movement.png)
 
 
 ## Practice Mindfulness

@@ -6,6 +6,7 @@ date: 2020-10-29T03:14:12.599Z
 featuredImage: /img/thinking/understanding-that-multicultural-is-a-multi-layered-story.jpg
 category: thought-leadership
 author: Katie Porrata, Senior Creative
+description: 
 ---
 
 The label of “Black,” “Asian” or “Latinx” to describe the multicultural population falls short. The term multicultural goes beyond ethnicity; it’s much more multi-dimensional than that. Multicultural communities are not a monolith. They are a blend of passions, concerns, beliefs and languages that differ from region to region and generation to generation; and brands must look at how they communicate with the population as such. This blend is especially evident in younger generations with rapidly growing purchase power. Today, 49% of Gen-Zs identify as multicultural and this shows no sign of slowing down.

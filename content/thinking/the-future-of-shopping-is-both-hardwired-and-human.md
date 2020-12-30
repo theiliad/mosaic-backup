@@ -6,6 +6,7 @@ date: 2020-10-30T03:14:12.599Z
 featuredImage: /img/thinking/the-future-of-shopping-is-both-hardwired-and-human.jpg
 category: one-eighty
 author: FPO
+description: 
 ---
 
 The disruption of retail was set in motion years ago with direct to consumer and e-commerce. However, this year has been one of rapid change – from the way we connect to how we shop and what we shop for, our world is now almost entirely virtual. This begs the question – will the future of shopping be hardwired in algorithm, analytics and auto-purchases? Or will we see a return to the emotional and human experience of shopping?
@@ -29,7 +30,7 @@ Read on for some takeaways from their discussion:
 * LIVESTREAM SHOPPING – TREND
 * POP UP RETAIL – TRUTH
 
-## THE BOTTOM LINE:
+### THE BOTTOM LINE:
 *The real opportunity lies in balancing the power of data and algorithms with human insights and behavior. The future is about hardwired and human elements working in tandem to inform a better experience.*
 
 ## TREND OR TRUTH?
@@ -55,7 +56,7 @@ Pop up has become mainstream but looking forward the use cases will continue to 
 * Designing for emotional engagement is critical to every consumer channel whether or not the interaction is physical or digital.
 * Marrying both data and human insight will take a customer experience from good to exceptional.
 
-## THE BOTTOM LINE:
+### THE BOTTOM LINE:
 *Emotion drives behavior. According to Harvard Professor Gerald Zaltman, 90-95% of the decisions we make are based on emotion. Brands that strategically design for emotional engagement at each step on a shopper’s path to purchase are poised to win the sale.*
 
 We’ve seen a lot of changes this year, which requires looking at things a little differently. We hope that Mosaic OneEighty has taught you how to flip the script and think outside the box to innovate – in business, marketing and life.

@@ -6,9 +6,8 @@ date: 2019-09-16T03:14:12.599Z
 featuredImage: /img/thinking/product-photography-vs-cgi.jpg
 category: one-eighty
 author: Tony Melino
+description: Mosaic’s own Design Director and CGI Artist of 18 years Tony Melino explores the debate between real and realistic.
 ---
-
-### Mosaic’s own Design Director and CGI Artist of 18 years Tony Melino explores the debate between real and realistic.
 
 Two powerful forces are responsible for an accelerating medium divide in our industry; advancements in computer graphics and our never-ending pursuit of creating crave-worthy products. With neither trend slowing, we examine why marketers would choose one over the other, and whether or not CGI will be the end of traditional product photography.
 

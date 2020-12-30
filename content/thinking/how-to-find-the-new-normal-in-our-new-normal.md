@@ -6,9 +6,8 @@ date: 2020-05-06T03:14:12.599Z
 featuredImage: /img/thinking/how-to-find-the-new-normal-in-our-new-normal.jpg
 category: thought-leadership
 author: Stephanie Ebbeler, Vice President, Human Resources
+description: Three areas of focus for business leaders as we strive to support our people in the workplace and continue to navigate new realities together across the globe.
 ---
-
-### Three areas of focus for business leaders as we strive to support our people in the workplace and continue to navigate new realities together across the globe.
 
 Right now, my days are filled with helping business leaders navigate these uncertain times and encouraging balance amidst the unease, discomfort and fatigue people are feeling. The question I’ve been wrestling with lately is, “How do I help leaders find the new normal in the new normal?”
 

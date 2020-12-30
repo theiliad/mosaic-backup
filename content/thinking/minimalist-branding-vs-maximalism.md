@@ -6,9 +6,8 @@ date: 2019-07-18T03:14:12.599Z
 featuredImage: /img/thinking/minimalism-vs-maximalism.jpg
 category: creative
 author: Robyn Cambruzzi
+description: When the majority of ad designs are minimalist, sometimes the best way to grab customer attention is maximalism. See how to rock maximalist advertising.
 ---
-
-### When the majority of ad designs are minimalist, sometimes the best way to grab customer attention is maximalism. See how to rock maximalist advertising.
 
 Simple is hard. Everything in moderation. The best things in life are free. Mo money, mo problems. Less is more. With so many paradoxes putting minimalism on a pedestal, it’s become second nature to reject the idea that sometimes more is just the right amount.
 

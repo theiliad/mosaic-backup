@@ -6,9 +6,8 @@ date: 2020-09-21T03:14:12.599Z
 featuredImage: /img/thinking/brandweek-2020.jpg
 category: one-eighty
 author: FPO
+description: Key insights from Brandweek 2020
 ---
-
-### Key insights from Brandweek 2020
 
 Brandweek 2020 was unlike any that we’ve experienced in previous years. A fully virtual conference, marketers of all backgrounds, disciplines and industries were able to connect and share ideas that will undoubtedly shape the future of our industry.
 
