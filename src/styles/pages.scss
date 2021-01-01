@@ -138,21 +138,21 @@ div.pages-index {
       div.columns {
         flex-direction: column;
       }
-	}
+    }
 
-	p {
-		@include transition_default;
-	}
+    p {
+      @include transition_default;
+    }
 
-	&.scroll-focused {
-		p {
-			color: $colors_white;
-		}
+    &.scroll-focused {
+      p {
+        color: $colors_white;
+      }
 
-		a.button {
-			background: $colors_white;
-		}
-	}
+      a.button {
+        background: $colors_white;
+      }
+    }
   }
 
   div.section-partners {
@@ -236,6 +236,21 @@ div.pages-thinking {
       margin-bottom: 1em;
     }
 
+    div.cp-image {
+      overflow: hidden;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: table;
+        width: 100%;
+        @include transition_default;
+      }
+    }
+
     p.cp-title {
     }
 
@@ -249,8 +264,8 @@ div.pages-thinking {
         span {
           position: relative;
           display: inline-block;
-          width: 1.4em;
-          height: 1.4em;
+          width: 1.45em;
+          height: 1.45em;
           border-radius: 50%;
           border: 2px solid $colors_blue_primary;
           //   margin-top: -0.15em;
@@ -327,8 +342,8 @@ div.pages-news {
     a.press-release {
       color: $colors_blue_primary;
       font-size: 1.2em;
-	    padding: 1.4em 0;
-	    margin: 0;
+      padding: 1.4em 0;
+      margin: 0;
       border-top: 1px solid $colors_grey_light;
       @include transition_default;
 
@@ -340,7 +355,7 @@ div.pages-news {
         @include transition_default;
         color: $colors_orange_primary;
         text-decoration: underline;
-        
+
         // background-color: $colors_grey_light;
         // box-shadow: 0 0 0 1px $colors_grey_light;
       }
@@ -385,6 +400,38 @@ div.pages-news {
           padding-right: 0;
         }
       }
+    }
+  }
+}
+
+div.pages-careers {
+  .section-careers {
+    margin-top: 3em;
+
+    h1 {
+      font-size: 3em;
+      line-height: 1em;
+      @include Roobert_SemiBold;
+    }
+
+    p {
+      margin: 0.8em 0;
+      font-size: 1.2em;
+    }
+
+    a.button {
+	  margin-bottom: 4em;
+	  padding: 1.5em 1.75em 1.5em 2em;
+
+      svg {
+        font-size: 1.2em;
+        margin-bottom: -0.175em;
+        margin-left: 0.24em;
+      }
+    }
+
+    img {
+      display: table;
     }
   }
 }

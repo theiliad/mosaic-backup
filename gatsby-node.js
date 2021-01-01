@@ -18,7 +18,7 @@ const getNodePrefix = postType => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const newsPostTemplate = path.resolve(`./src/templates/post-news.js`)
+  const postTemplate = path.resolve(`./src/templates/post.js`)
   return graphql(
     `
       {
@@ -65,7 +65,7 @@ exports.createPages = ({ graphql, actions }) => {
       const prefix = getNodePrefix(postType)
       createPage({
         path: post.node.fields.slug,
-        component: newsPostTemplate,
+        component: postTemplate,
         context: {
           slug: post.node.fields.slug,
           previous,

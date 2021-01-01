@@ -1,6 +1,6 @@
 ---
 posttype: thinking
-titleEN: The Show Must Go On: How to create a virtual attendee experience for live events
+titleEN: "The Show Must Go On: How to create a virtual attendee experience for live events"
 titleFR: FRFPO
 date: 2019-06-11T03:14:12.599Z
 featuredImage: /img/thinking/the-show-must-go-on.jpg

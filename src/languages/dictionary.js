@@ -28,6 +28,10 @@ export default {
       en: 'Play case study',
       fr: 'Play étude de cas',
     },
+    next: {
+      en: 'Next project',
+      fr: 'Projet suivant',
+    },
   },
   thinking: {
     title: {
@@ -37,11 +41,21 @@ export default {
     loadMore: {
       en: 'Load more',
       fr: 'Charger plus',
-	},
-	pastSession: {
-		en: "Past session",
-		fr: "Session passée"
-	}
+    },
+    pastSession: {
+      en: 'Past session',
+      fr: 'Session passée',
+    },
+  },
+  news: {
+    title: {
+      en: 'News',
+      fr: 'Nouvelles',
+    },
+    next: {
+      en: 'Next in news',
+      fr: "Suivant dans l'actualité",
+    },
   },
   pages: {
     index: {
@@ -62,6 +76,23 @@ export default {
           fr: `En tant qu'agence de marketing nord-américaine véritablement intégrée, nous ajoutons de la profondeur et du sens à nos marques et produisons des résultats puissants en tenant compte de tous les points de contact possibles avec les consommateurs.`,
         },
       },
+    },
+    careers: {
+      title: {
+        en: 'We cover a lot of bases, both in what we do and where we are.',
+        fr:
+          'Nous couvrons de nombreuses bases, à la fois dans ce que nous faisons et là où nous en sommes.',
+      },
+      description: {
+        en:
+          'We’re also big fans of fresh talent in both different spaces and places.',
+        fr:
+          'Nous sommes également de grands fans de nouveaux talents dans des espaces et des lieux différents.',
+	  },
+	  cta: {
+		  en: "View open roles",
+		  fr: "Afficher les rôles ouverts"
+	  }
     },
   },
 }

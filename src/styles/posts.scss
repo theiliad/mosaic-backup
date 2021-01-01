@@ -150,7 +150,8 @@ div.post {
       }
 
       &:hover {
-        background-color: $colors_blue_primary;
+		background-color: $colors_blue_primary;
+		color: #fff;
       }
 
       svg {

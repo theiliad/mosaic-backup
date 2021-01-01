@@ -7,6 +7,9 @@ import MDX from '@mdx-js/runtime'
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
+// Components
+import { NewsPostHeader, PostHeader } from './post-headers'
+
 import YouTube from 'react-youtube'
 
 // Locale
@@ -35,8 +38,22 @@ function NewsPost(props) {
 
   const [play, setPlay] = useState(false)
 
+  // Type of the post
+  const isNewsPost = frontmatter.posttype === 'news'
+
   return (
-    <Layout location={props.location} title={siteTitle} logo={LOGO_OPTIONS.orangeBlue}>
+    <Layout
+      location={props.location}
+      title={siteTitle}
+      logo={LOGO_OPTIONS.orangeBlue}
+      footerCTA={
+        isNewsPost ? (
+          <h6>
+            Interested in joining the team? <a href="#">Let's chat</a>
+          </h6>
+        ) : null
+      }
+    >
       <SEO
         title={frontmatter.title}
         image={`https://mosaic.com${frontmatter.shareImage ||
@@ -44,56 +61,11 @@ function NewsPost(props) {
       />
 
       <div className="post">
-        <div className="post-single-heading">
-          <div className="container">
-            <div className="columns post-single ui-grid">
-              <div className="column is-10">
-                <h1 className="cp-title">
-                  {frontmatter.companyName} - <Text
-                    variations={{
-                      en: frontmatter.titleEN,
-                      fr: frontmatter.titleFR,
-                    }}
-                  />
-                </h1>
-
-                <p className="cp-category">
-                  <Text
-                    variations={
-                      CATEGORIES['case-studies'][frontmatter.category]
-                    }
-                  />
-                </p>
-
-                <p className="cp-desc">
-                  <Text
-                    variations={{
-                      en: frontmatter.descriptionEN,
-                      fr: frontmatter.descriptionFR,
-                    }}
-                  />
-                </p>
-
-                <p>
-                  <a
-                    href="#"
-                    onClick={e => {
-                      e.preventDefault()
-                      setPlay(!play)
-                    }}
-                  >
-                    <span>
-                      <BsPlayFill />
-                    </span>
-                    <Text tid="caseStudies.playButton" />
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <img src={DEMO_1} style={{ width: '100%' }} />
+        {isNewsPost ? (
+          <NewsPostHeader post={post} />
+        ) : (
+          <PostHeader post={post} play={play} setPlay={setPlay} />
+        )}
 
         <div className="container">
           <div className="post-body content">
@@ -186,14 +158,23 @@ function NewsPost(props) {
           <div className="cp-bg"></div>
 
           <div className="container">
-            <div className="columns">
-              <div className="column is-narrow cp-img">
-                <img src={DEMO_2} style={{ maxWidth: 400 }} />
-              </div>
+            <div
+              className="columns"
+              style={{
+                minHeight: isNewsPost ? '15em' : null,
+              }}
+            >
+              {!isNewsPost && (
+                <div className="column is-narrow cp-img">
+                  <img src={DEMO_2} style={{ maxWidth: 400 }} />
+                </div>
+              )}
 
               <div className="column cp-text">
                 <div className="cp-texts">
-                  <p>Next project</p>
+                  <p>
+                    <Text tid={isNewsPost ? 'news.next' : 'case'} />
+                  </p>
                   <h6>Google — Pixelville</h6>
                 </div>
               </div>
@@ -222,13 +203,15 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       frontmatter {
         titleEN
-		titleFR
-		companyName
-        date(formatString: "MMMM DD, YYYY")
+        titleFR
+        companyName
+        posttype
+        date
         bodyEN
         bodyFR
         descriptionEN
         descriptionFR
+        featuredImage
         category
         videoID
       }

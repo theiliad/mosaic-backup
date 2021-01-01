@@ -157,14 +157,16 @@ class Header extends React.Component {
   }
 }
 
-export const Footer = props => (
+export const Footer = ({ footerCTA }) => (
   <>
     <footer>
       <div className="footer-content">
         <div className="container">
-          <h6>
-            Looking to drive conversion? <a href="#">Let's chat</a>
-          </h6>
+          {footerCTA || (
+            <h6>
+              Looking to drive conversion? <a href="#">Let's chat</a>
+            </h6>
+          )}
 
           <div className="bottom-links">
             <div className="container">
@@ -375,7 +377,7 @@ const Layout = props => {
 
           {children}
 
-          <Footer location={location} />
+          <Footer location={location} {...props} />
         </div>
       </StickyContainer>
     </div>
