@@ -6,13 +6,25 @@ export default {
     },
   },
   thinking: {
-    'thought-leadership': {
-      en: 'Thought Leadership',
-      fr: 'Lorem ip',
-    },
     'one-eighty': {
       en: 'OneEighty',
       fr: '180',
+    },
+    strategy: {
+      en: 'Strategy',
+      fr: 'Stratégie',
+    },
+    creative: {
+      en: 'Creative',
+      fr: 'Creative',
+    },
+    measurement: {
+      en: 'Measurement',
+      fr: 'la mesure',
+    },
+    'thought-leadership': {
+      en: 'Thought Leadership',
+      fr: 'Lorem ip',
     },
   },
 }

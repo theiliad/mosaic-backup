@@ -228,77 +228,80 @@ div.pages-index {
 
 div.pages-thinking {
   .section-thinking {
-    a {
-      color: $colors_blue_primary;
-    }
-
-    img {
-      margin-bottom: 1em;
-    }
-
-    div.cp-image {
-      overflow: hidden;
-      position: relative;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        display: table;
-        width: 100%;
-        @include transition_default;
-      }
-    }
-
-    p.cp-title {
-    }
-
-    span.cp-play {
-      padding-right: 0;
+    div.column {
+      margin-bottom: 5em;
 
       a {
-        color: $colors_white;
-        @include Roobert_SemiBold;
+        color: $colors_blue_primary;
+      }
 
-        span {
-          position: relative;
-          display: inline-block;
-          width: 1.45em;
-          height: 1.45em;
-          border-radius: 50%;
-          border: 2px solid $colors_blue_primary;
-          //   margin-top: -0.15em;
-          background: $colors_blue_primary;
-          vertical-align: middle;
+      img {
+        margin-bottom: 1em;
+      }
 
-          svg {
-            position: absolute;
-            top: 50%;
-            left: 53.5%;
-            transform: translate(-50%, -50%);
+      div.cp-image {
+        overflow: hidden;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          display: table;
+          width: 100%;
+          @include transition_default;
+        }
+      }
+
+      p.cp-meta {
+        span.cp-play {
+          padding-right: 0;
+
+          a {
+            color: $colors_white;
+            @include Roobert_SemiBold;
+
+            span {
+              position: relative;
+              display: inline-block;
+              width: 1.45em;
+              height: 1.45em;
+              border-radius: 50%;
+              border: 2px solid $colors_blue_primary;
+              //   margin-top: -0.15em;
+              background: $colors_blue_primary;
+              vertical-align: middle;
+
+              svg {
+                position: absolute;
+                top: 50%;
+                left: 53.5%;
+                transform: translate(-50%, -50%);
+              }
+            }
+
+            &:hover {
+              text-decoration: none;
+              box-shadow: none;
+            }
           }
         }
 
-        &:hover {
-          text-decoration: none;
-          box-shadow: none;
+        span.cp-category {
+          font-size: 0.75em;
+          padding: 0.1em 0.7em 0.35em 0.7em;
+          border: 1px solid $colors_blue_primary;
+          border-radius: 3em;
         }
-      }
-    }
 
-    span.cp-category {
-      font-size: 0.75em;
-      padding: 0.1em 0.7em 0.35em 0.7em;
-      border: 1px solid $colors_blue_primary;
-      border-radius: 3em;
-    }
+        span.cp-date {
+          padding-left: 0;
 
-    span.cp-date {
-      padding-left: 0;
-
-      span {
-        font-size: 0.75em;
+          span {
+            font-size: 0.75em;
+          }
+        }
       }
     }
 
@@ -306,8 +309,9 @@ div.pages-thinking {
       color: $colors_orange_primary;
       font-size: 2em;
       display: table;
-      margin: auto;
-      padding: 3.5em 0;
+	  margin: auto;
+	  margin-top: -1.5em;
+      padding: 0 0 3.5em 0;
     }
   }
 }
@@ -420,8 +424,8 @@ div.pages-careers {
     }
 
     a.button {
-	  margin-bottom: 4em;
-	  padding: 1.5em 1.75em 1.5em 2em;
+      margin-bottom: 4em;
+      padding: 1.5em 1.75em 1.5em 2em;
 
       svg {
         font-size: 1.2em;

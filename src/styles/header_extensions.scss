@@ -51,6 +51,65 @@
     }
   }
 
+  &.thinking {
+    padding-top: 8em;
+
+    h1 {
+      padding-top: 0;
+      @include Roobert_SemiBold;
+    }
+
+    div.columns {
+      margin-right: 0;
+
+      div.cp-spacer {
+        flex-grow: 1;
+      }
+    }
+
+    div.cp-filter {
+      display: table;
+      margin: auto;
+
+      ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        font-size: 0.85em;
+        margin-top: 0.5em;
+        justify-content: center;
+
+        li {
+          margin: 1em;
+          margin-bottom: 0;
+          padding-bottom: 0.15em;
+          border-bottom: 2px solid transparent;
+          @include transition_default;
+
+          a {
+            color: $colors_midnight_primary;
+          }
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &.active {
+            border-bottom: 2px solid $colors_blue_primary;
+            @include transition_default;
+
+            a {
+              color: $colors_blue_primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &.no_bg {
     padding: 10em 0 8em 0;
   }

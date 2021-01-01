@@ -128,28 +128,46 @@ class Thinking extends React.Component {
           <div className="header_extension thinking">
             <div class="bg">
               <div className="container">
-                <h1 class="primary heading_lg aligncenter">
-                  <span>
-                    <Text tid="thinking.title" />
-                  </span>
-                </h1>
+                <div className="columns">
+                  <div className="column is-5">
+                    <h1 class="primary heading_lg">
+                      <span>
+                        <Text tid="thinking.title" />
+                      </span>
+                    </h1>
+                  </div>
+                  <div className="column is-narrow cp-spacer"></div>
+                  <div>
+                    <div className="cp-filter">
+                      <ul>
+                        <li className={filter === null ? 'active' : ''}>
+                          <a href="#" onClick={e => this.filter(e, null)}>
+                            <Text
+                              variations={{
+                                en: 'All',
+                                fr: 'Toute',
+                              }}
+                            />
+                          </a>
+                        </li>
 
-                <div className="cp-filter">
-                  <ul>
-                    <li className={filter === null ? 'active' : ''}>
-                      <a href="#" onClick={e => this.filter(e, null)}>
-                        All
-                      </a>
-                    </li>
-
-                    {Object.keys(CATEGORIES.thinking).map(categoryKey => (
-                      <li className={filter === categoryKey ? 'active' : ''}>
-                        <a href="#" onClick={e => this.filter(e, categoryKey)}>
-                          <Text variations={CATEGORIES.thinking[categoryKey]} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                        {Object.keys(CATEGORIES.thinking).map(categoryKey => (
+                          <li
+                            className={filter === categoryKey ? 'active' : ''}
+                          >
+                            <a
+                              href="#"
+                              onClick={e => this.filter(e, categoryKey)}
+                            >
+                              <Text
+                                variations={CATEGORIES.thinking[categoryKey]}
+                              />
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
