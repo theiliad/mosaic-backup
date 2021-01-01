@@ -2,11 +2,11 @@
 posttype: thinking
 titleEN: Top CPG Industry Predictions for 2021
 titleFR: FRFPO
-date: 2020-01-02T03:14:12.599Z
+date: 2020-12-02T03:14:12.599Z
 featuredImage: /img/thinking/top-cpg-industry-predictions-2021.jpg
 category: thought-leadership
 author: Colin Stewart, EVP Business Intelligence, Acosta
-description: Forecasted market trends and economy predications from leading sales and marketing agency include integration of in-store and online shopping experience and CBD going mainstream.
+description: 
 ---
 
 After an unprecedented year, forecasted trends include ongoing focus on personal health and self-care, technology activation acceleration and fulfillment efficiencies

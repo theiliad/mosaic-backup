@@ -6,8 +6,8 @@ date: 2020-10-30T03:14:12.599Z
 featuredImage: /img/thinking/the-future-of-shopping-is-both-hardwired-and-human.jpg
 category: one-eighty
 author: FPO
-description: 
----
+description: Learnings from our latest expert panel on the future of shopping
+--- 
 
 The disruption of retail was set in motion years ago with direct to consumer and e-commerce. However, this year has been one of rapid change – from the way we connect to how we shop and what we shop for, our world is now almost entirely virtual. This begs the question – will the future of shopping be hardwired in algorithm, analytics and auto-purchases? Or will we see a return to the emotional and human experience of shopping?
 

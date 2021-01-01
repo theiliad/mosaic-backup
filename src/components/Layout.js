@@ -171,8 +171,14 @@ export const Footer = ({ footerCTA }) => (
           <div className="bottom-links">
             <div className="container">
               <div className="columns is-vcentered">
-                <div className="column is-narrow">Instagram</div>
+                <div className="column is-narrow"><a href="https://facebook.com/mosaic" target="_blank">Facebook</a></div>
+                <div className="column is-narrow"><a href="https://instagram.com/mosaicna" target="_blank">Instagram</a></div>
+                <div className="column is-narrow"><a href="https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10" target="_blank">LinkedIn</a></div>
                 <div className="column right-links">
+                  <div className="last">Privacy policy</div>
+                  <div className="last">Terms of Use</div>
+                  <div className="last">Accessibility</div>
+                  <div className="last">EN / FR</div>
                   <div className="last">© Mosaic 2020</div>
                 </div>
               </div>

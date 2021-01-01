@@ -44,7 +44,7 @@ class Careers extends React.Component {
                     <Text tid="pages.careers.description" />
                   </p>
 
-                  <a href="#" className="button primary">
+                  <a href="https://www.mosaicjobs.com/" target="_blank" className="button primary">
                     <Text tid="pages.careers.cta" /> <RiArrowRightUpLine />
                   </a>
                 </div>
