@@ -6,7 +6,7 @@ descriptionEN: Mosaic continues to grow U.S. shopper marketing practice with exp
 descriptionFR: FRFPO
 date: 2020-08-18T20:35:33.876Z
 featuredImage: /img/news/bill-haveron.jpg
-bodyEN: |-
+bodyEN: >-
   Mosaic announces the addition of Bill Haveron to its shopper marketing practice as a Group Director.
 
   Haveron will be the day-to-day leader for the agency’s U.S. shopper marketing team in planning and development of omni-channel experiences. Additionally, he will play a key role in U.S. shopper marketing business development and integrate the practice with Mosaic’s other U.S. offerings.
@@ -18,6 +18,6 @@ bodyEN: |-
   “I’m thrilled to be joining Lee and the Mosaic Shopper team to support the great work already coming out of the agency and ensure that other clients have a chance to work with a multi-talented and passionate group of people who care as much about growing their business as they do,” says Haveron. “I am also excited to partner with Acosta, as the industry leader in sales and marketing with expertise in retail management and intelligence to bring strategic, shopper-centric solutions to our clients. This role is an ideal combination of my career experience that started with Nestle Frozen & Refrigerated, continued with Acosta and has culminated in my passionate support for the discipline of shopper marketing over the last 18 years.”
 
   Based in Chicago, Bill holds a Bachelor of Science in Business Management and Food Marketing from Cornell University, and has led and contributed to numerous award-winning shopper campaigns throughout his career.
-bodyFR: |-
+bodyFR: >-
   FRFPO
 ---

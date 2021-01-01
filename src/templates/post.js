@@ -44,7 +44,7 @@ function NewsPost(props) {
 
   const previousPost = props.pageContext.previous
 
-  console.log("weg", post)
+  console.log('weg', post)
 
   return (
     <Layout
@@ -54,7 +54,10 @@ function NewsPost(props) {
       footerCTA={
         isNewsPost ? (
           <h6>
-            Interested in joining the team? <a href="#">Let's chat</a>
+            <Text tid="footerCTAs.joinTheTeam" />{' '}
+            <Link to="/careers">
+              <Text tid="footerCTAs.letsChat" />
+            </Link>
           </h6>
         ) : null
       }

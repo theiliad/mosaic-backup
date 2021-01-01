@@ -1,4 +1,14 @@
 export default {
+  footerCTAs: {
+    letsChat: {
+      en: "Let's chat",
+      fr: 'Lorem chat',
+    },
+    joinTheTeam: {
+      en: 'Interested in joining the team?',
+      fr: 'Lorem ipsum dolor sit amet?',
+    },
+  },
   navigation: {
     items: {
       capabilities: {

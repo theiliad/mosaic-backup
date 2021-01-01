@@ -6,7 +6,7 @@ descriptionEN: Canada’s largest integrated marketing agency bolsters leadershi
 descriptionFR: FRFPO
 date: 2020-10-01T20:35:33.876Z
 featuredImage: /img/news/subtej-nijjar.jpg
-bodyEN: |-
+bodyEN: >-
   Mosaic has named Subtej Nijjar President of Mosaic Canada.
 
   Nijjar will lead Canada’s largest group of strategists, creatives and client service teams in building brands through creative integrated marketing programs. Additionally, he will play a key role in agency leadership, operations and new business development. His hiring ushers in a new era for the agency, in which it will further integrate its business, providing end-to-end marketing solutions for clients.
@@ -20,6 +20,6 @@ bodyEN: |-
   “I am thrilled to be leading Mosaic Canada. The opportunity to help an organization that is the size and scale of Mosaic grow and progress into a new decade is tremendously exciting. This past year has shaped how the marketing industry operates and innovates, so I am beyond excited to help define the vision for the future of the agency,” says Nijjar.
 
   A strategic planner by trade, Nijjar has been celebrated as an industry visionary from the beginning of his career. He was recognized as one of Marketing Magazine’s “Ones to Watch,” celebrating Canada’s brightest minds under the age of 30.
-bodyFR: |-
+bodyFR: >-
   FRFPO
 ---
