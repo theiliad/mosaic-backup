@@ -64,6 +64,14 @@ export default {
       en: 'Past session',
       fr: 'Session passée',
     },
+    originallyStreamed: {
+      en: 'Originally streamed',
+      fr: "Diffusé à l'origine",
+    },
+    watchNow: {
+      en: 'Watch now',
+      fr: 'Play étude',
+    },
   },
   news: {
     title: {

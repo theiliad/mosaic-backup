@@ -3,7 +3,7 @@ div.post-single-heading {
   margin-bottom: 3em;
 
   h1 {
-    font-size: 3em !important;
+    font-size: 3em;
   }
 
   p.cp-desc {
@@ -11,10 +11,16 @@ div.post-single-heading {
     font-size: 1.2em;
   }
 
+  p.cp-date {
+    font-size: 1.2em;
+    margin-bottom: 0.25em;
+  }
+
   p.cp-category {
     font-size: 0.9em;
     color: $colors_red_primary;
     margin-top: 0.6em;
+    text-transform: uppercase;
   }
 
   p.cp-title {
@@ -47,6 +53,110 @@ div.post-single-heading {
     &:hover {
       text-decoration: none;
       box-shadow: none;
+    }
+  }
+
+  &.thinking {
+    padding-top: 0;
+
+    div.cp-desktop {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    div.cp-mobile {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: table;
+      }
+    }
+
+    &.one-eighty {
+      background: $colors_blue_primary url('../img/matrix.svg') repeat;
+      color: #fff;
+
+      p.cp-category {
+        color: #fff;
+        text-transform: none;
+        @include Roobert_SemiBold;
+      }
+
+      p.cp-streaming-date {
+        font-size: 0.9em;
+        margin-top: 0.6em;
+      }
+
+      p.cp-play {
+        margin-top: 1.5em;
+
+        a {
+          color: #fff;
+          @include Roobert_SemiBold;
+
+          span {
+            position: relative;
+            display: inline-block;
+            width: 2.25em;
+            height: 2.25em;
+            border-radius: 50%;
+            background: $colors_orange_primary;
+            border: 2px solid $colors_orange_primary;
+            margin-right: 0.85em;
+            margin-top: -0.15em;
+            vertical-align: middle;
+
+            svg {
+              font-size: 1.2em;
+              color: #fff;
+              position: absolute;
+              top: 50%;
+              left: 54.5%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          i {
+            font-size: 0.9em;
+            font-style: normal;
+          }
+
+          &:hover {
+            text-decoration: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    div.cp-image {
+      background-size: cover;
+
+      @media screen and (max-width: 768px) {
+        img {
+			width: 100%;
+		}
+      }
+    }
+
+    div.cp-meta {
+      margin: 14em 0 0 5em;
+      padding-bottom: 6em;
+
+      @media screen and (max-width: 768px) {
+		margin: 3em 0 0 0;
+		padding-bottom: 3.5em;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p.cp-author {
+        text-transform: uppercase;
+        color: $colors_midnight_secondary;
+      }
     }
   }
 }
@@ -112,6 +222,38 @@ div.post-body {
       margin: 1em auto;
     }
   }
+
+  div.cp-panel {
+    div.cp-panelist-image {
+      padding-right: 2em;
+
+      div.cp-image {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    p.cp-heading {
+      font-size: 0.7em;
+      color: $colors_midnight_secondary;
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+
+    p.cp-name {
+      margin-bottom: 0;
+    }
+
+    p.cp-title {
+      margin-bottom: 0;
+      line-height: 1em;
+      color: $colors_midnight_primary;
+      font-size: 0.8em;
+    }
+  }
 }
 
 div.post {
@@ -150,8 +292,8 @@ div.post {
       }
 
       &:hover {
-		background-color: $colors_blue_primary;
-		color: #fff;
+        background-color: $colors_blue_primary;
+        color: #fff;
       }
 
       svg {
@@ -226,13 +368,13 @@ div.video-overlay {
   div.cp-content {
     position: absolute;
     top: 50%;
-	left: 50%;
-	width: 80%;
-	height: 80%;
-	transform: translate(-50%, -50%);
-	
-	& > div {
-		height: 100%;
-	}
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+
+    & > div {
+      height: 100%;
+    }
   }
 }

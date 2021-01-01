@@ -59,7 +59,7 @@ h4,
 h5,
 h6,
 strong {
-  @include Roobert_Medium;
+  @include Roobert_SemiBold;
 
   &.heading_lg {
     font-size: 2.4em !important;
@@ -244,4 +244,5 @@ div.content {
 @import './posts';
 @import './footer';
 
+@import './components/accordion.scss';
 @import './components/sidenav.scss';
