@@ -8,7 +8,7 @@ import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
 // Components
-import { NewsPostHeader, PostHeader } from './post-headers'
+import { NewsPostHeader, ThinkingPostHeader, PostHeader } from './post-headers'
 
 import YouTube from 'react-youtube'
 
@@ -40,6 +40,11 @@ function NewsPost(props) {
 
   // Type of the post
   const isNewsPost = frontmatter.posttype === 'news'
+  const isThinkingPost = frontmatter.posttype === 'thinking'
+
+  const previousPost = props.pageContext.previous
+
+  console.log("weg", post)
 
   return (
     <Layout
@@ -71,8 +76,13 @@ function NewsPost(props) {
           <div className="post-body content">
             <div className="columns post-single ui-grid">
               <div className="column is-8">
-                {/* <MDXProvider>
-                  <MDXRenderer>{post.frontmatter.bodyFR}</MDXRenderer>
+                {/* <MDXProvider components={{
+					  English: (mProps) => {
+						  console.log("Ewgewg", mProps)
+						  return <MDX>{mProps.children}</MDX>
+					  }
+				  }}>
+                  <MDXRenderer>{post.body}</MDXRenderer>
                 </MDXProvider> */}
 
                 <MDX>
@@ -158,27 +168,46 @@ function NewsPost(props) {
           <div className="cp-bg"></div>
 
           <div className="container">
-            <div
-              className="columns"
-              style={{
-                minHeight: isNewsPost ? '15em' : null,
-              }}
-            >
-              {!isNewsPost && (
-                <div className="column is-narrow cp-img">
-                  <img src={DEMO_2} style={{ maxWidth: 400 }} />
-                </div>
-              )}
+            <Link to={previousPost.fields.slug}>
+              <div
+                className="columns"
+                style={{
+                  minHeight: isNewsPost ? '15em' : null,
+                }}
+              >
+                {!isNewsPost && (
+                  <div className="column is-narrow cp-img">
+                    <img src={DEMO_2} style={{ maxWidth: 400 }} />
+                  </div>
+                )}
 
-              <div className="column cp-text">
-                <div className="cp-texts">
-                  <p>
-                    <Text tid={isNewsPost ? 'news.next' : 'caseStudies.next'} />
-                  </p>
-                  <h6>Google — Pixelville</h6>
+                <div className="column cp-text">
+                  <div className="cp-texts">
+                    <p>
+                      <Text
+                        tid={
+                          isNewsPost
+                            ? 'news.next'
+                            : isThinkingPost
+                            ? post.frontmatter.category === 'one-eighty'
+                              ? 'thinking.next.oneEighty'
+                              : 'thinking.next'
+                            : 'caseStudies.next'
+                        }
+                      />
+                    </p>
+                    <h6>
+                      <Text
+                        variations={{
+                          en: previousPost.frontmatter.titleEN,
+                          fr: previousPost.frontmatter.titleFR,
+                        }}
+                      />
+                    </h6>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -204,6 +233,7 @@ export const pageQuery = graphql`
       frontmatter {
         titleEN
         titleFR
+        category
         companyName
         posttype
         date

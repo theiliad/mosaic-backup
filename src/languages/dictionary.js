@@ -42,6 +42,14 @@ export default {
       en: 'Load more',
       fr: 'Charger plus',
     },
+    next: {
+      en: 'Next in thinking',
+      fr: 'Suivant dans la réflexion',
+      oneEighty: {
+        en: 'Next in OneEighty',
+        fr: 'Suivant dans OneEighty',
+      },
+    },
     pastSession: {
       en: 'Past session',
       fr: 'Session passée',
@@ -88,11 +96,11 @@ export default {
           'We’re also big fans of fresh talent in both different spaces and places.',
         fr:
           'Nous sommes également de grands fans de nouveaux talents dans des espaces et des lieux différents.',
-	  },
-	  cta: {
-		  en: "View open roles",
-		  fr: "Afficher les rôles ouverts"
-	  }
+      },
+      cta: {
+        en: 'View open roles',
+        fr: 'Afficher les rôles ouverts',
+      },
     },
   },
 }

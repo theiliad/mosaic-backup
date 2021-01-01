@@ -1,6 +1,6 @@
 ---
 posttype: thinking
-titleEN: Engagement Marketing: Best Practices for Social, Content and Influencers
+titleEN: "Engagement Marketing: Best Practices for Social, Content and Influencers"
 titleFR: FRFPO
 date: 2020-04-23T03:14:12.599Z
 featuredImage: /img/thinking/engagement-marketing-best-practices.jpg

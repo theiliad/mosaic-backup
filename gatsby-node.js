@@ -2,6 +2,8 @@ const path = require(`path`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const { groupBy } = require('lodash')
+
 const getNodePrefix = postType => {
   let prefix = ''
   if (postType === 'news') {
@@ -54,25 +56,29 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create blog posts pages.
     const posts = result.data.allMdx.edges
+    const postsGroupedByPosttype = groupBy(
+      posts,
+      post => post.node.frontmatter.posttype
+    )
 
-    posts.forEach((post, index) => {
-      const postType = post.node.frontmatter.posttype
+    Object.keys(postsGroupedByPosttype).forEach(postType => {
+      const posts = postsGroupedByPosttype[postType]
+      posts.forEach((post, index) => {
+        const previous =
+          index === posts.length - 1 ? posts[0].node : posts[index + 1].node
+        const next = index === 0 ? null : posts[index - 1].node
 
-      //   if (postType === 'news') {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
-
-      const prefix = getNodePrefix(postType)
-      createPage({
-        path: post.node.fields.slug,
-        component: postTemplate,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
+        const prefix = getNodePrefix(postType)
+        createPage({
+          path: post.node.fields.slug,
+          component: postTemplate,
+          context: {
+            slug: post.node.fields.slug,
+            previous,
+            next,
+          },
+        })
       })
-      //   }
     })
   })
 }

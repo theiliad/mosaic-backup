@@ -6,7 +6,7 @@ date: 2019-06-11T03:14:12.599Z
 featuredImage: /img/thinking/breaking-stereotypes-of-women.jpg
 category: thought-leadership
 author: Sheri Pearson
-description: Strong female voices are echoing across the globe, and brands are taking notice. We’ve had several clients who traditionally target men ask Mosaic for help in sparking conversations with women. These briefs inevitably lead to the same question: how can brands be more relevant to this sought-after and diverse demographic during this wave of women’s empowerment?
+description: "Strong female voices are echoing across the globe, and brands are taking notice. We’ve had several clients who traditionally target men ask Mosaic for help in sparking conversations with women. These briefs inevitably lead to the same question: how can brands be more relevant to this sought-after and diverse demographic during this wave of women’s empowerment?"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yIxA3o84syY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
