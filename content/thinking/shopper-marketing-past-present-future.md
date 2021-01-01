@@ -1,6 +1,6 @@
 ---
 posttype: thinking
-titleEN: Shopper Marketing: Past, Present & Future
+titleEN: "Shopper Marketing: Past, Present & Future"
 titleFR: FRFPO
 date: 2019-11-22T03:14:12.599Z
 featuredImage: /img/thinking/shopper-marketing.jpg

@@ -1,6 +1,6 @@
 ---
 posttype: thinking
-titleEN: Brandweek 2020: Digital, Authentic and Inclusive Are the Way Forward
+titleEN: "Brandweek 2020: Digital, Authentic and Inclusive Are the Way Forward"
 titleFR: FRFPO
 date: 2020-09-21T03:14:12.599Z
 featuredImage: /img/thinking/brandweek-2020.jpg

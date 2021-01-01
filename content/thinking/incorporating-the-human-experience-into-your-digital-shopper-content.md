@@ -7,8 +7,7 @@ featuredImage: /img/thinking/incorporating-the-human-experience.jpg
 category: strategy
 author: Diana Allwein and Alexandra Plowman
 description: We find new ways to engage with the ever-changing online shopper. Attention to quality in brand storytelling.
----
-
+bodyEN: |-
 The way shoppers engage online continues to become more fluid in terms of how they search for and purchase products. Now, more than ever, e-commerce is the new shopping normal and retailers are competing to offer the best optimized digital experiences and value. Black Friday 2019 was proof as shopping continued to shift from brick & mortar to the living room couch, with online spend hitting just over $7 billion, +23% vs prior year.
 
 Most recently, the current COVID-19 situation has accelerated this shift in behavior of shopping for groceries and staples online in an effort to practice social distancing. Post virus, we expect this shift will continue to grow.  
@@ -32,3 +31,6 @@ What does this mean? Showing up well is more important than ever. Brands need to
 E-Commerce trends are evolving faster than predicted, especially with the recent pandemic.   Brands that deliver a compelling experience and get the digital shelf fundamentals right are poised to win the e-commerce sale.
 
 Think your brand might need to reshape its online shopping image? We’d love to chat. For more information, email us at [info@mosaic.com](mailto:info@mosaic.com).
+bodyFR: |-
+  FRFPO
+---
