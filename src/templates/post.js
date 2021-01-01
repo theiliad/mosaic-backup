@@ -173,7 +173,7 @@ function NewsPost(props) {
               <div className="column cp-text">
                 <div className="cp-texts">
                   <p>
-                    <Text tid={isNewsPost ? 'news.next' : 'case'} />
+                    <Text tid={isNewsPost ? 'news.next' : 'caseStudies.next'} />
                   </p>
                   <h6>Google — Pixelville</h6>
                 </div>

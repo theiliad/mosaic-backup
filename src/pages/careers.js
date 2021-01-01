@@ -16,7 +16,7 @@ class Careers extends React.Component {
     return (
       <Layout
         location={this.props.location}
-        logo={LOGO_OPTIONS.aquaBlue}
+        logo={LOGO_OPTIONS.orangeBlue}
         HeaderExtension={
           <div className="header_extension news">
             <div class="bg">
