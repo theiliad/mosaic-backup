@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const postTemplate = path.resolve(`./src/templates/post.js`)
+  const thinkingPostTemplate = path.resolve(`./src/templates/thinking-post.js`)
   return graphql(
     `
       {
@@ -71,7 +72,8 @@ exports.createPages = ({ graphql, actions }) => {
         const prefix = getNodePrefix(postType)
         createPage({
           path: post.node.fields.slug,
-          component: postTemplate,
+          component:
+            postType === 'thinking' ? thinkingPostTemplate : postTemplate,
           context: {
             slug: post.node.fields.slug,
             previous,

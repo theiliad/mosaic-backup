@@ -1,0 +1,71 @@
+/**
+* ----------------------------------------------
+* Accordion styles
+* ----------------------------------------------
+**/
+.accordion {
+//   border-top: 1px solid $colors_grey_light;
+  border-right: 0;
+  border-left: 0;
+
+  @media screen and (max-width: 768px) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.accordion__item + .accordion__item {
+  border-top: 1px solid $colors_grey_light;
+}
+
+.accordion__button {
+  position: relative;
+  color: $colors_blue_primary;
+  cursor: pointer;
+  padding: 1.4em;
+  padding-right: 4em;
+  width: 100%;
+  text-align: left;
+  border: none;
+
+  svg {
+    font-size: 1.25em;
+    position: absolute;
+    right: 1.2em;
+	top: 2.5em;
+	color: $colors_midnight_primary;
+  }
+
+  &:hover {
+    background: rgba($colors_grey_light, 0.3);
+    box-shadow: 0 0 0 1px rgba($colors_grey_light, 0.3);
+  }
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+.accordion__panel {
+  color: $colors_midnight_primary;
+  padding: 2em 1.25em;
+  animation: fadein 0.35s ease-in;
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,4 +1,14 @@
 export default {
+  footerCTAs: {
+    letsChat: {
+      en: "Let's chat",
+      fr: 'Lorem chat',
+    },
+    joinTheTeam: {
+      en: 'Interested in joining the team?',
+      fr: 'Lorem ipsum dolor sit amet?',
+    },
+  },
   navigation: {
     items: {
       capabilities: {
@@ -53,6 +63,14 @@ export default {
     pastSession: {
       en: 'Past session',
       fr: 'Session passée',
+    },
+    originallyStreamed: {
+      en: 'Originally streamed',
+      fr: "Diffusé à l'origine",
+    },
+    watchNow: {
+      en: 'Watch now',
+      fr: 'Play étude',
     },
   },
   news: {

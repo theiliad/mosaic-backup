@@ -6,7 +6,7 @@ descriptionEN: Agency continues to expand integrated marketing agenda with addit
 descriptionFR: FRFPO
 date: 2019-07-30T20:35:33.876Z
 featuredImage: /img/news/john-manley.jpg
-bodyEN: |-
+bodyEN: >-
   Mosaic announces the addition of John Manley to its executive leadership team as Senior Vice President, Strategy & Innovation.
 
   Manley will lead the agency's North American strategy and innovation team in planning integrated experiences to make brands more valuable. Additionally, he will play a key role in agency leadership and operations. Manley's hiring continues to deliver on Mosaic's quest to further integrate its business and provide end-to-end marketing solutions for clients.
@@ -20,6 +20,6 @@ bodyEN: |-
   Most recently, Manley served as the first-ever Chief Marketing Officer of Chew, an industry-leading food and beverage innovation lab focused on creating delicious, nutritious, scalable, sustainable, and profitable items.
 
   Based in Chicago, Manley holds a Master of Science in Integrated Marketing Communications from Northwestern University and a bachelor's degree from Kenyon College.
-bodyFR: |-
+bodyFR: >-
   FRFPO
 ---

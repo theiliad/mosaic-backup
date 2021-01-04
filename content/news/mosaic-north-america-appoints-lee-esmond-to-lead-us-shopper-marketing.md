@@ -6,7 +6,7 @@ descriptionEN: Integrating shopper marketing with CPG and retail offerings will 
 descriptionFR: FRFPO
 date: 2019-06-10T20:35:33.876Z
 featuredImage: /img/news/lee-esmond.jpg
-bodyEN: |-
+bodyEN: >-
 
   Mosaic announces the appointment of Lee Esmond, Senior Vice President, to a combined leadership role over her current CPG and retail experiential team as well as Mosaic’s U.S. Shopper Marketing team.
 
@@ -19,6 +19,6 @@ bodyEN: |-
   “I am honored to take on this new role and bring the experiential and shopper worlds together for Mosaic and its clients,” says Esmond, “The way we discover and purchase new products has changed tremendously – brands must adapt or fade into oblivion, which presents a whole new set of challenges to our clients. To me, this challenge is an exciting one and I could not be more excited to navigate the new shopper marketing world with our people and our clients.”
 
   Based in Bentonville, Arkansas, Esmond also co-leads of Mosaic’s U.S. experiential practice, leading CPG and mass retail teams, while also serving as a strategic partner to Acosta’s Chief Customer Officer.
-bodyFR: |-
+bodyFR: >-
   FRFPO
 ---

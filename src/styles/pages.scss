@@ -185,21 +185,21 @@ div.pages-index {
 
     // Styling
     .slider {
-      height: 400px;
+      height: 320px;
       margin: auto;
       overflow: hidden;
       position: relative;
       width: 100%;
 
-      &::before,
-      &::after {
-        // @include white-gradient;
-        content: '';
-        position: absolute;
-        height: 400px;
-        width: 400px;
-        z-index: 2;
-      }
+    //   &::before,
+    //   &::after {
+    //     // @include white-gradient;
+    //     content: '';
+    //     position: absolute;
+    //     height: 400px;
+    //     width: 400px;
+    //     z-index: 2;
+    //   }
 
       &::after {
         right: 0;
@@ -210,16 +210,20 @@ div.pages-index {
       &::before {
         left: 0;
         top: 0;
-      }
+	  }
+	  
+	  img {
+		  width: 80%;
+	  }
 
       .slide-track {
         animation: scroll $animationSpeed linear infinite;
         display: flex;
-        width: calc(250px * 14);
+        width: calc(450px * 16);
       }
 
       .slide {
-        height: 400px;
+        height: 320px;
         width: 400px;
       }
     }

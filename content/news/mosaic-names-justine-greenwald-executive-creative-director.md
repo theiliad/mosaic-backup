@@ -6,7 +6,7 @@ descriptionEN: Top brand activation agency bolsters leadership bench with additi
 descriptionFR: FRFPO
 date: 2019-10-26T20:35:33.876Z
 featuredImage: /img/news/justine-greenwald.jpg
-bodyEN: |-
+bodyEN: >-
   Mosaic announced today the addition of accomplished marketing executive Justine Greenwald as the agency's Executive Creative Director. Greenwald will lead award-winning teams of creatives and strategists to deliver game-changing experiences for top global brands. She will also play a key role in agency leadership and operations. Greenwald's hiring marks the addition of another talented woman to Mosaic's already strong bench of female-led experiential experts.
 
   "I was drawn to Mosaic because of the incredible work they are doing. The most recent experiences they have created for Sephora/Sephoria, and for Michelob Ultra at SXSW reflect trendsetting work that is making a cultural impact. I'm incredibly excited for the opportunity to build on Mosaic's success and momentum in live brand experiences," said Greenwald. "This role is the perfect blend of creativity and innovation. I'm looking forward to driving creativity in the work, innovation for the agency and building future leaders as we drive business growth for clients and for Mosaic."
@@ -20,6 +20,6 @@ bodyEN: |-
   Greenwald holds a bachelor's degree in communications and media studies from Syracuse University.
 
   ![alt new]("https://avatars3.githubusercontent.com/u/14989804?s=32")
-bodyFR: |-
+bodyFR: >-
   FRFPO
 ---
