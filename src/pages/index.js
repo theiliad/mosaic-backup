@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 import { Text } from '../containers/Language'
 
 // Lodash
-import { get, chunk } from 'lodash-es'
+import { get, chunk, debounce } from 'lodash-es'
 
 import CATEGORIES from '../data/categories'
 
@@ -37,6 +37,26 @@ import STARBUCKS from '../img/home/partners/starbucks.svg'
 import TISHMAN_SPEYER from '../img/home/partners/tishman-speyer.svg'
 
 class BlogIndex extends React.Component {
+  componentDidMount() {
+    document.addEventListener('scroll', this.trackScrolling)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.trackScrolling)
+  }
+
+  trackScrolling() {
+    const isBrowser = typeof window !== `undefined`
+
+    if (isBrowser) {
+      const heroElement = document.getElementById('cp_hero')
+      heroElement.style.transform = `translateY(-${window.scrollY / 3}px)`
+
+      const opacity = Math.min(50 / window.scrollY, 1)
+      heroElement.style.opacity = opacity
+    }
+  }
+
   render() {
     const { data } = this.props
 
@@ -53,8 +73,6 @@ class BlogIndex extends React.Component {
         caseStudies.push(caseStudies[0])
       }
     }
-
-    const isBrowser = typeof window !== `undefined`
 
     const CaseStudyMeta = ({ node, mobileVersion }) => (
       <>
@@ -96,19 +114,15 @@ class BlogIndex extends React.Component {
         HeaderExtension={
           <div className="header_extension home">
             <div className="bg">
-              <div className="cp-hero">
+              <div className="cp-hero" id="cp_hero">
                 <div className="container">
-                  <div className="columns is-vcentered">
-                    <div className="column is-6 aligncenter-mobile">
-                      <img src={LOGO_WHITE} />
+                  <img src={LOGO_WHITE} />
 
-                      <h1 className="primary heading_lg">
-                        <span>
-                          <Text tid="pages.index.title" />
-                        </span>
-                      </h1>
-                    </div>
-                  </div>
+                  <h1>
+                    <span>
+                      <Text tid="pages.index.title" />
+                    </span>
+                  </h1>
                 </div>
               </div>
             </div>
@@ -268,88 +282,49 @@ class BlogIndex extends React.Component {
                   />
                 </div>
                 <div class="slide">
-                  <img
-                    src={DR_OETKER}                    
-                    alt="Dr. Oetker"
-                  />
+                  <img src={DR_OETKER} alt="Dr. Oetker" />
+                </div>
+                <div class="slide">
+                  <img src={GENERAL_MILLS} alt="General Mills" />
+                </div>
+                <div class="slide">
+                  <img src={GOOGLE} alt="Google" />
+                </div>
+                <div class="slide">
+                  <img src={IG_WEALTH_MANAGEMENT} alt="IG Wealth Management" />
+                </div>
+                <div class="slide">
+                  <img src={IMPOSSIBLE} alt="Impossible" />
+                </div>
+                <div class="slide">
+                  <img src={KRAFT_HEINZ} alt="Kraft Heinz" />
+                </div>
+                <div class="slide">
+                  <img src={LABATT} alt="Labatt" />
+                </div>
+                <div class="slide">
+                  <img src={LOBLAWS} alt="Loblaws" />
                 </div>
                 <div class="slide">
                   <img
-                    src={GENERAL_MILLS}                    
-                    alt="General Mills"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={GOOGLE}                    
-                    alt="Google"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={IG_WEALTH_MANAGEMENT}                    
-                    alt="IG Wealth Management"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={IMPOSSIBLE}                    
-                    alt="Impossible"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={KRAFT_HEINZ}                    
-                    alt="Kraft Heinz"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={LABATT}                    
-                    alt="Labatt"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={LOBLAWS}                    
-                    alt="Loblaws"
-                  />
-                </div>
-                <div class="slide">
-                  <img
-                    src={MACKENZIE_INVESTMENTS}                    
+                    src={MACKENZIE_INVESTMENTS}
                     alt="Mackenzie Investments"
                   />
                 </div>
                 <div class="slide">
-                  <img
-                    src={RBC}                    
-                    alt="RBC"
-                  />
+                  <img src={RBC} alt="RBC" />
                 </div>
                 <div class="slide">
-                  <img
-                    src={SAMSUNG}                    
-                    alt="Samsung"
-                  />
+                  <img src={SAMSUNG} alt="Samsung" />
                 </div>
                 <div class="slide">
-                  <img
-                    src={SHOPPERS_DRUG_MART}                    
-                    alt="Shoppers Drug Mart"
-                  />
+                  <img src={SHOPPERS_DRUG_MART} alt="Shoppers Drug Mart" />
                 </div>
                 <div class="slide">
-                  <img
-                    src={STARBUCKS}                    
-                    alt="Starbucks"
-                  />
+                  <img src={STARBUCKS} alt="Starbucks" />
                 </div>
                 <div class="slide">
-                  <img
-                    src={TISHMAN_SPEYER}                    
-                    alt="Tishman Speyer"
-                  />
+                  <img src={TISHMAN_SPEYER} alt="Tishman Speyer" />
                 </div>
               </div>
             </div>

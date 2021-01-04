@@ -87,7 +87,7 @@ class Header extends React.Component {
 
   render() {
     const { props } = this
-    const { HeaderExtension } = props
+    const { HeaderExtension, location } = props
     const { scrollDir, whiteNav } = this.state
 
     return (
@@ -106,9 +106,11 @@ class Header extends React.Component {
               aria-label="main navigation"
             >
               <div className="navbar-brand">
-                <Link className="navbar-item logo" to="/">
-                  <img src={props.logo || LOGO_WHITE} />
-                </Link>
+                {location.pathname !== '/' && (
+                  <Link className="navbar-item logo" to="/">
+                    <img src={props.logo || LOGO_WHITE} />
+                  </Link>
+                )}
 
                 <a
                   role="button"

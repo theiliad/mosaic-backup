@@ -38,7 +38,8 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 titleEN
                 titleFR
-                date(formatString: "MMMM DD, YYYY")
+				date(formatString: "MMMM DD, YYYY")
+				featuredImage
                 posttype
                 bodyEN
                 bodyFR
