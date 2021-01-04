@@ -32,21 +32,26 @@
   }
 
   &.home {
-    background: $colors_blue_primary;
+	background: $colors_blue_primary url('../img/matrix.svg') repeat;
 
     div.bg {
-      @media screen and (min-width: 768px) {
-        position: relative;
-        height: 100vh;
-        max-height: 650px;
+      position: relative;
+      height: 100vh;
+      max-height: 650px;
 
-        div.cp-hero {
-          position: absolute;
-          bottom: 4em;
-          left: 0;
-          color: $colors_white;
-          width: 100%;
-        }
+      div.cp-hero {
+        position: absolute;
+        bottom: 4em;
+        left: 0;
+        color: $colors_white;
+        width: 100%;
+		// max-width: 900px;
+		
+		h1 {
+			font-size: 5em;
+			line-height: 1em;
+			margin-top: 0.25em;
+		}
       }
     }
   }
