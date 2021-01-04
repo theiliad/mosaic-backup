@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 import { Text } from '../containers/Language'
 
 // Lodash
-import { get, chunk } from 'lodash-es'
+import { get, chunk, debounce } from 'lodash-es'
 
 import CATEGORIES from '../data/categories'
 
@@ -46,16 +46,14 @@ class BlogIndex extends React.Component {
   }
 
   trackScrolling() {
-    console.log('scrolling')
-
     const isBrowser = typeof window !== `undefined`
 
     if (isBrowser) {
       const heroElement = document.getElementById('cp_hero')
       heroElement.style.transform = `translateY(-${window.scrollY / 3}px)`
-      heroElement.style.opacity = 50 / window.scrollY
 
-      console.log('ww', window.scrollY)
+      const opacity = Math.min(50 / window.scrollY, 1)
+      heroElement.style.opacity = opacity
     }
   }
 
