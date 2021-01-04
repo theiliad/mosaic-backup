@@ -341,12 +341,6 @@ div.pages-news {
       }
     }
 
-    div.container {
-      @media screen and (max-width: 768px) {
-        padding: 0;
-      }
-    }
-
     a.press-release {
       color: $colors_blue_primary;
       font-size: 1.2em;
@@ -363,20 +357,7 @@ div.pages-news {
         @include transition_default;
         color: $colors_orange_primary;
         text-decoration: underline;
-
-        // background-color: $colors_grey_light;
-        // box-shadow: 0 0 0 1px $colors_grey_light;
       }
-
-      //   p.column {
-      //     &:first-child {
-      //       padding-left: 0;
-      //     }
-
-      //     &:last-child {
-      //       padding-right: 0;
-      //     }
-      //   }
 
       @media screen and (max-width: 768px) {
         display: table;

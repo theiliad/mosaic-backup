@@ -54,7 +54,7 @@ function Post(props) {
 
   const previousPost = props.pageContext.previous
 
-  console.log('weg', post)
+  console.log('previousPost', previousPost)
 
   return (
     <Layout
@@ -177,7 +177,7 @@ function Post(props) {
           <div className="container">
             <div className="share columns">
               <div className="column is-narrow cp-title">
-                <span>SHARE</span>
+                <span>Share</span>
               </div>
 
               <div className="column">
@@ -228,7 +228,7 @@ function Post(props) {
               >
                 {!isNewsPost && (
                   <div className="column is-narrow cp-img">
-                    <img src={DEMO_2} style={{ maxWidth: 400 }} />
+                    <img src={previousPost.frontmatter.featuredImage} />
                   </div>
                 )}
 

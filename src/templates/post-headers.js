@@ -93,11 +93,7 @@ export function ThinkingPostHeader({ post }) {
           isOneEightyPost ? 'one-eighty' : ''
         }`}
       >
-        <div
-          className={`columns post-single ${
-            isOneEightyPost ? 'cp-desktop' : ''
-          }`}
-        >
+        <div className="columns post-single cp-desktop">
           <div
             className="column is-5 cp-image"
             style={{ backgroundImage: `url(${frontmatter.featuredImage})` }}
@@ -108,19 +104,17 @@ export function ThinkingPostHeader({ post }) {
           </div>
         </div>
 
-        {isOneEightyPost && (
-          <div className="post-single cp-mobile">
-            <div className="cp-image">
-              <img src={frontmatter.featuredImage} />
-            </div>
+        <div className="post-single cp-mobile">
+          <div className="cp-image">
+            <img src={frontmatter.featuredImage} />
+          </div>
 
-            <div className="cp-meta">
-              <div className="container">
-                <PostMeta />
-              </div>
+          <div className="cp-meta">
+            <div className="container">
+              <PostMeta />
             </div>
           </div>
-        )}
+        </div>
       </div>
     </>
   )
