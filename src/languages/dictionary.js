@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default {
   footerCTAs: {
     letsChat: {
@@ -118,6 +120,29 @@ export default {
       cta: {
         en: 'View open roles',
         fr: 'Afficher les rôles ouverts',
+      },
+    },
+    privacy: {
+      header: {
+        en: (
+          <>
+            <p>
+              <b>Effective January 1, 2020</b>
+            </p>
+
+            <p>
+              Mosaic is committed to respecting your privacy. This Privacy
+              Policy applies when you interact with Mosaic online or through the
+              advertising and marketing services we offer our clients (our
+              “Services”).
+            </p>
+            <p>
+              This Privacy Policy includes the following sections. You should
+              read the entire policy; however, you may use the links below to be
+              directed to the information you are seeking.
+            </p>
+          </>
+        ),
       },
     },
   },
