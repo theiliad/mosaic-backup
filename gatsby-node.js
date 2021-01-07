@@ -4,6 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const { groupBy } = require('lodash')
 
+const CATEGORIES = require('./src/data/categories')
+
 const getNodePrefix = postType => {
   let prefix = ''
   if (postType === 'news') {
@@ -19,6 +21,14 @@ const getNodePrefix = postType => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+
+  const ThinkingPage = path.resolve(`./src/pages/thinking.js`)
+  Object.keys(CATEGORIES.thinking).map(categoryKey => {
+    createPage({
+      path: `/thinking/${categoryKey}`,
+      component: ThinkingPage,
+    })
+  })
 
   const postTemplate = path.resolve(`./src/templates/post.js`)
   const thinkingPostTemplate = path.resolve(`./src/templates/thinking-post.js`)
@@ -38,8 +48,8 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 titleEN
                 titleFR
-				date(formatString: "MMMM DD, YYYY")
-				featuredImage
+                date(formatString: "MMMM DD, YYYY")
+                featuredImage
                 posttype
                 bodyEN
                 bodyFR

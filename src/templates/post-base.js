@@ -118,30 +118,66 @@ function Post(props) {
                             <AccordionItemButton>
                               <div className="columns is-vcentered">
                                 <div className="column is-narrow cp-panelist-image">
-                                  <div className="cp-image" style={{ backgroundImage: `url(${panelist.image})` }}></div>
+                                  <div
+                                    className="cp-image"
+                                    style={{
+                                      backgroundImage: `url(${panelist.image})`,
+                                    }}
+                                  ></div>
                                 </div>
 
                                 <div className="column">
-                                  <p className="cp-heading">Panelist</p>
+                                  <p className="cp-heading"><Text tid="thinking.panelist" /></p>
                                   <p className="cp-name">{panelist.name}</p>
-                                  <p className="cp-title">{panelist.title}</p>
+                                  <p className="cp-title">
+                                    <Text
+                                      variations={{
+                                        en: panelist.titleEN,
+                                        fr: panelist.titleFR,
+                                      }}
+                                    />
+                                  </p>
                                 </div>
                               </div>
                               <AccordionItemState>
                                 {({ expanded }) => (
                                   <span>
-                                    {expanded ? <VscChevronDown /> : <VscChevronLeft />}
+                                    {expanded ? (
+                                      <VscChevronDown />
+                                    ) : (
+                                      <VscChevronLeft />
+                                    )}
                                   </span>
                                 )}
                               </AccordionItemState>
                             </AccordionItemButton>
                           </AccordionItemHeading>
                           <AccordionItemPanel>
-                            <p>{panelist.text}</p>
+                            <p>
+                              <Text
+                                variations={{
+                                  en: panelist.textEN,
+                                  fr: panelist.textFR,
+                                }}
+                              />
+                            </p>
                           </AccordionItemPanel>
                         </AccordionItem>
                       ))}
                     </Accordion>
+                  </div>
+                )}
+
+                {isThinkingPost && (
+                  <div className="cp-tag">
+                    <Link
+                      to={`/thinking/${frontmatter.category}`}
+                      className="button"
+                    >
+                      <Text
+                        variations={CATEGORIES.thinking[frontmatter.category]}
+                      />
+                    </Link>
                   </div>
                 )}
               </div>

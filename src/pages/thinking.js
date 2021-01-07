@@ -72,15 +72,17 @@ const ThinkingItem = ({ node, size }) => {
               </span>
             </span>
 
-            <span className="column cp-date">
-              <span>
-                {isPastSession && isOneEighty ? (
-                  <Text tid="thinking.pastSession" />
-                ) : (
-                  <TextDate string={node.frontmatter.date} />
-                )}
+            {isOneEighty && (
+              <span className="column cp-date">
+                <span>
+                  {isPastSession && isOneEighty ? (
+                    <Text tid="thinking.pastSession" />
+                  ) : (
+                    <TextDate string={node.frontmatter.date} />
+                  )}
+                </span>
               </span>
-            </span>
+            )}
           </p>
         </Link>
       </div>
@@ -108,7 +110,14 @@ class Thinking extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     let allPosts = data.allMdx.edges
 
-    const { filter } = this.state
+    let filter = null
+    Object.keys(CATEGORIES.thinking).map(categoryKey => {
+      if (
+        this.props.location.pathname.indexOf(`thinking/${categoryKey}`) !== -1
+      ) {
+        filter = categoryKey
+      }
+    })
     if (filter) {
       allPosts = allPosts.filter(
         post => post.node.frontmatter.category === filter
@@ -118,7 +127,7 @@ class Thinking extends React.Component {
     const { page } = this.state
     const postsPerPage = 9
     const firstPageLength = 8
-
+    console.log('this', this.props)
     return (
       <Layout
         location={this.props.location}
@@ -141,28 +150,23 @@ class Thinking extends React.Component {
                     <div className="cp-filter">
                       <ul>
                         <li className={filter === null ? 'active' : ''}>
-                          <a href="#" onClick={e => this.filter(e, null)}>
-                            <Text
-                              variations={{
-                                en: 'All',
-                                fr: 'Toute',
-                              }}
-                            />
-                          </a>
+                          <Link to="/thinking/">
+                            <Text tid="misc.all" />
+                          </Link>
                         </li>
 
                         {Object.keys(CATEGORIES.thinking).map(categoryKey => (
                           <li
                             className={filter === categoryKey ? 'active' : ''}
                           >
-                            <a
-                              href="#"
-                              onClick={e => this.filter(e, categoryKey)}
+                            <Link
+                              to={`/thinking/${categoryKey}`}
+                              //   onClick={e => this.filter(e, categoryKey)}
                             >
                               <Text
                                 variations={CATEGORIES.thinking[categoryKey]}
                               />
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>

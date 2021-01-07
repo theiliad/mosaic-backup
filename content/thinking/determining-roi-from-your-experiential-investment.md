@@ -10,34 +10,40 @@ description: Proving Return on Dollars Spent in Experiential Marketing
 panel:
   - image: /img/news/lee-esmond.jpg
     name: Fred Champ
-    title: Network optimizations 101
-    text: >+
-      If you have an application that requires network requests to run, you
-      might want to come watch this presentation. We'll cover congestion
-      control, caching, batching and a couple advanced strategies to make your
-      application faster all while saving on infrastructure costs.
-    link: https://google.com
-    linkTitle: View Google
+    titleEN: Network optimizations 101
+    titleFR: Network lorem ipsum
+    textEN: >+
+        If you have an application that requires network requests to run, you
+        might want to come watch this presentation. We'll cover congestion
+        control, caching, batching and a couple advanced strategies to make your
+        application faster all while saving on infrastructure costs.
+    textFR: >+
+      If dolor sit amet
+    linkedin: https://google.com
   - image: /img/news/bill-haveron.jpg
     name: Ben Wilson
-    title: Memoizing functions
-    text: >-
+    titleEN: Memoizing functions
+    titleFR: Memoizing lorem ipsum
+    textEN: >-
       Ben will tell us all about the power of functional programming,
       specifically memoization and how it can help speed up frequently used side
       effect-less functions.
-    link: https://google.com
-linkTitle: View Google
+    textFR: >-
+      Ben will lorem ipsum
+    linkedin: https://google.com
 moderator:
   - image: /img/news/lee-esmond.jpg
     name: Bud smith
-    title: Entrepreneur
-    text: >+
+    titleEN: Entrepreneur
+    titleFR: Dolor sit amet
+    textEN: >+
       If you have an application that requires network requests to run, you
       might want to come watch this presentation. We'll cover congestion
       control, caching, batching and a couple advanced strategies to make your
       application faster all while saving on infrastructure costs.
-    link: https://google.com
-    linkTitle: View Google
+    textFR: >+
+      If lorem ipsum
+    linkedin: https://google.com
 bodyEN: >-
   More and more, there is pressure on marketers to prove the return on their dollars spent in any given channel, and experiential is no exception. But unlike most other channels, there is no industry standard or widely agreed upon way to measure XM. There isn’t a standard CPM, GRP, CPC, or established ROAS that unanimously works. Instead, clients look for guidance and expertise from their agency partner. And luckily for us (and our clients!), we at Mosaic have spent the past several years building a department that focuses solely on measuring experiential activations, and ensuring we have the right expertise, tools, and measurement methodologies to deliver a clear picture of success regardless of type of activation, business goal, category, or target consumer.
 

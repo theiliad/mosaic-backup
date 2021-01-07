@@ -24,10 +24,11 @@ export const pageQuery = graphql`
         posttype
         panel {
 		  name
-		  text
-		  title
-		  link
-		  linkTitle
+		  textEN
+		  textFR
+		  titleEN
+		  titleFR
+		  linkedin
 		  image
         }
         date

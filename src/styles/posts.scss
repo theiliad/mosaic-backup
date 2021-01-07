@@ -212,12 +212,37 @@ div.post-body {
     margin-left: 1em;
   }
 
+  p:not(:last-child)
+  dl:not(:last-child),
+  ol:not(:last-child),
+  ul:not(:last-child),
+  blockquote:not(:last-child),
+  pre:not(:last-child),
+  table:not(:last-child)
+ {
+    margin-bottom: 2em;
+  }
+
   b,
   strong {
     background: -webkit-linear-gradient(45deg, #1226aa, #d50057);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include Roobert_SemiBold;
+  }
+
+  blockquote {
+    background: transparent;
+    border-left: 5px solid $colors_blue_primary;
+    padding: 0 1.5em 0 2.5em;
+    margin: 2em 0;
+
+    strong,
+    b {
+      display: block;
+      @include Roobert_Medium;
+      font-size: 1.5em;
+    }
   }
 
   div.columns.ui-grid:not(:first-child) {
@@ -264,6 +289,16 @@ div.post-body {
 }
 
 div.post {
+  div.cp-tag {
+    margin-top: 6em;
+    text-align: center;
+
+    a {
+      background: $colors_red_primary;
+      color: #fff;
+    }
+  }
+
   div.share-wrapper {
     margin-top: 3em;
     border-top: 1px solid $colors_grey_light;
