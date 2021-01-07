@@ -104,7 +104,7 @@ function Post(props) {
 
           {member.linkedin && (
             <a href={member.linkedin} target="_blank" rel="nofollow" className="cp-linkedin">
-              <span>View LinkedIn</span> <RiArrowRightUpLine />
+              <span><Text tid="thinking.panelist.linkedin" /></span> <RiArrowRightUpLine />
             </a>
           )}
         </p>

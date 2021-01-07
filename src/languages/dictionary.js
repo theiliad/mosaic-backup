@@ -10,130 +10,131 @@ export default {
     },
     joinTheTeam: {
       en: 'Interested in joining the team?',
-      fr: FRFPO
+      fr: FRFPO,
     },
   },
   navigation: {
     items: {
       capabilities: {
         en: 'Capabilities',
-        fr: FRFPO
+        fr: FRFPO,
       },
       thinking: {
         en: 'Thinking',
-        fr: FRFPO
+        fr: FRFPO,
       },
       news: {
         en: 'News',
-        fr: FRFPO
+        fr: FRFPO,
       },
       careers: {
         en: 'Careers',
-        fr: FRFPO
+        fr: FRFPO,
       },
       contact: {
         en: 'Contact',
-        fr: FRFPO
+        fr: FRFPO,
       },
     },
   },
   caseStudies: {
     playButton: {
       en: 'Play case study',
-      fr: FRFPO
+      fr: FRFPO,
     },
     next: {
       en: 'Next project',
-      fr: FRFPO
+      fr: FRFPO,
     },
   },
   thinking: {
     title: {
       en: 'Thinking',
-      fr: FRFPO
+      fr: FRFPO,
     },
     loadMore: {
       en: 'Load more',
-      fr: FRFPO
+      fr: FRFPO,
     },
     next: {
       en: 'Next in thinking',
       fr: FRFPO,
       oneEighty: {
         en: 'Next in OneEighty',
-        fr: FRFPO
+        fr: FRFPO,
       },
     },
     pastSession: {
       en: 'Past session',
-      fr: FRFPO
+      fr: FRFPO,
     },
     originallyStreamed: {
       en: 'Originally streamed',
-      fr: FRFPO
+      fr: FRFPO,
     },
     watchNow: {
       en: 'Watch now',
-      fr: FRFPO
+      fr: FRFPO,
     },
     panelist: {
       en: 'Panelist',
-      fr: FRFPO
+      fr: FRFPO,
+      linkedin: {
+        en: 'View LinkedIn',
+        fr: FRFPO,
+      },
     },
     moderator: {
       en: 'Moderator',
-      fr: FRFPO
+      fr: FRFPO,
     },
     defaultAuthor: {
       en: 'Mosaic staff',
-      fr: FRFPO
+      fr: FRFPO,
     },
   },
   news: {
     title: {
       en: 'News',
-      fr: FRFPO
+      fr: FRFPO,
     },
     next: {
       en: 'Next in news',
-      fr: FRFPO
+      fr: FRFPO,
     },
   },
   pages: {
     index: {
       title: {
         en: 'We build brands in dimension.',
-        fr: FRFPO
+        fr: FRFPO,
       },
       why: {
         title: {
           en:
             'We use creativity to drive conversion in different spaces and places.',
-          fr:
-		  FRFPO
+          fr: FRFPO,
         },
         description: {
           en:
             'As a truly integrated North American marketing agency, we add depth and meaning to our brands and deliver powerful results by taking every possible consumer touchpoint into consideration.',
-          fr: FRFPO
+          fr: FRFPO,
         },
       },
     },
     careers: {
       title: {
         en: 'We cover a lot of bases, both in what we do and where we are.',
-        fr:
-		FRFPO
+        fr: FRFPO,
       },
       description: {
         en:
           'We’re also big fans of fresh talent in both different spaces and places.',
-        fr:
-		FRFPO
+        fr: FRFPO,
       },
       cta: {
         en: 'View open roles',
-        fr: FRFPO
+        fr: FRFPO,
       },
     },
     privacy: {
@@ -156,15 +157,15 @@ export default {
               directed to the information you are seeking.
             </p>
           </>
-		),
-		fr: FRFPO
+        ),
+        fr: FRFPO,
       },
     },
   },
   misc: {
     all: {
       en: 'All',
-      fr: FRFPO
+      fr: FRFPO,
     },
   },
 }
