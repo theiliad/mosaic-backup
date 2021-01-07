@@ -212,14 +212,12 @@ div.post-body {
     margin-left: 1em;
   }
 
-  p:not(:last-child)
-  dl:not(:last-child),
+  p:not(:last-child) dl:not(:last-child),
   ol:not(:last-child),
   ul:not(:last-child),
   blockquote:not(:last-child),
   pre:not(:last-child),
-  table:not(:last-child)
- {
+  table:not(:last-child) {
     margin-bottom: 2em;
   }
 
@@ -260,11 +258,27 @@ div.post-body {
       padding-right: 2em;
 
       div.cp-image {
-        width: 5em;
-        height: 5em;
+        position: relative;
+        width: 5.55em;
+        height: 5.55em;
         border-radius: 50%;
-        background-size: cover;
-        background-position: center;
+
+        &.cp-gradient {
+          background: -webkit-linear-gradient(45deg, #1226aa, #d50057);
+        }
+
+        div.cp-img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 5.2em;
+          height: 5.2em;
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
       }
     }
 
@@ -284,6 +298,26 @@ div.post-body {
       line-height: 1em;
       color: $colors_midnight_primary;
       font-size: 0.8em;
+    }
+
+    a.cp-linkedin {
+      display: block;
+      margin-top: 1em;
+      color: $colors_blue_primary;
+	  font-size: 0.8em;
+	  @include Roobert_SemiBold;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      span {
+        text-decoration: underline;
+      }
+
+      svg {
+        vertical-align: middle;
+      }
     }
   }
 }

@@ -17,12 +17,9 @@ import { Text } from '../containers/Language'
 
 import CATEGORIES from '../data/categories'
 
-import DEMO_1 from '../img/demo/1.jpg'
-import DEMO_2 from '../img/demo/2.jpg'
-import DEMO_3 from '../img/demo/3.jpg'
-
 // Icons
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
+import { RiArrowRightUpLine } from 'react-icons/ri'
 
 // Share buttons
 import {
@@ -55,6 +52,65 @@ function Post(props) {
   const previousPost = props.pageContext.previous
 
   console.log('previousPost', previousPost)
+
+  const EventMember = ({ member, isModerator }) => (
+    <AccordionItem>
+      <AccordionItemHeading>
+        <AccordionItemButton>
+          <div className="columns is-vcentered">
+            <div className="column is-narrow cp-panelist-image">
+              <div className={`cp-image ${isModerator ? 'cp-gradient' : ''}`}>
+                <div
+                  className="cp-img"
+                  style={{
+                    backgroundImage: `url(${member.image})`,
+                  }}
+                ></div>
+              </div>
+            </div>
+
+            <div className="column">
+              <p className="cp-heading">
+                <Text
+                  tid={isModerator ? 'thinking.moderator' : 'thinking.panelist'}
+                />
+              </p>
+              <p className="cp-name">{member.name}</p>
+              <p className="cp-title">
+                <Text
+                  variations={{
+                    en: member.titleEN,
+                    fr: member.titleFR,
+                  }}
+                />
+              </p>
+            </div>
+          </div>
+          <AccordionItemState>
+            {({ expanded }) => (
+              <span>{expanded ? <VscChevronDown /> : <VscChevronLeft />}</span>
+            )}
+          </AccordionItemState>
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
+        <p>
+          <Text
+            variations={{
+              en: member.textEN,
+              fr: member.textFR,
+            }}
+          />
+
+          {member.linkedin && (
+            <a href={member.linkedin} target="_blank" rel="nofollow" className="cp-linkedin">
+              <span>View LinkedIn</span> <RiArrowRightUpLine />
+            </a>
+          )}
+        </p>
+      </AccordionItemPanel>
+    </AccordionItem>
+  )
 
   return (
     <Layout
@@ -113,56 +169,11 @@ function Post(props) {
                   <div className="cp-panel">
                     <Accordion allowZeroExpanded={true}>
                       {frontmatter.panel.map(panelist => (
-                        <AccordionItem>
-                          <AccordionItemHeading>
-                            <AccordionItemButton>
-                              <div className="columns is-vcentered">
-                                <div className="column is-narrow cp-panelist-image">
-                                  <div
-                                    className="cp-image"
-                                    style={{
-                                      backgroundImage: `url(${panelist.image})`,
-                                    }}
-                                  ></div>
-                                </div>
+                        <EventMember member={panelist} />
+                      ))}
 
-                                <div className="column">
-                                  <p className="cp-heading"><Text tid="thinking.panelist" /></p>
-                                  <p className="cp-name">{panelist.name}</p>
-                                  <p className="cp-title">
-                                    <Text
-                                      variations={{
-                                        en: panelist.titleEN,
-                                        fr: panelist.titleFR,
-                                      }}
-                                    />
-                                  </p>
-                                </div>
-                              </div>
-                              <AccordionItemState>
-                                {({ expanded }) => (
-                                  <span>
-                                    {expanded ? (
-                                      <VscChevronDown />
-                                    ) : (
-                                      <VscChevronLeft />
-                                    )}
-                                  </span>
-                                )}
-                              </AccordionItemState>
-                            </AccordionItemButton>
-                          </AccordionItemHeading>
-                          <AccordionItemPanel>
-                            <p>
-                              <Text
-                                variations={{
-                                  en: panelist.textEN,
-                                  fr: panelist.textFR,
-                                }}
-                              />
-                            </p>
-                          </AccordionItemPanel>
-                        </AccordionItem>
+                      {frontmatter.moderator.map(moderator => (
+                        <EventMember member={moderator} isModerator={true} />
                       ))}
                     </Accordion>
                   </div>

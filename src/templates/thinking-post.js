@@ -23,13 +23,22 @@ export const pageQuery = graphql`
         companyName
         posttype
         panel {
-		  name
-		  textEN
-		  textFR
-		  titleEN
-		  titleFR
-		  linkedin
-		  image
+          name
+          textEN
+          textFR
+          titleEN
+          titleFR
+          linkedin
+          image
+        }
+        moderator {
+          name
+          textEN
+          textFR
+          titleEN
+          titleFR
+          linkedin
+          image
         }
         date
         bodyEN

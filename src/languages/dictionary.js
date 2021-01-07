@@ -80,6 +80,10 @@ export default {
       en: 'Panelist',
       fr: FRFPO
     },
+    moderator: {
+      en: 'Moderator',
+      fr: FRFPO
+    },
     defaultAuthor: {
       en: 'Mosaic staff',
       fr: FRFPO
