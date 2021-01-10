@@ -1,30 +1,32 @@
-export default {
+const FRFPO = 'FRFPO'
+
+module.exports = {
   'case-studies': {
     'content-strategy': {
       en: 'Content & strategy',
-      fr: 'Stratege',
+      fr: FRFPO,
     },
   },
   thinking: {
     'one-eighty': {
       en: 'OneEighty',
-      fr: '180',
+      fr: FRFPO,
     },
     strategy: {
       en: 'Strategy',
-      fr: 'Stratégie',
+      fr: FRFPO,
     },
     creative: {
       en: 'Creative',
-      fr: 'Creative',
+      fr: FRFPO,
     },
     measurement: {
       en: 'Measurement',
-      fr: 'la mesure',
+      fr: FRFPO,
     },
     'thought-leadership': {
       en: 'Thought Leadership',
-      fr: 'Lorem ip',
+      fr: FRFPO,
     },
   },
 }
