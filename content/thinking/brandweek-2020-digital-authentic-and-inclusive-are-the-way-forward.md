@@ -4,13 +4,13 @@ titleEN: 'Brandweek 2020: Digital, Authentic and Inclusive Are the Way Forward'
 titleFR: FRFPO
 date: 2020-09-21T03:14:12.599Z
 featuredImage: /img/thinking/brandweek-2020.jpg
-category: one-eighty
-author: FPO
+category: strategy
+author: Mosaic Staff
 description: Key insights from Brandweek 2020
 bodyEN: >-
   Brandweek 2020 was unlike any that we’ve experienced in previous years. A fully virtual conference, marketers of all backgrounds, disciplines and industries were able to connect and share ideas that will undoubtedly shape the future of our industry.
 
-  This year was particularly important as it was one of the first major industry gatherings to go digital that brought both agencies and brands together to learn how to navigate an ever-changing consumer landscape.
+  > This year was particularly important as it was one of the first major industry gatherings to go digital that brought both agencies and brands together to learn how to navigate an ever-changing consumer landscape.
 
 
   **Here are some of the most important learnings and how they can be applied to your brand:**
