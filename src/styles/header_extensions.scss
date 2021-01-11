@@ -32,7 +32,7 @@
   }
 
   &.home {
-	background: $colors_blue_primary url('../img/matrix.svg') repeat;
+    background: $colors_blue_primary url('../img/matrix.svg') repeat;
 
     div.bg {
       position: relative;
@@ -45,15 +45,24 @@
         left: 0;
         color: $colors_white;
         width: 100%;
-		// max-width: 900px;
-		
-		h1 {
-			font-size: 5em;
-			line-height: 1em;
-			margin-top: 0.25em;
-		}
+        // max-width: 900px;
+
+        h1 {
+          font-size: 5em;
+          line-height: 1em;
+		  margin-top: 0.25em;
+		  margin-left: -3px;
+        }
       }
     }
+  }
+
+  &.capabilities {
+	background: $colors_midnight_primary url('../img/matrix.svg') repeat;
+	
+	p {
+		max-width: 600px;
+	}
   }
 
   &.thinking {

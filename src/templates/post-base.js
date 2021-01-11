@@ -20,6 +20,7 @@ import CATEGORIES from '../data/categories'
 // Icons
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
 import { RiArrowRightUpLine } from 'react-icons/ri'
+import { IoCloseOutline } from 'react-icons/io5'
 
 // Share buttons
 import {
@@ -103,8 +104,16 @@ function Post(props) {
           />
 
           {member.linkedin && (
-            <a href={member.linkedin} target="_blank" rel="nofollow" className="cp-linkedin">
-              <span><Text tid="thinking.panelist.linkedin" /></span> <RiArrowRightUpLine />
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="nofollow"
+              className="cp-linkedin"
+            >
+              <span>
+                <Text tid="thinking.panelist.linkedin" />
+              </span>{' '}
+              <RiArrowRightUpLine />
             </a>
           )}
         </p>
@@ -138,7 +147,7 @@ function Post(props) {
         {isNewsPost ? (
           <NewsPostHeader post={post} />
         ) : isThinkingPost ? (
-          <ThinkingPostHeader post={post} />
+          <ThinkingPostHeader post={post} play={play} setPlay={setPlay} />
         ) : (
           <PostHeader post={post} play={play} setPlay={setPlay} />
         )}
@@ -205,6 +214,10 @@ function Post(props) {
             }}
           >
             <div className="cp-content">
+              <a href="#" onClick={e => setPlay(false)}>
+                <IoCloseOutline />
+              </a>
+
               <YouTube
                 videoId={post.frontmatter.videoID}
                 opts={{

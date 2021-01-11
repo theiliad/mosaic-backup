@@ -21,7 +21,8 @@ export const pageQuery = graphql`
         author
         category
         companyName
-        posttype
+		posttype
+		videoID
         panel {
           name
           textEN

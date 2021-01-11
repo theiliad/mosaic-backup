@@ -166,7 +166,7 @@ export const Footer = ({ footerCTA }) => (
         <div className="container">
           {footerCTA || (
             <h6>
-              Looking to drive conversion? <a href="#">Let's chat</a>
+              <Text tid="footerCTAs.driveConversion" /> <a href="#"><Text tid="footerCTAs.letsChat" /></a>
             </h6>
           )}
 
