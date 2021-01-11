@@ -68,12 +68,6 @@ class BlogIndex extends React.Component {
           get(group, 'edges[0].node.frontmatter.posttype') === 'case-study'
       ).edges || []
 
-    if (caseStudies.length < 4) {
-      for (let i = 0; i < 3; i++) {
-        caseStudies.push(caseStudies[0])
-      }
-    }
-
     const CaseStudyMeta = ({ node, mobileVersion }) => (
       <>
         <div className={'columns' + (mobileVersion ? ' is-mobile' : '')}>
@@ -168,7 +162,7 @@ class BlogIndex extends React.Component {
                     >
                       <Link to={node.fields.slug}>
                         <img
-                          src={i === 1 ? DEMO_1 : DEMO_2}
+                          src={node.frontmatter.featuredImage}
                           style={{ width: '100%' }}
                         />
                       </Link>
@@ -358,7 +352,8 @@ export const pageQuery = graphql`
               titleFR
               companyName
               posttype
-              descriptionEN
+			  descriptionEN
+			  featuredImage
               category
             }
           }

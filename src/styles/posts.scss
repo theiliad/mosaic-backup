@@ -304,8 +304,8 @@ div.post-body {
       display: block;
       margin-top: 1em;
       color: $colors_blue_primary;
-	  font-size: 0.8em;
-	  @include Roobert_SemiBold;
+      font-size: 0.8em;
+      @include Roobert_SemiBold;
 
       &:hover {
         box-shadow: none;
@@ -486,7 +486,7 @@ div.video-overlay {
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba($colors_midnight_primary, 0.95);
   z-index: 100;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -499,8 +499,20 @@ div.video-overlay {
     height: 80%;
     transform: translate(-50%, -50%);
 
+    a {
+      display: block;
+      text-align: right;
+      margin-right: -0.15em;
+      color: #fff;
+      font-size: 2em;
+    }
+
     & > div {
-      height: 100%;
+      height: calc(100% - 3em);
+
+      ifram {
+        height: calc(100% - 3em);
+      }
     }
   }
 }

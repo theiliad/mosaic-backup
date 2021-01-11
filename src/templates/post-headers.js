@@ -12,7 +12,7 @@ import { BsPlayFill } from 'react-icons/bs'
 
 import { isBefore } from 'date-fns'
 
-export function ThinkingPostHeader({ post }) {
+export function ThinkingPostHeader({ post, play, setPlay }) {
   const { frontmatter } = post
   const isOneEightyPost = frontmatter.category === 'one-eighty'
   const isPastSession = isBefore(new Date(frontmatter.date), new Date())
@@ -70,6 +70,7 @@ export function ThinkingPostHeader({ post }) {
               href="#"
               onClick={e => {
                 e.preventDefault()
+                setPlay(!play)
               }}
             >
               <span>
@@ -225,7 +226,7 @@ export function PostHeader({ post, play, setPlay }) {
         </div>
       </div>
 
-      <img src={DEMO_1} style={{ width: '100%' }} />
+      <img src={frontmatter.featuredImage} style={{ width: '100%' }} />
     </>
   )
 }
