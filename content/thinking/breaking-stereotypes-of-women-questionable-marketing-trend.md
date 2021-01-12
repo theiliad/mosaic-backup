@@ -162,4 +162,6 @@ bodyEN: >-
   for marketing to women? Or in the spirit of 2019, is it time to break new
   ground and ditch the stereotypes all together? It will be interesting to watch
   where the trend takes us this year.
+bodyFR: >-
+  frFPO
 ---

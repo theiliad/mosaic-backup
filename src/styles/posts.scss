@@ -25,6 +25,7 @@ div.post-single-heading {
 
   p.cp-title {
     @include Roobert_SemiBold;
+    color: #ff0000 !important;
   }
 
   a {
@@ -75,7 +76,8 @@ div.post-single-heading {
     }
 
     &.one-eighty {
-      background: $colors_blue_primary url('../img/matrix.svg') repeat;
+      background: $colors_blue_primary url("../img/matrix.svg") repeat;
+      background-size: 1.4em;
       color: #fff;
 
       p.cp-category {

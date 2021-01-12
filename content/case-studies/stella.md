@@ -1,13 +1,13 @@
 ---
 posttype: case-study
 titleEN: Wassup again
-titleFR: Dolor sit amet
+titleFR: frFPO
 companyName: Budweiser
 descriptionEN: Reimagining a classic with a smart twist.
-descriptionFR: Lorem ipsum
+descriptionFR: frFPO
 category: content-strategy
 videoID: _KK958OkD6g
-featuredImage: /img/news/bill-haveron.jpg
+featuredImage: /img/case-studies/stella.jpg
 bodyEN: >-
   1 in 3 Canadians still make the stupid decision to drink and drive. It’s truly a shocking stat considering all the smart ways to get home nowadays. So when Budweiser approached us to create a campaign to change this behavior, we knew we needed to do more than entertain. **We needed to create a campaign that would change cultural behavior.**
 

@@ -32,7 +32,8 @@
   }
 
   &.home {
-    background: $colors_blue_primary url('../img/matrix.svg') repeat;
+    background: $colors_blue_primary url("../img/matrix.svg") repeat;
+    background-size: 1.4em;
 
     div.bg {
       position: relative;
@@ -58,7 +59,8 @@
   }
 
   &.capabilities {
-	background: $colors_midnight_primary url('../img/matrix.svg') repeat;
+    background: $colors_midnight_primary url("../img/matrix.svg") repeat;
+    background-size: 1.4em;
 	
 	p {
 		max-width: 600px;

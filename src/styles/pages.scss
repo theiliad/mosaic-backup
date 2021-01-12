@@ -275,6 +275,12 @@ div.pages-thinking {
         color: $colors_blue_primary;
       }
 
+      .cp-title {
+        margin: .5em 0 1em 0;
+        line-height: 1.375em;
+        font-size: 1.375em;
+      }
+
       img {
         margin-bottom: 1em;
       }
@@ -329,8 +335,8 @@ div.pages-thinking {
         }
 
         span.cp-category {
-          font-size: 0.75em;
-          padding: 0.1em 0.7em 0.35em 0.7em;
+          font-size: 0.875em;
+          padding: .5em 1em .6em 1em;
           border: 1px solid $colors_blue_primary;
           border-radius: 3em;
         }
