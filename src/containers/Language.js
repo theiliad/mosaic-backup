@@ -37,21 +37,28 @@ export function LanguageProvider({ children }) {
   )
 }
 
-// get text according to id & current language
-export function Text({ tid, variations }) {
-  const languageContext = useContext(LanguageContext)
-
+export function getText({ dictionary, tid, variations, userLanguage }) {
   let text
   if (tid) {
-    text = get(
-      languageContext.dictionary,
-      `${tid}.${languageContext.userLanguage}`
-    )
+    text = get(dictionary, `${tid}.${userLanguage}`)
   } else if (variations) {
-    text = variations[languageContext.userLanguage]
+    text = variations[userLanguage]
   }
 
   return text || tid || ''
+}
+
+// get text according to id & current language
+export function Text({ tid, variations }) {
+  const languageContext = useContext(LanguageContext)
+  const { dictionary, userLanguage } = languageContext
+
+  return getText({
+    dictionary,
+    userLanguage,
+    tid,
+    variations,
+  })
 }
 
 // get text according to id & current language
@@ -63,7 +70,7 @@ export function TextDate({ string, format, options }) {
     defaultOptions.locale = frLocale
   }
 
-  const defaultFormat = "MMM dd yyyy"
+  const defaultFormat = 'MMM dd yyyy'
 
   return dateFnsFormat(
     new Date(string),

@@ -50,10 +50,12 @@ class BlogIndex extends React.Component {
 
     if (isBrowser) {
       const heroElement = document.getElementById('cp_hero')
-      heroElement.style.transform = `translateY(-${window.scrollY / 3}px)`
+      if (heroElement) {
+        heroElement.style.transform = `translateY(-${window.scrollY / 3}px)`
 
-      const opacity = Math.min(50 / window.scrollY, 1)
-      heroElement.style.opacity = opacity
+        const opacity = Math.min(50 / window.scrollY, 1)
+        heroElement.style.opacity = opacity
+      }
     }
   }
 
@@ -223,9 +225,9 @@ class BlogIndex extends React.Component {
                     dimensions.
                   </p>
 
-                  <a href="#" className="button light">
+                  <Link to="/capabilities" className="button light">
                     Explore our capabilities
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="column is-1"></div>
@@ -246,9 +248,9 @@ class BlogIndex extends React.Component {
                     creativity from all angles.
                   </p>
 
-                  <a href="#" className="button light">
+                  <Link to="/thinking/one-eighty" className="button light">
                     Visit OneEighty
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="column is-1"></div>
@@ -352,8 +354,8 @@ export const pageQuery = graphql`
               titleFR
               companyName
               posttype
-			  descriptionEN
-			  featuredImage
+              descriptionEN
+              featuredImage
               category
             }
           }

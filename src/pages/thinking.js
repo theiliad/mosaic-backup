@@ -127,8 +127,8 @@ class Thinking extends React.Component {
     const { page } = this.state
     const postsPerPage = 9
     const firstPageLength = 8
-    console.log('this', this.props)
-    return (
+
+	return (
       <Layout
         location={this.props.location}
         title={siteTitle}

@@ -159,38 +159,84 @@ class Header extends React.Component {
   }
 }
 
-export const Footer = ({ footerCTA }) => (
-  <>
-    <footer>
-      <div className="footer-content">
-        <div className="container">
-          {footerCTA || (
-            <h6>
-              <Text tid="footerCTAs.driveConversion" /> <a href="#"><Text tid="footerCTAs.letsChat" /></a>
-            </h6>
-          )}
+export const Footer = ({ footerCTA }) => {
+  const { userLanguage, changeUserLanguage } = useContext(LanguageContext)
 
-          <div className="bottom-links">
-            <div className="container">
-              <div className="columns is-vcentered">
-                <div className="column is-narrow"><a href="https://facebook.com/mosaic" target="_blank">Facebook</a></div>
-                <div className="column is-narrow"><a href="https://instagram.com/mosaicna" target="_blank">Instagram</a></div>
-                <div className="column is-narrow"><a href="https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10" target="_blank">LinkedIn</a></div>
-                <div className="column right-links">
-                  <div className="last">Privacy policy</div>
-                  <div className="last">Terms of Use</div>
-                  <div className="last">Accessibility</div>
-                  <div className="last">EN / FR</div>
-                  <div className="last">© Mosaic 2020</div>
+  return (
+    <>
+      <footer>
+        <div className="footer-content">
+          <div className="container">
+            {footerCTA || (
+              <h6>
+                <Text tid="footerCTAs.driveConversion" />{' '}
+                <a href="#">
+                  <Text tid="footerCTAs.letsChat" />
+                </a>
+              </h6>
+            )}
+
+            <div className="bottom-links">
+              <div className="container">
+                <div className="columns is-vcentered">
+                  <div className="column is-narrow">
+                    <a href="https://facebook.com/mosaic" target="_blank">
+                      Facebook
+                    </a>
+                  </div>
+                  <div className="column is-narrow">
+                    <a href="https://instagram.com/mosaicna" target="_blank">
+                      Instagram
+                    </a>
+                  </div>
+                  <div className="column is-narrow">
+                    <a
+                      href="https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
+                  <div className="column right-links">
+                    <div className="last">© Mosaic 2020</div>
+                    <div className="cp-lang-switcher">
+                      <a
+                        className={
+                          'cp-lang-switcher ' +
+                          (userLanguage === 'en' ? 'active' : '')
+                        }
+                        onClick={e => {
+                          changeUserLanguage('en')
+                        }}
+                      >
+                        EN
+                      </a>{' '}
+                      /{' '}
+                      <a
+                        className={
+                          'cp-lang-switcher ' +
+                          (userLanguage === 'fr' ? 'active' : '')
+                        }
+                        onClick={e => {
+                          changeUserLanguage('fr')
+                        }}
+                      >
+                        FR
+                      </a>
+                    </div>
+                    <div>Accessibility</div>
+                    <div><Link to="/terms">Terms of Use</Link></div>
+                    <div><Link to="/privacy-policy">Privacy policy</Link></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </>
-)
+      </footer>
+    </>
+  )
+}
 
 const Layout = props => {
   const { children, location } = props

@@ -105,8 +105,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const postType = node.frontmatter.posttype
     const prefix = getNodePrefix(postType)
 
-    console.log('prefix + value', prefix + value)
-
     createNodeField({
       name: `slug`,
       node,

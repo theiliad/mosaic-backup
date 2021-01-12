@@ -19,10 +19,32 @@ footer {
   width: 100%;
   height: 28em;
   z-index: -1;
-  background: $colors_blue_primary url("../img/matrix.svg") repeat;
+  background: $colors_blue_primary url('../img/matrix.svg') repeat;
   background-size: 1.4em;
   color: $colors_white;
   padding: 8em 0 0;
+
+  @media screen and (max-width: 768px) {
+    height: 37em;
+  }
+
+  a {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    @include transition_default;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &.cp-lang-switcher {
+      &.active {
+        padding-bottom: 2px;
+        border-bottom-color: #fff;
+        @include transition_default;
+      }
+    }
+  }
 
   @media screen and (max-width: 768px) {
     padding: 3.5em 0 0 0;
@@ -58,14 +80,16 @@ footer {
     width: 100%;
 
     @media screen and (max-width: 768px) {
-      text-align: center;
+      text-align: left;
 
-      div.column.is-narrow {
-        padding-bottom: 0;
-      }
+      div.column {
+        &:not(.right-links) {
+          font-size: 1.2em;
+        }
 
-      div.column.right-links {
-        margin-bottom: 2em;
+        &.is-narrow {
+          padding-bottom: 0;
+        }
       }
     }
 
@@ -78,15 +102,26 @@ footer {
       flex-direction: row-reverse;
       font-size: 0.7em;
 
-      @media screen and (max-width: 768px) {
-        font-size: 0.9em;
-      }
-
       div {
         padding-right: 2em;
 
         &.last {
           padding-right: 0;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        font-size: 0.9em;
+        margin-top: 2em;
+
+        div {
+          padding-right: 0;
+          padding-bottom: 1em;
+
+          &.cp-lang-switcher {
+            margin-top: 2em;
+          }
         }
       }
     }

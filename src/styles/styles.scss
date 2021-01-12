@@ -10,8 +10,8 @@ $colors_white: #ffffff; // white
 
 $colors_blue_primary: #1226aa; // links
 $colors_red_primary: #d50057; // labels
-$colors_orange_primary: #FF675D; // accents
-$colors_aqua_primary: #00BED6; // accents
+$colors_orange_primary: #ff675d; // accents
+$colors_aqua_primary: #00bed6; // accents
 
 @mixin transition_default {
   transition: all 0.2s ease-out;
@@ -50,6 +50,10 @@ body {
   overflow-y: hidden;
   margin-bottom: 28em;
   transition: background-color 1s ease;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 37em;
+  }
 }
 
 h1,

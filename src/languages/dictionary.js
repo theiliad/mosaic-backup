@@ -242,6 +242,74 @@ export default {
         fr: FRFPO,
       },
     },
+    contact: {
+      title: {
+        en: (
+          <>
+            Let’s
+            <br />
+            chat.
+          </>
+        ),
+        fr: FRFPO,
+      },
+      formItems: {
+        email: {
+          en: 'Email Address',
+          fr: FRFPO,
+        },
+        subject: {
+          en: 'Subject',
+          fr: FRFPO,
+        },
+        name: {
+          en: 'Name',
+          fr: FRFPO,
+        },
+        company: {
+          en: 'Company',
+          fr: FRFPO,
+        },
+        phone: {
+          en: 'Phone number',
+          fr: FRFPO,
+        },
+        message: {
+          en: 'Message',
+          fr: FRFPO,
+        },
+        optional: {
+          en: 'optional',
+          fr: FRFPO,
+        },
+        send: {
+          en: 'Send message',
+          fr: FRFPO,
+        },
+        error: {
+          en: 'Something went wrong, please try again!',
+          fr: FRFPO,
+        },
+      },
+      formSubmitted: {
+        message: {
+          en: (
+            <>
+              <h1>We've got your message</h1>
+              <p>
+                We value your business. Our team will get in touch with you
+                shortly.
+              </p>
+            </>
+          ),
+          fr: FRFPO,
+        },
+        cta: {
+          en: 'Continue Browsing',
+          fr: FRFPO,
+        },
+      },
+    },
     privacy: {
       header: {
         en: (

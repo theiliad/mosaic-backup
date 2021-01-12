@@ -52,8 +52,6 @@ function Post(props) {
 
   const previousPost = props.pageContext.previous
 
-  console.log('previousPost', previousPost)
-
   const EventMember = ({ member, isModerator }) => (
     <AccordionItem>
       <AccordionItemHeading>
