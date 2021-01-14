@@ -3,6 +3,7 @@ posttype: case-study
 titleEN: ShopHERE powered by Google
 titleFR: frFPO
 companyName: Digital Main St
+date: 2020-08-17T20:35:33.876Z
 descriptionEN: Reimagining a classic with a smart twist.
 descriptionFR: frFPO
 category: assisted-selling-training

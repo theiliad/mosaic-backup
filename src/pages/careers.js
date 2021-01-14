@@ -28,7 +28,7 @@ class Careers extends React.Component {
         <SEO
           title="TODO"
           keywords={['TODO']}
-          image="https://mosaic.com/img/logo/share.jpg"
+          image={null}
         />
 
         <div className="pages-careers">

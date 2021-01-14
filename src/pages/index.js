@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 import { Text } from '../containers/Language'
 
 // Lodash
-import { get, chunk, debounce } from 'lodash-es'
+import { get, chunk } from 'lodash-es'
 
 import CATEGORIES from '../data/categories'
 
@@ -35,6 +35,33 @@ import SAMSUNG from '../img/home/partners/samsung.svg'
 import SHOPPERS_DRUG_MART from '../img/home/partners/shoppers-drug-mart.svg'
 import STARBUCKS from '../img/home/partners/starbucks.svg'
 import TISHMAN_SPEYER from '../img/home/partners/tishman-speyer.svg'
+
+export const CaseStudyMeta = ({ node, mobileVersion }) => (
+  <>
+    <div className={'columns' + (mobileVersion ? ' is-mobile' : '')}>
+      <div className="column is-8">
+        <p className="cp-company">{node.frontmatter.companyName}</p>
+
+        <p>
+          <Text
+            variations={{
+              en: node.frontmatter.titleEN,
+              fr: node.frontmatter.titleFR,
+            }}
+          />
+        </p>
+      </div>
+
+      <div className="column is-4">
+        <p className="cp-category">
+          <Text
+            variations={CATEGORIES['case-studies'][node.frontmatter.category]}
+          />
+        </p>
+      </div>
+    </div>
+  </>
+)
 
 class BlogIndex extends React.Component {
   componentDidMount() {
@@ -69,35 +96,6 @@ class BlogIndex extends React.Component {
         group =>
           get(group, 'edges[0].node.frontmatter.posttype') === 'case-study'
       ).edges || []
-
-    const CaseStudyMeta = ({ node, mobileVersion }) => (
-      <>
-        <div className={'columns' + (mobileVersion ? ' is-mobile' : '')}>
-          <div className="column is-8">
-            <p className="cp-company">{node.frontmatter.companyName}</p>
-
-            <p>
-              <Text
-                variations={{
-                  en: node.frontmatter.titleEN,
-                  fr: node.frontmatter.titleFR,
-                }}
-              />
-            </p>
-          </div>
-
-          <div className="column is-4">
-            <p className="cp-category">
-              <Text
-                variations={
-                  CATEGORIES['case-studies'][node.frontmatter.category]
-                }
-              />
-            </p>
-          </div>
-        </div>
-      </>
-    )
 
     return (
       <Layout
@@ -197,7 +195,7 @@ class BlogIndex extends React.Component {
                   >
                     <Link to={node.fields.slug}>
                       <img
-                        src={i % 2 === 0 ? DEMO_1 : DEMO_2}
+                        src={node.frontmatter.featuredImage}
                         style={{ width: '100%' }}
                       />
 
@@ -349,9 +347,9 @@ export const pageQuery = graphql`
               slug
             }
             frontmatter {
-              date(formatString: "MMMM DD, YYYY")
               titleEN
               titleFR
+              date
               companyName
               posttype
               descriptionEN

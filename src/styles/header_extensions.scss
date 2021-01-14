@@ -32,7 +32,7 @@
   }
 
   &.home {
-    background: $colors_blue_primary url("../img/matrix.svg") repeat;
+    background: $colors_blue_primary url('../img/matrix.svg') repeat;
     background-size: 1.4em;
 
     div.bg {
@@ -51,20 +51,20 @@
         h1 {
           font-size: 5em;
           line-height: 1em;
-		  margin-top: 0.25em;
-		  margin-left: -3px;
+          margin-top: 0.25em;
+          margin-left: -3px;
         }
       }
     }
   }
 
   &.capabilities {
-    background: $colors_midnight_primary url("../img/matrix.svg") repeat;
+    background: $colors_midnight_primary url('../img/matrix.svg') repeat;
     background-size: 1.4em;
-	
-	p {
-		max-width: 600px;
-	}
+
+    p {
+      max-width: 600px;
+    }
   }
 
   &.thinking {
@@ -78,14 +78,27 @@
     div.columns {
       margin-right: 0;
 
+      @media screen and (max-width: 949px) {
+        flex-direction: column;
+      }
+
       div.cp-spacer {
         flex-grow: 1;
+
+        @media screen and (max-width: 949px) {
+          display: none;
+        }
       }
     }
 
     div.cp-filter {
       display: table;
       margin: auto;
+
+      @media screen and (max-width: 949px) {
+        margin-left: 0;
+        padding: 0.75rem;
+      }
 
       ul {
         display: inline-flex;
@@ -121,6 +134,69 @@
               color: $colors_blue_primary;
             }
           }
+        }
+
+        @media screen and (max-width: 949px) {
+          display: none;
+        }
+      }
+
+      div.select {
+        display: none;
+
+        // a.button {
+        //   background: $colors_midnight_primary;
+        //   position: relative;
+
+        //   select {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        // 	height: 100%;
+        // 	opacity: ;
+        //   }
+        // }
+        &:after {
+          width: 0.5em;
+          height: 0.5em;
+          border: 2px solid #fff;
+          border-right: 0;
+          border-top: 0;
+          border-radius: 1px;
+          right: 1.5em;
+          margin-top: -0.1em;
+        }
+
+        select {
+          background: $colors_midnight_primary;
+          color: #fff;
+          padding-left: 1.4em;
+          height: 3em;
+          border-radius: 2em;
+          @include Roobert_Medium;
+        }
+
+        @media screen and (max-width: 949px) {
+          display: block;
+        }
+      }
+    }
+
+    div.cp-desc {
+      div.column.cp-spacer {
+        @media screen and (max-width: 949px) {
+          display: none;
+        }
+      }
+
+      div.column.cp-text {
+        @media screen and (max-width: 949px) {
+		  width: 100%;
+		  
+		  p {
+			  margin-top: 0;
+		  }
         }
       }
     }

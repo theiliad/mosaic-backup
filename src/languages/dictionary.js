@@ -55,6 +55,11 @@ export default {
     title: {
       en: 'Thinking',
       fr: FRFPO,
+      oneEightyDescription: {
+        en:
+          'OneEighty is our digital conference that is flipping the script to rewrite the future of culture, commerce and creativity.',
+        fr: FRFPO,
+      },
     },
     loadMore: {
       en: 'Load more',
@@ -331,6 +336,12 @@ export default {
             </p>
           </>
         ),
+        fr: FRFPO,
+      },
+    },
+    workArchive: {
+      title: {
+        en: 'Work archive',
         fr: FRFPO,
       },
     },

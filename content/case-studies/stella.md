@@ -2,7 +2,8 @@
 posttype: case-study
 titleEN: Wassup again
 titleFR: frFPO
-companyName: Budweiser
+companyName: Stella
+date: 2020-08-25T20:35:33.876Z
 descriptionEN: Reimagining a classic with a smart twist.
 descriptionFR: frFPO
 category: content-strategy

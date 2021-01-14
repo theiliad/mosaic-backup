@@ -4,7 +4,7 @@
 * ----------------------------------------------
 **/
 .accordion {
-//   border-top: 1px solid $colors_grey_light;
+  //   border-top: 1px solid $colors_grey_light;
   border-right: 0;
   border-left: 0;
 
@@ -28,12 +28,17 @@
   text-align: left;
   border: none;
 
+  & > div.columns {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   svg {
     font-size: 1.25em;
     position: absolute;
     right: 1.2em;
-	top: 2.5em;
-	color: $colors_midnight_primary;
+    top: 2.5em;
+    color: $colors_midnight_primary;
   }
 
   &:hover {

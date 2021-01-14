@@ -1,11 +1,16 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React, { useState, useContext } from 'react'
+import { Link, graphql, navigate } from 'gatsby'
 
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
 // Locale
-import { Text, TextDate } from '../containers/Language'
+import {
+  getText,
+  Text,
+  TextDate,
+  LanguageContext,
+} from '../containers/Language'
 
 import CATEGORIES from '../data/categories'
 
@@ -90,121 +95,138 @@ const ThinkingItem = ({ node, size }) => {
   )
 }
 
-class Thinking extends React.Component {
-  state = {
-    filter: null,
-    page: 1,
-  }
+function Thinking({ data, location }) {
+  const languageContext = useContext(LanguageContext)
+  const { dictionary, userLanguage } = languageContext
 
-  filter(e, category) {
-    e.preventDefault()
+  const siteTitle = data.site.siteMetadata.title
+  let allPosts = data.allMdx.edges
 
-    this.setState({
-      filter: category,
-      page: 1,
-    })
-  }
-
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    let allPosts = data.allMdx.edges
-
-    let filter = null
-    Object.keys(CATEGORIES.thinking).map(categoryKey => {
-      if (
-        this.props.location.pathname.indexOf(`thinking/${categoryKey}`) !== -1
-      ) {
-        filter = categoryKey
-      }
-    })
-    if (filter) {
-      allPosts = allPosts.filter(
-        post => post.node.frontmatter.category === filter
-      )
+  let filter = null
+  Object.keys(CATEGORIES.thinking).map(categoryKey => {
+    if (location.pathname.indexOf(`thinking/${categoryKey}`) !== -1) {
+      filter = categoryKey
     }
+  })
+  if (filter) {
+    allPosts = allPosts.filter(
+      post => post.node.frontmatter.category === filter
+    )
+  }
 
-    const { page } = this.state
-    const postsPerPage = 9
-    const firstPageLength = 8
+  return (
+    <Layout
+      location={location}
+      title={siteTitle}
+      logo={LOGO_OPTIONS.orangeBlue}
+      HeaderExtension={
+        <div className="header_extension thinking">
+          <div class="bg">
+            <div className="container">
+              <div className="columns">
+                <div className="column is-narrow">
+                  <h1 class="primary heading_lg">
+                    <span>
+                      <Text tid="thinking.title" />
+                    </span>
+                  </h1>
+                </div>
+                <div className="column is-narrow cp-spacer"></div>
+                <div className="cp-filter-wrapper">
+                  <div className="cp-filter">
+                    <ul>
+                      <li className={filter === null ? 'active' : ''}>
+                        <Link to="/thinking/">
+                          <Text tid="misc.all" />
+                        </Link>
+                      </li>
 
-	return (
-      <Layout
-        location={this.props.location}
-        title={siteTitle}
-        logo={LOGO_OPTIONS.orangeBlue}
-        HeaderExtension={
-          <div className="header_extension thinking">
-            <div class="bg">
-              <div className="container">
-                <div className="columns">
-                  <div className="column is-5">
-                    <h1 class="primary heading_lg">
-                      <span>
-                        <Text tid="thinking.title" />
-                      </span>
-                    </h1>
-                  </div>
-                  <div className="column is-narrow cp-spacer"></div>
-                  <div>
-                    <div className="cp-filter">
-                      <ul>
-                        <li className={filter === null ? 'active' : ''}>
-                          <Link to="/thinking/">
-                            <Text tid="misc.all" />
+                      {Object.keys(CATEGORIES.thinking).map(categoryKey => (
+                        <li className={filter === categoryKey ? 'active' : ''}>
+                          <Link to={`/thinking/${categoryKey}`}>
+                            <Text
+                              variations={CATEGORIES.thinking[categoryKey]}
+                            />
                           </Link>
                         </li>
+                      ))}
+                    </ul>
 
+                    <div className="select">
+                      <select
+                        onChange={e => {
+                          const filterTo = e.target.value
+
+                          navigate(`/thinking/${filterTo}`)
+                        }}
+                      >
+                        <option value="" selected={filter === null}>
+                          {getText({
+                            tid: 'misc.all',
+                            dictionary,
+                            userLanguage,
+                          })}
+                        </option>
                         {Object.keys(CATEGORIES.thinking).map(categoryKey => (
-                          <li
-                            className={filter === categoryKey ? 'active' : ''}
+                          <option
+                            value={categoryKey}
+                            selected={filter === categoryKey}
                           >
-                            <Link
-                              to={`/thinking/${categoryKey}`}
-                              //   onClick={e => this.filter(e, categoryKey)}
-                            >
-                              <Text
-                                variations={CATEGORIES.thinking[categoryKey]}
-                              />
-                            </Link>
-                          </li>
+                            {getText({
+                              variations: CATEGORIES.thinking[categoryKey],
+                              dictionary,
+                              userLanguage,
+                            })}
+                          </option>
                         ))}
-                      </ul>
+                      </select>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        }
-      >
-        <SEO title="Thinking" keywords={['Thinking']} image={null} />
 
-        <div className="pages-index pages-thinking">
-          <div className="section-thinking">
-            <div className="container">
-              <div
-                className="columns post-single ui-grid"
-                style={{ marginTop: '2em' }}
-              >
-                <div className="column is-12">
-                  <div className="columns is-multiline">
-                    {allPosts.map(({ node }) => (
-                      <ThinkingItem node={node} size="is-one-third" />
-                    ))}
+              {filter === 'one-eighty' && (
+                <div className="columns cp-desc">
+                  <div className="column is-6 cp-spacer"></div>
+
+                  <div className="column is-6 cp-text">
+                    <p>
+                      <Text tid="thinking.title.oneEightyDescription" />
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <a href="#" className="cp-load-more">
-                <Text tid="thinking.loadMore" />
-              </a>
+              )}
             </div>
           </div>
         </div>
-      </Layout>
-    )
-  }
+      }
+    >
+      <SEO title="Thinking" keywords={['Thinking']} image={null} />
+
+      <div className="pages-index pages-thinking">
+        <div className="section-thinking">
+          <div className="container">
+            <div
+              className="columns post-single ui-grid"
+              style={{ marginTop: '2em' }}
+            >
+              <div className="column is-12">
+                <div className="columns is-multiline">
+                  {allPosts.map(({ node }) => (
+                    <ThinkingItem node={node} size="is-one-third" />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <a href="#" className="cp-load-more">
+              <Text tid="thinking.loadMore" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
 export default Thinking

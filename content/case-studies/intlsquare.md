@@ -3,6 +3,7 @@ posttype: case-study
 titleEN: intl.square
 titleFR: frFPO
 companyName: Tishman Speyer
+date: 2020-08-21T20:35:33.876Z
 descriptionEN: enFPO
 descriptionFR: frFPO
 category: brand-development-design

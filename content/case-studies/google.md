@@ -3,6 +3,7 @@ posttype: case-study
 titleEN: Pixelville
 titleFR: frFPO
 companyName: Google
+date: 2020-08-16T20:35:33.876Z
 descriptionEN: enFPO
 descriptionFR: frFPO
 category: retail-commerce

@@ -23,7 +23,7 @@ class News extends React.Component {
             <div class="bg">
               <div className="container">
                 <h1 class="primary heading_lg">
-                  <span>News</span>
+                  <span><Text tid="news.title" /></span>
                 </h1>
               </div>
             </div>
@@ -33,7 +33,7 @@ class News extends React.Component {
         <SEO
           title="TODO"
           keywords={['TODO']}
-          image="https://mosaic.com/img/logo/share.jpg"
+          image={null}
         />
 
         <div className="pages-news">

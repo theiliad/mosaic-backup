@@ -3,6 +3,7 @@ posttype: case-study
 titleEN: National Kickoff
 titleFR: frFPO
 companyName: Loblaws Companies Limited
+date: 2020-08-10T20:35:33.876Z
 descriptionEN: enFPO
 descriptionFR: frFPO
 category: b2b
