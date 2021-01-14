@@ -491,6 +491,56 @@ div.pages-sup {
   }
 }
 
+/*
+ *
+	Contact page
+ *
+ */
+div.post-single-heading.thinking.contact {
+  background: $colors_red_primary url('../img/matrix.svg') repeat;
+  background-size: 1.4em;
+  color: #fff;
+  margin-bottom: 0;
+
+  & > div.columns {
+	padding-top: 4.5em;
+	margin-bottom: 0;
+  }
+
+  div.cp-meta {
+    margin-top: 3em;
+    padding-bottom: 4em;
+
+    h2 {
+      font-size: 3em;
+      line-height: 1.1em;
+    }
+
+    p.cp-desc {
+      font-size: 2em;
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+      line-height: 1.2em;
+    }
+
+    div.cp-contacts {
+      div.columns {
+        padding: 1em 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+          @include Roobert_Medium;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
 div.pages-contact {
   div.form {
     padding: 7em 0;

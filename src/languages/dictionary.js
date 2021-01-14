@@ -258,6 +258,26 @@ export default {
         ),
         fr: FRFPO,
       },
+      meta: {
+        description: {
+          en: 'See where you can reach us across North America.',
+          fr: FRFPO,
+        },
+        contacts: {
+          newBusiness: {
+            en: 'New business',
+            fr: FRFPO,
+          },
+          mediaInquiries: {
+            en: 'Media inquiries',
+            fr: FRFPO,
+          },
+          general: {
+            en: 'General inquiries',
+            fr: FRFPO,
+          },
+        },
+      },
       formItems: {
         email: {
           en: 'Email Address',

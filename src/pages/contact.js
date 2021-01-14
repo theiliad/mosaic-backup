@@ -12,6 +12,8 @@ import { FormValidation } from 'calidation'
 import axios from 'axios'
 import * as qs from 'query-string'
 
+import HERO from '../img/contact.jpg'
+
 function Contact({ data, location }) {
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
@@ -21,7 +23,7 @@ function Contact({ data, location }) {
     if (isValid) {
       setLoading(true)
 
-	  const axiosOptions = {
+      const axiosOptions = {
         url: location.pathname,
         method: 'post',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -121,8 +123,124 @@ function Contact({ data, location }) {
     },
   }
 
+  const Meta = () => (
+    <>
+      <h2>
+        Hi. Hello.
+        <br />
+        Bonjour. Howdy.
+      </h2>
+      <p className="cp-desc">
+        <Text tid="pages.contact.meta.description" />
+      </p>
+
+      <div className="cp-contacts">
+        <div className="columns is-mobile">
+          <div className="column is-5">
+            <p>
+              <Text tid="pages.contact.meta.contacts.newBusiness" />
+            </p>
+
+            <p>U.S.</p>
+          </div>
+
+          <div className="column is-7">
+            <p>Mike Pennington</p>
+
+            <p>
+              <a href="mailto:USNewBusiness@mosaic.com">
+                USNewBusiness@mosaic.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="columns is-mobile">
+          <div className="column is-5">
+            <p>
+              <Text tid="pages.contact.meta.contacts.newBusiness" />
+            </p>
+
+            <p>Canada</p>
+          </div>
+
+          <div className="column is-7">
+            <p>Terri Truscello</p>
+
+            <p>
+              <a href="mailto:CADNewBusiness@mosaic.com">
+                CADNewBusiness@mosaic.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="columns is-mobile">
+          <div className="column is-5">
+            <p>
+              <Text tid="pages.contact.meta.contacts.mediaInquiries" />
+            </p>
+          </div>
+
+          <div className="column is-7">
+            <p>
+              <a href="mailto:Media@mosaic.com">Media@mosaic.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="columns is-mobile">
+          <div className="column is-5">
+            <p>
+              <Text tid="pages.contact.meta.contacts.general" />
+            </p>
+          </div>
+
+          <div className="column is-7">
+            <p>
+              <a href="mailto:Info@mosaic.com">Info@mosaic.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+
   return (
-    <Layout HeaderExtension={<div></div>} location={location} title={siteTitle}>
+    <Layout
+      HeaderExtension={
+        <>
+          <div className="post-single-heading thinking contact">
+            <div className="columns post-single cp-desktop">
+              <div className="column is-5 cp-meta">
+                <Meta />
+              </div>
+
+              <div className="column is-1"></div>
+
+              <div
+                className="column is-6 cp-image"
+                style={{ backgroundImage: `url(${HERO})` }}
+              ></div>
+            </div>
+
+            <div className="post-single cp-mobile">
+              <div className="cp-image">
+                <img src={HERO} />
+              </div>
+
+              <div className="cp-meta">
+                <div className="container">
+                  <Meta />
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      }
+      location={location}
+      title={siteTitle}
+    >
       <SEO title="Contact" keywords={['Contact']} image={null} />
 
       <div>
