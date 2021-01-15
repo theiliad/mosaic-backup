@@ -87,7 +87,7 @@ class Header extends React.Component {
 
   render() {
     const { props } = this
-    const { HeaderExtension, location } = props
+    const { HeaderExtension, location, navIdleLight } = props
     const { scrollDir, whiteNav } = this.state
 
     return (
@@ -95,6 +95,7 @@ class Header extends React.Component {
         <div
           className={
             'site-header' +
+            (navIdleLight ? ' idle-light' : '') +
             (scrollDir === 'down' ? ' hidden' : '') +
             (whiteNav === true ? ' white' : '')
           }
@@ -224,9 +225,15 @@ export const Footer = ({ footerCTA }) => {
                         FR
                       </a>
                     </div>
-                    <div><Link to="/accessibility">Accessibility</Link></div>
-                    <div><Link to="/terms-of-use">Terms of Use</Link></div>
-                    <div><Link to="/privacy-policy">Privacy policy</Link></div>
+                    <div>
+                      <Link to="/accessibility">Accessibility</Link>
+                    </div>
+                    <div>
+                      <Link to="/terms-of-use">Terms of Use</Link>
+                    </div>
+                    <div>
+                      <Link to="/privacy-policy">Privacy policy</Link>
+                    </div>
                   </div>
                 </div>
               </div>
