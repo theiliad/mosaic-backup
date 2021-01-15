@@ -5,8 +5,6 @@ import { Text, TextDate } from '../containers/Language'
 
 import CATEGORIES from '../data/categories'
 
-import DEMO_1 from '../img/demo/1.jpg'
-
 // Icons
 import { BsPlayFill } from 'react-icons/bs'
 
@@ -60,7 +58,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
               <TextDate string={frontmatter.date} />
             </p>
 
-            <p className="cp-author">BY {frontmatter.author}</p>
+            <p className="cp-author">BY {frontmatter.author || <Text tid="thinking.defaultAuthor" />}</p>
           </>
         )}
 

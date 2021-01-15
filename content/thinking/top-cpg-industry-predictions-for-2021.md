@@ -79,11 +79,10 @@ bodyEN: >-
     - Retailer and manufacturer mergers and acquisitions  
 
 
-  ---
+    ---
 
 
     Acosta's top CPG industry predictions for 2021 were compiled by Acosta business leaders across the country and supported by analysis and custom research by Acosta Strategic Advisors.
-
 bodyFR: >-
   frFPO
 ---
