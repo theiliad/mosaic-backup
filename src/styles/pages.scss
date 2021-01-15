@@ -503,13 +503,14 @@ div.post-single-heading.thinking.contact {
   margin-bottom: 0;
 
   & > div.columns {
-	padding-top: 4.5em;
-	margin-bottom: 0;
+    padding-top: 4.5em;
+    margin-bottom: 0;
   }
 
   div.cp-meta {
     margin-top: 3em;
     padding-bottom: 4em;
+    padding-left: 0;
 
     h2 {
       font-size: 3em;
@@ -525,8 +526,19 @@ div.post-single-heading.thinking.contact {
 
     div.cp-contacts {
       div.columns {
+        margin: -0.75rem 0;
         padding: 1em 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        div.column {
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
 
         a {
           color: #fff;

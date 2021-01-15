@@ -130,6 +130,7 @@ function Contact({ data, location }) {
         <br />
         Bonjour. Howdy.
       </h2>
+
       <p className="cp-desc">
         <Text tid="pages.contact.meta.description" />
       </p>
@@ -237,8 +238,8 @@ function Contact({ data, location }) {
             </div>
           </div>
         </>
-	  }
-	  navIdleLight={true}
+      }
+      navIdleLight={true}
       location={location}
       title={siteTitle}
     >
