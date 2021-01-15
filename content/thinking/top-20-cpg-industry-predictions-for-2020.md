@@ -145,7 +145,7 @@ bodyEN: >-
     Strong sales growth is projected for small store formats and club channel retailers, which are succeeding by offering differentiated items, whether it is a focus on better-for-you, local/specialty/curated offerings, or by providing value through their own brands.
 
 
-  ---
+    ---
 
 
     ## About Acosta
