@@ -1,10 +1,10 @@
 ---
 posttype: thinking
-titleEN: Determining ROI From Your Experiential Investment
+titleEN: Determining ROI from Your Experiential Investment
 titleFR: FRFPO
-date: 2019-08-28T03:14:12.599Z
+date: 2019-10-28T03:14:12.599Z
 featuredImage: /img/thinking/determining-roi.jpg
-category: strategy
+category: measurement
 author: Amelia Rowe, Sr. Director, Measurement & Insights
 description: Proving Return on Dollars Spent in Experiential Marketing
 bodyEN: >-
@@ -17,16 +17,16 @@ bodyEN: >-
   One of the tools we lean on heavily through the Measurement First™ process is our historical results database. We have more than 15 years of programming results across all categories, business objectives, and activation types that we leverage to establish benchmarks and norms, that in turn allow us to set targets and KPIs by channel.
 
 
-  **When setting KPIs, we always strive to look across 3 pillars of measurement**
+  ## When setting KPIs, we always strive to look across 3 pillars of measurement**
 
 
-  1) REACH (the numbers of consumers we reach through our activation)
+  **1. REACH** (the numbers of consumers we reach through our activation)
 
 
-  2) IMPACT (the impact we have on changing their attitudes and behaviors)
+  **2. IMPACT** (the impact we have on changing their attitudes and behaviors)
 
 
-  3) RESULTS (the impact we have on driving business results in the short and long term).
+  **3. RESULTS** (the impact we have on driving business results in the short and long term).
 
 
   We have built an in-house set of measurement capabilities that allow us to properly evaluate the effectiveness of our programs in a cost effective and time efficient manner, giving our clients access to data quickly with the ability to optimize the execution strategy while it’s still in market.

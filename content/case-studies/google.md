@@ -4,7 +4,7 @@ titleEN: Pixelville
 titleFR: frFPO
 companyName: Google
 date: 2021-01-04T20:35:33.876Z
-descriptionEN: Rated R - radically redefined retail 
+descriptionEN: 'Rated R: radically redefined retail'
 descriptionFR: frFPO
 category: retail-commerce
 videoID: _KK958OkD6g

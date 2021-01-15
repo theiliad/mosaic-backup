@@ -4,7 +4,7 @@ titleEN: International Square
 titleFR: frFPO
 companyName: Tishman Speyer
 date: 2021-01-01T20:35:33.876Z
-descriptionEN: enFPO
+descriptionEN: Reimagining, repositioning, rebranding.
 descriptionFR: frFPO
 category: brand-development-design
 videoID: _KK958OkD6g
