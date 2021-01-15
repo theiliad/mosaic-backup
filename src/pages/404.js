@@ -13,7 +13,7 @@ class NotFoundPage extends React.Component {
 
         <div class="not-found">
           <div class="not-found-type">
-            <h1>Not found</h1>
+            <h1>404</h1>
           </div>
         </div>
       </Layout>

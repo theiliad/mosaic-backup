@@ -66,10 +66,10 @@ export default {
       fr: FRFPO,
     },
     next: {
-      en: 'Next in thinking',
+      en: 'Next in Thinking',
       fr: FRFPO,
       oneEighty: {
-        en: 'Next in OneEighty',
+        en: '[remove] Next in OneEighty',
         fr: FRFPO,
       },
     },
@@ -121,12 +121,12 @@ export default {
       why: {
         title: {
           en:
-            'We use creativity to drive conversion in different spaces and places.',
+            'We do this by using creativity to drive conversion.',
           fr: FRFPO,
         },
         description: {
           en:
-            'As a truly integrated North American marketing agency, we add depth and meaning to our brands and deliver powerful results by taking every possible consumer touchpoint into consideration.',
+            '[remove] As a truly integrated North American marketing agency, we add depth and meaning to our brands and deliver powerful results by taking every possible consumer touchpoint into consideration.',
           fr: FRFPO,
         },
       },
