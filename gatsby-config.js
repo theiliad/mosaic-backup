@@ -153,6 +153,15 @@ module.exports = {
         icon: `src/img/logo/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#1226aa`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
