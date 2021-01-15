@@ -99,6 +99,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout
+        navIdleLight={true}
         location={this.props.location}
         title={siteTitle}
         backgroundColorsOnScroll={{
@@ -137,7 +138,6 @@ class BlogIndex extends React.Component {
                     <Text tid="pages.index.why.title" />
                   </h2>
                 </div>
-
               </div>
             </div>
           </div>
@@ -211,7 +211,8 @@ class BlogIndex extends React.Component {
 
                 <div className="column is-3-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <p className="secondary">
-                  To effectively drive conversion, we assess every business challenge through six specialized capabilities.
+                    To effectively drive conversion, we assess every business
+                    challenge through six specialized capabilities.
                   </p>
 
                   <Link to="/capabilities" className="button light">
@@ -231,13 +232,14 @@ class BlogIndex extends React.Component {
 
                 <div className="column is-3-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <p className="secondary">
-                  We love a good challenge and when we get one, we look at it
-                  with a 180 view. It’s why we created the OneEighty conference
-                  to analyze the future of culture, commerce and creativity from all angles.
+                    We love a good challenge and when we get one, we look at it
+                    with a 180 view. It’s why we created the OneEighty
+                    conference to analyze the future of culture, commerce and
+                    creativity from all angles.
                   </p>
 
                   <Link to="/thinking/one-eighty" className="button light">
-                  See OneEighty streams
+                    See OneEighty streams
                   </Link>
                 </div>
 

@@ -7,9 +7,13 @@ div.site-header {
   z-index: 99;
   transition: all 0.2s ease-in-out;
 
-  &:not(.white) nav.navbar a.navbar-item.link {
+  &.idle-light nav.navbar a.navbar-item.link {
     color: $colors_white;
   }
+
+  //   &:not(.white) nav.navbar a.navbar-item.link {
+  //     color: $colors_white;
+  //   }
 
   @media (max-width: 768px) {
   }
@@ -42,7 +46,7 @@ nav.navbar {
     font-size: 0.8em;
 
     &:hover {
-    //   color: $colors_gold_primary;
+      //   color: $colors_gold_primary;
       background: none;
     }
 

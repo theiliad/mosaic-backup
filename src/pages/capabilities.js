@@ -43,6 +43,7 @@ class Capabilities extends React.Component {
             </div>
           </div>
         }
+        navIdleLight={true}
       >
         <SEO title="Home" keywords={['TODO']} description="TODO" />
 

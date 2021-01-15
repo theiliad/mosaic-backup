@@ -237,7 +237,8 @@ function Contact({ data, location }) {
             </div>
           </div>
         </>
-      }
+	  }
+	  navIdleLight={true}
       location={location}
       title={siteTitle}
     >
