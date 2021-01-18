@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 // Locale
 import { Text, TextDate } from '../containers/Language'
@@ -12,7 +13,7 @@ import { isBefore } from 'date-fns'
 
 export function ThinkingPostHeader({ post, play, setPlay }) {
   const { frontmatter } = post
-  const isOneEightyPost = frontmatter.category === 'one-eighty'
+  const isOneEightyPost = frontmatter.category === 'oneeighty'
   const isPastSession = isBefore(new Date(frontmatter.date), new Date())
 
   const PostMeta = () => (
@@ -27,10 +28,10 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
       </h1>
 
       <div style={{ fontSize: '0.85em', marginTop: '1.5em' }}>
-        <p className="cp-category">
+        <p className="cp-category cp-regular">
           {isOneEightyPost ? (
             <>
-              <Text variations={CATEGORIES.thinking['one-eighty']} />
+              <Text variations={CATEGORIES.thinking['oneeighty']} />
               {isPastSession ? (
                 <>
                   {' '}
@@ -41,7 +42,9 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
               )}
             </>
           ) : (
-            <Text tid="news.title" />
+            <Link to={`/thinking/${frontmatter.category}`}>
+              <Text variations={CATEGORIES.thinking[frontmatter.category]} />
+            </Link>
           )}
         </p>
 
@@ -58,7 +61,9 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
               <TextDate string={frontmatter.date} />
             </p>
 
-            <p className="cp-author">BY {frontmatter.author || <Text tid="thinking.defaultAuthor" />}</p>
+            <p className="cp-author">
+              BY {frontmatter.author || <Text tid="thinking.defaultAuthor" />}
+            </p>
           </>
         )}
 
@@ -68,7 +73,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
               href="#"
               onClick={e => {
                 e.preventDefault()
-                setPlay(!play)
+                setPlay(frontmatter.videoID)
               }}
             >
               <span>
@@ -89,7 +94,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
     <>
       <div
         className={`post-single-heading thinking ${
-          isOneEightyPost ? 'one-eighty' : ''
+          isOneEightyPost ? 'oneeighty' : ''
         }`}
       >
         <div className="columns post-single cp-desktop">
@@ -151,7 +156,7 @@ export function NewsPostHeader({ post }) {
                   className="cp-category"
                   style={{ textTransform: 'uppercase' }}
                 >
-                  <Text tid="news.title" />
+                  <Link to="/news"><Text tid="news.title" /></Link>
                 </p>
 
                 <p className="cp-date">
@@ -180,45 +185,83 @@ export function PostHeader({ post, play, setPlay }) {
         <div className="container">
           <div className="columns post-single ui-grid">
             <div className="column is-10">
-              <h1 className="cp-title">
-                {frontmatter.companyName} -{' '}
-                <Text
-                  variations={{
-                    en: frontmatter.titleEN,
-                    fr: frontmatter.titleFR,
-                  }}
-                />
-              </h1>
+              <div className="columns">
+                <div className="column is-10">
+                  <p className="cp-company">{frontmatter.companyName}</p>
 
-              <p className="cp-category">
-                <Text
-                  variations={CATEGORIES['case-studies'][frontmatter.category]}
-                />
-              </p>
+                  <h1 className="cp-title">
+                    <Text
+                      variations={{
+                        en: frontmatter.titleEN,
+                        fr: frontmatter.titleFR,
+                      }}
+                    />
+                  </h1>
 
-              <p className="cp-desc">
-                <Text
-                  variations={{
-                    en: frontmatter.descriptionEN,
-                    fr: frontmatter.descriptionFR,
-                  }}
-                />
-              </p>
+                  <p className="cp-desc">
+                    <Text
+                      variations={{
+                        en: frontmatter.descriptionEN,
+                        fr: frontmatter.descriptionFR,
+                      }}
+                    />
+                  </p>
 
-              <p>
-                <a
-                  href="#"
-                  onClick={e => {
-                    e.preventDefault()
-                    setPlay(!play)
-                  }}
-                >
-                  <span>
-                    <BsPlayFill />
-                  </span>
-                  <Text tid="caseStudies.playButton" />
-                </a>
-              </p>
+                  <p className="cp-category cp-regular cp-mobile">
+                    <Text
+                      variations={
+                        CATEGORIES['case-studies'][frontmatter.category]
+                      }
+                    />
+                  </p>
+
+                  <p className="cp-controls">
+                    <a
+                      href="#"
+                      className="cp-watch-case-study"
+                      onClick={e => {
+                        e.preventDefault()
+                        setPlay(frontmatter.caseStudyVideoID)
+                      }}
+                    >
+                      <span>
+                        <BsPlayFill />
+                      </span>
+                      <i>
+                        <Text tid="caseStudies.watchCaseStudy" /> (
+                        {frontmatter.caseStudyVideoDuration})
+                      </i>
+                    </a>
+
+                    <a
+                      href="#"
+                      className="cp-watch-spot"
+                      onClick={e => {
+                        e.preventDefault()
+                        setPlay(frontmatter.spotVideoID)
+                      }}
+                    >
+                      <span>
+                        <BsPlayFill />
+                      </span>
+                      <i>
+                        <Text tid="caseStudies.watchSpot" /> (
+                        {frontmatter.spotVideoDuration})
+                      </i>
+                    </a>
+                  </p>
+                </div>
+
+                <div className="column is-2 cp-wide">
+                  <p className="cp-category cp-regular">
+                    <Text
+                      variations={
+                        CATEGORIES['case-studies'][frontmatter.category]
+                      }
+                    />
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

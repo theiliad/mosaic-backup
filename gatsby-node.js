@@ -53,7 +53,6 @@ exports.createPages = ({ graphql, actions }) => {
                 posttype
                 bodyEN
                 bodyFR
-                videoID
               }
               body
             }

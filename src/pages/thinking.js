@@ -25,7 +25,7 @@ import { isBefore } from 'date-fns'
 const ThinkingItem = ({ node, size }) => {
   const postDate = new Date(node.frontmatter.date)
   const isPastSession = isBefore(postDate, new Date())
-  const isOneEighty = node.frontmatter.category === 'one-eighty'
+  const isOneEighty = node.frontmatter.category === 'oneeighty'
 
   return (
     <Fade key={node.fields.slug} duration={300}>
@@ -96,6 +96,8 @@ const ThinkingItem = ({ node, size }) => {
 }
 
 function Thinking({ data, location }) {
+  const [page, setPage] = useState(1)
+
   const languageContext = useContext(LanguageContext)
   const { dictionary, userLanguage } = languageContext
 
@@ -113,6 +115,9 @@ function Thinking({ data, location }) {
       post => post.node.frontmatter.category === filter
     )
   }
+
+  const postsPerPage = 9
+  const postsToShow = allPosts.slice(0, page * postsPerPage)
 
   return (
     <Layout
@@ -185,7 +190,7 @@ function Thinking({ data, location }) {
                 </div>
               </div>
 
-              {filter === 'one-eighty' && (
+              {filter === 'oneeighty' && (
                 <div className="columns cp-desc">
                   <div className="column is-6 cp-spacer"></div>
 
@@ -212,16 +217,22 @@ function Thinking({ data, location }) {
             >
               <div className="column is-12">
                 <div className="columns is-multiline">
-                  {allPosts.map(({ node }) => (
+                  {postsToShow.map(({ node }) => (
                     <ThinkingItem node={node} size="is-one-third" />
                   ))}
                 </div>
               </div>
             </div>
 
-            <a href="#" className="cp-load-more">
-              <Text tid="thinking.loadMore" />
-            </a>
+            {allPosts.length > page * postsPerPage && (
+              <a href="#" className="cp-load-more" onClick={e => {
+				  e.preventDefault()
+
+				  setPage(page + 1)
+			  }}>
+                <Text tid="thinking.loadMore" />
+              </a>
+            )}
           </div>
         </div>
       </div>

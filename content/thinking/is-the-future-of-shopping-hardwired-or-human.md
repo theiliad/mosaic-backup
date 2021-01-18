@@ -4,7 +4,7 @@ titleEN: Is the future of shopping hardwired or human?
 titleFR: FRFPO
 date: 2020-10-28T03:14:12.599Z
 featuredImage: /img/thinking/can-any-brand-be-a-wellness-brand.jpg
-category: one-eighty
+category: oneeighty
 descriptionEN: The past session of the Mosaic 180 conference that uncovers what the future of shopping holds
 descriptionFR: frFPO
 panel:

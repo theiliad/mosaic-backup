@@ -171,9 +171,9 @@ export const Footer = ({ footerCTA }) => {
             {footerCTA || (
               <h6>
                 <Text tid="footerCTAs.driveConversion" />{' '}
-                <a href="#">
+                <Link to="/contact">
                   <Text tid="footerCTAs.letsChat" />
-                </a>
+                </Link>
               </h6>
             )}
 

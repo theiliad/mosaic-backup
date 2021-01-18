@@ -4,7 +4,7 @@ titleEN: 'The wellness pandemic: How will the new normal drive brand purpose?'
 titleFR: FRFPO
 date: 2020-05-20T03:14:12.599Z
 featuredImage: /img/thinking/can-any-brand-be-a-wellness-brand.jpg
-category: one-eighty
+category: oneeighty
 descriptionEN: The past session of Mosaic 180 conference that uncovers the ways brands must shift to adapt
 descriptionFR: frFPO
 panel:

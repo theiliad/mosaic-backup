@@ -4,7 +4,8 @@ titleEN: 'The Future of Shopping is Both Hardwired and Human: A Mosaic OneEighty
 titleFR: FRFPO
 date: 2020-10-30T03:14:12.599Z
 featuredImage: /img/thinking/the-future-of-shopping-is-both-hardwired-and-human.jpg
-category: one-eighty
+category: oneeighty
+videoID: _KK958OkD6g
 descriptionEN: Learnings from our latest expert panel on the future of shopping
 descriptionFR:
 bodyEN: >-
@@ -66,7 +67,7 @@ bodyEN: >-
   While gaining popularity given the cultural context, our experts expect it to normalize and become part of how a brand activates when it makes sense.
   Pop up has become mainstream but looking forward, the use cases will continue to broaden from product launches to test markets, test layouts and the like.
 
-  
+
   ## DESIGNING FOR THE SHOPPER OF TOMORROW
 
 

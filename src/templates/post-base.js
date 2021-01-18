@@ -39,6 +39,8 @@ import {
   AccordionItemState,
 } from 'react-accessible-accordion'
 
+import { get } from 'lodash-es'
+
 function Post(props) {
   const post = props.data.mdx
   const { frontmatter } = post
@@ -49,6 +51,7 @@ function Post(props) {
   // Type of the post
   const isNewsPost = frontmatter.posttype === 'news'
   const isThinkingPost = frontmatter.posttype === 'thinking'
+  const isOneEightyPost = isThinkingPost && frontmatter.category === 'oneeighty'
 
   const previousPost = props.pageContext.previous
 
@@ -124,12 +127,20 @@ function Post(props) {
       location={props.location}
       title={siteTitle}
       logo={LOGO_OPTIONS.orangeBlue}
+      navIdleLight={isOneEightyPost}
       footerCTA={
         isNewsPost ? (
           <h6>
             <Text tid="footerCTAs.joinTheTeam" />{' '}
             <Link to="/careers">
               <Text tid="footerCTAs.letsChat" />
+            </Link>
+          </h6>
+        ) : isOneEightyPost ? (
+          <h6>
+            <Text tid="footerCTAs.oneEighty" />{' '}
+            <Link to="/contact">
+              <Text tid="footerCTAs.shout" />
             </Link>
           </h6>
         ) : null
@@ -163,7 +174,18 @@ function Post(props) {
                   <MDXRenderer>{post.body}</MDXRenderer>
                 </MDXProvider> */}
 
-                <MDX>
+                <MDX
+                  components={{
+                    a: aProps => {
+                      const aText =
+                        get(aProps, 'children.props.parentName') === 'p'
+                          ? get(aProps, 'children.props.children')
+                          : aProps.children
+
+                      return <a {...aProps}>{aText}</a>
+                    },
+                  }}
+                >
                   {Text({
                     variations: {
                       en: post.frontmatter.bodyEN,
@@ -208,16 +230,16 @@ function Post(props) {
             className="video-overlay"
             onClick={e => {
               e.preventDefault()
-              setPlay(!play)
+              setPlay(null)
             }}
           >
             <div className="cp-content">
-              <a href="#" onClick={e => setPlay(false)}>
+              <a href="#" onClick={e => setPlay(null)}>
                 <IoCloseOutline />
               </a>
 
               <YouTube
-                videoId={post.frontmatter.videoID}
+                videoId={play}
                 opts={{
                   height: '100%',
                   width: '100%',

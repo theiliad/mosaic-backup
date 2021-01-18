@@ -4,7 +4,7 @@ titleEN: Can Any Brand be a Wellness Brand? Mosaic OneEighty Reveals the Signifi
 titleFR: FRFPO
 date: 2020-06-23T03:14:12.599Z
 featuredImage: /img/thinking/can-any-brand-be-a-wellness-brand.jpg
-category: one-eighty
+category: oneeighty
 author: Pauline Critch-Gilfillan
 descriptionEN: How wellness is connecting brands to customers. Mosaic OneEighty and the importance of wellness branding in the here and now.
 descriptionFR: frFPO
@@ -15,15 +15,15 @@ bodyEN: >-
     With new realities come new expectations. People are now viewing brands through three distinctions: “safe or unsafe,” “helpful or unhelpful,” “courageous or cowardly.”   
     
     
-    > This wave of new distinctions has not spared the paradigms of health and wellness. Moving far beyond face masks and spin bikes, the definition of wellness is expanding to include mental health, social connection, and frankly — anything that makes you and your circle feel good. 
-    “Health is not just the absence of disease.”
-    - Dr. Vivien Brown at Mosaic OneEighty
+    > **This wave of new distinctions has not spared the paradigms of health and wellness. Moving far beyond face masks and spin bikes, the definition of wellness is expanding to include mental health, social connection, and frankly — anything that makes you and your circle feel good. 
+    “Health is not just the absence of disease.”**
+    *- Dr. Vivien Brown at Mosaic OneEighty*
 
 
     Michelob ULTRA has taken a new role in home life, bringing virtual workouts to the nation, in support of local gyms and studios. HBO’s latest campaign “It’s OK to not be OK” used faces of their past and present TV series to promote mental health during quarantine.
 
 
-    > “Wellness is no longer just about the individual anymore. It's about the greater collective, and that includes the earth.” - Lana Pawziuk, Digital Director at Canopy Growth, at Mosaic OneEighty
+    > **Wellness is no longer just about the individual anymore. It's about the greater collective, and that includes the earth.** *- Lana Pawziuk, Digital Director at Canopy Growth, at Mosaic OneEighty*
 
 
     All of this change may sound intimidating to us as we sit cozily in our comfort zone. However, there’s great opportunity at hand to move beyond this way of thinking. Brands now have the chance to solidify their purpose in the world, with clarity and freedom.
@@ -59,7 +59,7 @@ bodyEN: >-
     ---
 
 
-    Like this thinking? Head to the [OneEighty](/thinking/one-eighty) section of our website to register for our next discussion, taking place on Wednesday, June 24. 
+    Like this thinking? Head to the [OneEighty](/thinking/oneeighty) section of our website to register for our next discussion, taking place on Wednesday, June 24. 
 bodyFR: >-
     FRFPO
 ---

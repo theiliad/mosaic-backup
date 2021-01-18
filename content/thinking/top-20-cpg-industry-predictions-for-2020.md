@@ -151,7 +151,7 @@ bodyEN: >-
     ## About Acosta
 
 
-    Acosta is the sales and marketing powerhouse behind most of the trusted brands seen in stores every day. The company provides a range of outsourced sales, marketing and retail merchandising services throughout the U.S., Canada and Europe. For 90 years, Acosta has led the industry in helping consumer packaged goods companies move products off shelves and into shoppers’ baskets. For more information, please visit <a href="acosta.com" target="_blank">www.acosta.com</a>
+    Acosta is the sales and marketing powerhouse behind most of the trusted brands seen in stores every day. The company provides a range of outsourced sales, marketing and retail merchandising services throughout the U.S., Canada and Europe. For 90 years, Acosta has led the industry in helping consumer packaged goods companies move products off shelves and into shoppers’ baskets. For more information, please visit <a href="http://acosta.com" target="_blank">www.acosta.com</a>
 
 bodyFR: >-
   frFPO

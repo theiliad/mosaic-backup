@@ -238,7 +238,7 @@ class BlogIndex extends React.Component {
                     creativity from all angles.
                   </p>
 
-                  <Link to="/thinking/one-eighty" className="button light">
+                  <Link to="/thinking/oneeighty" className="button light">
                     See OneEighty streams
                   </Link>
                 </div>

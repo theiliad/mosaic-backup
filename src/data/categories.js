@@ -28,7 +28,7 @@ module.exports = {
     },
   },
   thinking: {
-    'one-eighty': {
+    'oneeighty': {
       en: 'OneEighty',
       fr: FRFPO,
     },

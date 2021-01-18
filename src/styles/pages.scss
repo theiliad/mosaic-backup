@@ -471,9 +471,17 @@ div.pages-careers {
 }
 
 div.pages-sup {
+  .section-title {
+    padding: 3em 0;
+	padding-top: 6em;
+	
+	h1 {
+		font-size: 2em;
+	}
+  }
+
   .section-header {
     padding: 3em 0;
-    padding-top: 6em;
     background: $colors_blue_primary;
     color: #fff;
 
@@ -583,6 +591,58 @@ div.pages-contact {
       margin-top: 2em;
       padding: 1.5em 1.5em;
       font-size: 0.75em;
+    }
+  }
+}
+
+/*
+ *
+	404 page
+ *
+ */
+div.post-single-heading.thinking.fourOFour {
+  position: relative;
+  background: $colors_grey_light url('../img/matrix_grey.svg') repeat;
+  background-size: 1.4em;
+  margin-bottom: 0;
+  overflow: hidden;
+
+  div.cp-meta {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+
+    div.cp-meta-wrap {
+      p {
+        font-size: 1.25em;
+        margin-bottom: 1em;
+      }
+
+      a.button {
+        padding: 1.6em 1.4em;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      top: 40%;
+    }
+  }
+
+  p.cp-ftext {
+    position: absolute;
+    right: 0.1em;
+    bottom: 0;
+    font-size: 16em;
+    line-height: 0.745em;
+    color: $colors_midnight_primary;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14em;
+      right: 50%;
+      transform: translateX(50%);
     }
   }
 }
