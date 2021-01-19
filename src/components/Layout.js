@@ -3,19 +3,14 @@ import { Link } from 'gatsby'
 
 import '../styles/styles.scss'
 
-import { FiArrowUpRight, FiArrowRight, FiChevronDown } from 'react-icons/fi'
-
 // Locale
 import { Text, LanguageContext } from '../containers/Language'
 
 // ICONS
-import { FiInstagram } from 'react-icons/fi'
 import { IoMdClose } from 'react-icons/io'
-import { AiFillFacebook } from 'react-icons/ai'
-import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 
 import ReactTooltip from 'react-tooltip'
-import { StickyContainer, Sticky } from 'react-sticky'
+import { StickyContainer } from 'react-sticky'
 
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -181,12 +176,20 @@ export const Footer = ({ footerCTA }) => {
               <div className="container">
                 <div className="columns is-vcentered">
                   <div className="column is-narrow">
-                    <a href="https://facebook.com/mosaic" target="_blank">
+                    <a
+                      href="https://facebook.com/mosaic"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Facebook
                     </a>
                   </div>
                   <div className="column is-narrow">
-                    <a href="https://instagram.com/mosaicna" target="_blank">
+                    <a
+                      href="https://instagram.com/mosaicna"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Instagram
                     </a>
                   </div>
@@ -194,6 +197,7 @@ export const Footer = ({ footerCTA }) => {
                     <a
                       href="https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       LinkedIn
                     </a>
@@ -375,7 +379,7 @@ const Layout = props => {
               <div className="column close-wrapper">
                 <div className="close">
                   <a
-                    href="#"
+                    href="/"
                     onClick={e => {
                       e.preventDefault()
 

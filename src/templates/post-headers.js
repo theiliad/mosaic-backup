@@ -70,7 +70,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
         {isOneEightyPost && (
           <p className="cp-play">
             <a
-              href="#"
+              href="/"
               onClick={e => {
                 e.preventDefault()
                 setPlay(frontmatter.videoID)
@@ -110,7 +110,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
 
         <div className="post-single cp-mobile">
           <div className="cp-image">
-            <img src={frontmatter.featuredImage} />
+            <img alt={frontmatter.titleEN} src={frontmatter.featuredImage} />
           </div>
 
           <div className="cp-meta">
@@ -156,7 +156,9 @@ export function NewsPostHeader({ post }) {
                   className="cp-category"
                   style={{ textTransform: 'uppercase' }}
                 >
-                  <Link to="/news"><Text tid="news.title" /></Link>
+                  <Link to="/news">
+                    <Text tid="news.title" />
+                  </Link>
                 </p>
 
                 <p className="cp-date">
@@ -165,6 +167,7 @@ export function NewsPostHeader({ post }) {
               </div>
 
               <img
+                alt={frontmatter.titleEN}
                 src={frontmatter.featuredImage}
                 style={{ width: '100%', marginTop: '1.5em' }}
               />
@@ -217,7 +220,7 @@ export function PostHeader({ post, play, setPlay }) {
 
                   <p className="cp-controls">
                     <a
-                      href="#"
+                      href="/"
                       className="cp-watch-case-study"
                       onClick={e => {
                         e.preventDefault()
@@ -234,7 +237,7 @@ export function PostHeader({ post, play, setPlay }) {
                     </a>
 
                     <a
-                      href="#"
+                      href="/"
                       className="cp-watch-spot"
                       onClick={e => {
                         e.preventDefault()
@@ -267,7 +270,7 @@ export function PostHeader({ post, play, setPlay }) {
         </div>
       </div>
 
-      <img src={frontmatter.featuredImage} style={{ width: '100%' }} />
+      <img alt={frontmatter.titleEN} src={frontmatter.featuredImage} style={{ width: '100%' }} />
     </>
   )
 }

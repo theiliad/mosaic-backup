@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import Carousel from '../components/Carousel'
 
 // Locale
 import { Text } from '../containers/Language'
@@ -14,8 +15,6 @@ import CATEGORIES from '../data/categories'
 
 // Assets
 import LOGO_WHITE from '../img/logo/white-transparent.svg'
-import DEMO_1 from '../img/demo/1.jpg'
-import DEMO_2 from '../img/demo/2.jpg'
 import DEMO_3 from '../img/demo/3.jpg'
 import HOME_HERO from '../img/home/hero.jpg'
 
@@ -257,6 +256,29 @@ class BlogIndex extends React.Component {
               <h3>Our partners</h3>
             </div>
 
+            <Carousel
+              slides={[
+                {
+                  src: ANHEUSER_BUSCH,
+                  alt: 'Anheuser-Busch',
+                },
+                { src: DR_OETKER, alt: 'Dr. Oetker' },
+                { src: GENERAL_MILLS, alt: 'General Mills' },
+                { src: GOOGLE, alt: 'Google' },
+                { src: IG_WEALTH_MANAGEMENT, alt: 'IG Wealth Management' },
+                { src: IMPOSSIBLE, alt: 'Impossible' },
+                { src: KRAFT_HEINZ, alt: 'Kraft Heinz' },
+                { src: LABATT, alt: 'Labatt' },
+                { src: LOBLAWS, alt: 'Loblaws' },
+                { src: MACKENZIE_INVESTMENTS, alt: 'Mackenzie Investments' },
+                { src: RBC, alt: 'RBC' },
+                { src: SAMSUNG, alt: 'Samsung' },
+                { src: SHOPPERS_DRUG_MART, alt: 'Shoppers Drug Mart' },
+                { src: STARBUCKS, alt: 'Starbucks' },
+                { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' }
+              ]}
+            />
+{/* 
             <div class="slider">
               <div class="slide-track">
                 <div class="slide">
@@ -313,7 +335,7 @@ class BlogIndex extends React.Component {
                   <img src={TISHMAN_SPEYER} alt="Tishman Speyer" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Layout>

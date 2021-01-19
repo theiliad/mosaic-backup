@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Link, graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from '@mdx-js/react'
+import { Link } from 'gatsby'
+// import { MDXRenderer } from 'gatsby-plugin-mdx'
+// import { MDXProvider } from '@mdx-js/react'
 import MDX from '@mdx-js/runtime'
 
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
@@ -108,7 +108,7 @@ function Post(props) {
             <a
               href={member.linkedin}
               target="_blank"
-              rel="nofollow"
+              rel="noopener noreferrer"
               className="cp-linkedin"
             >
               <span>
@@ -231,10 +231,11 @@ function Post(props) {
             onClick={e => {
               e.preventDefault()
               setPlay(null)
-            }}
+			}}
+			role="presentation"
           >
             <div className="cp-content">
-              <a href="#" onClick={e => setPlay(null)}>
+              <a href="/" onClick={e => setPlay(null)}>
                 <IoCloseOutline />
               </a>
 

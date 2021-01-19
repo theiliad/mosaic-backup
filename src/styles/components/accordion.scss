@@ -37,7 +37,8 @@
     font-size: 1.25em;
     position: absolute;
     right: 1.2em;
-    top: 2.5em;
+    top: 50%;
+    transform: translateY(-50%);
     color: $colors_midnight_primary;
   }
 

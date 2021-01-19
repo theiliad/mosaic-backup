@@ -57,7 +57,7 @@ const ThinkingItem = ({ node, size }) => {
               <span className="column is-narrow cp-play">
                 <p>
                   <a
-                    href="#"
+                    href="/"
                     onClick={e => {
                       e.preventDefault()
                     }}
@@ -124,6 +124,16 @@ function Thinking({ data, location }) {
       location={location}
       title={siteTitle}
       logo={LOGO_OPTIONS.orangeBlue}
+      footerCTA={
+        filter === "oneeighty" ? (
+          <h6>
+            <Text tid="footerCTAs.oneEighty" />{' '}
+            <Link to="/contact">
+              <Text tid="footerCTAs.shout" />
+            </Link>
+          </h6>
+        ) : null
+      }
       HeaderExtension={
         <div className="header_extension thinking">
           <div class="bg">
@@ -225,11 +235,15 @@ function Thinking({ data, location }) {
             </div>
 
             {allPosts.length > page * postsPerPage && (
-              <a href="#" className="cp-load-more" onClick={e => {
-				  e.preventDefault()
+              <a
+                href="/"
+                className="cp-load-more"
+                onClick={e => {
+                  e.preventDefault()
 
-				  setPage(page + 1)
-			  }}>
+                  setPage(page + 1)
+                }}
+              >
                 <Text tid="thinking.loadMore" />
               </a>
             )}

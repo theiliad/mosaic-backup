@@ -8,7 +8,6 @@ import SEO from '../components/seo'
 import { Text } from '../containers/Language'
 
 // Assets
-import LOGO_WHITE from '../img/logo/white-transparent.svg'
 import DEMO_3 from '../img/demo/3.jpg'
 import DEMO_4 from '../img/demo/4.jpg'
 

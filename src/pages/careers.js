@@ -25,11 +25,7 @@ class Careers extends React.Component {
           </div>
         }
       >
-        <SEO
-          title="TODO"
-          keywords={['TODO']}
-          image={null}
-        />
+        <SEO title="TODO" keywords={['TODO']} image={null} />
 
         <div className="pages-careers">
           <div className="section-careers">
@@ -44,7 +40,12 @@ class Careers extends React.Component {
                     <Text tid="pages.careers.description" />
                   </p>
 
-                  <a href="https://www.mosaicjobs.com/" target="_blank" className="button primary">
+                  <a
+                    href="https://www.mosaicjobs.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button primary"
+                  >
                     <Text tid="pages.careers.cta" /> <RiArrowRightUpLine />
                   </a>
                 </div>

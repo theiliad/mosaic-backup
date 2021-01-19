@@ -163,70 +163,74 @@ div.pages-index {
       margin-bottom: 2em;
     }
 
-    @mixin white-gradient {
-      background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
+    div.embla__slide {
+      min-width: 320px;
     }
 
-    $animationSpeed: 40s;
+    // @mixin white-gradient {
+    //   background: linear-gradient(
+    //     to right,
+    //     rgba(255, 255, 255, 1) 0%,
+    //     rgba(255, 255, 255, 0) 100%
+    //   );
+    // }
 
-    // Animation
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(calc(-250px * 7));
-      }
-    }
+    // $animationSpeed: 40s;
 
-    // Styling
-    .slider {
-      height: 320px;
-      margin: auto;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
+    // // Animation
+    // @keyframes scroll {
+    //   0% {
+    //     transform: translateX(0);
+    //   }
+    //   100% {
+    //     transform: translateX(calc(-250px * 7));
+    //   }
+    // }
 
-      //   &::before,
-      //   &::after {
-      //     // @include white-gradient;
-      //     content: '';
-      //     position: absolute;
-      //     height: 400px;
-      //     width: 400px;
-      //     z-index: 2;
-      //   }
+    // // Styling
+    // .slider {
+    //   height: 320px;
+    //   margin: auto;
+    //   overflow: hidden;
+    //   position: relative;
+    //   width: 100%;
 
-      &::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-      }
+    //   //   &::before,
+    //   //   &::after {
+    //   //     // @include white-gradient;
+    //   //     content: '';
+    //   //     position: absolute;
+    //   //     height: 400px;
+    //   //     width: 400px;
+    //   //     z-index: 2;
+    //   //   }
 
-      &::before {
-        left: 0;
-        top: 0;
-      }
+    //   &::after {
+    //     right: 0;
+    //     top: 0;
+    //     transform: rotateZ(180deg);
+    //   }
 
-      img {
-        width: 80%;
-      }
+    //   &::before {
+    //     left: 0;
+    //     top: 0;
+    //   }
 
-      .slide-track {
-        animation: scroll $animationSpeed linear infinite;
-        display: flex;
-        width: calc(450px * 16);
-      }
+    //   img {
+    //     width: 80%;
+    //   }
 
-      .slide {
-        height: 320px;
-        width: 400px;
-      }
-    }
+    //   .slide-track {
+    //     animation: scroll $animationSpeed linear infinite;
+    //     display: flex;
+    //     width: calc(450px * 16);
+    //   }
+
+    //   .slide {
+    //     height: 320px;
+    //     width: 400px;
+    //   }
+    // }
   }
 }
 
@@ -473,11 +477,11 @@ div.pages-careers {
 div.pages-sup {
   .section-title {
     padding: 3em 0;
-	padding-top: 6em;
-	
-	h1 {
-		font-size: 2em;
-	}
+    padding-top: 6em;
+
+    h1 {
+      font-size: 2em;
+    }
   }
 
   .section-header {
