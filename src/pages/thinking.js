@@ -16,6 +16,7 @@ import CATEGORIES from '../data/categories'
 
 // Icons
 import { BsPlayFill } from 'react-icons/bs'
+import { VscChevronDown } from 'react-icons/vsc'
 
 import Fade from 'react-reveal/Fade'
 
@@ -119,13 +120,26 @@ function Thinking({ data, location }) {
   const postsPerPage = 12
   const postsToShow = allPosts.slice(0, page * postsPerPage)
 
+  const [sideNav, setSideNav] = useState(false)
+  const handleSideNavToggle = e => {
+    if (e) e.preventDefault()
+
+    if (sideNav === true) {
+      document.querySelector('html').style.overflowY = 'auto'
+    } else {
+      document.querySelector('html').style.overflowY = 'hidden'
+    }
+
+    setSideNav(!sideNav)
+  }
+
   return (
     <Layout
       location={location}
       title={siteTitle}
       logo={LOGO_OPTIONS.orangeBlue}
       footerCTA={
-        filter === "oneeighty" ? (
+        filter === 'oneeighty' ? (
           <h6>
             <Text tid="footerCTAs.oneEighty" />{' '}
             <Link to="/contact">
@@ -167,35 +181,19 @@ function Thinking({ data, location }) {
                       ))}
                     </ul>
 
-                    <div className="select">
-                      <select
-                        onChange={e => {
-                          const filterTo = e.target.value
+                    <a
+                      className="button primary"
+                      href="/"
+                      onClick={handleSideNavToggle}
+                    >
+                      {filter === null ? (
+                        <Text tid="misc.all" />
+                      ) : (
+                        <Text variations={CATEGORIES.thinking[filter]} />
+                      )}
 
-                          navigate(`/thinking/${filterTo}`)
-                        }}
-                      >
-                        <option value="" selected={filter === null}>
-                          {getText({
-                            tid: 'misc.all',
-                            dictionary,
-                            userLanguage,
-                          })}
-                        </option>
-                        {Object.keys(CATEGORIES.thinking).map(categoryKey => (
-                          <option
-                            value={categoryKey}
-                            selected={filter === categoryKey}
-                          >
-                            {getText({
-                              variations: CATEGORIES.thinking[categoryKey],
-                              dictionary,
-                              userLanguage,
-                            })}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
+                      <VscChevronDown />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -217,6 +215,37 @@ function Thinking({ data, location }) {
       }
     >
       <SEO title="Thinking" keywords={['Thinking']} image={null} />
+
+      <div className={'sidenav thinking' + (sideNav ? ' open' : '')}>
+        <div className="container cp-content">
+          <h3>
+            <Text tid="thinking.title" />
+          </h3>
+
+          <div className="links">
+            {Object.keys(CATEGORIES.thinking).map(categoryKey => (
+              <Link
+                to={`/thinking/${categoryKey}`}
+                className={filter === categoryKey ? 'active' : ''}
+              >
+                <Text variations={CATEGORIES.thinking[categoryKey]} />
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className="close">
+          <a
+            href="/"
+            onClick={e => {
+              e.preventDefault()
+
+              handleSideNavToggle()
+            }}
+          >
+            <Text tid="misc.close" />
+          </a>
+        </div>
+      </div>
 
       <div className="pages-index pages-thinking">
         <div className="section-thinking">

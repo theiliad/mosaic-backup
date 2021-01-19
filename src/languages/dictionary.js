@@ -262,7 +262,7 @@ export default {
       title: {
         en: (
           <>
-            Let’s
+            Let’s{` `}
             <br />
             chat.
           </>
@@ -331,17 +331,16 @@ export default {
         message: {
           en: (
             <>
-              <h1>We've got your message</h1>
               <p>
-                We value your business. Our team will get in touch with you
-                shortly.
+                Sent! Thanks for the message. We’ll get back to you as soon as
+                we can.
               </p>
             </>
           ),
           fr: FRFPO,
         },
         cta: {
-          en: 'Continue Browsing',
+          en: 'Start another message',
           fr: FRFPO,
         },
       },
@@ -678,6 +677,10 @@ export default {
   misc: {
     all: {
       en: 'All posts',
+      fr: FRFPO,
+    },
+    close: {
+      en: 'Close',
       fr: FRFPO,
     },
   },

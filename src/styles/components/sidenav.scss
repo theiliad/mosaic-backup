@@ -58,9 +58,9 @@ div.sidenav {
     text-align: center;
     margin-top: 2em;
 
-	a img {
-		height: 6em;
-	}
+    a img {
+      height: 6em;
+    }
 
     div.links {
       max-height: calc(100vh - 7em);
@@ -106,6 +106,40 @@ div.sidenav {
           padding-top: 0.3em;
         }
       }
+    }
+  }
+
+  &.thinking {
+    background: $colors_midnight_primary url('../img/matrix.svg') repeat;
+    background-size: 1.4em;
+
+    h3 {
+      font-size: 2.5em;
+      color: #fff;
+      text-align: left;
+    }
+
+    div.cp-content {
+      padding-top: 2em;
+
+      div.links a {
+        text-align: left;
+		font-size: 1.25em;
+		
+		&.active {
+			color: $colors_orange_primary;
+			text-decoration: underline;
+		}
+      }
+    }
+
+    div.close {
+      position: absolute;
+      bottom: 2em;
+      left: 0;
+      width: 100%;
+	  text-align: center;
+	  text-transform: uppercase;
     }
   }
 }

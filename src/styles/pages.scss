@@ -576,7 +576,26 @@ div.pages-contact {
         line-height: 1.3em;
         margin-top: -0.2em;
         @include Roobert_SemiBold;
+
+        @media screen and (max-width: 768px) {
+          font-size: 2em;
+          line-height: 1em;
+
+          br {
+            display: none;
+          }
+        }
       }
+    }
+
+    @media screen and (max-width: 768px) {
+      div.column.is-1 {
+		  display: none;
+	  }
+    }
+
+    p.is-danger {
+      color: $colors_red_primary;
     }
 
     input,
@@ -585,6 +604,17 @@ div.pages-contact {
       background: transparent;
       border: 1px solid $colors_midnight_secondary;
       box-shadow: none;
+
+      &.is-danger {
+        border-color: $colors_red_primary;
+        border-width: 2px;
+      }
+
+      &:active,
+      &:focus {
+        border-width: 2px;
+        border-color: $colors_blue_primary;
+      }
     }
 
     div.select::after {
@@ -595,6 +625,15 @@ div.pages-contact {
       margin-top: 2em;
       padding: 1.5em 1.5em;
       font-size: 0.75em;
+    }
+  }
+
+  div.cp-success {
+    p {
+      font-size: 1.75em;
+      color: $colors_blue_primary;
+      max-width: 500px;
+      margin-bottom: 1em;
     }
   }
 }
