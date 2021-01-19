@@ -408,7 +408,8 @@ div.post-body {
       }
 
       span {
-        text-decoration: underline;
+      border-bottom: 1px solid transparent;
+      @include transition_default;
       }
 
       svg {
@@ -435,7 +436,7 @@ div.post {
 
     @media screen and (max-width: 768px) {
       border-top: none;
-      margin-bottom: 3em;
+      margin-bottom: 6em;
     }
   }
 
@@ -469,8 +470,8 @@ div.post {
       color: $colors_blue_primary;
       border: none;
       border-radius: 0;
-      padding: 2em 2em;
-      font-size: 1.25em;
+      padding: 3em 2.2em;
+      font-size: 2.4vw;
       @include transition_default;
 
       &:last-child {
@@ -479,8 +480,9 @@ div.post {
 
       @media screen and (min-width: 769px) {
         &:hover {
-          background-color: $colors_blue_primary;
-          color: #fff;
+          color: $colors_red_primary;
+          text-decoration: underline;
+          @include transition_default;
         }
       }
 
@@ -490,6 +492,7 @@ div.post {
 
       @media screen and (max-width: 768px) {
         padding: 0.5em 2em;
+        font-size: 1.5em;
       }
     }
   }
