@@ -249,100 +249,88 @@ function Contact({ data, location }) {
         <div className="pages-index pages-contact">
           <div className="form">
             <div className="container page">
-              {!success && (
-                <div className="columns">
-                  <div className="column is-4 contact-info">
-                    <h5>
-                      <Text tid="pages.contact.title" />
-                    </h5>
-                  </div>
+              <div className="columns">
+                <div className="column is-4 contact-info">
+                  <h5>
+                    <Text tid="pages.contact.title" />
+                  </h5>
+                </div>
 
-                  <div className="column is-1"></div>
+                <div className="column is-1"></div>
 
-                  <div className="column is-7">
-                    <form
-                      name="contact"
-                      method="post"
-                      action="/thanks/"
-                      data-netlify="true"
-                      data-netlify-honeypot="bot-field"
-                      style={{
-                        display: 'block',
-                        height: 0,
-                        visibility: 'hidden',
-                        opacity: '0',
-                      }}
-                    >
-                      <input type="hidden" name="form-name" value="contact" />
+                <div className="column is-7">
+                  {!success && (
+                    <>
+                      <form
+                        name="contact"
+                        method="post"
+                        action="/thanks/"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        style={{
+                          display: 'block',
+                          height: 0,
+                          visibility: 'hidden',
+                          opacity: '0',
+                        }}
+                      >
+                        <input type="hidden" name="form-name" value="contact" />
 
-                      {formItems.map(formItem => (
-                        <>
-                          {!formItem.type && (
-                            <input id={formItem.name} name={formItem.name} />
-                          )}
+                        {formItems.map(formItem => (
+                          <>
+                            {!formItem.type && (
+                              <input id={formItem.name} name={formItem.name} />
+                            )}
 
-                          {formItem.type === 'select' && (
-                            <div class="select">
-                              <select id={formItem.name} name={formItem.name}>
-                                <option>General inquiries</option>
-                                <option>Support</option>
-                              </select>
-                            </div>
-                          )}
+                            {formItem.type === 'select' && (
+                              <div class="select">
+                                <select id={formItem.name} name={formItem.name}>
+                                  <option>General inquiries</option>
+                                  <option>Support</option>
+                                </select>
+                              </div>
+                            )}
 
-                          {formItem.type === 'textarea' && (
-                            <textarea
-                              id={formItem.name}
-                              name={formItem.name}
-                            ></textarea>
-                          )}
-                        </>
-                      ))}
-                    </form>
+                            {formItem.type === 'textarea' && (
+                              <textarea
+                                id={formItem.name}
+                                name={formItem.name}
+                              ></textarea>
+                            )}
+                          </>
+                        ))}
+                      </form>
 
-                    <FormValidation
-                      onSubmit={handleSubmit}
-                      config={config}
-                      onSubmit={handleSubmit}
-                    >
-                      {({ fields, errors, submitted }) => (
-                        <>
-                          <div>
-                            {formItems.map(formItem => (
-                              <div
-                                className="field"
-                                key={`formItem-${formItem.name}`}
-                              >
-                                <label
-                                  className="label"
-                                  for={`mc-${formItem.name}`}
+                      <FormValidation
+                        onSubmit={handleSubmit}
+                        config={config}
+                        onSubmit={handleSubmit}
+                      >
+                        {({ fields, errors, submitted }) => (
+                          <>
+                            <div>
+                              {formItems.map(formItem => (
+                                <div
+                                  className="field"
+                                  key={`formItem-${formItem.name}`}
                                 >
-                                  {formItem.title +
-                                    (!config[formItem.name].isRequired
-                                      ? ` (${getText({
-                                          tid:
-                                            'pages.contact.formItems.optional',
-                                          dictionary,
-                                          userLanguage,
-                                        })})`
-                                      : '')}
-                                </label>
-                                <div className="control">
-                                  {!formItem.type && (
-                                    <input
-                                      className={`input ${
-                                        submitted && errors[formItem.name]
-                                          ? 'is-danger'
-                                          : ''
-                                      }`}
-                                      id={`mc-${formItem.name}`}
-                                      name={formItem.name}
-                                    />
-                                  )}
-
-                                  {formItem.type === 'select' && (
-                                    <div class="select">
-                                      <select
+                                  <label
+                                    className="label"
+                                    for={`mc-${formItem.name}`}
+                                  >
+                                    {formItem.title +
+                                      (!config[formItem.name].isRequired
+                                        ? ` (${getText({
+                                            tid:
+                                              'pages.contact.formItems.optional',
+                                            dictionary,
+                                            userLanguage,
+                                          })})`
+                                        : '')}
+                                  </label>
+                                  <div className="control">
+                                    {!formItem.type && (
+                                      <input
                                         className={`input ${
                                           submitted && errors[formItem.name]
                                             ? 'is-danger'
@@ -350,69 +338,89 @@ function Contact({ data, location }) {
                                         }`}
                                         id={`mc-${formItem.name}`}
                                         name={formItem.name}
-                                      >
-                                        <option>General inquiries</option>
-                                        <option>Support</option>
-                                      </select>
-                                    </div>
-                                  )}
+                                      />
+                                    )}
 
-                                  {formItem.type === 'textarea' && (
-                                    <textarea
-                                      className={`textarea ${
-                                        submitted && errors[formItem.name]
-                                          ? 'is-danger'
-                                          : ''
-                                      }`}
-                                      id={`mc-${formItem.name}`}
-                                      name={formItem.name}
-                                    ></textarea>
+                                    {formItem.type === 'select' && (
+                                      <div class="select">
+                                        <select
+                                          className={`input ${
+                                            submitted && errors[formItem.name]
+                                              ? 'is-danger'
+                                              : ''
+                                          }`}
+                                          id={`mc-${formItem.name}`}
+                                          name={formItem.name}
+                                        >
+                                          <option>General inquiries</option>
+                                          <option>Support</option>
+                                        </select>
+                                      </div>
+                                    )}
+
+                                    {formItem.type === 'textarea' && (
+                                      <textarea
+                                        className={`textarea ${
+                                          submitted && errors[formItem.name]
+                                            ? 'is-danger'
+                                            : ''
+                                        }`}
+                                        id={`mc-${formItem.name}`}
+                                        name={formItem.name}
+                                      ></textarea>
+                                    )}
+                                  </div>
+
+                                  {submitted && errors[formItem.name] && (
+                                    <p className="help is-danger">
+                                      {errors[formItem.name]}
+                                    </p>
                                   )}
                                 </div>
-
-                                {submitted && errors[formItem.name] && (
-                                  <p className="help is-danger">
-                                    {errors[formItem.name]}
-                                  </p>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-
-                          <div>
-                            <button
-                              type="submit"
-                              className={`cp-button button primary ${
-                                loading ? 'is-loading' : ''
-                              }`}
-                            >
-                              <Text tid="pages.contact.formItems.send" />
-                            </button>
-                          </div>
-
-                          {error && (
-                            <div className="notification is-danger marginTop">
-                              <span>
-                                <Text tid="pages.contact.formItems.error" />
-                              </span>
+                              ))}
                             </div>
-                          )}
-                        </>
-                      )}
-                    </FormValidation>
-                  </div>
-                </div>
-              )}
 
-              {success && (
-                <div className="aligncenter cp-success">
-                  <Text tid="pages.contact.formSubmitted.message" />
+                            <div>
+                              <button
+                                type="submit"
+                                className={`cp-button button primary ${
+                                  loading ? 'is-loading' : ''
+                                }`}
+                              >
+                                <Text tid="pages.contact.formItems.send" />
+                              </button>
+                            </div>
 
-                  <Link to="/" className="button primary">
-                    <Text tid="pages.contact.formSubmitted.cta" />
-                  </Link>
+                            {error && (
+                              <div className="notification is-danger marginTop">
+                                <span>
+                                  <Text tid="pages.contact.formItems.error" />
+                                </span>
+                              </div>
+                            )}
+                          </>
+                        )}
+                      </FormValidation>
+                    </>
+                  )}
+
+                  {success && (
+                    <div className="cp-success">
+                      <Text tid="pages.contact.formSubmitted.message" />
+
+                      <a href="/" className="button primary" onClick={e => {
+						  e.preventDefault()
+
+						  if (typeof window !== undefined) {
+							window.location.reload()
+						  }
+					  }}>
+                        <Text tid="pages.contact.formSubmitted.cta" />
+                      </a>
+                    </div>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>

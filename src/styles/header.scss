@@ -62,7 +62,7 @@ nav.navbar {
 
   .navbar-burger {
     transform: translateX(1.13rem);
-    color: $colors_white;
+    color: $colors_blue_primary;
 
     span {
       height: 1px;
@@ -129,6 +129,12 @@ nav.navbar {
         }
       }
     }
+  }
+}
+
+div.site-header.idle-light {
+  .navbar-burger {
+    color: $colors_white;
   }
 }
 

@@ -39,6 +39,10 @@ import {
   AccordionItemState,
 } from 'react-accessible-accordion'
 
+// Copy to cliboard
+import { Slide, toast } from 'react-toastify'
+import { copyToClipboard } from '../utils'
+
 import { get } from 'lodash-es'
 
 function Post(props) {
@@ -231,8 +235,8 @@ function Post(props) {
             onClick={e => {
               e.preventDefault()
               setPlay(null)
-			}}
-			role="presentation"
+            }}
+            role="presentation"
           >
             <div className="cp-content">
               <a href="/" onClick={e => setPlay(null)}>
@@ -289,7 +293,26 @@ function Post(props) {
               </div>
 
               <div className="column">
-                <button class="button is-medium">Copy link</button>{' '}
+                <button
+                  class="button is-medium"
+                  onClick={e => {
+                    copyToClipboard(`https://mosaic.com/${post.fields.slug}`)
+
+                    toast('Copied to clipboard!', {
+                      position: 'bottom-right',
+                      autoClose: 3000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      type: toast.TYPE.SUCCESS,
+                      transition: Slide,
+                    })
+                  }}
+                >
+                  Copy link
+                </button>{' '}
               </div>
             </div>
           </div>

@@ -120,7 +120,7 @@ class Header extends React.Component {
                 </a>
               </div>
 
-              <div id="navbarBasicExample" className="navbar-menu">
+              <div className="navbar-menu">
                 <div className="navbar-start"></div>
 
                 <div className="navbar-end">
