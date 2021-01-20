@@ -28,15 +28,112 @@ class Capabilities extends React.Component {
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
                 <div className="container">
-                  <h1>
-                    <span>
-                      <Text tid="pages.capabilities.title" />
-                    </span>
-                  </h1>
+                  <div className="columns">
+                    <div className="column">
+                      <h1>
+                        <span>
+                          <Text tid="pages.capabilities.title" />
+                        </span>
+                      </h1>
 
-                  <p>
-                    <Text tid="pages.capabilities.title.text" />
-                  </p>
+                      <p>
+                        <Text tid="pages.capabilities.title.text" />
+                      </p>
+                    </div>
+
+                    <div className="column cp-img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="543.572021484375"
+                        height="646.9089965820312"
+                        viewBox="0 0 543.572 646.909"
+                      >
+                        <g
+                          id="Group_997"
+                          data-name="Group 997"
+                          transform="translate(-533.816 -129.672)"
+                        >
+                          <path
+                            id="Path_1190"
+                            data-name="Path 1190"
+                            d="M804.347,769.674,537.061,610.2V291.242L804.347,450.72Z"
+                            transform="translate(1.255 2.407)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-1"
+                          ></path>
+                          <path
+                            id="Path_1191"
+                            data-name="Path 1191"
+                            d="M801.084,769.674,1068.37,610.2V291.242L801.084,450.72Z"
+                            transform="translate(4.518 2.407)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-2"
+                          ></path>
+                          <path
+                            id="Path_1192"
+                            data-name="Path 1192"
+                            d="M537.061,612.143,804.347,452.666V133.712L537.061,293.189Z"
+                            transform="translate(1.255 0.46)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-3"
+                          ></path>
+                          <path
+                            id="Path_1193"
+                            data-name="Path 1193"
+                            d="M537.061,293.189,804.347,452.666l267.286-159.477L804.347,133.712Z"
+                            transform="translate(1.255 0.46)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-4"
+                          ></path>
+                          <path
+                            id="Path_1194"
+                            data-name="Path 1194"
+                            d="M537.061,608.25,804.347,767.727,1071.632,608.25,804.347,448.773Z"
+                            transform="translate(1.255 4.354)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-5"
+                          ></path>
+                          <path
+                            id="Path_1195"
+                            data-name="Path 1195"
+                            d="M804.347,769.674,537.061,291.242h534.572Z"
+                            transform="translate(1.255 2.407)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-6"
+                          ></path>
+                          <path
+                            id="Path_1196"
+                            data-name="Path 1196"
+                            d="M804.347,133.712,537.061,612.143h534.572Z"
+                            transform="translate(1.255 0.46)"
+                            fill="none"
+                            stroke="#ffffff"
+                            stroke-linejoin="round"
+                            stroke-width="9"
+                            class="svg-elem-7"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
