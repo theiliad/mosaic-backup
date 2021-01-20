@@ -596,7 +596,13 @@ div.pages-contact {
 
     p.is-danger {
       color: $colors_red_primary;
-    }
+	}
+	
+	label {
+		color: $colors_midnight_primary;
+		font-size: 0.8em;
+		@include Roobert_Medium;
+	}
 
     input,
     textarea,
@@ -615,7 +621,13 @@ div.pages-contact {
         border-width: 2px;
         border-color: $colors_blue_primary;
       }
-    }
+	}
+	
+	select {
+		@include Roobert_Medium;
+		color: $colors_midnight_primary;
+		font-size: 1em;
+	}
 
     div.select::after {
       border-color: $colors_midnight_primary;

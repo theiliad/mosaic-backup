@@ -278,64 +278,6 @@ class BlogIndex extends React.Component {
                 { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' }
               ]}
             />
-{/* 
-            <div class="slider">
-              <div class="slide-track">
-                <div class="slide">
-                  <img
-                    src={ANHEUSER_BUSCH}
-                    height="800"
-                    width="800"
-                    alt="Anheuser-Busch"
-                  />
-                </div>
-                <div class="slide">
-                  <img src={DR_OETKER} alt="Dr. Oetker" />
-                </div>
-                <div class="slide">
-                  <img src={GENERAL_MILLS} alt="General Mills" />
-                </div>
-                <div class="slide">
-                  <img src={GOOGLE} alt="Google" />
-                </div>
-                <div class="slide">
-                  <img src={IG_WEALTH_MANAGEMENT} alt="IG Wealth Management" />
-                </div>
-                <div class="slide">
-                  <img src={IMPOSSIBLE} alt="Impossible" />
-                </div>
-                <div class="slide">
-                  <img src={KRAFT_HEINZ} alt="Kraft Heinz" />
-                </div>
-                <div class="slide">
-                  <img src={LABATT} alt="Labatt" />
-                </div>
-                <div class="slide">
-                  <img src={LOBLAWS} alt="Loblaws" />
-                </div>
-                <div class="slide">
-                  <img
-                    src={MACKENZIE_INVESTMENTS}
-                    alt="Mackenzie Investments"
-                  />
-                </div>
-                <div class="slide">
-                  <img src={RBC} alt="RBC" />
-                </div>
-                <div class="slide">
-                  <img src={SAMSUNG} alt="Samsung" />
-                </div>
-                <div class="slide">
-                  <img src={SHOPPERS_DRUG_MART} alt="Shoppers Drug Mart" />
-                </div>
-                <div class="slide">
-                  <img src={STARBUCKS} alt="Starbucks" />
-                </div>
-                <div class="slide">
-                  <img src={TISHMAN_SPEYER} alt="Tishman Speyer" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </Layout>

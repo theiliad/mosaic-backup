@@ -30,7 +30,7 @@ const EmblaCarousel = ({ slides }) => {
                 <img
                   className="embla__slide__img"
                   src={slide.src}
-                  alt="A cool cat."
+                  alt={slide.alt}
                 />
               </div>
             </div>
