@@ -29,6 +29,10 @@ bodyEN: >-
 
 
   In total, Pixelville surpassed its goals with **46% conversion from intercept to demo, +35pt lift in purchase consideration for Pixel 4,** and **+15pt lift in purchase consideration for Nest Mini.**
+
+    ![Google Pixelville Space](/img/case-studies/google/google-pixelville-space.jpg)
+    ![Google Pixelville Activations](/img/case-studies/google/google-pixelville-activations.jpg)
+    ![Google Pixelville Billboard](/img/case-studies/google/google-pixelville-billboard.jpg)
 bodyFR: >-
   FRFPO
 ---

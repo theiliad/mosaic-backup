@@ -17,7 +17,7 @@ export default {
       fr: FRFPO,
     },
     oneEighty: {
-      en: 'Have a question about OneEighty',
+      en: 'Have a question about OneEighty?',
       fr: FRFPO,
     },
     shout: {
@@ -679,8 +679,8 @@ export default {
       en: 'All posts',
       fr: FRFPO,
     },
-    close: {
-      en: 'Close',
+    cancel: {
+      en: 'Cancel',
       fr: FRFPO,
     },
   },

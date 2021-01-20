@@ -264,6 +264,7 @@ div.post-body {
   margin-top: 4em;
   margin-bottom: 7em;
   color: $colors_midnight_primary;
+  @include Roobert_Regular;
 
   a.cp-apply {
     padding: 1.5em;
@@ -383,10 +384,12 @@ div.post-body {
       color: $colors_midnight_secondary;
       margin-bottom: 0;
       line-height: 1em;
+      @include Roobert-Medium;
     }
 
     p.cp-name {
       margin-bottom: 0;
+      @include Roobert-Medium;
     }
 
     p.cp-title {
@@ -394,6 +397,7 @@ div.post-body {
       line-height: 1em;
       color: $colors_midnight_primary;
       font-size: 0.8em;
+      @include Roobert-Medium;
     }
 
     a.cp-linkedin {
@@ -408,7 +412,8 @@ div.post-body {
       }
 
       span {
-        text-decoration: underline;
+      border-bottom: 1px solid $colors_blue_primary;
+      @include transition_default;
       }
 
       svg {
@@ -425,7 +430,14 @@ div.post {
 
     a {
       background: $colors_red_primary;
-      color: #fff;
+      border: 2px solid transparent;
+      color: $colors_white;
+
+      &:hover {
+        background: $colors_white;
+        border: 2px solid $colors_red_primary;
+        color: $colors_red_primary;
+      }
     }
   }
 
@@ -435,7 +447,7 @@ div.post {
 
     @media screen and (max-width: 768px) {
       border-top: none;
-      margin-bottom: 3em;
+      margin-bottom: 6em;
     }
   }
 
@@ -469,8 +481,8 @@ div.post {
       color: $colors_blue_primary;
       border: none;
       border-radius: 0;
-      padding: 2em 2em;
-      font-size: 1.25em;
+      padding: 3em 2.2em;
+      font-size: 2.4vw;
       @include transition_default;
 
       &:last-child {
@@ -479,8 +491,9 @@ div.post {
 
       @media screen and (min-width: 769px) {
         &:hover {
-          background-color: $colors_blue_primary;
-          color: #fff;
+          color: $colors_red_primary;
+          text-decoration: underline;
+          @include transition_default;
         }
       }
 
@@ -490,6 +503,7 @@ div.post {
 
       @media screen and (max-width: 768px) {
         padding: 0.5em 2em;
+        font-size: 1.5em;
       }
     }
   }

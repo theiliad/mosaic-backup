@@ -21,7 +21,11 @@ bodyEN: >-
 
   We worked closely with Digital Main Street to help scale the initiative with a **goal of helping 50,000 small businesses online.** We implemented a **diversity and inclusion hiring strategy, training over 500 students** and recent grads as resources for small business owners to help them get their business online and maintain growth.
 
-  ![alt new](https://mosaic.com/uploads/SincerelyPeter_CaseStudy_1_Header_3840x2160.jpg)
+    ![Digital Main St Phones](/img/case-studies/digital-main-st/digital-main-st-phones.jpg)
+    ![Digital Main St Laptop](/img/case-studies/digital-main-st/digital-main-st-laptop.jpg)
+    ![Digital Main St Stats](/img/case-studies/digital-main-st/digital-main-st-stats.gif)
+    ![Digital Main St Stats](/img/case-studies/digital-main-st/digital-main-st-stats-2.gif)
+    ![Digital Main St Logos](/img/case-studies/digital-main-st/digital-main-st-logos.png)
 bodyFR: >-
  FRFPO
 ---

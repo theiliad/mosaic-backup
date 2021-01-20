@@ -11,7 +11,7 @@ caseStudyVideoID: _KK958OkD6g
 caseStudyVideoDuration: 0:45
 spotVideoID: SS9_6hCXu_0
 spotVideoDuration: 0:30
-featuredImage: /img/case-studies/intlsquare.jpg
+featuredImage: /img/case-studies/tishman-speyer.jpg
 bodyEN: >-
   International Square, an office building in the heart of Washington, DC, had a problem: they were struggling to attract tech tenants. In contrast to the sleek new developments they were competing with, the enormous 70s-era brutalist building felt gloomy and outdated. The size of the building turned off medium and small sized tenants who wanted smaller buildings where they could occupy an entire floor. On the verge of a modest renovation, the leasing team needed a new approach to attract the tech set without alienating their current conservative tenants.
 
@@ -23,6 +23,10 @@ bodyEN: >-
 
 
   To bring it all together, we rolled it all out onto a microsite, hoarding, brochures and even right down to their classy new business cards.
+
+    ![International Square Books](/img/case-studies/tishman-speyer/international-square-books.jpg)
+    ![International Square Outdoor](/img/case-studies/tishman-speyer/international-square-outdoor.jpg)
+    ![International Square Stationary](/img/case-studies/tishman-speyer/international-square-stationary.jpg)
 bodyFR: >-
   FRFPO
 ---

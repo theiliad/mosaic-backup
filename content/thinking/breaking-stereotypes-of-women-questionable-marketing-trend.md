@@ -8,7 +8,7 @@ category: thought-leadership
 author: Sheri Pearson
 description: "Strong female voices are echoing across the globe, and brands are taking notice. We’ve had several clients who traditionally target men ask Mosaic for help in sparking conversations with women. These briefs inevitably lead to the same question: how can brands be more relevant to this sought-after and diverse demographic during this wave of women’s empowerment?"
 bodyEN: >-
-  <iframe width="560" height="315"
+  <iframe width="100%" height="00"
   src="https://www.youtube.com/embed/yIxA3o84syY" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>
@@ -23,7 +23,7 @@ bodyEN: >-
 
 
 
-  <iframe width="560" height="315"
+  <iframe width="100%" height="350"
   src="https://www.youtube.com/embed/XpaOjMXyJGk" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>
@@ -89,7 +89,7 @@ bodyEN: >-
 
 
 
-  <iframe width="560" height="315"
+  <iframe width="100%" height="350"
   src="https://www.youtube.com/embed/8MgADRovxuU" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +122,7 @@ bodyEN: >-
 
 
 
-  <iframe width="560" height="315"
+  <iframe width="100%" height="350"
   src="https://www.youtube.com/embed/KkIsB4O_d_E" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>

@@ -27,8 +27,8 @@
   }
 
   p {
-    font-size: 1.1em;
-    margin-top: 1.3em;
+    font-size: 1.25em;
+    margin: 2em 0;
   }
 
   &.home {
@@ -206,6 +206,10 @@
 
           a {
             color: $colors_midnight_primary;
+
+            &:hover {
+              color: $colors_red_primary;
+            }
           }
 
           &:first-child {

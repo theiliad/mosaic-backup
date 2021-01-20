@@ -117,7 +117,7 @@ function Thinking({ data, location }) {
     )
   }
 
-  const postsPerPage = 9
+  const postsPerPage = 12
   const postsToShow = allPosts.slice(0, page * postsPerPage)
 
   const [sideNav, setSideNav] = useState(false)
@@ -242,7 +242,7 @@ function Thinking({ data, location }) {
               handleSideNavToggle()
             }}
           >
-            <Text tid="misc.close" />
+            <Text tid="misc.cancel" />
           </a>
         </div>
       </div>
@@ -257,7 +257,7 @@ function Thinking({ data, location }) {
               <div className="column is-12">
                 <div className="columns is-multiline">
                   {postsToShow.map(({ node }) => (
-                    <ThinkingItem node={node} size="is-one-third" />
+                    <ThinkingItem node={node} size="is-3-widescreen is-4-desktop is-6-tablet is-12-mobile" />
                   ))}
                 </div>
               </div>
