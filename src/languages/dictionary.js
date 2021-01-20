@@ -679,8 +679,8 @@ export default {
       en: 'All posts',
       fr: FRFPO,
     },
-    close: {
-      en: 'Close',
+    cancel: {
+      en: 'Cancel',
       fr: FRFPO,
     },
   },

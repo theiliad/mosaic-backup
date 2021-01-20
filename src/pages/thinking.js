@@ -242,7 +242,7 @@ function Thinking({ data, location }) {
               handleSideNavToggle()
             }}
           >
-            <Text tid="misc.close" />
+            <Text tid="misc.cancel" />
           </a>
         </div>
       </div>

@@ -30,18 +30,22 @@ footer {
 
   a {
     color: #fff;
-    border-bottom: 1px solid transparent;
     @include transition_default;
 
     &:hover {
-      color: #fff;
+      color: $colors_orange_primary;
+      border-bottom: 1px solid $colors_orange_primary;
+      @include transition_default;
     }
 
     &.cp-lang-switcher {
       &.active {
         padding-bottom: 2px;
-        border-bottom-color: #fff;
+        border-bottom: 1px solid #fff;
         @include transition_default;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
@@ -62,10 +66,16 @@ footer {
 
   h6 {
     font-size: 2.2em;
+    @include Roobert_Medium;
 
     a {
       color: $colors_white;
-      text-decoration: underline;
+      border-bottom: 1px solid #fff;
+      @include transition_default;
+      &:hover {
+        color: $colors_orange_primary;
+        border-bottom: 1px solid $colors_orange_primary;
+      }
     }
   }
 

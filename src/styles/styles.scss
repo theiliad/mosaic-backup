@@ -35,9 +35,9 @@ html {
 
 @media screen and (min-width: 1400px) {
   html {
-    font-size: 133.3333%;
+   font-size: 133.3333%;
   }
-}
+ }
 
 body {
   background: $colors_white;
@@ -169,7 +169,7 @@ p a:hover {
   background-color: $colors_grey_light;
   color: $colors_midnight_secondary;
   font-size: 0.85em;
-  padding: 1.5em 2em;
+  padding: 1.5em 1.5em;
   border-radius: 2em;
   border: none;
   line-height: 0;

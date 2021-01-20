@@ -264,6 +264,7 @@ div.post-body {
   margin-top: 4em;
   margin-bottom: 7em;
   color: $colors_midnight_primary;
+  @include Roobert_Regular;
 
   a.cp-apply {
     padding: 1.5em;
@@ -383,10 +384,12 @@ div.post-body {
       color: $colors_midnight_secondary;
       margin-bottom: 0;
       line-height: 1em;
+      @include Roobert-Medium;
     }
 
     p.cp-name {
       margin-bottom: 0;
+      @include Roobert-Medium;
     }
 
     p.cp-title {
@@ -394,6 +397,7 @@ div.post-body {
       line-height: 1em;
       color: $colors_midnight_primary;
       font-size: 0.8em;
+      @include Roobert-Medium;
     }
 
     a.cp-linkedin {
@@ -408,7 +412,7 @@ div.post-body {
       }
 
       span {
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid $colors_blue_primary;
       @include transition_default;
       }
 
@@ -426,7 +430,14 @@ div.post {
 
     a {
       background: $colors_red_primary;
-      color: #fff;
+      border: 2px solid transparent;
+      color: $colors_white;
+
+      &:hover {
+        background: $colors_white;
+        border: 2px solid $colors_red_primary;
+        color: $colors_red_primary;
+      }
     }
   }
 

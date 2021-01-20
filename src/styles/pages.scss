@@ -1,7 +1,7 @@
 $slider_arrow_size: 1.5;
 
 @mixin section_padding {
-  padding: 7em 0;
+  padding: 12em 0;
 
   @media screen and (max-width: 768px) {
     padding: 4em 0;
@@ -259,7 +259,8 @@ div.pages-capabilities {
       @include Roobert_SemiBold;
 
       span {
-        text-decoration: underline;
+      border-bottom: 1px solid $colors_blue_primary;
+      @include transition_default;
       }
 
       svg {
@@ -271,7 +272,10 @@ div.pages-capabilities {
 }
 
 div.pages-thinking {
+
   .section-thinking {
+      padding-bottom: 8em;
+
     div.column {
       margin-bottom: 5em;
 
@@ -280,9 +284,12 @@ div.pages-thinking {
       }
 
       .cp-title {
-        margin: 0.5em 0 1em 0;
+        margin: 1em 0;
         line-height: 1.375em;
-        font-size: 1.375em;
+        font-size: 1.25em;
+
+       @media screen and (max-width: 768px) {
+        margin: 0.5em 0; }
       }
 
       img {
@@ -300,6 +307,23 @@ div.pages-thinking {
           z-index: 2;
           display: table;
           width: 100%;
+          height: 100%;
+          @include transition_default;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+        }
+      }
+
+      .thinking-item:hover {
+        img {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+    
+        .cp-title {
+          text-decoration: underline;
           @include transition_default;
         }
       }
@@ -339,8 +363,8 @@ div.pages-thinking {
         }
 
         span.cp-category {
-          font-size: 0.875em;
-          padding: 0.5em 1em 0.6em 1em;
+          font-size: 0.75em;
+          padding: 0.3em .8em 0.4em 0.8em;
           border: 1px solid $colors_blue_primary;
           border-radius: 3em;
         }
@@ -357,11 +381,15 @@ div.pages-thinking {
 
     a.cp-load-more {
       color: $colors_orange_primary;
-      font-size: 2em;
+      font-size: 3em;
       display: table;
       margin: auto;
-      margin-top: -1.5em;
-      padding: 0 0 3.5em 0;
+      border-bottom: 2px solid $colors_orange_primary;
+
+      &:hover {
+        color: $colors_blue_primary;
+        border-bottom: 2px solid $colors_blue_primary;
+      }
     }
   }
 }
@@ -389,22 +417,22 @@ div.pages-news {
 
     a.press-release {
       color: $colors_blue_primary;
-      font-size: 1.2em;
+      font-size: 1.6em;
       padding: 1.4em 0;
       margin: 0;
       border-top: 1px solid $colors_grey_light;
       @include transition_default;
 
-      &:last-child {
-        border-bottom: 1px solid $colors_grey_light;
-      }
+      // &:last-child {
+      //  border-bottom: 1px solid $colors_grey_light;
+      // }
 
       &:hover {
         @include transition_default;
-        color: $colors_orange_primary;
 
-        p.cp-title {
-          text-decoration: underline;
+        p.cp-title { 
+        text-decoration: underline;
+        @include transition_default;
         }
       }
 
@@ -420,7 +448,7 @@ div.pages-news {
       p.cp-date {
         text-align: right;
         color: $colors_midnight_secondary;
-        font-size: 0.85em;
+        font-size: 0.5em;
         margin-top: 0.2em;
 
         @media screen and (max-width: 768px) {
@@ -554,7 +582,8 @@ div.post-single-heading.thinking.contact {
 
         a {
           color: #fff;
-          text-decoration: underline;
+          border-bottom: 1px solid #fff;
+          @include transition_default;
           @include Roobert_Medium;
         }
 
@@ -576,26 +605,7 @@ div.pages-contact {
         line-height: 1.3em;
         margin-top: -0.2em;
         @include Roobert_SemiBold;
-
-        @media screen and (max-width: 768px) {
-          font-size: 2em;
-          line-height: 1em;
-
-          br {
-            display: none;
-          }
-        }
       }
-    }
-
-    @media screen and (max-width: 768px) {
-      div.column.is-1 {
-		  display: none;
-	  }
-    }
-
-    p.is-danger {
-      color: $colors_red_primary;
     }
 
     input,
@@ -604,17 +614,6 @@ div.pages-contact {
       background: transparent;
       border: 1px solid $colors_midnight_secondary;
       box-shadow: none;
-
-      &.is-danger {
-        border-color: $colors_red_primary;
-        border-width: 2px;
-      }
-
-      &:active,
-      &:focus {
-        border-width: 2px;
-        border-color: $colors_blue_primary;
-      }
     }
 
     div.select::after {
@@ -625,15 +624,6 @@ div.pages-contact {
       margin-top: 2em;
       padding: 1.5em 1.5em;
       font-size: 0.75em;
-    }
-  }
-
-  div.cp-success {
-    p {
-      font-size: 1.75em;
-      color: $colors_blue_primary;
-      max-width: 500px;
-      margin-bottom: 1em;
     }
   }
 }
