@@ -6,7 +6,7 @@ div.footer_cta {
   }
 
   p.cp-title {
-    font-size: 2.4em;
+    font-size: 2em;
     line-height: 1.2em;
     color: $colors_blue_primary;
   }
@@ -20,7 +20,7 @@ footer {
   height: 28em;
   z-index: -1;
   background: $colors_blue_primary url('../img/matrix.svg') repeat;
-  background-size: 1.4em;
+  background-size: 1.5em;
   color: $colors_white;
   padding: 8em 0 0;
 
@@ -29,7 +29,7 @@ footer {
   }
 
   a {
-    color: #fff;
+    color: $colors_white;
     @include transition_default;
 
     &:hover {
@@ -41,10 +41,10 @@ footer {
     &.cp-lang-switcher {
       &.active {
         padding-bottom: 2px;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid $colors_white;
         @include transition_default;
         &:hover {
-          color: #fff;
+          color: $colors_white;
         }
       }
     }
@@ -65,12 +65,12 @@ footer {
   }
 
   h6 {
-    font-size: 2.2em;
+    font-size: 3em;
     @include Roobert_Medium;
 
     a {
       color: $colors_white;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid $colors_white;
       @include transition_default;
       &:hover {
         color: $colors_orange_primary;
@@ -110,7 +110,7 @@ footer {
     div.right-links {
       display: inline-flex;
       flex-direction: row-reverse;
-      font-size: 0.7em;
+      font-size: 0.875em;
 
       div {
         padding-right: 2em;
@@ -122,7 +122,7 @@ footer {
 
       @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
-        font-size: 0.9em;
+        font-size: 0.875em;
         margin-top: 2em;
 
         div {

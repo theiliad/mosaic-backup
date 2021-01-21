@@ -41,7 +41,7 @@ export const CaseStudyMeta = ({ node, mobileVersion }) => (
       <div className="column is-8">
         <p className="cp-company">{node.frontmatter.companyName}</p>
 
-        <p>
+        <p className="cp-project">
           <Text
             variations={{
               en: node.frontmatter.titleEN,

@@ -295,7 +295,7 @@ export default {
       },
       formItems: {
         email: {
-          en: 'Email Address',
+          en: 'Email address',
           fr: FRFPO,
         },
         subject: {

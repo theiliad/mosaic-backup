@@ -27,7 +27,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
         />
       </h1>
 
-      <div style={{ fontSize: '0.85em', marginTop: '1.5em' }}>
+      <div style={{ marginTop: '1.5em' }}>
         <p className="cp-category cp-regular">
           {isOneEightyPost ? (
             <>
@@ -151,7 +151,7 @@ export function NewsPostHeader({ post }) {
                 />
               </p>
 
-              <div style={{ fontSize: '0.85em', marginTop: '1.5em' }}>
+              <div style={{ marginTop: '1.5em' }}>
                 <p
                   className="cp-category"
                   style={{ textTransform: 'uppercase' }}
