@@ -5,7 +5,7 @@ const FRFPO = 'FRFPO'
 export default {
   footerCTAs: {
     letsChat: {
-      en: "Let's chat",
+      en: "Let's chat.",
       fr: FRFPO,
     },
     driveConversion: {
@@ -13,7 +13,7 @@ export default {
       fr: FRFPO,
     },
     joinTheTeam: {
-      en: 'Interested in joining the team?',
+      en: 'Thinking about joining our team?',
       fr: FRFPO,
     },
     oneEighty: {
@@ -22,6 +22,10 @@ export default {
     },
     shout: {
       en: 'Give us a shout.',
+      fr: FRFPO,
+    },
+    viewOpenRoles: {
+      en: 'View open roles',
       fr: FRFPO,
     },
   },

@@ -5,7 +5,7 @@ titleFR: FRFPO
 date: 2020-05-20T03:14:12.599Z
 featuredImage: /img/thinking/can-any-brand-be-a-wellness-brand.jpg
 category: oneeighty
-descriptionEN: The past session of Mosaic 180 conference that uncovers the ways brands must shift to adapt
+descriptionEN: 'Marketing experts debate best practices for brands helping consumers adapt to their new normal: maintaining physical and mental wellness at home.'  
 descriptionFR: frFPO
 panel:
   - image: /img/oneeighty/panel/fpo.jpg

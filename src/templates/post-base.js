@@ -136,8 +136,8 @@ function Post(props) {
         isNewsPost ? (
           <h6>
             <Text tid="footerCTAs.joinTheTeam" />{' '}
-            <Link to="/careers">
-              <Text tid="footerCTAs.letsChat" />
+            <Link to="https://www.mosaicjobs.com/">
+              <Text tid="footerCTAs.viewOpenRoles" />
             </Link>
           </h6>
         ) : isOneEightyPost ? (

@@ -5,7 +5,7 @@ titleFR: FRFPO
 date: 2020-06-24T03:14:12.599Z
 featuredImage: /img/thinking/no-irl-no-problem.jpg
 category: oneeighty
-descriptionEN: The past session of the Mosaic 180 conference that looks to virtualize the human experience
+descriptionEN: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
 descriptionFR: frFPO
 panel:
   - image: /img/oneeighty/panel/fpo.jpg
