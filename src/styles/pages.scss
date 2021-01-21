@@ -24,7 +24,7 @@ div.pages-index {
   p.secondary {
     @include Roobert_Medium;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   p.color_secondary {
@@ -37,9 +37,9 @@ div.pages-index {
 
   a.text-link {
     display: inline-table;
-    font-size: 0.88em;
+    font-size: 0.875em;
     @include Roobert_Medium;
-    margin-top: 0.85em;
+    margin-top: 0.875em;
   }
 
   div.section-why {
@@ -67,7 +67,7 @@ div.pages-index {
     }
 
     div.columns {
-      font-size: 0.9em;
+      font-size: 1em;
 
       div.column {
         &.cp-photo {
@@ -100,13 +100,25 @@ div.pages-index {
     }
 
     p.cp-company {
-      font-size: 0.8em;
+      font-size: 0.875em;
       color: $colors_midnight_secondary;
+    }
+
+    p.cp-project {
+      font-size: 1.125em;
+      color: $colors_midnight_primary;
+      padding-top: 0.125em;
     }
 
     p.cp-category {
       color: $colors_red_primary;
-      font-size: 0.8em;
+      font-size: 0.875em;
+      width: 40%;
+
+      @media screen and (max-width: 1068px) {
+        width: 100%;
+      }
+
     }
   }
 
@@ -256,15 +268,19 @@ div.pages-capabilities {
     h2 {
       @include Roobert_Medium;
       margin-bottom: 0.7em;
-      font-size: 2em;
+      font-size: 2.5em;
       line-height: 1em;
+    }
+
+    p.secondary {
+      font-size: 1.125em;
     }
 
     a {
       display: block;
       margin-top: 1em;
       color: $colors_blue_primary;
-      font-size: 0.85em;
+      font-size: 1em;
       @include Roobert_SemiBold;
 
       span {
@@ -294,7 +310,7 @@ div.pages-thinking {
       .cp-title {
         margin: 1em 0;
         line-height: 1.375em;
-        font-size: 1.25em;
+        font-size: 1.5em;
 
         @media screen and (max-width: 768px) {
           margin: 0.5em 0;
@@ -327,8 +343,8 @@ div.pages-thinking {
 
       .thinking-item:hover {
         img {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
         }
 
         .cp-title {
@@ -348,8 +364,8 @@ div.pages-thinking {
             span {
               position: relative;
               display: inline-block;
-              width: 1.45em;
-              height: 1.45em;
+              width: 1.5em;
+              height: 1.5em;
               border-radius: 50%;
               border: 2px solid $colors_blue_primary;
               //   margin-top: -0.15em;
@@ -372,7 +388,7 @@ div.pages-thinking {
         }
 
         span.cp-category {
-          font-size: 0.75em;
+          font-size: 0.875em;
           padding: 0.3em 0.8em 0.4em 0.8em;
           border: 1px solid $colors_blue_primary;
           border-radius: 3em;
@@ -414,7 +430,7 @@ div.pages-news {
     @media screen and (max-width: 768px) {
       .heading_lg,
       .text-link {
-        padding-left: 24px;
+        padding-left: 1.5em;
       }
     }
 
@@ -426,8 +442,8 @@ div.pages-news {
 
     a.press-release {
       color: $colors_blue_primary;
-      font-size: 1.6em;
-      padding: 1.4em 0;
+      font-size: 2em;
+      padding: 1.375em 0;
       margin: 0;
       border-top: 1px solid $colors_grey_light;
       @include transition_default;
@@ -484,14 +500,14 @@ div.pages-careers {
     margin-top: 3em;
 
     h1 {
-      font-size: 3em;
+      font-size: 3.5em;
       line-height: 1em;
       @include Roobert_SemiBold;
     }
 
     p {
-      margin: 0.8em 0;
-      font-size: 1.2em;
+      margin: 1em 0;
+      font-size: 1.75em;
     }
 
     a.button {
@@ -499,9 +515,9 @@ div.pages-careers {
       padding: 1.5em 1.75em 1.5em 2em;
 
       svg {
-        font-size: 1.2em;
+        font-size: 1.25em;
         margin-bottom: -0.175em;
-        margin-left: 0.24em;
+        margin-left: 0.25em;
       }
     }
 
@@ -547,8 +563,8 @@ div.pages-sup {
  */
 div.post-single-heading.thinking.contact {
   background: $colors_red_primary url('../img/matrix.svg') repeat;
-  background-size: 1.4em;
-  color: #fff;
+  background-size: 1.5em;
+  color: $colors_white;
   margin-bottom: 0;
 
   & > div.columns {
@@ -562,7 +578,7 @@ div.post-single-heading.thinking.contact {
     padding-left: 0;
 
     h2 {
-      font-size: 3em;
+      font-size: 3.5em;
       line-height: 1.1em;
     }
 
@@ -624,7 +640,7 @@ div.pages-contact {
 
     .contact-info {
       h5 {
-        font-size: 4.3em;
+        font-size: 4.375em;
         line-height: 1.3em;
         margin-top: -0.2em;
         @include Roobert_SemiBold;
@@ -648,13 +664,13 @@ div.pages-contact {
 
     p.is-danger {
       color: $colors_red_primary;
-    }
-
-    label {
-      color: $colors_midnight_primary;
-      font-size: 0.8em;
-      @include Roobert_Medium;
-    }
+	}
+	
+	label {
+		color: $colors_midnight_primary;
+		font-size: 0.875em;
+		@include Roobert_Medium;
+	}
 
     input,
     textarea,
@@ -702,7 +718,7 @@ div.pages-contact {
 div.post-single-heading.thinking.fourOFour {
   position: relative;
   background: $colors_grey_light url('../img/matrix_grey.svg') repeat;
-  background-size: 1.4em;
+  background-size: 1.5em;
   margin-bottom: 0;
   overflow: hidden;
 

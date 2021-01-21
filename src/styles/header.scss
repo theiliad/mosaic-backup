@@ -38,12 +38,14 @@ nav.navbar {
 
     img {
       display: table;
+      max-height: 3em;
     }
   }
 
   a.navbar-item.link {
     color: $colors_blue_primary;
-    font-size: 0.8em;
+    font-size: 1.125em;
+    padding: 0.5rem 1rem;
 
     &:hover {
       //   color: $colors_gold_primary;
@@ -56,7 +58,7 @@ nav.navbar {
     }
 
     svg {
-      margin-left: 0.3em;
+      margin-left: 0.375em;
     }
   }
 
@@ -65,8 +67,8 @@ nav.navbar {
     color: $colors_blue_primary;
 
     span {
-      height: 1px;
-      width: 13px;
+      height: 2px;
+      width: 16px;
 
       &:nth-child(2) {
         top: 50%;
@@ -89,7 +91,7 @@ nav.navbar {
     }
 
     div.column.logo {
-      height: 1.85em;
+      height: 1.875em;
     }
 
     div.column.hamburger {
@@ -101,7 +103,7 @@ nav.navbar {
         transform: translate(0, -50%);
         right: 0;
         top: 50%;
-        width: 0.9em;
+        width: 1em;
         height: 0.5em;
 
         a {
