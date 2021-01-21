@@ -211,18 +211,22 @@ p a:hover {
 
 div.content {
   div.cp-el-img {
-    width: 125%;
-	margin-left: -12.5%;
-	
+    @media screen and (min-width: 769px) {
+      width: 125%;
+      margin-left: -12.5%;
+  }
+
 	p.cp-caption {
 		display: block;
 		text-align: center;
-		font-size: 0.75em;
+    font-size: 0.8em;
+    padding-bottom: 2.25em;
+    color: $colors_midnight_secondary;
 	}
   }
 
   img {
-    margin: 2em 0;
+    margin: 1em 0;
   }
 }
 

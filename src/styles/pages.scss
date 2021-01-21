@@ -298,10 +298,14 @@ div.pages-capabilities {
 
 div.pages-thinking {
   .section-thinking {
-    padding-bottom: 8em;
 
     div.column {
       margin-bottom: 5em;
+      
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 4em;
+      }
 
       a {
         color: $colors_blue_primary;
@@ -409,11 +413,11 @@ div.pages-thinking {
       font-size: 3em;
       display: table;
       margin: auto;
-      border-bottom: 2px solid $colors_orange_primary;
+      padding-bottom: 3em;
+      text-decoration: underline;
 
       &:hover {
         color: $colors_blue_primary;
-        border-bottom: 2px solid $colors_blue_primary;
       }
     }
   }

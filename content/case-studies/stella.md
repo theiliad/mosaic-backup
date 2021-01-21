@@ -25,9 +25,7 @@ bodyEN: >-
   The Stella Stadium Bites pilot program scored **5.2M social impressions, 100% positive consumer sentiment** and **27.1M PR impressions** from celebrities and media outlets, attracting the attention of new and potential team partnerships. Because of its success, the program continues to expand and evolve, converting a new consumer base – sports fans – to Stella.
 
 
-  <img src="/img/case-studies/stella/stella-stadium-bites-box.jpg" alt="Stella Stadium Bites Box" caption="Testing caption" />
-
-
+  ![Stella Stadium Bites Box](/img/case-studies/stella/stella-stadium-bites-box.jpg)
   ![Stella Stadium Bites Video Stills](/img/case-studies/stella/stella-stadium-bites-stills.jpg)
   ![Stella Stadium Bites Food and Packaging](/img/case-studies/stella/stella-stadium-bites-packaging.jpg)
 bodyFR: >-

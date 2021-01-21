@@ -39,12 +39,9 @@ bodyEN: >-
     Both artists use complex thematic patterns in their work to create visual tension. The resulting chaotic environments confront viewers with an array of concepts and emotions.
 
 
-    ![](/img/thinking/minimalism-vs-maximalism/hattie.jpg)
-    Image By: Hattie Stewart
+    <img src="/img/thinking/minimalism-vs-maximalism/hattie.jpg" alt="enFPO" caption="Image by Hattie Stewart" />
 
-
-    ![](/img/thinking/minimalism-vs-maximalism/wiley_simeon_the_god_receiver.jpg)
-    Image By: Kahinde Wiley
+    <img src="/img/thinking/minimalism-vs-maximalism/wiley_simeon_the_god_receiver.jpg" alt="enFPO" caption="Image by Kahinde Wiley" />
 
 
     In fashion, designers such as Versace, Gucci, and Moschino have been staunch supporters of loud patterns and textures for years, but in 2018, they’ve taken this devotion to the extreme. Fashion lovers and stylists worldwide are filling their shopping bags to the max, and high fashion maximalism has trickled down to mainstream retailers like H+M and Zara.

@@ -262,12 +262,15 @@ div.columns.post-single.featured-image.ui-grid.post-html-img {
 }
 
 div.post-body {
-  font-size: 1.125em;
-  line-height: 1.875em;
   margin-top: 4em;
   margin-bottom: 8em;
   color: $colors_midnight_primary;
   @include Roobert_Regular;
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.875em;
+  }
 
   a.cp-apply {
     padding: 1.5em;
@@ -289,17 +292,55 @@ div.post-body {
   h5,
   h6 {
     margin-top: 1em;
-    color: $colors_blue_primary;
+    color: $colors_midnight_primary;
+    line-height: 1.5em;
+    @include Roobert_Medium;
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   h2 {
-    font-size: 1.375em;
-    margin-top: 1.25em;
+    font-size: 1.875em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.625em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  h6 {
+    font-size: 1.25em;
   }
 
   ol {
     margin-top: 0;
     margin-left: 1em;
+  }
+
+  li {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+
+  p a {
+    color: $colors_blue_primary;
+    box-shadow: inset 0 -2px 0 0 $colors_blue_primary;
+
+    &:hover {
+      color: $colors_red_primary;
+      text-decoration: underline;
+      box-shadow: inset 0 -2px 0 0 $colors_red_primary;
+      text-decoration: none;
+    }
   }
 
   p:not(:last-child) dl:not(:last-child),
@@ -558,7 +599,7 @@ div.post {
           div.cp-texts {
             width: 100%;
             padding-right: 3em;
-            font-size: 1.5em;
+            font-size: 1.125em;
 
             @media screen and (min-width: 769px) {
               position: absolute;
@@ -567,8 +608,15 @@ div.post {
             }
 
             h6 {
-              font-size: 2em;
+              font-size: 3.5vw;
+              line-height: 1.2em;
+              padding-top: 0.25em;
               @include Roobert_Medium;
+
+                @media screen and (max-width: 768px) {
+                  font-size: 6vw;
+                  line-height: 1.2em;
+                }
             }
           }
         }
