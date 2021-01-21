@@ -10,7 +10,7 @@ $colors_white: #ffffff; // white
 
 $colors_blue_primary: #1226aa; // links
 $colors_red_primary: #d50057; // labels
-$colors_orange_primary: #FB6157; // accents
+$colors_orange_primary: #fb6157; // accents
 $colors_aqua_primary: #00bed6; // accents
 
 @mixin transition_default {
@@ -35,9 +35,9 @@ html {
 
 @media screen and (min-width: 1400px) {
   html {
-   font-size: 133.3333%;
+    font-size: 133.3333%;
   }
- }
+}
 
 body {
   background: $colors_white;
@@ -212,6 +212,17 @@ p a:hover {
 }
 
 div.content {
+  div.cp-el-img {
+    width: 125%;
+	margin-left: -12.5%;
+	
+	p.cp-caption {
+		display: block;
+		text-align: center;
+		font-size: 0.75em;
+	}
+  }
+
   img {
     margin: 2em 0;
   }

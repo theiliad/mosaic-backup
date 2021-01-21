@@ -16,25 +16,37 @@ class News extends React.Component {
     return (
       <Layout
         location={this.props.location}
-		title={siteTitle}
-		logo={LOGO_OPTIONS.aquaBlue}
+        title={siteTitle}
+        logo={LOGO_OPTIONS.aquaBlue}
+        footerCTA={
+          <>
+            <h6>
+              <Text tid="footerCTAs.joinTheTeam" />{' '}
+              <a
+                href="https://www.mosaicjobs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Text tid="footerCTAs.viewOpenRoles" />
+              </a>
+            </h6>
+          </>
+        }
         HeaderExtension={
           <div className="header_extension news">
             <div class="bg">
               <div className="container">
                 <h1 class="primary heading_lg">
-                  <span><Text tid="news.title" /></span>
+                  <span>
+                    <Text tid="news.title" />
+                  </span>
                 </h1>
               </div>
             </div>
           </div>
         }
       >
-        <SEO
-          title="TODO"
-          keywords={['TODO']}
-          image={null}
-        />
+        <SEO title="TODO" keywords={['TODO']} image={null} />
 
         <div className="pages-news">
           <div className="section-news">

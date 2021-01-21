@@ -259,6 +259,10 @@ class BlogIndex extends React.Component {
             <Carousel
               slides={[
                 {
+                  src: null,
+                  alt: null,
+                },
+                {
                   src: ANHEUSER_BUSCH,
                   alt: 'Anheuser-Busch',
                 },
@@ -275,7 +279,11 @@ class BlogIndex extends React.Component {
                 { src: SAMSUNG, alt: 'Samsung' },
                 { src: SHOPPERS_DRUG_MART, alt: 'Shoppers Drug Mart' },
                 { src: STARBUCKS, alt: 'Starbucks' },
-                { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' }
+                { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' },
+                {
+                  src: null,
+                  alt: null,
+                },
               ]}
             />
           </div>

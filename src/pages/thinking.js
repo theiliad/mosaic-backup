@@ -223,6 +223,10 @@ function Thinking({ data, location }) {
           </h3>
 
           <div className="links">
+            <Link to={`/thinking/`} className={filter === null ? 'active' : ''}>
+              <Text tid="misc.all" />
+            </Link>
+
             {Object.keys(CATEGORIES.thinking).map(categoryKey => (
               <Link
                 to={`/thinking/${categoryKey}`}
@@ -257,7 +261,10 @@ function Thinking({ data, location }) {
               <div className="column is-12">
                 <div className="columns is-multiline">
                   {postsToShow.map(({ node }) => (
-                    <ThinkingItem node={node} size="is-3-widescreen is-4-desktop is-6-tablet is-12-mobile" />
+                    <ThinkingItem
+                      node={node}
+                      size="is-3-widescreen is-4-desktop is-6-tablet is-12-mobile"
+                    />
                   ))}
                 </div>
               </div>

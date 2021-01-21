@@ -136,9 +136,13 @@ function Post(props) {
         isNewsPost ? (
           <h6>
             <Text tid="footerCTAs.joinTheTeam" />{' '}
-            <Link to="https://www.mosaicjobs.com/">
+            <a
+              href="https://www.mosaicjobs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Text tid="footerCTAs.viewOpenRoles" />
-            </Link>
+            </a>
           </h6>
         ) : isOneEightyPost ? (
           <h6>
@@ -188,6 +192,13 @@ function Post(props) {
 
                       return <a {...aProps}>{aText}</a>
                     },
+                    img: imgProps => (
+                      <div className="cp-el-img">
+                        <img {...imgProps} />
+
+						{imgProps.caption && <p className="cp-caption subtitle is-6">{imgProps.caption}</p>}
+                      </div>
+                    ),
                   }}
                 >
                   {Text({
