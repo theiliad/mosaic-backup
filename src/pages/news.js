@@ -52,7 +52,7 @@ class News extends React.Component {
           <div className="section-news">
             <div className="container">
               {posts.map(({ node }) => (
-                <Link to={node.fields.slug} className="press-release columns">
+                <Link to={node.fields.slug} className="piece columns">
                   <p className="column is-9 cp-title">
                     <Text
                       variations={{

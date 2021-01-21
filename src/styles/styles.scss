@@ -213,6 +213,10 @@ div.content {
   div.cp-el-img {
     width: 125%;
 	margin-left: -12.5%;
+
+	img {
+		width: 100%;
+	}
 	
 	p.cp-caption {
 		display: block;

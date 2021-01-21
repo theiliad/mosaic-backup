@@ -42,6 +42,10 @@ export const pageQuery = graphql`
           image
         }
         date
+        streamStartDate
+		streamEndDate
+		recap
+		reminderURL
         bodyEN
         bodyFR
         descriptionEN
