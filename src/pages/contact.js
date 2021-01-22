@@ -9,11 +9,22 @@ import { getText, Text, LanguageContext } from '../containers/Language'
 
 // ICONS
 import { RiArrowRightUpLine } from 'react-icons/ri'
+import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
 
 import { FormValidation } from 'calidation'
 
 import axios from 'axios'
 import * as qs from 'query-string'
+
+// Accordion
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+  AccordionItemState,
+} from 'react-accessible-accordion'
 
 import HERO from '../img/contact.jpg'
 
@@ -315,14 +326,22 @@ function Contact({ data, location }) {
     </>
   )
 
-  const Contact = ({ contact }) => (
+  const Contact = ({ contact, title, description, numberLink }) => (
     <>
-      <h6>{contact.name}</h6>
-      {contact.description && (
+      {title !== false && <h6>{contact.name}</h6>}
+      {description !== false && (
         <p className="cp-description">{contact.description}</p>
       )}
 
-      <p className="cp-number">{contact.number}</p>
+      <p className="cp-number">
+        {numberLink ? (
+          <a href={`tel:${contact.number.replace(/\./g, '')}`}>
+            {contact.number}
+          </a>
+        ) : (
+          contact.number
+        )}
+      </p>
 
       <p className="cp-address">
         <a href={contact.link} target="_blank" rel="noopener noreferrer">
@@ -333,6 +352,31 @@ function Contact({ data, location }) {
         </a>
       </p>
     </>
+  )
+
+  const ContactAccordionItem = ({ contact }) => (
+    <AccordionItem>
+      <AccordionItemHeading>
+        <AccordionItemButton>
+          {contact.name} <span>{contact.description}</span>
+          <AccordionItemState>
+            {({ expanded }) => (
+              <span>{expanded ? <VscChevronDown /> : <VscChevronLeft />}</span>
+            )}
+          </AccordionItemState>
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
+        <div className="cp-contact">
+          <Contact
+            contact={contact}
+            title={false}
+            description={false}
+            numberLink={true}
+          />
+        </div>
+      </AccordionItemPanel>
+    </AccordionItem>
   )
 
   return (
@@ -376,7 +420,7 @@ function Contact({ data, location }) {
       <div>
         <div className="pages-index pages-contact">
           <div className="section-contacts">
-            <div className="container">
+            <div className="container cp-wide">
               <h3>
                 <Text tid="pages.contact.contacts.title" />
               </h3>
@@ -404,6 +448,28 @@ function Contact({ data, location }) {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="container cp-mobile">
+              <h5>
+                <Text tid="misc.countries.usa" />
+              </h5>
+
+              <Accordion allowZeroExpanded={true}>
+                {CONTACTS.USA.map(contact => (
+                  <ContactAccordionItem contact={contact} />
+                ))}
+              </Accordion>
+
+              <h5 className="cp-2nd-h5">
+                <Text tid="misc.countries.canada" />
+              </h5>
+
+              <Accordion allowZeroExpanded={true}>
+                {CONTACTS.CANADA.map(contact => (
+                  <ContactAccordionItem contact={contact} />
+                ))}
+              </Accordion>
             </div>
           </div>
 

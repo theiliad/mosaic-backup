@@ -662,11 +662,62 @@ div.pages-contact {
       font-size: 1.25em;
       text-transform: uppercase;
       color: $colors_red_primary;
-	  @include Roobert_Medium;
-	  
-	  &.cp-2nd-h5 {
-		  margin-top: 1em;
-	  }
+      @include Roobert_Medium;
+
+      &.cp-2nd-h5 {
+        margin-top: 1em;
+      }
+    }
+
+    div.accordion__item:first-child {
+      border-top: 1px solid #e8eceb;
+    }
+
+    div.accordion__item:last-child {
+      border-bottom: 1px solid #e8eceb;
+    }
+
+    div.accordion__button {
+      color: $colors_midnight_primary;
+
+      span {
+        color: $colors_midnight_secondary;
+        font-size: 0.85em;
+        margin-left: 0.5em;
+      }
+    }
+
+    div.accordion__panel {
+      padding: 0.5em 1.25em 0.5em 1.25em;
+
+      div.cp-contact {
+        margin: 0;
+      }
+    }
+
+    div.cp-wide {
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    div.cp-mobile {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: table;
+      }
+
+      h5 {
+        font-size: 0.875em;
+        margin: 0;
+        margin-bottom: 1.5em;
+
+        &.cp-2nd-h5 {
+          margin-top: 3em;
+        }
+      }
     }
 
     div.cp-contact {
@@ -681,11 +732,15 @@ div.pages-contact {
       p {
         font-size: 1.125em;
 
+        @media screen and (max-width: 768px) {
+          font-size: unset;
+        }
+
         &.cp-description {
           position: absolute;
           left: 0.75rem;
-		  top: 3.25em;
-		  color: $colors_midnight_secondary;
+          top: 3.25em;
+          color: $colors_midnight_secondary;
         }
 
         &.cp-address {
@@ -708,6 +763,13 @@ div.pages-contact {
             &:hover {
               box-shadow: none;
             }
+          }
+        }
+
+        &.cp-number {
+          a {
+            color: $colors_blue_primary;
+            text-decoration: underline;
           }
         }
       }
