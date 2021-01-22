@@ -3,7 +3,7 @@ div.app-wrapper {
 
   div.app-container {
     position: relative;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
 
     div.overlay {
       content: ' ';
@@ -18,17 +18,17 @@ div.app-wrapper {
       visibility: hidden;
       z-index: 100;
       cursor: pointer;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
     }
 
     &.sidenav-open {
       // transform: translateX(-16.875em);
-      transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
 
       div.overlay {
         opacity: 1;
         visibility: visible;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-out;
       }
     }
   }

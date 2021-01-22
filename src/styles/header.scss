@@ -5,7 +5,7 @@ div.site-header {
   width: 100%;
   background: none;
   z-index: 99;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
 
   &.idle-light nav.navbar a.navbar-item.link {
     color: $colors_white;
@@ -20,11 +20,16 @@ div.site-header {
 
   &.hidden {
     top: -150px;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-out;
   }
 
   &.white {
-    background: none;
+    background: white;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+
+    nav.navbar a.navbar-item.link {
+      color: $colors_blue_primary;
+    }
   }
 }
 

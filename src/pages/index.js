@@ -35,6 +35,40 @@ import SHOPPERS_DRUG_MART from '../img/home/partners/shoppers-drug-mart.svg'
 import STARBUCKS from '../img/home/partners/starbucks.svg'
 import TISHMAN_SPEYER from '../img/home/partners/tishman-speyer.svg'
 
+// Home logos
+import HOME_LOGO_AQUABLUE from '../img/logo/animated/aqua-blue.svg'
+import HOME_LOGO_ORANGEBLUE from '../img/logo/animated/orange-blue.svg'
+import HOME_LOGO_REDMATRIX from '../img/logo/animated/red-matrix.svg'
+import HOME_LOGO_WHITEMATRIX from '../img/logo/animated/white-matrix.svg'
+import HOME_LOGO_WHITEOUTLINE from '../img/logo/animated/white-outline.svg'
+import HOME_LOGO_WHITERED from '../img/logo/animated/white-red.svg'
+
+// d3
+import { scaleLinear } from 'd3-scale'
+
+import { HOMEPAGE_NAV_HIDE_THRESHOLD } from '../components/Layout'
+
+const HOME_ANIMATED_LOGOS = [
+  HOME_LOGO_AQUABLUE,
+  HOME_LOGO_ORANGEBLUE,
+  HOME_LOGO_REDMATRIX,
+  HOME_LOGO_WHITEMATRIX,
+  HOME_LOGO_WHITEOUTLINE,
+  HOME_LOGO_WHITERED,
+]
+const updateLogos = () => {
+  const heroLogoElement = document.getElementById('cp_hero_logo')
+  if (heroLogoElement) {
+    const currentLogoIndex = HOME_ANIMATED_LOGOS.indexOf(heroLogoElement.src)
+    const nextLogoIndex =
+      currentLogoIndex < HOME_ANIMATED_LOGOS.length - 1
+        ? currentLogoIndex + 1
+        : 0
+
+    heroLogoElement.src = HOME_ANIMATED_LOGOS[nextLogoIndex]
+  }
+}
+
 export const CaseStudyMeta = ({ node, mobileVersion }) => (
   <>
     <div className={'columns' + (mobileVersion ? ' is-mobile' : '')}>
@@ -65,10 +99,22 @@ export const CaseStudyMeta = ({ node, mobileVersion }) => (
 class BlogIndex extends React.Component {
   componentDidMount() {
     document.addEventListener('scroll', this.trackScrolling)
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.trackScrolling)
+    }
+
+    this.updateLogosIntervalID = setInterval(updateLogos, 400)
   }
 
   componentWillUnmount() {
     document.removeEventListener('scroll', this.trackScrolling)
+
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.trackScrolling)
+    }
+
+    clearInterval(this.updateLogosIntervalID)
   }
 
   trackScrolling() {
@@ -76,11 +122,82 @@ class BlogIndex extends React.Component {
 
     if (isBrowser) {
       const heroElement = document.getElementById('cp_hero')
-      if (heroElement) {
-        heroElement.style.transform = `translateY(-${window.scrollY / 3}px)`
 
-        const opacity = Math.min(50 / window.scrollY, 1)
-        heroElement.style.opacity = opacity
+      const scale = scaleLinear()
+        .domain([0, 400]) // Mouse y scroll positions
+        .range([1, 0.263]) // Scale sizes
+
+      const heroLogoElement = document.getElementById('cp_hero_logo')
+      const hiddenHeroLogoElement = document.getElementById(
+        'cp_hero_logo_hidden'
+      )
+      const siteLogoElement = document.getElementById('cp_site_logo')
+
+      if (heroLogoElement && hiddenHeroLogoElement && siteLogoElement) {
+        const hiddenLogoTopDistance = hiddenHeroLogoElement.getBoundingClientRect()
+          .top
+        const siteLogoTopDistance = siteLogoElement.getBoundingClientRect().top
+
+        const st = window.pageYOffset || document.documentElement.scrollTop
+        if (heroLogoElement && hiddenHeroLogoElement) {
+          let heroLogoElementTop
+          if (st >= scale.domain()[1]) {
+            heroLogoElement.style.top = siteLogoTopDistance + 'px'
+          } else {
+            const computedTopValue =
+              (1 - st / scale.domain()[1]) * hiddenLogoTopDistance +
+              siteLogoTopDistance
+
+            let topValue
+            //   if (computedTopValue < siteLogoTopDistance) {
+            //     topValue = siteLogoTopDistance
+            //   } else if (computedTopValue > hiddenLogoTopDistance) {
+            //     topValue = hiddenLogoTopDistance
+            //   } else {
+            //     topValue = computedTopValue
+            //   }
+
+			// The "* 1.5" bit adds some elastic easing to the animation
+            // Can remove for a more subtle effect
+            topValue = Math.max(
+              Math.min(computedTopValue * 1.5, hiddenLogoTopDistance),
+              siteLogoTopDistance
+            )
+
+            // console.log("top", topValue)
+
+            heroLogoElement.style.top = topValue + 'px'
+
+            //   console.log(st / scale.domain()[1])
+            //   heroLogoElement.style.top =
+            //     Math.max(
+            //       hiddenLogoTopDistance,
+            //       siteLogoTopDistance +
+            //         (1 - st / scale.domain()[1]) * hiddenLogoTopDistance
+            //     ) + 'px'
+          }
+          // heroLogoElement.style.top = `${Math.max(
+          //   hiddenLogoTopDistance,
+          //   siteLogoTopDistance
+          // )}px`
+
+          heroLogoElement.style.transform = `scale(${Math.max(
+            scale(window.scrollY),
+            scale.range()[1]
+          )})`
+
+          // Adds some elastic easing to the animation
+          // Can remove for a more subtle effect
+          hiddenHeroLogoElement.style.transform = `scale(${Math.min(
+            Math.max(scale(window.scrollY), scale.range()[1]) * 1.3,
+            1
+          )})`
+
+          heroLogoElement.style.transformOrigin = 'left top'
+
+          heroLogoElement.style.opacity =
+            st > HOMEPAGE_NAV_HIDE_THRESHOLD ? 0 : 1
+        }
       }
     }
   }
@@ -109,9 +226,10 @@ class BlogIndex extends React.Component {
           <div className="header_extension home">
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
-                <div className="container">
-                  <img src={LOGO_WHITE} />
+                <img src={HOME_LOGO_AQUABLUE} id="cp_hero_logo" />
+                <img src={HOME_LOGO_AQUABLUE} id="cp_hero_logo_hidden" />
 
+                <div className="container">
                   <h1>
                     <span>
                       <Text tid="pages.index.title" />
