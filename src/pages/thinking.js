@@ -44,10 +44,15 @@ const ThinkingItem = ({ node, size }) => {
   const isOneEighty = node.frontmatter.category === 'oneeighty'
   const isRecap = node.frontmatter.recap === true
 
+  let itemLink = node.fields.slug
+  if (isOneEighty && !isRecap && isPastSession) {
+    itemLink = itemLink + '?playVideo=true'
+  }
+
   return (
     <Fade key={node.fields.slug} duration={300}>
       <div className={`column thinking-item ${size}`}>
-        <Link to={node.fields.slug}>
+        <Link to={node.fields.slug} className="cp-full-link">
           <div className="cp-image">
             <img src={node.frontmatter.featuredImage} />
 
@@ -68,81 +73,83 @@ const ThinkingItem = ({ node, size }) => {
               }}
             />
           </p>
+        </Link>
 
-          <p className="cp-meta columns is-mobile">
-            <span className="column is-narrow">
+        <p className="cp-meta columns is-mobile">
+          <span className="column is-narrow cp-category-wrapper">
+            <Link to={`/thinking/${node.frontmatter.category}`}>
               <span className="cp-category">
                 <Text
                   variations={CATEGORIES.thinking[node.frontmatter.category]}
                 />
               </span>
-            </span>
+            </Link>
+          </span>
 
-            {isOneEighty && !isRecap && (
-              <>
-                {isPastSession && (
-                  <span className="column is-narrow cp-play">
-                    <p>
-                      <a
-                        href="/"
-                        onClick={e => {
-                          e.preventDefault()
-                        }}
-                      >
-                        <span>
-                          <BsPlayFill />
-                        </span>
-                      </a>
-                    </p>
+          {isOneEighty && !isRecap && (
+            <Link to={itemLink} className="column is-narrow">
+              {isPastSession && (
+                <>
+                  <span className="cp-play">
+                    <a
+                      href="/"
+                      onClick={e => {
+                        e.preventDefault()
+                      }}
+                    >
+                      <span>
+                        <BsPlayFill />
+                      </span>
+                    </a>
                   </span>
-                )}
 
-                {isPastSession && (
-                  <span className="column cp-date">
+                  <span className="cp-date">
                     <span>
                       <Text tid="thinking.pastSession" />
                     </span>
                   </span>
-                )}
+                </>
+              )}
 
-                {isLiveSession && (
-                  <span className="column cp-date cp-live">
-                    <span>
-                      <IoIosRadio />
-                      <Text tid="thinking.liveSession" />
-                    </span>
+              {isLiveSession && (
+                <span className="cp-date cp-live">
+                  <span>
+                    <IoIosRadio />
+                    <Text tid="thinking.liveSession" />
                   </span>
-                )}
+                </span>
+              )}
 
-                {isUpcomingSession && (
-                  <span className="column cp-date">
-                    <span>
-                      <AiOutlineCalendar /> 
-                      <Text tid="thinking.upcomingSession" />
-                    </span>
+              {isUpcomingSession && (
+                <span className="cp-date">
+                  <span>
+                    <AiOutlineCalendar />
+                    <Text tid="thinking.upcomingSession" />
                   </span>
-                )}
+                </span>
+              )}
 
-                {!isPastSession && !isLiveSession && !isUpcomingSession && (
-                  <span className="column cp-date">
-                    <span>
-                      <TextDate string={node.frontmatter.date} />
-                    </span>
+              {!isPastSession && !isLiveSession && !isUpcomingSession && (
+                <span className="cp-date">
+                  <span>
+                    <TextDate string={node.frontmatter.date} />
                   </span>
-                )}
-              </>
-            )}
+                </span>
+              )}
+            </Link>
+          )}
 
-            {isOneEighty && isRecap && (
-              <span className="column cp-date">
+          {isOneEighty && isRecap && (
+            <Link to={itemLink} className="column is-narrow">
+              <span className="cp-date">
                 <span>
                   <GiBackwardTime />
                   <Text tid="thinking.recap" />
                 </span>
               </span>
-            )}
-          </p>
-        </Link>
+            </Link>
+          )}
+        </p>
       </div>
     </Fade>
   )

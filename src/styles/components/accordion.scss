@@ -11,6 +11,10 @@
   @media screen and (max-width: 768px) {
     margin-left: -24px;
     margin-right: -24px;
+
+    .cp-wide {
+      display: none;
+    }
   }
 }
 

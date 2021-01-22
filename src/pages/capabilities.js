@@ -166,7 +166,7 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.content_digital.text" />
                   </p>
 
-                  <Link to="/">
+                  <Link to="/case-studies/budweiser/">
                     <span>
                       <Text tid="pages.capabilities.content_digital.cta" />
                     </span>
@@ -191,7 +191,7 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.experiential_marketing.text" />
                   </p>
 
-                  <Link to="/">
+                  <Link to="/case-studies/stella/">
                     <span>
                       <Text tid="pages.capabilities.experiential_marketing.cta" />
                     </span>
@@ -226,7 +226,7 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.retail_commerce.text" />
                   </p>
 
-                  <Link to="/">
+                  <Link to="/case-studies/google/">
                     <span>
                       <Text tid="pages.capabilities.retail_commerce.cta" />
                     </span>
@@ -251,7 +251,7 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.b2b.text" />
                   </p>
 
-                  <Link to="/">
+                  <Link to="/case-studies/loblaws/">
                     <span>
                       <Text tid="pages.capabilities.b2b.cta" />
                     </span>
@@ -286,7 +286,7 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.assisted_selling.text" />
                   </p>
 
-                  <Link to="/">
+                  <Link to="/case-studies/digital-main-st/">
                     <span>
                       <Text tid="pages.capabilities.assisted_selling.cta" />
                     </span>
@@ -311,7 +311,7 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.brand_development.text" />
                   </p>
 
-                  <Link to="/">
+                  <Link to="/case-studies/tishman-speyer/">
                     <span>
                       <Text tid="pages.capabilities.brand_development.cta" />
                     </span>

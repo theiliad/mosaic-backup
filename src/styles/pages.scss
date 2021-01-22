@@ -319,10 +319,9 @@ div.pages-capabilities {
 
 div.pages-thinking {
   .section-thinking {
-
     div.column {
       margin-bottom: 5em;
-      
+
       &:last-child {
         margin-bottom: 0;
         padding-bottom: 4em;
@@ -366,7 +365,7 @@ div.pages-thinking {
         }
       }
 
-      .thinking-item:hover {
+      a.cp-full-link:hover {
         img {
           -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -412,11 +411,23 @@ div.pages-thinking {
           }
         }
 
-        span.cp-category {
-          font-size: 0.875em;
-          padding: 0.3em 0.8em 0.4em 0.8em;
-          border: 1px solid $colors_blue_primary;
-          border-radius: 3em;
+        span.cp-category-wrapper {
+          span.cp-category {
+            font-size: 0.875em;
+            padding: 0.3em 0.8em 0.4em 0.8em;
+            border: 1px solid $colors_blue_primary;
+            border-radius: 3em;
+          }
+
+          a:hover {
+            text-decoration: none;
+            box-shadow: none;
+
+            span.cp-category {
+              background: $colors_blue_primary;
+              color: #fff;
+            }
+          }
         }
 
         span.cp-date {
@@ -666,6 +677,132 @@ div.post-single-heading.thinking.contact {
   }
 }
 div.pages-contact {
+  div.section-contacts {
+    padding: 6em 0 2em 0;
+
+    h3 {
+      font-size: 2.5em;
+    }
+
+    h5 {
+      margin: 6em 0 3em 0;
+      font-size: 1.25em;
+      text-transform: uppercase;
+      color: $colors_red_primary;
+      @include Roobert_Medium;
+
+      &.cp-2nd-h5 {
+        margin-top: 1em;
+      }
+    }
+
+    div.accordion__item:first-child {
+      border-top: 1px solid #e8eceb;
+    }
+
+    div.accordion__item:last-child {
+      border-bottom: 1px solid #e8eceb;
+    }
+
+    div.accordion__button {
+      color: $colors_midnight_primary;
+
+      span {
+        color: $colors_midnight_secondary;
+        font-size: 0.85em;
+        margin-left: 0.5em;
+      }
+    }
+
+    div.accordion__panel {
+      padding: 0.5em 1.25em 0.5em 1.25em;
+
+      div.cp-contact {
+        margin: 0;
+      }
+    }
+
+    div.cp-wide {
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    div.cp-mobile {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: table;
+      }
+
+      h5 {
+        font-size: 0.875em;
+        margin: 0;
+        margin-bottom: 1.5em;
+
+        &.cp-2nd-h5 {
+          margin-top: 3em;
+        }
+      }
+    }
+
+    div.cp-contact {
+      position: relative;
+      margin-bottom: 5em;
+
+      h6 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+      }
+
+      p {
+        font-size: 1.125em;
+
+        @media screen and (max-width: 768px) {
+          font-size: unset;
+        }
+
+        &.cp-description {
+          position: absolute;
+          left: 0.75rem;
+          top: 3.25em;
+          color: $colors_midnight_secondary;
+        }
+
+        &.cp-address {
+          margin-top: 1em;
+
+          a {
+            color: $colors_blue_primary;
+
+            span {
+              &.cp-a {
+                text-decoration: underline;
+              }
+
+              &.cp-icon {
+                vertical-align: middle;
+                font-size: 1.25em;
+              }
+            }
+
+            &:hover {
+              box-shadow: none;
+            }
+          }
+        }
+
+        &.cp-number {
+          a {
+            color: $colors_blue_primary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
   div.cp-success {
     p {
       color: $colors_blue_primary;

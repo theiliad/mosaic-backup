@@ -7,12 +7,131 @@ import SEO from '../components/seo'
 // Locale
 import { getText, Text, LanguageContext } from '../containers/Language'
 
+// ICONS
+import { RiArrowRightUpLine } from 'react-icons/ri'
+import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
+
 import { FormValidation } from 'calidation'
 
 import axios from 'axios'
 import * as qs from 'query-string'
 
+// Accordion
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+  AccordionItemState,
+} from 'react-accessible-accordion'
+
 import HERO from '../img/contact.jpg'
+
+const CONTACTS = {
+  USA: [
+    {
+      name: 'Dallas',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+    {
+      name: 'Chicago',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+    {
+      name: 'Bentonville',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+    {
+      name: 'Norwalk',
+      description: 'Frontline marketing',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+    {
+      name: 'Jacksonville',
+      description: 'Mosaic Pro',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+  ],
+  CANADA: [
+    {
+      name: 'Toronto',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+    {
+      name: 'Missisauga',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+    {
+      name: 'Montreal',
+      number: '877.870.4800',
+      address: (
+        <>
+          220 East Las Colinas Blvd Suite 300
+          <br />
+          Irving, TX. 75039
+        </>
+      ),
+      link: 'https://google.com',
+    },
+  ],
+}
 
 function Contact({ data, location }) {
   const [loading, setLoading] = useState(false)
@@ -207,6 +326,59 @@ function Contact({ data, location }) {
     </>
   )
 
+  const Contact = ({ contact, title, description, numberLink }) => (
+    <>
+      {title !== false && <h6>{contact.name}</h6>}
+      {description !== false && (
+        <p className="cp-description">{contact.description}</p>
+      )}
+
+      <p className="cp-number">
+        {numberLink ? (
+          <a href={`tel:${contact.number.replace(/\./g, '')}`}>
+            {contact.number}
+          </a>
+        ) : (
+          contact.number
+        )}
+      </p>
+
+      <p className="cp-address">
+        <a href={contact.link} target="_blank" rel="noopener noreferrer">
+          <span className="cp-a">{contact.address}</span>{' '}
+          <span className="cp-icon">
+            <RiArrowRightUpLine />
+          </span>
+        </a>
+      </p>
+    </>
+  )
+
+  const ContactAccordionItem = ({ contact }) => (
+    <AccordionItem>
+      <AccordionItemHeading>
+        <AccordionItemButton>
+          {contact.name} <span>{contact.description}</span>
+          <AccordionItemState>
+            {({ expanded }) => (
+              <span>{expanded ? <VscChevronDown /> : <VscChevronLeft />}</span>
+            )}
+          </AccordionItemState>
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
+        <div className="cp-contact">
+          <Contact
+            contact={contact}
+            title={false}
+            description={false}
+            numberLink={true}
+          />
+        </div>
+      </AccordionItemPanel>
+    </AccordionItem>
+  )
+
   return (
     <Layout
       HeaderExtension={
@@ -247,6 +419,60 @@ function Contact({ data, location }) {
 
       <div>
         <div className="pages-index pages-contact">
+          <div className="section-contacts">
+            <div className="container cp-wide">
+              <h3>
+                <Text tid="pages.contact.contacts.title" />
+              </h3>
+
+              <h5>
+                <Text tid="misc.countries.usa" />
+              </h5>
+
+              <div className="columns is-multiline">
+                {CONTACTS.USA.map(contact => (
+                  <div className="column is-4 cp-contact">
+                    <Contact contact={contact} />
+                  </div>
+                ))}
+              </div>
+
+              <h5 className="cp-2nd-h5">
+                <Text tid="misc.countries.canada" />
+              </h5>
+
+              <div className="columns is-multiline">
+                {CONTACTS.CANADA.map(contact => (
+                  <div className="column is-4 cp-contact">
+                    <Contact contact={contact} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="container cp-mobile">
+              <h5>
+                <Text tid="misc.countries.usa" />
+              </h5>
+
+              <Accordion allowZeroExpanded={true}>
+                {CONTACTS.USA.map(contact => (
+                  <ContactAccordionItem contact={contact} />
+                ))}
+              </Accordion>
+
+              <h5 className="cp-2nd-h5">
+                <Text tid="misc.countries.canada" />
+              </h5>
+
+              <Accordion allowZeroExpanded={true}>
+                {CONTACTS.CANADA.map(contact => (
+                  <ContactAccordionItem contact={contact} />
+                ))}
+              </Accordion>
+            </div>
+          </div>
+
           <div className="form">
             <div className="container page">
               <div className="columns">
@@ -408,13 +634,17 @@ function Contact({ data, location }) {
                     <div className="cp-success">
                       <Text tid="pages.contact.formSubmitted.message" />
 
-                      <a href="/" className="button primary" onClick={e => {
-						  e.preventDefault()
+                      <a
+                        href="/"
+                        className="button primary"
+                        onClick={e => {
+                          e.preventDefault()
 
-						  if (typeof window !== undefined) {
-							window.location.reload()
-						  }
-					  }}>
+                          if (typeof window !== undefined) {
+                            window.location.reload()
+                          }
+                        }}
+                      >
                         <Text tid="pages.contact.formSubmitted.cta" />
                       </a>
                     </div>

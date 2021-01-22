@@ -195,14 +195,14 @@
     div.columns {
       margin-right: 0;
 
-      @media screen and (max-width: 949px) {
+      @media screen and (max-width: 1175px) {
         flex-direction: column;
       }
 
       div.cp-spacer {
         flex-grow: 1;
 
-        @media screen and (max-width: 949px) {
+        @media screen and (max-width: 1175px) {
           display: none;
         }
       }
@@ -212,7 +212,7 @@
       display: table;
       margin: auto;
 
-      @media screen and (max-width: 949px) {
+      @media screen and (max-width: 1175px) {
         margin-left: 0;
         padding: 0.75rem;
       }
@@ -257,7 +257,7 @@
           }
         }
 
-        @media screen and (max-width: 949px) {
+        @media screen and (max-width: 1175px) {
           display: none;
         }
       }
@@ -271,7 +271,7 @@
           font-size: 1.1em;
         }
 
-        @media screen and (max-width: 949px) {
+        @media screen and (max-width: 1175px) {
           display: inline-flex;
         }
       }
@@ -279,13 +279,13 @@
 
     div.cp-desc {
       div.column.cp-spacer {
-        @media screen and (max-width: 949px) {
+        @media screen and (max-width: 1175px) {
           display: none;
         }
       }
 
       div.column.cp-text {
-        @media screen and (max-width: 949px) {
+        @media screen and (max-width: 1175px) {
           width: 100%;
 
           p {

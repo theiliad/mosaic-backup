@@ -51,23 +51,26 @@ import { scaleLinear } from 'd3-scale'
 import { HOMEPAGE_NAV_HIDE_THRESHOLD } from '../components/Layout'
 
 const HOME_ANIMATED_LOGOS = [
-  HOME_LOGO_AQUABLUE,
-  HOME_LOGO_ORANGEBLUE,
-  HOME_LOGO_REDMATRIX,
-  HOME_LOGO_WHITEMATRIX,
-  HOME_LOGO_WHITEOUTLINE,
-  HOME_LOGO_WHITERED,
+  { name: 'aquablue', src: HOME_LOGO_AQUABLUE },
+  { name: 'orangeblue', src: HOME_LOGO_ORANGEBLUE },
+  { name: 'redmatrix', src: HOME_LOGO_REDMATRIX },
+  { name: 'whitematrix', src: HOME_LOGO_WHITEMATRIX },
+  { name: 'whiteoutline', src: HOME_LOGO_WHITEOUTLINE },
+  { name: 'whitered', src: HOME_LOGO_WHITERED },
 ]
 const updateLogos = () => {
   const heroLogoElement = document.getElementById('cp_hero_logo')
   if (heroLogoElement) {
-    const currentLogoIndex = HOME_ANIMATED_LOGOS.indexOf(heroLogoElement.src)
+    const currentLogoIndex = HOME_ANIMATED_LOGOS.findIndex(
+      logo => logo.name === heroLogoElement.getAttribute('data-lname')
+    )
     const nextLogoIndex =
       currentLogoIndex < HOME_ANIMATED_LOGOS.length - 1
         ? currentLogoIndex + 1
         : 0
 
-    heroLogoElement.src = HOME_ANIMATED_LOGOS[nextLogoIndex]
+    heroLogoElement.src = HOME_ANIMATED_LOGOS[nextLogoIndex].src
+    heroLogoElement.setAttribute('data-lname', HOME_ANIMATED_LOGOS[nextLogoIndex].name)
   }
 }
 
@@ -159,7 +162,7 @@ class BlogIndex extends React.Component {
             //     topValue = computedTopValue
             //   }
 
-			// The "* 1.5" bit adds some elastic easing to the animation
+            // The "* 1.5" bit adds some elastic easing to the animation
             // Can remove for a more subtle effect
             topValue = Math.max(
               Math.min(computedTopValue * 1.5, hiddenLogoTopDistance),

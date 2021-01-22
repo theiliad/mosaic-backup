@@ -32,6 +32,10 @@ export const pageQuery = graphql`
           linkedin
           image
         }
+        sponsors {
+		  image
+		  alt
+        }
         moderator {
           name
           textEN
