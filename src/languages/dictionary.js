@@ -93,6 +93,30 @@ export default {
       en: 'Past session',
       fr: FRFPO,
     },
+    liveSession: {
+      en: 'Live session',
+      fr: FRFPO,
+      startedAt: {
+        en: 'Stream started at',
+        fr: FRFPO,
+      },
+    },
+    upcomingSession: {
+      en: 'Upcoming session',
+      fr: FRFPO,
+      at: {
+        en: 'at',
+        fr: FRFPO,
+      },
+      reminder: {
+        en: 'Set a reminder',
+        fr: FRFPO,
+      },
+    },
+    recap: {
+      en: 'Recap',
+      fr: FRFPO,
+    },
     originallyStreamed: {
       en: 'Originally streamed',
       fr: FRFPO,

@@ -7,14 +7,42 @@ import { Text, TextDate } from '../containers/Language'
 import CATEGORIES from '../data/categories'
 
 // Icons
-import { BsPlayFill } from 'react-icons/bs'
+import { BsPlayFill, BsBellFill } from 'react-icons/bs'
+import { IoIosRadio } from 'react-icons/io'
+import { RiArrowRightUpLine } from 'react-icons/ri'
 
-import { isBefore } from 'date-fns'
+import { isBefore, isAfter } from 'date-fns'
 
 export function ThinkingPostHeader({ post, play, setPlay }) {
   const { frontmatter } = post
   const isOneEightyPost = frontmatter.category === 'oneeighty'
-  const isPastSession = isBefore(new Date(frontmatter.date), new Date())
+
+  const postDate = new Date(frontmatter.date)
+
+  let streamStartDate = null,
+    streamEndDate = null
+  if (frontmatter.streamStartDate && frontmatter.streamEndDate) {
+    streamStartDate = new Date(frontmatter.streamStartDate)
+    streamEndDate = new Date(frontmatter.streamEndDate)
+  }
+
+  const isPastSession = isBefore(streamEndDate || postDate, new Date())
+  const isLiveSession = !isPastSession && isBefore(streamStartDate, new Date())
+  const isUpcomingSession =
+    !isPastSession && isAfter(streamStartDate, new Date())
+
+  const isRecap = frontmatter.recap === true
+
+  let categoryTID
+  if (isRecap) {
+    categoryTID = 'thinking.recap'
+  } else if (isPastSession) {
+    categoryTID = 'thinking.pastSession'
+  } else if (isLiveSession) {
+    categoryTID = 'thinking.liveSession'
+  } else if (isUpcomingSession) {
+    categoryTID = 'thinking.upcomingSession'
+  }
 
   const PostMeta = () => (
     <>
@@ -31,15 +59,9 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
         <p className="cp-category cp-regular">
           {isOneEightyPost ? (
             <>
-              <Text variations={CATEGORIES.thinking['oneeighty']} />
-              {isPastSession ? (
-                <>
-                  {' '}
-                  - <Text tid="thinking.pastSession" />
-                </>
-              ) : (
-                ''
-              )}
+              {isLiveSession && <IoIosRadio />}
+              <Text variations={CATEGORIES.thinking['oneeighty']} /> -{' '}
+              <Text tid={categoryTID} />
             </>
           ) : (
             <Link to={`/thinking/${frontmatter.category}`}>
@@ -48,14 +70,37 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
           )}
         </p>
 
-        {isOneEightyPost && isPastSession && (
+        {isOneEightyPost && !isRecap && isPastSession && (
           <p className="cp-streaming-date">
             <Text tid="thinking.originallyStreamed" />{' '}
-            <TextDate string={frontmatter.date} />
+            <TextDate string={frontmatter.streamStartDate} />
           </p>
         )}
 
-        {!isOneEightyPost && (
+        {isOneEightyPost && !isRecap && isLiveSession && (
+          <p className="cp-streaming-date">
+            <Text tid="thinking.liveSession.startedAt" />{' '}
+            <TextDate
+              string={frontmatter.streamStartDate}
+              format="hh:mma"
+              lowercase={true}
+            />
+          </p>
+        )}
+
+        {isOneEightyPost && !isRecap && isUpcomingSession && (
+          <p className="cp-streaming-date">
+            <TextDate string={frontmatter.streamStartDate} />{' '}
+            <Text tid="thinking.upcomingSession.at" />{' '}
+            <TextDate
+              string={frontmatter.streamStartDate}
+              format="hh:mma"
+              lowercase={true}
+            />
+          </p>
+        )}
+
+        {(!isOneEightyPost || isRecap) && (
           <>
             <p className="cp-date">
               <TextDate string={frontmatter.date} />
@@ -68,23 +113,47 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
         )}
 
         {isOneEightyPost && (
-          <p className="cp-play">
-            <a
-              href="/"
-              onClick={e => {
-                e.preventDefault()
-                setPlay(frontmatter.videoID)
-              }}
-            >
-              <span>
-                <BsPlayFill />
-              </span>
+          <>
+            {!isRecap && !isUpcomingSession && (
+              <p className="cp-play">
+                <a
+                  href="/"
+                  onClick={e => {
+                    e.preventDefault()
+                    setPlay(frontmatter.videoID)
+                  }}
+                >
+                  <span>
+                    <BsPlayFill />
+                  </span>
 
-              <i>
-                <Text tid="thinking.watchNow" />
-              </i>
-            </a>
-          </p>
+                  <i>
+                    <Text tid="thinking.watchNow" />
+                  </i>
+                </a>
+              </p>
+            )}
+
+            {isUpcomingSession && (
+              <p className="cp-play cp-reminder">
+                <a
+                  href={frontmatter.reminderURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>
+                    <BsBellFill />
+                  </span>
+
+                  <i>
+                    <Text tid="thinking.upcomingSession.reminder" />
+
+                    <RiArrowRightUpLine />
+                  </i>
+                </a>
+              </p>
+            )}
+          </>
         )}
       </div>
     </>
@@ -94,7 +163,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
     <>
       <div
         className={`post-single-heading thinking ${
-          isOneEightyPost ? 'oneeighty' : ''
+          isOneEightyPost && !isRecap ? 'oneeighty' : ''
         }`}
       >
         <div className="columns post-single cp-desktop">
@@ -270,7 +339,11 @@ export function PostHeader({ post, play, setPlay }) {
         </div>
       </div>
 
-      <img alt={frontmatter.titleEN} src={frontmatter.featuredImage} style={{ width: '100%' }} />
+      <img
+        alt={frontmatter.titleEN}
+        src={frontmatter.featuredImage}
+        style={{ width: '100%' }}
+      />
     </>
   )
 }

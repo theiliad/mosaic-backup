@@ -3,6 +3,8 @@ posttype: thinking
 titleEN: Is the future of shopping hardwired or human?
 titleFR: FRFPO
 date: 2020-10-28T03:14:12.599Z
+streamStartDate: 2021-01-18T03:14:12.599Z
+streamEndDate: 2021-01-18T03:14:12.599Z
 featuredImage: /img/thinking/can-any-brand-be-a-wellness-brand.jpg
 category: oneeighty
 descriptionEN: Industry experts from both data driven and behavioral backgrounds challenge each other and share their insights on what the future of shopping has in store.

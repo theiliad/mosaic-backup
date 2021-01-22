@@ -118,7 +118,6 @@ div.pages-index {
       @media screen and (max-width: 1068px) {
         width: 100%;
       }
-
     }
   }
 
@@ -359,10 +358,10 @@ div.pages-thinking {
 
       p.cp-meta {
         span.cp-play {
-          padding-right: 0;
+          padding-right: 0.5em;
 
           a {
-            color: $colors_white;
+            // color: $colors_white;
             @include Roobert_SemiBold;
 
             span {
@@ -371,16 +370,16 @@ div.pages-thinking {
               width: 1.5em;
               height: 1.5em;
               border-radius: 50%;
-              border: 2px solid $colors_blue_primary;
+              border: 1px solid $colors_blue_primary;
               //   margin-top: -0.15em;
-              background: $colors_blue_primary;
+              //   background: $colors_blue_primary;
               vertical-align: middle;
 
               svg {
                 position: absolute;
                 top: 50%;
                 left: 53.5%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%) scale(0.9);
               }
             }
 
@@ -400,6 +399,18 @@ div.pages-thinking {
 
         span.cp-date {
           padding-left: 0;
+          margin-top: -0.1em;
+
+          svg {
+            font-size: 1.5em;
+			vertical-align: middle;
+			margin-right: 0.25em;
+			margin-top: -0.1em;
+          }
+
+          &.cp-live {
+            color: $colors_red_primary;
+          }
 
           span {
             font-size: 0.75em;
@@ -448,7 +459,7 @@ div.pages-news {
       }
     }
 
-    a.press-release {
+    a.piece {
       color: $colors_blue_primary;
       font-size: 2em;
       padding: 1.375em 0;
@@ -655,7 +666,7 @@ div.pages-contact {
 
         @media screen and (max-width: 768px) {
           font-size: 2em;
-		  line-height: 1em;
+          line-height: 1em;
 
           br {
             display: none;
@@ -672,13 +683,13 @@ div.pages-contact {
 
     p.is-danger {
       color: $colors_red_primary;
-	}
-	
-	label {
-		color: $colors_midnight_primary;
-		font-size: 0.875em;
-		@include Roobert_Medium;
-	}
+    }
+
+    label {
+      color: $colors_midnight_primary;
+      font-size: 0.875em;
+      @include Roobert_Medium;
+    }
 
     input,
     textarea,

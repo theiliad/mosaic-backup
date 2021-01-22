@@ -62,7 +62,7 @@ export function Text({ tid, variations }) {
 }
 
 // get text according to id & current language
-export function TextDate({ string, format, options }) {
+export function TextDate({ string, format, options, lowercase }) {
   const languageContext = useContext(LanguageContext)
 
   let defaultOptions = {}
@@ -72,9 +72,15 @@ export function TextDate({ string, format, options }) {
 
   const defaultFormat = 'MMM dd yyyy'
 
-  return dateFnsFormat(
+  const result = dateFnsFormat(
     new Date(string),
     format || defaultFormat,
     options || defaultOptions
   )
+
+  if (lowercase) {
+    return result.toLowerCase()
+  }
+
+  return result
 }

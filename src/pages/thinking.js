@@ -17,16 +17,32 @@ import CATEGORIES from '../data/categories'
 // Icons
 import { BsPlayFill } from 'react-icons/bs'
 import { VscChevronDown } from 'react-icons/vsc'
+import { IoIosRadio } from 'react-icons/io'
+import { GiBackwardTime } from 'react-icons/gi'
+import { AiOutlineCalendar } from 'react-icons/ai'
 
 import Fade from 'react-reveal/Fade'
 
 // dates
-import { isBefore } from 'date-fns'
+import { isBefore, isAfter } from 'date-fns'
 
 const ThinkingItem = ({ node, size }) => {
   const postDate = new Date(node.frontmatter.date)
-  const isPastSession = isBefore(postDate, new Date())
+
+  let streamStartDate = null,
+    streamEndDate = null
+  if (node.frontmatter.streamStartDate && node.frontmatter.streamEndDate) {
+    streamStartDate = new Date(node.frontmatter.streamStartDate)
+    streamEndDate = new Date(node.frontmatter.streamEndDate)
+  }
+
+  const isPastSession = isBefore(streamEndDate || postDate, new Date())
+  const isLiveSession = !isPastSession && isBefore(streamStartDate, new Date())
+  const isUpcomingSession =
+    !isPastSession && isAfter(streamStartDate, new Date())
+
   const isOneEighty = node.frontmatter.category === 'oneeighty'
+  const isRecap = node.frontmatter.recap === true
 
   return (
     <Fade key={node.fields.slug} duration={300}>
@@ -54,22 +70,6 @@ const ThinkingItem = ({ node, size }) => {
           </p>
 
           <p className="cp-meta columns is-mobile">
-            {isPastSession && isOneEighty && (
-              <span className="column is-narrow cp-play">
-                <p>
-                  <a
-                    href="/"
-                    onClick={e => {
-                      e.preventDefault()
-                    }}
-                  >
-                    <span>
-                      <BsPlayFill />
-                    </span>
-                  </a>
-                </p>
-              </span>
-            )}
             <span className="column is-narrow">
               <span className="cp-category">
                 <Text
@@ -78,14 +78,66 @@ const ThinkingItem = ({ node, size }) => {
               </span>
             </span>
 
-            {isOneEighty && (
+            {isOneEighty && !isRecap && (
+              <>
+                {isPastSession && (
+                  <span className="column is-narrow cp-play">
+                    <p>
+                      <a
+                        href="/"
+                        onClick={e => {
+                          e.preventDefault()
+                        }}
+                      >
+                        <span>
+                          <BsPlayFill />
+                        </span>
+                      </a>
+                    </p>
+                  </span>
+                )}
+
+                {isPastSession && (
+                  <span className="column cp-date">
+                    <span>
+                      <Text tid="thinking.pastSession" />
+                    </span>
+                  </span>
+                )}
+
+                {isLiveSession && (
+                  <span className="column cp-date cp-live">
+                    <span>
+                      <IoIosRadio />
+                      <Text tid="thinking.liveSession" />
+                    </span>
+                  </span>
+                )}
+
+                {isUpcomingSession && (
+                  <span className="column cp-date">
+                    <span>
+                      <AiOutlineCalendar />
+                      <Text tid="thinking.upcomingSession" />
+                    </span>
+                  </span>
+                )}
+
+                {!isPastSession && !isLiveSession && !isUpcomingSession && (
+                  <span className="column cp-date">
+                    <span>
+                      <TextDate string={node.frontmatter.date} />
+                    </span>
+                  </span>
+                )}
+              </>
+            )}
+
+            {isOneEighty && isRecap && (
               <span className="column cp-date">
                 <span>
-                  {isPastSession && isOneEighty ? (
-                    <Text tid="thinking.pastSession" />
-                  ) : (
-                    <TextDate string={node.frontmatter.date} />
-                  )}
+                  <GiBackwardTime />
+                  <Text tid="thinking.recap" />
                 </span>
               </span>
             )}
@@ -311,6 +363,9 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date
+            streamStartDate
+            streamEndDate
+            recap
             titleEN
             titleFR
             featuredImage

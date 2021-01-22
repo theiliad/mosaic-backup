@@ -169,6 +169,13 @@ div.post-single-heading {
         color: $colors_white;
         text-transform: none;
         @include Roobert_Medium;
+
+        svg {
+          vertical-align: middle;
+          font-size: 1.25em;
+          margin-top: -0.1em;
+          margin-right: 0.5em;
+        }
       }
 
       p.cp-streaming-date {
@@ -213,6 +220,29 @@ div.post-single-heading {
           &:hover {
             text-decoration: none;
             box-shadow: none;
+          }
+        }
+
+        &.cp-reminder {
+          a {
+            span {
+              background: transparent;
+              border-color: #fff;
+              border-width: 1px;
+
+              svg {
+                font-size: 1em;
+                left: 52.5%;
+              }
+            }
+
+            i {
+              svg {
+				margin-left: 0.5em;
+				vertical-align: middle;
+				margin-top: -0.1em;
+              }
+            }
           }
         }
       }
@@ -457,8 +487,8 @@ div.post-body {
       }
 
       span {
-      border-bottom: 1px solid $colors_blue_primary;
-      @include transition_default;
+        border-bottom: 1px solid $colors_blue_primary;
+        @include transition_default;
       }
 
       svg {
