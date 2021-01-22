@@ -117,7 +117,7 @@ const ThinkingItem = ({ node, size }) => {
                 {isUpcomingSession && (
                   <span className="column cp-date">
                     <span>
-                      <AiOutlineCalendar />
+                      <AiOutlineCalendar /> 
                       <Text tid="thinking.upcomingSession" />
                     </span>
                   </span>

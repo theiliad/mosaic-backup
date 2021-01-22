@@ -262,19 +262,28 @@ div.pages-index {
 div.pages-capabilities {
   div.section-writeup,
   div.section-writeup2 {
-    @include section_padding;
-    padding-bottom: 0;
+    padding: 12em 0;
 
-    &:last-child {
-      padding-bottom: 7em;
+    @media screen and (max-width: 768px) {
+      padding: 4em 0;
     }
+
+    //&:last-child {
+    //  padding-bottom: 7em;
+    //}
 
     h2 {
       @include Roobert_Medium;
       margin-bottom: 0.7em;
       font-size: 2.5em;
       line-height: 1em;
+
+        @media screen and (max-width: 768px) {
+          margin-top: .25em;
+        }
     }
+
+
 
     p.secondary {
       font-size: 1.125em;
@@ -290,6 +299,14 @@ div.pages-capabilities {
       span {
         border-bottom: 1px solid $colors_blue_primary;
         @include transition_default;
+      }
+
+      &:hover {
+        color: $colors_red_primary;
+
+        span {
+          border-bottom: 1px solid $colors_red_primary;
+        }
       }
 
       svg {

@@ -1,6 +1,9 @@
 div.post-single-heading {
   padding: 8em 0 0 0;
-  margin-bottom: 3em;
+
+    @media screen and (min-width: 769px) {
+      margin-bottom: 3em;
+    }
 
   h1 {
     font-size: 3.5em;
@@ -275,7 +278,12 @@ div.post-single-heading {
       }
 
       h1 {
-        font-size: 2.5em;
+        font-size: 5vh;
+        line-height: 1.25em;
+
+         @media screen and (max-width: 768px) {
+           font-size: 3vh;
+         }
       }
 
       p.cp-author {
@@ -292,10 +300,13 @@ div.columns.post-single.featured-image.ui-grid.post-html-img {
 }
 
 div.post-body {
-  margin-top: 4em;
   margin-bottom: 8em;
   color: $colors_midnight_primary;
   @include Roobert_Regular;
+
+    @media screen and (min-width: 769px) {
+      margin-top: 4em;
+    }
 
   p {
     font-size: 1.25em;
@@ -660,7 +671,7 @@ div.post {
 
           img {
             display: table;
-            max-width: 400px;
+            max-width: 504px;
 
             @media screen and (max-width: 768px) {
               width: 100%;

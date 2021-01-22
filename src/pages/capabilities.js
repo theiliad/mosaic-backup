@@ -8,8 +8,12 @@ import SEO from '../components/seo'
 import { Text } from '../containers/Language'
 
 // Assets
-import DEMO_3 from '../img/demo/3.jpg'
-import DEMO_4 from '../img/demo/4.jpg'
+import CAPABILITIES_CONTENT_DIGITAL from '../img/capabilities/content-digital.jpg'
+import CAPABILITIES_EXPERIENTIAL_MARKETING from '../img/capabilities/experiential-marketing.jpg'
+import CAPABILITIES_RETAIL_COMMERCE from '../img/capabilities/retail-commerce.jpg'
+import CAPABILITIES_B2B from '../img/capabilities/b2b.jpg'
+import CAPABILITIES_ASSISTED_SELLING from '../img/capabilities/assisted-selling.jpg'
+import CAPABILITIES_BRAND_DEVELOPMENT from '../img/capabilities/brand-development.jpg'
 
 import { FiArrowRight } from 'react-icons/fi'
 
@@ -147,13 +151,13 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_4} className="image-below" />
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img src={CAPABILITIES_CONTENT_DIGITAL} className="image-below" />
                 </div>
 
                 <div className="column is-1"></div>
 
-                <div className="column is-4-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.content_digital.title" />
                   </h2>
@@ -178,7 +182,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-4-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.experiential_marketing.title" />
                   </h2>
@@ -197,8 +201,8 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_4} className="image-below" />
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img src={CAPABILITIES_EXPERIENTIAL_MARKETING} className="image-below" />
                 </div>
               </div>
             </div>
@@ -207,13 +211,13 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_4} className="image-below" />
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img src={CAPABILITIES_RETAIL_COMMERCE} className="image-below" />
                 </div>
 
                 <div className="column is-1"></div>
 
-                <div className="column is-4-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.retail_commerce.title" />
                   </h2>
@@ -238,7 +242,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-4-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+              <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.b2b.title" />
                   </h2>
@@ -257,8 +261,8 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_4} className="image-below" />
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img src={CAPABILITIES_B2B} className="image-below" />
                 </div>
               </div>
             </div>
@@ -267,13 +271,13 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_4} className="image-below" />
+               <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img src={CAPABILITIES_ASSISTED_SELLING} className="image-below" />
                 </div>
 
                 <div className="column is-1"></div>
 
-                <div className="column is-4-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.assisted_selling.title" />
                   </h2>
@@ -298,7 +302,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-4-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+               <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.brand_development.title" />
                   </h2>
@@ -317,8 +321,8 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_4} className="image-below" />
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img src={CAPABILITIES_BRAND_DEVELOPMENT} className="image-below" />
                 </div>
               </div>
             </div>

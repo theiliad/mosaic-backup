@@ -17,6 +17,8 @@ import CATEGORIES from '../data/categories'
 import LOGO_WHITE from '../img/logo/white-transparent.svg'
 import DEMO_3 from '../img/demo/3.jpg'
 import HOME_HERO from '../img/home/hero.jpg'
+import HOME_CAPABILITIES from '../img/home/capabilities.jpg'
+import HOME_ONEEIGHTY from '../img/home/oneeighty.jpg'
 
 // Partner logos
 import ANHEUSER_BUSCH from '../img/home/partners/anheuser-busch.svg'
@@ -321,7 +323,7 @@ class BlogIndex extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_3} className="image-below" />
+                  <img src={HOME_CAPABILITIES} className="image-below" />
                 </div>
 
                 <div className="column is-1"></div>
@@ -363,7 +365,7 @@ class BlogIndex extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  <img src={DEMO_3} className="image-below" />
+                  <img src={HOME_ONEEIGHTY} className="image-below" />
                 </div>
               </div>
             </div>
