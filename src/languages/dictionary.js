@@ -155,7 +155,12 @@ export default {
   pages: {
     index: {
       title: {
-        en: 'We build brands in dimension.',
+        en: (
+          <>
+            We build brands <br />
+            in dimension.
+          </>
+        ),
         fr: FRFPO,
       },
       why: {

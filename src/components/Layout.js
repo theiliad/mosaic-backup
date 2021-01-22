@@ -31,6 +31,8 @@ export const LOGO_OPTIONS = {
   white: LOGO_WHITE,
 }
 
+export const HOMEPAGE_NAV_HIDE_THRESHOLD = 450
+
 class Header extends React.Component {
   state = {
     scrollDir: 'up',
@@ -40,14 +42,23 @@ class Header extends React.Component {
   componentDidMount() {
     this.lastScrollTop = null
     document.addEventListener('scroll', this.trackScrolling)
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.trackScrolling)
+    }
   }
 
   trackScrolling = () => {
     const { scrollDir } = this.state
+    const isHomepage = this.props.location.pathname === '/'
+
     if (typeof window !== 'undefined') {
-      var st = window.pageYOffset || document.documentElement.scrollTop
+      const st = window.pageYOffset || document.documentElement.scrollTop
       if (st > this.lastScrollTop) {
-        if (scrollDir === 'up') {
+        if (
+          scrollDir === 'up' &&
+          (!isHomepage || st > HOMEPAGE_NAV_HIDE_THRESHOLD)
+        ) {
           this.setState({
             ...this.state,
             scrollDir: 'down',
@@ -69,11 +80,22 @@ class Header extends React.Component {
         })
       }
 
-      if (st === 0 && this.state.whiteNav !== false) {
+      if (
+        ((isHomepage && st < HOMEPAGE_NAV_HIDE_THRESHOLD + 300) ||
+          (!isHomepage && st < 150)) &&
+        this.state.whiteNav !== false
+      ) {
         this.setState({
           ...this.state,
           whiteNav: false,
         })
+      }
+
+      const siteLogoElement = document.getElementById('cp_site_logo')
+      if (isHomepage && st <= HOMEPAGE_NAV_HIDE_THRESHOLD) {
+        siteLogoElement.style.opacity = 0
+      } else {
+        siteLogoElement.style.opacity = 1
       }
 
       this.lastScrollTop = st <= 0 ? 0 : st
@@ -84,6 +106,13 @@ class Header extends React.Component {
     const { props } = this
     const { HeaderExtension, location, navIdleLight } = props
     const { scrollDir, whiteNav } = this.state
+
+    const isHomepage = location.pathname === '/'
+
+    let st = 0
+    if (typeof window !== 'undefined') {
+      st = window.pageYOffset || document.documentElement.scrollTop
+    }
 
     return (
       <>
@@ -102,11 +131,16 @@ class Header extends React.Component {
               aria-label="main navigation"
             >
               <div className="navbar-brand">
-                {location.pathname !== '/' && (
-                  <Link className="navbar-item logo" to="/">
-                    <img src={props.logo || LOGO_WHITE} />
-                  </Link>
-                )}
+                <Link className="navbar-item logo" to="/">
+                  <img
+                    src={props.logo || (navIdleLight && whiteNav ? LOGO_ORANGE_BLUE : LOGO_WHITE)}
+                    id="cp_site_logo"
+                    style={{
+                      opacity:
+                        isHomepage && st <= HOMEPAGE_NAV_HIDE_THRESHOLD ? 0 : 1,
+                    }}
+                  />
+                </Link>
 
                 <a
                   role="button"

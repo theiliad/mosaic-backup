@@ -684,7 +684,7 @@ div.video-overlay {
   background: rgba($colors_midnight_primary, 0.96);
   z-index: 100;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
 
   div.cp-content {
     position: absolute;
