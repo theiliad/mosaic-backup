@@ -50,12 +50,16 @@ function Post(props) {
   const { frontmatter } = post
   const siteTitle = props.data.site.siteMetadata.title
 
-  const [play, setPlay] = useState(false)
+  const [play, setPlay] = useState(
+    props.location.search === '?playVideo=true' ? frontmatter.videoID : null
+  )
 
   // Type of the post
   const isNewsPost = frontmatter.posttype === 'news'
   const isThinkingPost = frontmatter.posttype === 'thinking'
+  const isCaseStudy = frontmatter.posttype === 'case-study'
   const isOneEightyPost = isThinkingPost && frontmatter.category === 'oneeighty'
+  const isRecap = frontmatter.recap === true
 
   const previousPost = props.pageContext.previous
 
@@ -63,7 +67,7 @@ function Post(props) {
     <AccordionItem>
       <AccordionItemHeading>
         <AccordionItemButton>
-          <div className="columns is-vcentered">
+          <div className="columns is-vcentered is-mobile">
             <div className="column is-narrow cp-panelist-image">
               <div className={`cp-image ${isModerator ? 'cp-gradient' : ''}`}>
                 <div
@@ -100,28 +104,37 @@ function Post(props) {
         </AccordionItemButton>
       </AccordionItemHeading>
       <AccordionItemPanel>
-        <p>
-          <Text
-            variations={{
-              en: member.textEN,
-              fr: member.textFR,
-            }}
-          />
+        <div class="columns is-vcentered">
+          <div class="column is-narrow cp-panelist-image cp-wide">
+            <div class="cp-image ">
+              <div class="cp-img"></div>
+            </div>
+          </div>
+          <div class="column">
+            <p>
+              <Text
+                variations={{
+                  en: member.textEN,
+                  fr: member.textFR,
+                }}
+              />
 
-          {member.linkedin && (
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cp-linkedin"
-            >
-              <span>
-                <Text tid="thinking.panelist.linkedin" />
-              </span>{' '}
-              <RiArrowRightUpLine />
-            </a>
-          )}
-        </p>
+              {member.linkedin && (
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cp-linkedin"
+                >
+                  <span>
+                    <Text tid="thinking.panelist.linkedin" />
+                  </span>{' '}
+                  <RiArrowRightUpLine />
+                </a>
+              )}
+            </p>
+          </div>
+        </div>
       </AccordionItemPanel>
     </AccordionItem>
   )
@@ -131,7 +144,7 @@ function Post(props) {
       location={props.location}
       title={siteTitle}
       logo={LOGO_OPTIONS.orangeBlue}
-      navIdleLight={isOneEightyPost}
+      navIdleLight={isOneEightyPost && !isRecap}
       footerCTA={
         isNewsPost ? (
           <h6>
@@ -182,6 +195,14 @@ function Post(props) {
                   <MDXRenderer>{post.body}</MDXRenderer>
                 </MDXProvider> */}
 
+                <div className="columns cp-sponsors is-mobile is-multiline">
+                  {frontmatter.sponsors.map(sponsor => (
+                    <div className="column is-3-widescreen is-4-desktop is-4-tablet is-4-mobile">
+                      <img src={sponsor.image} alt={sponsor.alt} />
+                    </div>
+                  ))}
+                </div>
+
                 <MDX
                   components={{
                     a: aProps => {
@@ -196,7 +217,11 @@ function Post(props) {
                       <div className="cp-el-img">
                         <img {...imgProps} />
 
-						{imgProps.caption && <p className="cp-caption subtitle is-6">{imgProps.caption}</p>}
+                        {imgProps.caption && (
+                          <p className="cp-caption subtitle is-6">
+                            {imgProps.caption}
+                          </p>
+                        )}
                       </div>
                     ),
                   }}
@@ -362,10 +387,17 @@ function Post(props) {
                     </p>
                     <h6>
                       <Text
-                        variations={{
-                          en: previousPost.frontmatter.titleEN,
-                          fr: previousPost.frontmatter.titleFR,
-                        }}
+                        variations={
+                          isCaseStudy
+                            ? {
+                                en: `${previousPost.frontmatter.companyName} — ${previousPost.frontmatter.titleEN}`,
+                                fr: `${previousPost.frontmatter.companyName} — ${previousPost.frontmatter.titleFR}`,
+                              }
+                            : {
+                                en: previousPost.frontmatter.titleEN,
+                                fr: previousPost.frontmatter.titleFR,
+                              }
+                        }
                       />
                     </h6>
                   </div>

@@ -102,9 +102,11 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
 
         {(!isOneEightyPost || isRecap) && (
           <>
-            <p className="cp-date">
-              <TextDate string={frontmatter.date} />
-            </p>
+            {isOneEightyPost && (
+              <p className="cp-date">
+                <TextDate string={frontmatter.date} />
+              </p>
+            )}
 
             <p className="cp-author">
               BY {frontmatter.author || <Text tid="thinking.defaultAuthor" />}

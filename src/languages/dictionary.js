@@ -322,6 +322,12 @@ export default {
           },
         },
       },
+      contacts: {
+        title: {
+          en: 'Our offices',
+          fr: FRFPO,
+        },
+      },
       formItems: {
         email: {
           en: 'Email address',
@@ -715,6 +721,16 @@ export default {
     cancel: {
       en: 'Cancel',
       fr: FRFPO,
+    },
+    countries: {
+      canada: {
+        en: 'Canada',
+        fr: FRFPO,
+      },
+      usa: {
+        en: 'United States',
+        fr: FRFPO,
+      },
     },
   },
 }

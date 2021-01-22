@@ -480,7 +480,8 @@ div.post-body {
       margin-top: 1em;
       color: $colors_blue_primary;
       font-size: 0.875em;
-      @include Roobert_SemiBold;
+	  @include Roobert_SemiBold;
+	  box-shadow: none;
 
       &:hover {
         box-shadow: none;
