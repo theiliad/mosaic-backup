@@ -3,6 +3,7 @@ posttype: thinking
 titleEN: 'The Future of Shopping is Both Hardwired and Human: A Mosaic OneEighty Session Recap'
 titleFR: FRFPO
 date: 2020-10-30T03:14:12.599Z
+recap: true
 featuredImage: /img/thinking/the-future-of-shopping-is-both-hardwired-and-human.jpg
 category: oneeighty
 videoID: _KK958OkD6g

@@ -22,8 +22,8 @@
   position: relative;
   color: $colors_blue_primary;
   cursor: pointer;
-  padding: 1.4em;
-  padding-right: 4em;
+  padding: 1em 4em 1em 1.4em;
+  margin: 1em 0;
   width: 100%;
   text-align: left;
   border: none;
@@ -57,11 +57,11 @@
   color: $colors_midnight_primary;
   padding: 0.5em 1.25em 1.5em 1.25em;
   animation: fadein 0.35s ease-in;
-  font-size: 1em;
+  font-size: 0.8em;
 
   p {
     margin-bottom: 1em;
-    font-size: 0.875em;
+    font-size: 0.8em;
     line-height: 1.875em;
   }
 }

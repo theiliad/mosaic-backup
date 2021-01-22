@@ -124,7 +124,11 @@ div.sidenav {
 
       div.links a {
         text-align: left;
-		font-size: 1.25em;
+        font-size: 1.25em;
+        
+        &:hover {
+          text-decoration: underline;
+        }
 		
 		&.active {
 			color: $colors_orange_primary;
@@ -139,7 +143,12 @@ div.sidenav {
       left: 0;
       width: 100%;
 	  text-align: center;
-	  text-transform: uppercase;
+    text-transform: uppercase;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    
     }
   }
 }

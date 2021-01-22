@@ -363,13 +363,12 @@ div.post-body {
 
   p a {
     color: $colors_blue_primary;
-    box-shadow: inset 0 -2px 0 0 $colors_blue_primary;
+    text-decoration: underline;
 
     &:hover {
       color: $colors_red_primary;
       text-decoration: underline;
-      box-shadow: inset 0 -2px 0 0 $colors_red_primary;
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 
@@ -430,8 +429,8 @@ div.post-body {
 
       div.cp-image {
         position: relative;
-        width: 6.625em;
-        height: 6.625em;
+        width: 7em;
+        height: 7em;
         border-radius: 50%;
 
         &.cp-gradient {
@@ -443,8 +442,8 @@ div.post-body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 6.375em;
-          height: 6.3755em;
+          width: 7.25em;
+          height: 7.25em;
           background-size: cover;
           background-position: center;
           border-radius: 50%;
@@ -464,7 +463,7 @@ div.post-body {
     p.cp-name {
       margin-bottom: 0;
       @include Roobert-Medium;
-      font-size: 1em;
+      font-size: 1.375em;
     }
 
     p.cp-title {
@@ -479,15 +478,16 @@ div.post-body {
       display: block;
       margin-top: 1em;
       color: $colors_blue_primary;
-      font-size: 0.875em;
+      font-size: 1em;
       @include Roobert_SemiBold;
 
       &:hover {
+        color: $colors_red_primary;
         box-shadow: none;
       }
 
       span {
-        border-bottom: 1px solid $colors_blue_primary;
+        // border-bottom: 1px solid $colors_blue_primary;
         @include transition_default;
       }
 

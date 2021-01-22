@@ -152,6 +152,12 @@ p a:hover {
   &.primary {
     color: $colors_white;
     background: $colors_blue_primary;
+
+    &:hover {
+      color: $colors_midnight_primary;
+      background: $colors_orange_primary;
+    }
+
   }
 
   &.light {
@@ -232,6 +238,17 @@ div.content {
   img {
     margin: 1em 0;
   }
+}
+
+div.Toastify__toast--success {
+  background: $colors_white;
+  border: 1px solid $colors_midnight_primary;
+}
+
+div.Toastify__toast {
+  color: $colors_midnight_primary;
+  @include Roobert_Medium;
+  padding-left: 1.5em;
 }
 
 .not-found {

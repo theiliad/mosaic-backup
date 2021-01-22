@@ -162,6 +162,11 @@ div.pages-index {
 
       a.button {
         background: $colors_white;
+        border: none;
+
+        &:hover {
+          background: $colors_orange_primary;
+        }
       }
     }
   }
@@ -399,17 +404,22 @@ div.pages-thinking {
 
         span.cp-date {
           padding-left: 0;
-          margin-top: -0.1em;
+          margin-top: -0.2em;
+          font-size: 1.2em;
 
           svg {
             font-size: 1.5em;
-			vertical-align: middle;
-			margin-right: 0.25em;
-			margin-top: -0.1em;
+            vertical-align: middle;
+            margin-right: 0.25em;
+            margin-top: -0.1em;
           }
 
           &.cp-live {
             color: $colors_red_primary;
+          }
+
+          &.cp-play {
+            padding: 0 !important;
           }
 
           span {
@@ -438,8 +448,8 @@ div.pages-news {
   .section-news {
     padding: 1.5em 0 7em 0;
 
-    div.column {
-      padding: 0;
+    p.column {
+      padding: 0 !important;
     }
 
     @media screen and (max-width: 768px) {

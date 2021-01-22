@@ -309,7 +309,7 @@ function Post(props) {
                   onClick={e => {
                     copyToClipboard(`https://mosaic.com/${post.fields.slug}`)
 
-                    toast('Copied to clipboard!', {
+                    toast('Copied!', {
                       position: 'bottom-right',
                       autoClose: 3000,
                       hideProgressBar: false,

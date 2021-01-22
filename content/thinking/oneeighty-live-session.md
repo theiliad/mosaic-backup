@@ -1,8 +1,11 @@
 ---
 posttype: thinking
-titleEN: 'No IRL? No problem: Virtualizing the human experience'
+titleEN: Placeholder Live OneEighty Session
 titleFR: FRFPO
-date: 2020-06-24T03:14:12.599Z
+date: 2021-01-21T03:14:12.599Z
+streamStartDate: 2021-01-21T03:14:12.599Z
+streamEndDate: 2021-01-31T03:18:12.599Z
+reminderURL: https://www.youtube.com/
 featuredImage: /img/thinking/no-irl-no-problem.jpg
 category: oneeighty
 descriptionEN: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
