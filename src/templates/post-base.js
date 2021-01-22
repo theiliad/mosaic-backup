@@ -196,7 +196,7 @@ function Post(props) {
                 </MDXProvider> */}
 
                 <div className="columns cp-sponsors is-mobile is-multiline">
-                  {frontmatter.sponsors.map(sponsor => (
+                  {frontmatter.sponsors && frontmatter.sponsors.map(sponsor => (
                     <div className="column is-3-widescreen is-4-desktop is-4-tablet is-4-mobile">
                       <img src={sponsor.image} alt={sponsor.alt} />
                     </div>
