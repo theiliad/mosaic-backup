@@ -427,6 +427,10 @@ div.pages-news {
   .section-news {
     padding: 1.5em 0 7em 0;
 
+    div.column {
+      padding: 0;
+    }
+
     @media screen and (max-width: 768px) {
       padding: 2em 0 2em 0;
     }
