@@ -6,7 +6,7 @@ date: 2021-01-21T03:14:12.599Z
 streamStartDate: 2021-01-21T03:14:12.599Z
 streamEndDate: 2021-01-31T03:18:12.599Z
 reminderURL: https://www.youtube.com/
-featuredImage: /img/thinking/no-irl-no-problem.jpg
+featuredImage: /img/thinking/oneeighty-fpo-2.jpg
 category: oneeighty
 descriptionEN: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
 descriptionFR: frFPO

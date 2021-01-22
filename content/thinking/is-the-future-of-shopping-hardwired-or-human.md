@@ -5,7 +5,7 @@ titleFR: FRFPO
 date: 2020-10-28T03:14:12.599Z
 streamStartDate: 2021-01-18T03:14:12.599Z
 streamEndDate: 2021-01-18T03:14:12.599Z
-featuredImage: /img/thinking/can-any-brand-be-a-wellness-brand.jpg
+featuredImage: /img/thinking/is-the-future-shopping-hardwired-human.jpg
 category: oneeighty
 descriptionEN: Industry experts from both data driven and behavioral backgrounds challenge each other and share their insights on what the future of shopping has in store.
 descriptionFR: frFPO
@@ -38,14 +38,12 @@ panel:
       frFPO
 linkedin: https://www.linkedin.com/in/ericbogart/
 sponsors:
-  - image: /img/demo/RBC.png
+  - image: /img/oneeighty/sponsors/anheuser-busch.svg
+    alt: Anheuser Busch
+  - image: /img/oneeighty/sponsors/rbc.svg
     alt: RBC
-  - image: /img/demo/bacardi.png
-    alt: Bacardi
-  - image: /img/demo/RBC.png
-    alt: RBC
-  - image: /img/demo/bacardi.png
-    alt: Bacardi
+  - image: /img/oneeighty/sponsors/bacardi.svg
+    alt: Bacardi    
 moderator:
   - image: /img/oneeighty/panel/fpo.jpg
     name: Jesse Lipscombe

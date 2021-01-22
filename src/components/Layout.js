@@ -16,7 +16,6 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 // Logo options
-import LOGO from '../img/logo/logo.png'
 import LOGO_AQUA_BLUE from '../img/logo/aqua-blue.svg'
 import LOGO_DARK_BLUE from '../img/logo/blue-darkblue.svg'
 import LOGO_ORANGE_BLUE from '../img/logo/orange-blue.svg'
@@ -428,7 +427,7 @@ const Layout = props => {
           </div>
           <div className="container cp-content">
             <Link onClick={handleSideNavToggle} to="/">
-              <img src={LOGO} />
+              <img src={LOGO_WHITE_RED} />
             </Link>
 
             <div className="links">

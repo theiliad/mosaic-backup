@@ -1,6 +1,6 @@
 ---
 posttype: thinking
-titleEN: Can Any Brand be a Wellness Brand? Mosaic OneEighty Reveals the Significance of Marketing Wellness.
+titleEN: Can Any Brand be a Wellness Brand? Mosaic OneEighty Reveals the Significance of Marketing Wellness
 titleFR: FRFPO
 date: 2020-06-23T03:14:12.599Z
 recap: true

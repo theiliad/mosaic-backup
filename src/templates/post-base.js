@@ -390,7 +390,7 @@ function Post(props) {
                         variations={
                           isCaseStudy
                             ? {
-                                en: `${previousPost.frontmatter.companyName} — ${previousPost.frontmatter.titleEN}`,
+                                en: `${previousPost.frontmatter.companyName} —  ${previousPost.frontmatter.titleEN}`,
                                 fr: `${previousPost.frontmatter.companyName} — ${previousPost.frontmatter.titleFR}`,
                               }
                             : {

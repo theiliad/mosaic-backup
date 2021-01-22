@@ -219,6 +219,11 @@ div.content {
   div.cp-el-img {
     img {
       width: 100%;
+      padding: 6em 0;
+
+      @media screen and (max-width: 768px) {
+        padding: 3em 0;
+      }
     }
 
     @media screen and (min-width: 769px) {
@@ -230,13 +235,15 @@ div.content {
       display: block;
       text-align: center;
       font-size: 0.8em;
-      padding-bottom: 2.25em;
+      margin-top: -6em;
+      padding-bottom: 4em;
       color: $colors_midnight_secondary;
-    }
-  }
 
-  img {
-    margin: 1em 0;
+        @media screen and (max-width: 768px) {
+      margin-top: -2em;
+        }
+
+    }
   }
 
   div.cp-sponsors {
