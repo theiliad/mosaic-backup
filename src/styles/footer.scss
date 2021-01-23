@@ -75,12 +75,24 @@ footer {
 
     a {
       color: $colors_white;
+      padding-bottom: .15em;
       border-bottom: 1px solid $colors_white;
       @include transition_default;
-      &:hover {
-        color: $colors_orange_primary;
-        border-bottom: 1px solid $colors_orange_primary;
+
+      svg {
+        font-size: 0.625em;
       }
+
+        &:hover {
+          color: $colors_orange_primary;
+          border-bottom: 1px solid $colors_orange_primary;
+
+          svg {
+            color: $colors_orange_primary;
+          }
+
+        }
+        
     }
   }
 

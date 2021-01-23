@@ -5,7 +5,7 @@ const FRFPO = 'FRFPO'
 export default {
   footerCTAs: {
     letsChat: {
-      en: "Let's chat.",
+      en: "Let's chat",
       fr: FRFPO,
     },
     driveConversion: {

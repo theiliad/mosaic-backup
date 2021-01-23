@@ -17,13 +17,13 @@ bodyEN: >-
 
     In its infancy, CGI was not able to effectively produce realistic product imagery. But today, modeling and 3D rendering software like Cinema 4D and KeyShot, produce ultra-realistic images that are (almost) too good to be the real thing.
 
-    ![](/img/thinking/product-phography-vs-cgi/image-1.jpg)
+    ![](/img/thinking/product-phography-vs-cgi/image-1.png)
 
     In addition to their real product likeness, CGI-made images are faster and less expensive to produce than final digital photographs. If a client wants three rounds of revisions? CGI is a medium that can just as easily deliver thirteen rounds. It is infinitely editable without the need for a reshoot. With commercial photography, you have to worry about product shipment, travel expenses, studio or site rental and setup, lighting, product propping, and set takedown. Then there's post- production editing, which can only go so far, and a dependency on the right environmental conditions. Mistakes or misdirection can bring the disaster of a reshoot. Every additional round of revisions in photography is one round closer to serious ramifications.
 
     CGI can be simpler, but it is not simple. Creating realistic CGI renders is far more than a push of the button. It requires a highly skilled individual or team that understands the limits of current technology, and in some instances, the need to create new technology to bring ideas to life. The necessary components of CGI are modeling, texturing and lighting, but the complexity and degree of realism at each step can vary and drive dramatic changes in costs and completion times. While CGI can be expensive initially, and may not fit every budget, the end result has clear advantages over commercial photography in the long run, one of which is the ability to manipulate, or even animate your images.
 
-    ![](/img/thinking/product-phography-vs-cgi/image-2.jpg)
+    ![](/img/thinking/product-phography-vs-cgi/image-2.png)
 
     A traditional photoshoot can cost the automotive industry $100,000, and in the end, the shoot's images are flat and final. Whereas a CGI model yields a faster turnaround time at less than half the cost and is incredibly versatile. With close up details and a plethora of angles, a near impossible task with photography, a CGI file can be adapted for use as a sales tool to showcase paint and trim options online, or animated and used in commercials.
 

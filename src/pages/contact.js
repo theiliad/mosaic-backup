@@ -35,100 +35,99 @@ const CONTACTS = {
       number: '877.870.4800',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          220 East Las Colinas Blvd <br />
+          Suite 300 <br />
+          Irving, TX 75039
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/rJCQuKG9dMkq99m77',
     },
     {
       name: 'Chicago',
-      number: '877.870.4800',
+      number: '312.526.3126',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          320 N. Elizabeth Street <br />
+          Chicago, IL 60607
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/mUqWvoGd94WDh2iY8',
     },
     {
       name: 'Bentonville',
-      number: '877.870.4800',
+      number: '479.268.2775',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          4204 S. Pinnacle Hills Pkwy <br />
+          Suite 101 <br />
+          Rogers, AR 72758
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/UZwCaAmLP6uC8McGA',
     },
     {
       name: 'Norwalk',
-      description: 'Frontline marketing',
-      number: '877.870.4800',
+      description: 'FrontLine marketing',
+      number: '203.662.5252',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          383 Main Avenue <br />
+          7th Floor <br />
+          Norwalk, CT 06851
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/eJ8bGtrxC5h2tTAn7',
     },
     {
       name: 'Jacksonville',
       description: 'Mosaic Pro',
-      number: '877.870.4800',
+      number: '904.470.4196',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          8500 Baycenter Road <br />
+          Suite 2 <br />
+          Jacksonville, FL 32256
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/DiDcSpfUcqFasqmy8',
     },
   ],
   CANADA: [
     {
       name: 'Toronto',
-      number: '877.870.4800',
+      number: '647.100.1000',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          100 Liberty Street <br />
+          Suite 100 <br />
+          Toronto, ON M6K 3L7
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/8DWvFZ1k1iZAz5Rc6',
     },
     {
       name: 'Missisauga',
-      number: '877.870.4800',
+      number: '905.238.8422',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          2700 Matheson Blvd East <br />
+          East Tower, Suite 101 <br />
+          Mississauga, ON L4W 4V9
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/HF2otzFhsvAws6188',
     },
     {
       name: 'Montreal',
-      number: '877.870.4800',
+      number: '514.228.8950',
       address: (
         <>
-          220 East Las Colinas Blvd Suite 300
-          <br />
-          Irving, TX. 75039
+          2075, Boulevard Robert-Bourassa <br />
+          Bureau 310 <br />
+          Montréal, QB H3A 2L1
         </>
       ),
-      link: 'https://google.com',
+      link: 'https://goo.gl/maps/zMtartEnzaHCQYk28',
     },
   ],
 }

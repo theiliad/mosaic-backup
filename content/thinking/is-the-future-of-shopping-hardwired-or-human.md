@@ -3,14 +3,15 @@ posttype: thinking
 titleEN: Is the future of shopping hardwired or human?
 titleFR: FRFPO
 date: 2020-10-28T03:14:12.599Z
-streamStartDate: 2021-01-18T03:14:12.599Z
-streamEndDate: 2021-01-18T03:14:12.599Z
+streamStartDate: 2022-01-18T03:14:12.599Z
+streamEndDate: 2022-01-18T03:14:12.599Z
+reminderURL: https://www.youtube.com/
 featuredImage: /img/thinking/is-the-future-shopping-hardwired-human.jpg
 category: oneeighty
 descriptionEN: Industry experts from both data driven and behavioral backgrounds challenge each other and share their insights on what the future of shopping has in store.
 descriptionFR: frFPO
 panel:
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/melissa-gonzalez.jpg
     name: Melissa Gonzalez
     titleEN: CEO of The Lionesque Group & Principal, MG2
     titleFR: frFPO
@@ -19,7 +20,7 @@ panel:
     textFR: >+
       frFPO
     linkedin: https://www.linkedin.com/in/melissagonzalezlionesque/
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/chris-gray.jpg
     name: Dr. Chris Gray
     titleEN: Founder & Chief Behaviorist, Buycology
     titleFR: frFPO
@@ -28,7 +29,7 @@ panel:
     textFR: >-
       frFPO
     linkedin: https://www.linkedin.com/in/drchris/
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/eric-bogart.jpg
     name: Eric Bogart
     titleEN: Vice President, Advanced Analytics, Mosaic North America
     titleFR: frFPO
@@ -36,7 +37,7 @@ panel:
       Eric leads Advanced Analytics for Mosaic North America and has deep experience in retail and shopper analytics. He and his team are responsible for researching and building analytic solutions that power Mosaic. Previously, Eric worked with Procter & Gamble for over 10 years in both US and Europe and consulted on Analytics Strategy with Deloitte. His favorite algorithm is the Random Forest.
     textFR: >-
       frFPO
-linkedin: https://www.linkedin.com/in/ericbogart/
+    linkedin: https://www.linkedin.com/in/ericbogart/
 sponsors:
   - image: /img/oneeighty/sponsors/anheuser-busch.svg
     alt: Anheuser Busch
@@ -45,7 +46,7 @@ sponsors:
   - image: /img/oneeighty/sponsors/bacardi.svg
     alt: Bacardi    
 moderator:
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/jesse-lipscombe.jpg
     name: Jesse Lipscombe
     titleEN: Entrepreneur, Consultant, Activist
     titleFR: frFPO

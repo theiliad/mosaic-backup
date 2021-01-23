@@ -39,11 +39,17 @@ bodyEN: >-
   Before you start transcreating headlines, ask yourself three things:
 
 
-  1. How does this insight impact my community? When COVID swept through the US in March, many brands were quick to support front line workers. But Popeyes, native to New Orleans, took a moment to think “where can I help more effectively and truthfully?” and chose to support their local community instead when they needed it the most.
+  1. **How does this insight impact my community?**  
 
-  2. Who is the best person to tell the story? Puerto Ricans, Mexicans and Argentinians are all Latinx, but their dialects, slang and even some holidays differ. Value the talent and voice behind the story. Remember to craft an influencer & media strategy that speaks to a specific culture within the multicultural community to tell the story correctly and authentically.
+  When COVID swept through the US in March, many brands were quick to support front line workers. But Popeyes, native to New Orleans, took a moment to think “where can I help more effectively and truthfully?” and chose to support their local community instead when they needed it the most.
 
-  3. In what language do I tell this story best? Some might assume multicultural marketing always involves translating a campaign from English into the native language of that ethnic group. However, that is a generalization and might not create that authentic connection. For example, many 4th and 5th generation Latinx Americans speak English as their native language, versus older generations that might primarily speak Spanish. Evaluating the age of your audience will give you a better-informed strategy for delivering your message and show your consumers that you truly understand them.
+  2. **Who is the best person to tell the story?**  
+
+  Puerto Ricans, Mexicans and Argentinians are all Latinx, but their dialects, slang and even some holidays differ. Value the talent and voice behind the story. Remember to craft an influencer & media strategy that speaks to a specific culture within the multicultural community to tell the story correctly and authentically.
+
+  3. **In what language do I tell this story best?**  
+  
+  Some might assume multicultural marketing always involves translating a campaign from English into the native language of that ethnic group. However, that is a generalization and might not create that authentic connection. For example, many 4th and 5th generation Latinx Americans speak English as their native language, versus older generations that might primarily speak Spanish. Evaluating the age of your audience will give you a better-informed strategy for delivering your message and show your consumers that you truly understand them.
 
 
   ### READ THE ROOM

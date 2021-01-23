@@ -20,6 +20,7 @@ import { VscChevronDown } from 'react-icons/vsc'
 import { IoIosRadio } from 'react-icons/io'
 import { GiBackwardTime } from 'react-icons/gi'
 import { AiOutlineCalendar } from 'react-icons/ai'
+import { FiArrowRight } from 'react-icons/fi'
 
 import Fade from 'react-reveal/Fade'
 
@@ -202,7 +203,7 @@ function Thinking({ data, location }) {
           <h6>
             <Text tid="footerCTAs.oneEighty" />{' '}
             <Link to="/contact">
-              <Text tid="footerCTAs.shout" />
+              <Text tid="footerCTAs.shout" /> <FiArrowRight />
             </Link>
           </h6>
         ) : null

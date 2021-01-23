@@ -50,8 +50,7 @@ bodyEN: >-
   reviews are also important to help drive search results and sales.
 
 
-  ![Digital Shelf Content Best
-  Practice](/img/thinking/incorporating-the-human-experience/digital-shelf.png)
+  ![Digital Shelf Content Best Practice](/img/thinking/incorporating-the-human-experience/digital-shelf.png)
 
 
   E-commerce trends are evolving faster than predicted, especially with the recent pandemic. Brands that deliver a compelling experience and get the digital shelf fundamentals right are poised to win the e-commerce sale.

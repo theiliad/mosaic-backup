@@ -84,10 +84,10 @@ bodyEN: >-
   **THE BOTTOM LINE:** Emotion drives behavior. According to Harvard Professor Gerald Zaltman, 90-95% of the decisions we make are based on emotion. Brands that strategically design for emotional engagement at each step on a shopper’s path to purchase are poised to win the sale.
 
 
-  ---
-
-
   We’ve seen a lot of changes this year, which requires looking at things a little differently. We hope that Mosaic OneEighty has taught you how to flip the script and think outside the box to innovate – in business, marketing and life.
+
+
+  ---
 
 
   Is there a topic you’d love to see us explore as part of our series? Think you’d make a great panelist? Email us at <mailto:oneeighty@mosaic.com>.

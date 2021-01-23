@@ -322,10 +322,6 @@ div.pages-thinking {
     div.column {
       margin-bottom: 5em;
 
-      p a:hover {
-        box-shadow: none !important;
-      }
-
       &:last-child {
         margin-bottom: 0;
         padding-bottom: 4em;
@@ -383,6 +379,10 @@ div.pages-thinking {
 
       p.cp-meta {
 
+        a:hover {
+          border-bottom: none !important;
+        }
+        
         span.cp-play {
           padding-right: 0.5em;
 
@@ -411,7 +411,6 @@ div.pages-thinking {
 
             &:hover {
               text-decoration: none;
-              box-shadow: none;
             }
           }
         }
@@ -427,7 +426,6 @@ div.pages-thinking {
 
           a:hover {
             text-decoration: none;
-            box-shadow: none;
 
             span.cp-category {
               background: $colors_blue_primary;
@@ -527,10 +525,6 @@ div.pages-news {
       @media screen and (max-width: 768px) {
         display: table;
         width: 100%;
-
-        &:hover {
-          box-shadow: none;
-        }
       }
 
       p.cp-date {
@@ -631,7 +625,7 @@ div.post-single-heading.thinking.contact {
   margin-bottom: 0;
 
   & > div.columns {
-    padding-top: 4.5em;
+    padding-top: 5em;
     margin-bottom: 0;
   }
 
@@ -669,10 +663,15 @@ div.post-single-heading.thinking.contact {
         }
 
         a {
-          color: #fff;
-          border-bottom: 1px solid #fff;
+          color: $colors_white;
+          border-bottom: 1px solid;
           @include transition_default;
           @include Roobert_Medium;
+
+          &:hover {
+            color: $colors_midnight_primary;
+            @include transition_default;
+          }
         }
 
         &:last-child {
@@ -760,10 +759,15 @@ div.pages-contact {
       h6 {
         font-size: 2em;
         margin-bottom: 1.5em;
+        @include Roobert_Medium;
       }
 
       p {
         font-size: 1.125em;
+
+        a:hover {
+          border-bottom: none !important;
+        }
 
         @media screen and (max-width: 768px) {
           font-size: unset;
@@ -778,31 +782,39 @@ div.pages-contact {
 
         &.cp-address {
           margin-top: 1em;
-
-          a {
-            color: $colors_blue_primary;
-
-            span {
-              &.cp-a {
-                text-decoration: underline;
-              }
-
-              &.cp-icon {
-                vertical-align: middle;
-                font-size: 1.25em;
-              }
+            
+            .cp-a {
+              border-bottom: 1px solid;
+              color: $colors_blue_primary;
+              @include transition_default;
             }
 
-            &:hover {
-              box-shadow: none;
+            .cp-icon {
+              color: $colors_blue_primary;
+              vertical-align: middle;
+              font-size: 1.25em;
+              @include transition_default;
             }
+
+          a:hover {
+
+              .cp-a {
+                color: $colors_red_primary;
+                @include transition_default;
+              }
+
+              .cp-icon {
+                color: $colors_red_primary;
+                @include transition_default;
+              }
           }
+
         }
 
         &.cp-number {
           a {
             color: $colors_blue_primary;
-            text-decoration: underline;
+            border-bottom: 1px solid $colors_blue_primary;
           }
         }
       }
@@ -866,7 +878,6 @@ div.pages-contact {
     select {
       background: transparent;
       border: 1px solid $colors_midnight_secondary;
-      box-shadow: none;
       @include Roobert_Medium;
 
       &.is-danger {

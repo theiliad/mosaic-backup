@@ -11,11 +11,13 @@ descriptionFR:
 bodyEN: >-
     Working from home comes with a whole lot of unexpected distractions - kids, cats, dogs and a whole lot of other things that might pull us away from our home office desk.
 
-    ![](/img/thinking/introducing-the-out-of-home-office/one.jpg)
-    ![](/img/thinking/introducing-the-out-of-home-office/two.jpg)
-    ![](/img/thinking/introducing-the-out-of-home-office/three.jpg)
 
-    Dealing with the "home" in work from home requires time management and clear communication, so let our OOHO (Out of Home Office) Alerts help you out. Check out a few of our favorites below. [https://drive.google.com/drive/folders/1uCd9uhqHbmu8IhKarU1nVNyNdV25ZsWR](Download the full suite).
+    Dealing with the "home" in work from home requires time management and clear communication, so let our OOHO (Out of Home Office) Alerts help you out. Check out a few of our favorites below. [Download the full suite.](https://drive.google.com/drive/folders/1uCd9uhqHbmu8IhKarU1nVNyNdV25ZsWR)
+
+
+    ![My dog's freaking out.](/img/thinking/introducing-the-out-of-home-office/one.jpg)
+    ![Dealing with a mini monster meltdown.](/img/thinking/introducing-the-out-of-home-office/two.jpg)
+    ![My internet is lagging and my face is about to do the same.](/img/thinking/introducing-the-out-of-home-office/three.jpg)
 bodyFR: >-
   frFPO
 ---

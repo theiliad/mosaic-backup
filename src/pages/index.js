@@ -15,10 +15,13 @@ import CATEGORIES from '../data/categories'
 
 // Assets
 import LOGO_WHITE from '../img/logo/white-transparent.svg'
-import DEMO_3 from '../img/demo/3.jpg'
 import HOME_HERO from '../img/home/hero.jpg'
 import HOME_CAPABILITIES from '../img/home/capabilities.jpg'
 import HOME_ONEEIGHTY from '../img/home/oneeighty.jpg'
+
+
+// icons
+import { FiArrowRight } from 'react-icons/fi'
 
 // Partner logos
 import ANHEUSER_BUSCH from '../img/home/partners/anheuser-busch.svg'
@@ -338,7 +341,7 @@ class BlogIndex extends React.Component {
                   </p>
 
                   <Link to="/capabilities" className="button light">
-                    Explore our capabilities
+                    Explore our capabilities <FiArrowRight />
                   </Link>
                 </div>
 
@@ -361,7 +364,7 @@ class BlogIndex extends React.Component {
                   </p>
 
                   <Link to="/thinking/oneeighty" className="button light">
-                    See OneEighty streams
+                    See OneEighty streams <FiArrowRight />
                   </Link>
                 </div>
 
@@ -386,22 +389,20 @@ class BlogIndex extends React.Component {
                   alt: null,
                 },
                 {
-                  src: ANHEUSER_BUSCH,
-                  alt: 'Anheuser-Busch',
-                },
-                { src: DR_OETKER, alt: 'Dr. Oetker' },
-                { src: GENERAL_MILLS, alt: 'General Mills' },
+                  src: ANHEUSER_BUSCH, alt: 'Anheuser-Busch', },
+                  { src: STARBUCKS, alt: 'Starbucks' },
+                  { src: SAMSUNG, alt: 'Samsung' },
                 { src: GOOGLE, alt: 'Google' },
-                { src: IG_WEALTH_MANAGEMENT, alt: 'IG Wealth Management' },
                 { src: IMPOSSIBLE, alt: 'Impossible' },
-                { src: KRAFT_HEINZ, alt: 'Kraft Heinz' },
                 { src: LABATT, alt: 'Labatt' },
                 { src: LOBLAWS, alt: 'Loblaws' },
-                { src: MACKENZIE_INVESTMENTS, alt: 'Mackenzie Investments' },
-                { src: RBC, alt: 'RBC' },
-                { src: SAMSUNG, alt: 'Samsung' },
                 { src: SHOPPERS_DRUG_MART, alt: 'Shoppers Drug Mart' },
-                { src: STARBUCKS, alt: 'Starbucks' },
+                { src: MACKENZIE_INVESTMENTS, alt: 'Mackenzie Investments' },
+                { src: DR_OETKER, alt: 'Dr. Oetker' },
+                { src: IG_WEALTH_MANAGEMENT, alt: 'IG Wealth Management' },
+                { src: KRAFT_HEINZ, alt: 'Kraft Heinz' },
+                { src: GENERAL_MILLS, alt: 'General Mills' },
+                { src: RBC, alt: 'RBC' },
                 { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' },
                 {
                   src: null,

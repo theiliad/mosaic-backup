@@ -21,6 +21,8 @@ import CATEGORIES from '../data/categories'
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
 import { RiArrowRightUpLine } from 'react-icons/ri'
 import { IoCloseOutline } from 'react-icons/io5'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 // Share buttons
 import {
@@ -128,8 +130,7 @@ function Post(props) {
                 >
                   <span>
                     <Text tid="thinking.panelist.linkedin" />
-                  </span>{' '}
-                  <RiArrowRightUpLine />
+                  </span>{' '}<RiArrowRightUpLine />
                 </a>
               )}
             </p>
@@ -154,14 +155,14 @@ function Post(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Text tid="footerCTAs.viewOpenRoles" />
+              <Text tid="footerCTAs.viewOpenRoles" /> <FiArrowUpRight />
             </a>
           </h6>
         ) : isOneEightyPost ? (
           <h6>
             <Text tid="footerCTAs.oneEighty" />{' '}
             <Link to="/contact">
-              <Text tid="footerCTAs.shout" />
+              <Text tid="footerCTAs.shout" /> <FiArrowRight />
             </Link>
           </h6>
         ) : null

@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
+import { FiArrowUpRight } from 'react-icons/fi'
+
 // Locale
 import { Text, TextDate } from '../containers/Language'
 
@@ -27,7 +29,7 @@ class News extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Text tid="footerCTAs.viewOpenRoles" />
+                <Text tid="footerCTAs.viewOpenRoles" /> <FiArrowUpRight />
               </a>
             </h6>
           </>

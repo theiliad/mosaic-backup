@@ -8,6 +8,7 @@ import { Text, LanguageContext } from '../containers/Language'
 
 // ICONS
 import { IoMdClose } from 'react-icons/io'
+import { FiArrowRight } from 'react-icons/fi'
 
 import ReactTooltip from 'react-tooltip'
 import { StickyContainer } from 'react-sticky'
@@ -200,7 +201,7 @@ export const Footer = ({ footerCTA }) => {
               <h6>
                 <Text tid="footerCTAs.driveConversion" />{' '}
                 <Link to="/contact">
-                  <Text tid="footerCTAs.letsChat" />
+                  <Text tid="footerCTAs.letsChat" /> <FiArrowRight />
                 </Link>
               </h6>
             )}
@@ -376,6 +377,7 @@ const Layout = props => {
 
   return (
     <div className="app-wrapper">
+      <div className="fr-toggle">
       <a
         className="button"
         style={{
@@ -391,6 +393,7 @@ const Layout = props => {
       >
         {(userLanguage === 'en' ? 'fr' : 'en').toUpperCase()}
       </a>
+      </div>
 
       <ToastContainer
         position="bottom-right"

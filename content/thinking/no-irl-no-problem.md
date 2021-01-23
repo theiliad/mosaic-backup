@@ -3,12 +3,14 @@ posttype: thinking
 titleEN: 'No IRL? No problem: Virtualizing the human experience'
 titleFR: FRFPO
 date: 2020-06-24T03:14:12.599Z
+streamStartDate: 2020-01-18T03:14:12.599Z
+streamEndDate: 2022-01-18T03:14:12.599Z
 featuredImage: /img/thinking/no-irl-no-problem.jpg
 category: oneeighty
 descriptionEN: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
 descriptionFR: frFPO
 panel:
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/matt-mcglynn.jpg
     name: Matt McGlynn
     titleEN: Vice President, Brand Marketing, RBC
     titleFR: frFPO
@@ -17,7 +19,7 @@ panel:
     textFR: >+
       frFPO
     linkedin: https://www.linkedin.com/in/matt-mcglynn-4361b711/
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/nicole-ransom.jpg
     name: Nicole Ransom
     titleEN: Brand Manager, Bacardi Rums
     titleFR: frFPO
@@ -26,7 +28,7 @@ panel:
     textFR: >+
       frFPO
     linkedin: https://www.linkedin.com/in/nmransom/
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/emmanuel-patterson.jpg
     name: Emmanuel Patterson
     titleEN: Live Music, Partnerships, Tour Marketing Director
     titleFR: frFPO
@@ -34,9 +36,9 @@ panel:
       Emmanuel Patterson has been working in the music industry for 35 years as a concert promoter and event producer. He has worked with bands and events of all sizes, scope and reach. He continues to see the inherent value of developing 'next generation' artists and events. Emmanuel remains a passionate leader in the music community and has served as a board member for several music, arts and not-for-profit related organizations. Emmanuel also spends his personal time producing fundraising and philanthropic events for organizations in the cancer research and mental health fields.
     textFR: >+
       frFPO
-    linkedin:
+    linkedin: https://www.linkedin.com/in/emmanuel-patterson-186ba422/
 moderator:
-  - image: /img/oneeighty/panel/fpo.jpg
+  - image: /img/oneeighty/panel/jesse-lipscombe.jpg
     name: Jesse Lipscombe
     titleEN: Entrepreneur, Consultant, Activist
     titleFR: frFPO

@@ -135,7 +135,6 @@ div.post-single-heading {
 
     &:hover {
       text-decoration: none;
-      box-shadow: none;
     }
   }
 
@@ -222,7 +221,6 @@ div.post-single-heading {
 
           &:hover {
             text-decoration: none;
-            box-shadow: none;
           }
         }
 
@@ -374,12 +372,11 @@ div.post-body {
 
   p a {
     color: $colors_blue_primary;
-    text-decoration: underline;
+    border-bottom: 1px solid $colors_blue_primary;
 
     &:hover {
       color: $colors_red_primary;
-      text-decoration: underline;
-      text-decoration: underline;
+      border-bottom: 1px solid $colors_red_primary;
     }
   }
 
@@ -490,15 +487,15 @@ div.post-body {
       margin-top: 1em;
       color: $colors_blue_primary;
       font-size: 1em;
+      text-decoration: underline;
+      border-bottom: none;
       @include Roobert_SemiBold;
 
       &:hover {
         color: $colors_red_primary;
-        box-shadow: none;
       }
 
       span {
-        // border-bottom: 1px solid $colors_blue_primary;
         @include transition_default;
       }
 
@@ -567,7 +564,7 @@ div.post {
       color: $colors_blue_primary;
       border: none;
       border-radius: 0;
-      padding: 3em 2.25em;
+      padding: 2.25em 2.25em;
       font-size: 2.2vw;
       @include transition_default;
 
