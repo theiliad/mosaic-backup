@@ -328,13 +328,15 @@ class BlogIndex extends React.Component {
           <div className="section-writeup" id="home-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
+
+
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <img src={HOME_CAPABILITIES} className="image-below" />
                 </div>
 
-                <div className="column is-1"></div>
+                <div className="column is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd"></div>
 
-                <div className="column is-3-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
                     To effectively drive conversion, we assess every business
                     challenge through six specialized capabilities.
@@ -345,7 +347,6 @@ class BlogIndex extends React.Component {
                   </Link>
                 </div>
 
-                <div className="column is-1"></div>
               </div>
             </div>
           </div>
@@ -353,9 +354,8 @@ class BlogIndex extends React.Component {
           <div className="section-writeup2" id="home-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-1"></div>
 
-                <div className="column is-3-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
                     We love a good challenge and when we get one, we look at it
                     with a 180 view. It’s why we created the OneEighty
@@ -368,9 +368,9 @@ class BlogIndex extends React.Component {
                   </Link>
                 </div>
 
-                <div className="column is-1"></div>
+                <div className="column is-1-tablet is-1-desktop is-2-widescreen is-2-fullhd"></div>
 
-                <div className="column is-5-tablet is-6-desktop is-6-widescreen is-6-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <img src={HOME_ONEEIGHTY} className="image-below" />
                 </div>
               </div>

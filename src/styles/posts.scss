@@ -5,14 +5,19 @@ div.post-single-heading {
       margin-bottom: 3em;
     }
 
-  h1 {
-    font-size: 3.5em;
-    line-height: 1.3em;
-  }
+    h1 {
+      font-size: 4vh;
+      line-height: 1.25em;
+    }
 
   p.cp-desc {
     margin: 0.5em 0 1em 0;
     font-size: 1.75em;
+   
+      @media screen and (max-width: 768px) {
+        font-size: 1.25em;
+        line-height: 1.4em;
+      }
   }
 
   p.cp-date {
@@ -26,7 +31,7 @@ div.post-single-heading {
   }
 
   p.cp-controls {
-    margin-top: 1.25em;
+    margin: 1.5em 0 3em 0;
 
     a {
       i {
@@ -280,7 +285,7 @@ div.post-single-heading {
         line-height: 1.25em;
 
          @media screen and (max-width: 768px) {
-           font-size: 3vh;
+           font-size: 4vh;
          }
       }
 
@@ -298,7 +303,7 @@ div.columns.post-single.featured-image.ui-grid.post-html-img {
 }
 
 div.post-body {
-  margin-bottom: 8em;
+  margin: 2em 0 8em 0;
   color: $colors_midnight_primary;
   @include Roobert_Regular;
 
@@ -309,7 +314,10 @@ div.post-body {
   p {
     font-size: 1.25em;
     line-height: 1.875em;
-  }
+        @media screen and (max-width: 768px) {
+          font-size: 1.125em
+        }
+    }
 
   a.cp-apply {
     padding: 1.5em;
@@ -368,6 +376,9 @@ div.post-body {
   li {
     font-size: 1.25em;
     line-height: 2em;
+      @media screen and (max-width: 768px) {
+        font-size: 1em;
+      }
   }
 
   p a {
@@ -433,13 +444,21 @@ div.post-body {
 
   div.cp-panel {
     div.cp-panelist-image {
-      padding-right: 2em;
+
+        @media screen and (min-width: 769px) {
+          padding-right: 2em;
+        }
 
       div.cp-image {
         position: relative;
         width: 7em;
         height: 7em;
         border-radius: 50%;
+
+        @media screen and (max-width: 768px) {
+          width: 4.25em;
+          height: 4.25em;
+        }
 
         &.cp-gradient {
           background: -webkit-linear-gradient(45deg, #1226aa, #d50057);
@@ -450,33 +469,45 @@ div.post-body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 7.25em;
-          height: 7.25em;
+          width: 6.75em;
+          height: 6.75em;
           background-size: cover;
           background-position: center;
           border-radius: 50%;
           border: 2px solid $colors_white;
+
+          @media screen and (max-width: 768px) {
+            width: 4em;
+            height: 4em;
+          }
+
         }
       }
     }
 
     p.cp-heading {
-      font-size: 0.75em;
+      font-size: 0.625em;
       color: $colors_midnight_secondary;
       margin-bottom: 0;
-      line-height: 1em;
+      line-height: 1.2em;
+      text-transform: uppercase;
       @include Roobert-Medium;
     }
 
     p.cp-name {
-      margin-bottom: 0;
-      @include Roobert-Medium;
+      margin: 0.25em 0;
+      @include Roobert-SemiBold;
       font-size: 1.375em;
+      line-height: 1.2em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.125em;
+      }
     }
 
     p.cp-title {
       margin-bottom: 0;
-      line-height: 1em;
+      line-height: 1.2em;
       color: $colors_midnight_primary;
       font-size: 0.875em;
       @include Roobert-Medium;

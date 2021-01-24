@@ -25,6 +25,10 @@ div.pages-index {
     @include Roobert_Medium;
     font-weight: 500;
     font-size: 1.5em;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 1.125em;
+      }
   }
 
   p.color_secondary {
@@ -92,7 +96,7 @@ div.pages-index {
     }
 
     div.column.is-mobile {
-      margin-bottom: 1.5em;
+      margin-bottom: 4em;
 
       &:last-child {
         margin-bottom: 0;
@@ -282,8 +286,6 @@ div.pages-capabilities {
           margin-top: .25em;
         }
     }
-
-
 
     p.secondary {
       font-size: 1.125em;
@@ -542,6 +544,10 @@ div.pages-news {
       }
 
       p.cp-title {
+
+      line-height: 1.2em;
+      margin-bottom: 0.5em;
+
         @media screen and (max-width: 768px) {
           padding-bottom: 0;
           padding-left: 0;
