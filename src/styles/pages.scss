@@ -439,7 +439,7 @@ div.pages-thinking {
         span.cp-date {
           padding-left: 0;
           margin-top: -0.2em;
-          font-size: 1.2em;
+          font-size: 1.25em;
 
           svg {
             font-size: 1.5em;
@@ -566,11 +566,19 @@ div.pages-careers {
       font-size: 3.5em;
       line-height: 1em;
       @include Roobert_SemiBold;
+
+      @media screen and (max-width: 768px) {
+        font-size: 2.5em;
+      }
     }
 
     p {
       margin: 1em 0;
       font-size: 1.75em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.25em;
+      }
     }
 
     a.button {
@@ -641,18 +649,33 @@ div.post-single-heading.thinking.contact {
     padding-left: 0;
 
     h2 {
-      font-size: 3.5em;
-      line-height: 1.1em;
-    }
+      font-size: 5vh;
+      line-height: 1.25em;
+
+       @media screen and (max-width: 768px) {
+         font-size: 4vh;
+       }
+      }
 
     p.cp-desc {
       font-size: 2em;
       margin-top: 1em;
       margin-bottom: 1.5em;
       line-height: 1.2em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.25em;
+      }
     }
 
     div.cp-contacts {
+
+      font-size: 1.125em;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.75em;
+        }
+
       div.columns {
         margin: -0.75rem 0;
         padding: 1em 0;
@@ -689,7 +712,7 @@ div.post-single-heading.thinking.contact {
 }
 div.pages-contact {
   div.section-contacts {
-    padding: 6em 0 2em 0;
+    padding: 6em 0;
 
     h3 {
       font-size: 2.5em;
@@ -720,13 +743,13 @@ div.pages-contact {
 
       span {
         color: $colors_midnight_secondary;
-        font-size: 0.85em;
+        font-size: 0.875em;
         margin-left: 0.5em;
       }
     }
 
     div.accordion__panel {
-      padding: 0.5em 1.25em 0.5em 1.25em;
+      padding: 0 0 1.5em 0;
 
       div.cp-contact {
         margin: 0;
@@ -776,7 +799,8 @@ div.pages-contact {
         }
 
         @media screen and (max-width: 768px) {
-          font-size: unset;
+          font-size: 1.5em;
+          line-height: 1.5em;
         }
 
         &.cp-description {
@@ -822,6 +846,10 @@ div.pages-contact {
             color: $colors_blue_primary;
             border-bottom: 1px solid $colors_blue_primary;
           }
+          a:hover {
+            color: $colors_red_primary;
+            border-bottom: 1px solid $colors_red_primary !important;
+          }
         }
       }
     }
@@ -848,7 +876,7 @@ div.pages-contact {
     .contact-info {
       h5 {
         font-size: 4.375em;
-        line-height: 1.3em;
+        line-height: 1em;
         margin-top: -0.2em;
         @include Roobert_SemiBold;
 
@@ -889,6 +917,7 @@ div.pages-contact {
       &.is-danger {
         border-color: $colors_red_primary;
         border-width: 2px;
+        @include Roobert_Medium;
       }
 
       &:active,
@@ -911,7 +940,7 @@ div.pages-contact {
     button {
       margin-top: 2em;
       padding: 1.5em 1.5em;
-      font-size: 0.75em;
+      font-size: 1em;
     }
   }
 }

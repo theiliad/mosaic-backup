@@ -443,6 +443,8 @@ div.post-body {
   }
 
   div.cp-panel {
+    margin-top: 4em;
+
     div.cp-panelist-image {
 
         @media screen and (min-width: 769px) {
@@ -497,20 +499,19 @@ div.post-body {
     p.cp-name {
       margin: 0.25em 0;
       @include Roobert-SemiBold;
-      font-size: 1.375em;
+      font-size: 1em;
       line-height: 1.2em;
+      width: 88%;
 
-      @media screen and (max-width: 768px) {
-        font-size: 1.125em;
-      }
     }
 
     p.cp-title {
       margin-bottom: 0;
       line-height: 1.2em;
       color: $colors_midnight_primary;
-      font-size: 0.875em;
+      font-size: 0.75em;
       @include Roobert-Medium;
+      width: 88%;
     }
 
     a.cp-linkedin {

@@ -67,7 +67,7 @@ const CONTACTS = {
     },
     {
       name: 'Norwalk',
-      description: 'FrontLine marketing',
+      description: 'FrontLine Marketing',
       number: '203.662.5252',
       address: (
         <>
@@ -255,7 +255,7 @@ function Contact({ data, location }) {
 
       <div className="cp-contacts">
         <div className="columns is-mobile">
-          <div className="column is-5">
+          <div className="column is-4">
             <p>
               <Text tid="pages.contact.meta.contacts.newBusiness" />
             </p>
@@ -275,7 +275,7 @@ function Contact({ data, location }) {
         </div>
 
         <div className="columns is-mobile">
-          <div className="column is-5">
+          <div className="column is-4">
             <p>
               <Text tid="pages.contact.meta.contacts.newBusiness" />
             </p>
@@ -295,7 +295,7 @@ function Contact({ data, location }) {
         </div>
 
         <div className="columns is-mobile">
-          <div className="column is-5">
+          <div className="column is-4">
             <p>
               <Text tid="pages.contact.meta.contacts.mediaInquiries" />
             </p>
@@ -309,7 +309,7 @@ function Contact({ data, location }) {
         </div>
 
         <div className="columns is-mobile">
-          <div className="column is-5">
+          <div className="column is-4">
             <p>
               <Text tid="pages.contact.meta.contacts.general" />
             </p>
@@ -475,15 +475,16 @@ function Contact({ data, location }) {
           <div className="form">
             <div className="container page">
               <div className="columns">
-                <div className="column is-4 contact-info">
+              <div className="column is-1"></div>
+                <div className="column is-3 contact-info">
                   <h5>
                     <Text tid="pages.contact.title" />
                   </h5>
                 </div>
 
-                <div className="column is-1"></div>
+              <div className="column is-1"></div>
 
-                <div className="column is-7">
+                <div className="column is-6-tablet">
                   {!success && (
                     <>
                       <form
