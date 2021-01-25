@@ -69,13 +69,13 @@ footer {
     line-height: 1.2em;
     @include Roobert_Medium;
 
-      @media screen and (max-width: 768px) {
-        font-size: 6vw;
-      }
+    @media screen and (max-width: 768px) {
+      font-size: 6vw;
+    }
 
     a {
       color: $colors_white;
-      padding-bottom: .15em;
+      padding-bottom: 0.15em;
       border-bottom: 1px solid $colors_white;
       @include transition_default;
 
@@ -83,16 +83,14 @@ footer {
         font-size: 0.625em;
       }
 
-        &:hover {
+      &:hover {
+        color: $colors_orange_primary;
+        border-bottom: 1px solid $colors_orange_primary;
+
+        svg {
           color: $colors_orange_primary;
-          border-bottom: 1px solid $colors_orange_primary;
-
-          svg {
-            color: $colors_orange_primary;
-          }
-
         }
-        
+      }
     }
   }
 
@@ -105,6 +103,27 @@ footer {
     bottom: 2.5em;
     left: 0;
     width: 100%;
+
+    div.cp-wide {
+      @media screen and (max-width: 960px) {
+        display: none;
+      }
+    }
+
+    div.cp-mobile {
+      display: none;
+
+      @media screen and (max-width: 960px) {
+        display: table;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      & div.container > div.columns {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
 
     @media screen and (max-width: 768px) {
       text-align: left;

@@ -133,7 +133,10 @@ class Header extends React.Component {
               <div className="navbar-brand">
                 <Link className="navbar-item logo" to="/">
                   <img
-                    src={props.logo || (navIdleLight && whiteNav ? LOGO_ORANGE_BLUE : LOGO_WHITE)}
+                    src={
+                      props.logo ||
+                      (navIdleLight && whiteNav ? LOGO_ORANGE_BLUE : LOGO_WHITE)
+                    }
                     id="cp_site_logo"
                     style={{
                       opacity:
@@ -189,6 +192,22 @@ class Header extends React.Component {
   }
 }
 
+const FOOTER_SOCIAL_LINKS = [
+  {
+    name: 'Facebook',
+    href: 'https://facebook.com/mosaic',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://instagram.com/mosaicna',
+  },
+  {
+    name: 'LinkedIn',
+    href:
+      'https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10',
+  },
+]
+
 export const Footer = ({ footerCTA }) => {
   const { userLanguage, changeUserLanguage } = useContext(LanguageContext)
 
@@ -209,33 +228,34 @@ export const Footer = ({ footerCTA }) => {
             <div className="bottom-links">
               <div className="container">
                 <div className="columns is-vcentered">
-                  <div className="column is-narrow">
-                    <a
-                      href="https://facebook.com/mosaic"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Facebook
-                    </a>
+                  <div className="column is-narrow cp-mobile">
+                    <div className="columns">
+                      {FOOTER_SOCIAL_LINKS.map(footerSocialLink => (
+                        <div className="column is-narrow">
+                          <a
+                            href={footerSocialLink.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {footerSocialLink.name}
+                          </a>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div className="column is-narrow">
-                    <a
-                      href="https://instagram.com/mosaicna"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Instagram
-                    </a>
-                  </div>
-                  <div className="column is-narrow">
-                    <a
-                      href="https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      LinkedIn
-                    </a>
-                  </div>
+                  
+                  {FOOTER_SOCIAL_LINKS.map(footerSocialLink => (
+                    <div className="column is-narrow cp-wide">
+                      <a
+                        href={footerSocialLink.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {footerSocialLink.name}
+                      </a>
+                    </div>
+                  ))}
+
                   <div className="column right-links">
                     <div className="last">© Mosaic 2020</div>
                     <div className="cp-lang-switcher">
@@ -378,21 +398,21 @@ const Layout = props => {
   return (
     <div className="app-wrapper">
       <div className="fr-toggle">
-      <a
-        className="button"
-        style={{
-          position: 'fixed',
-          right: 0,
-          bottom: 0,
-          zIndex: 100000000,
-          borderRadius: 0,
-        }}
-        onClick={e => {
-          changeUserLanguage(userLanguage === 'en' ? 'fr' : 'en')
-        }}
-      >
-        {(userLanguage === 'en' ? 'fr' : 'en').toUpperCase()}
-      </a>
+        <a
+          className="button"
+          style={{
+            position: 'fixed',
+            right: 0,
+            bottom: 0,
+            zIndex: 100000000,
+            borderRadius: 0,
+          }}
+          onClick={e => {
+            changeUserLanguage(userLanguage === 'en' ? 'fr' : 'en')
+          }}
+        >
+          {(userLanguage === 'en' ? 'fr' : 'en').toUpperCase()}
+        </a>
       </div>
 
       <ToastContainer

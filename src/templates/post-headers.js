@@ -102,7 +102,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
 
         {(!isOneEightyPost || isRecap) && (
           <>
-            {isOneEightyPost && (
+            {isOneEightyPost && !isRecap && (
               <p className="cp-date">
                 <TextDate string={frontmatter.date} />
               </p>
