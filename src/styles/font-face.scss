@@ -25,19 +25,19 @@
 }
 
 @mixin Roobert_Regular {
-  font-family: 'Roobert_Regular';
+  font-family: 'Roobert_Regular', $fonts_fallback;
   font-weight: normal;
   font-style: normal;
 }
 
 @mixin Roobert_Medium {
-  font-family: 'Roobert_Medium';
+  font-family: 'Roobert_Medium', $fonts_fallback;
   font-weight: normal;
   font-style: normal;
 }
 
 @mixin Roobert_SemiBold {
-  font-family: 'Roobert_SemiBold';
+  font-family: 'Roobert_SemiBold', $fonts_fallback;
   font-weight: normal;
   font-style: normal;
 }

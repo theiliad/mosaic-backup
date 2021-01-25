@@ -13,6 +13,8 @@ $colors_red_primary: #d50057; // labels
 $colors_orange_primary: #fb6157; // accents
 $colors_aqua_primary: #00bed6; // accents
 
+$fonts_fallback: Helvetica, Arial, Sans-serif;
+
 @mixin transition_default {
   transition: all 0.16s ease-out;
 }
@@ -29,7 +31,7 @@ div.columns.ui-grid {
 
 html {
   font-size: 16px;
-  font-family: Helvetica, Arial, Sans-serif;
+  font-family: $fonts_fallback;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,7 +43,9 @@ html {
 // }
 
 // French temp toggle
-.fr-toggle { display: none; }
+.fr-toggle {
+  display: none;
+}
 
 body {
   background: $colors_white;
@@ -163,7 +167,6 @@ p a:hover {
       color: $colors_midnight_primary;
       background: $colors_orange_primary;
     }
-
   }
 
   &.light {
@@ -244,21 +247,20 @@ div.content {
       padding-bottom: 4em;
       color: $colors_midnight_secondary;
 
-        @media screen and (max-width: 768px) {
-      margin-top: -2em;
-        }
-
+      @media screen and (max-width: 768px) {
+        margin-top: -2em;
+      }
     }
   }
 
   div.cp-sponsors {
-	  img {
-		  width: 48%;
+    img {
+      width: 48%;
 
-		  @media screen and (max-width: 1100px) {
-			  width: 80%;
-		  }
-	  }
+      @media screen and (max-width: 1100px) {
+        width: 80%;
+      }
+    }
   }
 }
 

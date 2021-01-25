@@ -1,23 +1,23 @@
 div.post-single-heading {
   padding: 8em 0 0 0;
 
-    @media screen and (min-width: 769px) {
-      margin-bottom: 3em;
-    }
+  @media screen and (min-width: 769px) {
+    margin-bottom: 3em;
+  }
 
-    h1 {
-      font-size: 4vh;
-      line-height: 1.25em;
-    }
+  h1 {
+    font-size: 4vh;
+    line-height: 1.25em;
+  }
 
   p.cp-desc {
     margin: 0.5em 0 1em 0;
     font-size: 1.75em;
-   
-      @media screen and (max-width: 768px) {
-        font-size: 1.25em;
-        line-height: 1.4em;
-      }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.25em;
+      line-height: 1.4em;
+    }
   }
 
   p.cp-date {
@@ -244,9 +244,9 @@ div.post-single-heading {
 
             i {
               svg {
-				margin-left: 0.5em;
-				vertical-align: middle;
-				margin-top: -0.1em;
+                margin-left: 0.5em;
+                vertical-align: middle;
+                margin-top: -0.1em;
               }
             }
           }
@@ -284,9 +284,9 @@ div.post-single-heading {
         font-size: 5vh;
         line-height: 1.25em;
 
-         @media screen and (max-width: 768px) {
-           font-size: 4vh;
-         }
+        @media screen and (max-width: 768px) {
+          font-size: 4vh;
+        }
       }
 
       p.cp-author {
@@ -307,17 +307,17 @@ div.post-body {
   color: $colors_midnight_primary;
   @include Roobert_Regular;
 
-    @media screen and (min-width: 769px) {
-      margin-top: 4em;
-    }
+  @media screen and (min-width: 769px) {
+    margin-top: 4em;
+  }
 
   p {
     font-size: 1.25em;
     line-height: 1.875em;
-        @media screen and (max-width: 768px) {
-          font-size: 1.125em
-        }
+    @media screen and (max-width: 768px) {
+      font-size: 1.125em;
     }
+  }
 
   a.cp-apply {
     padding: 1.5em;
@@ -376,9 +376,9 @@ div.post-body {
   li {
     font-size: 1.25em;
     line-height: 2em;
-      @media screen and (max-width: 768px) {
-        font-size: 1em;
-      }
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
   }
 
   p a {
@@ -402,6 +402,7 @@ div.post-body {
 
   b,
   strong {
+    display: inline-block;
     background: -webkit-linear-gradient(45deg, #1226aa, #d50057);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -446,10 +447,9 @@ div.post-body {
     margin-top: 4em;
 
     div.cp-panelist-image {
-
-        @media screen and (min-width: 769px) {
-          padding-right: 2em;
-        }
+      @media screen and (min-width: 769px) {
+        padding-right: 2em;
+      }
 
       div.cp-image {
         position: relative;
@@ -482,7 +482,6 @@ div.post-body {
             width: 4em;
             height: 4em;
           }
-
         }
       }
     }
@@ -502,7 +501,6 @@ div.post-body {
       font-size: 1em;
       line-height: 1.2em;
       width: 88%;
-
     }
 
     p.cp-title {
@@ -683,10 +681,10 @@ div.post {
               padding-top: 0.25em;
               @include Roobert_Medium;
 
-                @media screen and (max-width: 768px) {
-                  font-size: 6vw;
-                  line-height: 1.2em;
-                }
+              @media screen and (max-width: 768px) {
+                font-size: 6vw;
+                line-height: 1.2em;
+              }
             }
           }
         }
