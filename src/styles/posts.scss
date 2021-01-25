@@ -671,7 +671,7 @@ div.post {
 
             @media screen and (min-width: 769px) {
               position: absolute;
-              bottom: 2.25em;
+              bottom: 2.5em;
               left: 2.5em;
             }
 
@@ -681,10 +681,21 @@ div.post {
               padding-top: 0.25em;
               @include Roobert_Medium;
 
+              @media screen and (min-width: 1260px) {
+                font-size: 2.75em;
+              }
+          
               @media screen and (max-width: 768px) {
+                font-size: 4.5vw;
+                line-height: 1.2em;
+              }
+
+              @media screen and (max-width: 400px) {
                 font-size: 6vw;
                 line-height: 1.2em;
               }
+
+
             }
           }
         }

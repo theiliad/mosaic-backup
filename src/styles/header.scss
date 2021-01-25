@@ -47,10 +47,10 @@ div.site-header {
       a.navbar-burger {
         display: table;
         margin-left: auto;
-        background: $colors_blue_primary;
+        background: $colors_white;
         border-radius: 50%;
         transform: none;
-        color: #fff;
+        color: $colors_blue_primary;
       }
     }
 

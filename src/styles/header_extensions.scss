@@ -49,7 +49,7 @@
         // max-width: 900px;
 
         @media screen and (max-width: 768px) {
-          // position: static;
+          position: static;
           // attn Eliad
         }
 
@@ -93,7 +93,7 @@
 
   &.capabilities {
     background: $colors_midnight_primary url('../img/matrix.svg') repeat;
-    background-size: 1.4em;
+    background-size: 1.5em;
 
     p {
       max-width: 600px;
