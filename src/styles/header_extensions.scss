@@ -49,11 +49,13 @@
         // max-width: 900px;
 
         @media screen and (max-width: 768px) {
-          position: static;
+          // position: static;
+          // attn Eliad
         }
 
         img {
           height: 11.375em;
+          z-index: 9999;
 
           &#cp_hero_logo {
             position: fixed;

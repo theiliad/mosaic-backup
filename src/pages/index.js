@@ -14,7 +14,7 @@ import { get, chunk } from 'lodash-es'
 import CATEGORIES from '../data/categories'
 
 // Assets
-import LOGO_WHITE from '../img/logo/white-transparent.svg'
+import LOGO_WHITE from '../img/logo/white-outline.svg'
 import HOME_HERO from '../img/home/hero.jpg'
 import HOME_CAPABILITIES from '../img/home/capabilities.jpg'
 import HOME_ONEEIGHTY from '../img/home/oneeighty.jpg'
@@ -41,12 +41,14 @@ import STARBUCKS from '../img/home/partners/starbucks.svg'
 import TISHMAN_SPEYER from '../img/home/partners/tishman-speyer.svg'
 
 // Home logos
-import HOME_LOGO_AQUABLUE from '../img/logo/animated/aqua-blue.svg'
-import HOME_LOGO_ORANGEBLUE from '../img/logo/animated/orange-blue.svg'
-import HOME_LOGO_REDMATRIX from '../img/logo/animated/red-matrix.svg'
-import HOME_LOGO_WHITEMATRIX from '../img/logo/animated/white-matrix.svg'
-import HOME_LOGO_WHITEOUTLINE from '../img/logo/animated/white-outline.svg'
-import HOME_LOGO_WHITERED from '../img/logo/animated/white-red.svg'
+// import HOME_LOGO_AQUABLUE from '../img/logo/aqua-blue.svg'
+// import HOME_LOGO_ORANGEBLUE from '../img/logo/orange-blue.svg'
+import HOME_LOGO_AQUAMIDNIGHT from '../img/logo/aqua-midnight.svg'
+import HOME_LOGO_ORANGEMIDNIGHT from '../img/logo/orange-midnight.svg'
+import HOME_LOGO_REDMATRIX from '../img/logo/red-matrix.svg'
+import HOME_LOGO_WHITEMATRIX from '../img/logo/white-matrix.svg'
+import HOME_LOGO_WHITEOUTLINE from '../img/logo/white-outline.svg'
+import HOME_LOGO_WHITERED from '../img/logo/white-red.svg'
 
 // d3
 import { scaleLinear } from 'd3-scale'
@@ -54,8 +56,10 @@ import { scaleLinear } from 'd3-scale'
 import { HOMEPAGE_NAV_HIDE_THRESHOLD } from '../components/Layout'
 
 const HOME_ANIMATED_LOGOS = [
-  { name: 'aquablue', src: HOME_LOGO_AQUABLUE },
-  { name: 'orangeblue', src: HOME_LOGO_ORANGEBLUE },
+  // { name: 'aquablue', src: HOME_LOGO_AQUABLUE },
+  // { name: 'orangeblue', src: HOME_LOGO_ORANGEBLUE },
+  // { name: 'aquamidnight', src: HOME_LOGO_AQUAMIDNIGHT },
+  { name: 'orangemidnight', src: HOME_LOGO_ORANGEMIDNIGHT },
   { name: 'redmatrix', src: HOME_LOGO_REDMATRIX },
   { name: 'whitematrix', src: HOME_LOGO_WHITEMATRIX },
   { name: 'whiteoutline', src: HOME_LOGO_WHITEOUTLINE },
@@ -234,8 +238,8 @@ class BlogIndex extends React.Component {
           <div className="header_extension home">
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
-                <img src={HOME_LOGO_AQUABLUE} id="cp_hero_logo" />
-                <img src={HOME_LOGO_AQUABLUE} id="cp_hero_logo_hidden" />
+                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo" />
+                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo_hidden" />
 
                 <div className="container">
                   <h1>

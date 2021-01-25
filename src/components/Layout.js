@@ -18,17 +18,18 @@ import 'react-toastify/dist/ReactToastify.css'
 
 // Logo options
 import LOGO_AQUA_BLUE from '../img/logo/aqua-blue.svg'
-import LOGO_DARK_BLUE from '../img/logo/blue-darkblue.svg'
+import LOGO_AQUA_MATRIX from '../img/logo/aqua-matrix.svg'
+import LOGO_BLUE_MIDNIGHT from '../img/logo/blue-midnight.svg'
 import LOGO_ORANGE_BLUE from '../img/logo/orange-blue.svg'
 import LOGO_WHITE_RED from '../img/logo/white-red.svg'
-import LOGO_WHITE from '../img/logo/white-transparent.svg'
+import LOGO_WHITE_OUTLINE from '../img/logo/white-outline.svg'
 
 export const LOGO_OPTIONS = {
   aquaBlue: LOGO_AQUA_BLUE,
-  darkBlue: LOGO_DARK_BLUE,
+  blueMidnight: LOGO_BLUE_MIDNIGHT,
   orangeBlue: LOGO_ORANGE_BLUE,
   whiteRed: LOGO_WHITE_RED,
-  white: LOGO_WHITE,
+  white: LOGO_WHITE_OUTLINE,
 }
 
 export const HOMEPAGE_NAV_HIDE_THRESHOLD = 450
@@ -135,7 +136,7 @@ class Header extends React.Component {
                   <img
                     src={
                       props.logo ||
-                      (navIdleLight && whiteNav ? LOGO_ORANGE_BLUE : LOGO_WHITE)
+                      (navIdleLight && whiteNav ? LOGO_ORANGE_BLUE : LOGO_ORANGE_BLUE)
                     }
                     id="cp_site_logo"
                     style={{

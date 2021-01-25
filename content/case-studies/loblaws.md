@@ -2,7 +2,7 @@
 posttype: case-study
 titleEN: National Kickoff
 titleFR: frFPO
-companyName: Loblaws Companies Limited
+companyName: Loblaw Companies Limited
 date: 2021-01-03T20:35:33.876Z
 descriptionEN: Imagining a more human conference
 descriptionFR: frFPO

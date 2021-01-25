@@ -241,7 +241,7 @@ export default {
           fr: FRFPO,
         },
         cta: {
-          en: `View Loblaws’ case study`,
+          en: `View Loblaw's case study`,
           fr: FRFPO,
         },
       },
