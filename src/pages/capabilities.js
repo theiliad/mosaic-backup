@@ -33,7 +33,7 @@ class Capabilities extends React.Component {
               <div className="cp-hero" id="cp_hero">
                 <div className="container">
                   <div className="columns">
-                    <div className="column">
+                    <div className="column cp-copy">
                       <h1>
                         <span>
                           <Text tid="pages.capabilities.title" />
@@ -47,92 +47,56 @@ class Capabilities extends React.Component {
 
                     <div className="column cp-img">
                       <svg
+                        version="1.1"
+                        id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg"
-                        width="543.572021484375"
-                        height="646.9089965820312"
-                        viewBox="0 0 543.572 646.909"
+                        // xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 543.6 646.9"
+                        style={{ enableBackground: 'new 0 0 543.6 646.9' }}
+                        // xml:space="preserve"
+                        width="543.5999755859375"
+                        height="646.9000244140625"
                       >
                         <g
                           id="Group_997"
-                          data-name="Group 997"
                           transform="translate(-533.816 -129.672)"
                         >
                           <path
                             id="Path_1190"
-                            data-name="Path 1190"
-                            d="M804.347,769.674,537.061,610.2V291.242L804.347,450.72Z"
-                            transform="translate(1.255 2.407)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-1"
+                            class="st0 svg-elem-1"
+                            d="M805.6,772.1L538.3,612.6v-319l267.3,159.5V772.1z"
                           ></path>
                           <path
                             id="Path_1191"
-                            data-name="Path 1191"
-                            d="M801.084,769.674,1068.37,610.2V291.242L801.084,450.72Z"
-                            transform="translate(4.518 2.407)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-2"
+                            class="st0 svg-elem-2"
+                            d="M805.6,772.1l267.3-159.5v-319L805.6,453.1V772.1z"
                           ></path>
                           <path
                             id="Path_1192"
-                            data-name="Path 1192"
-                            d="M537.061,612.143,804.347,452.666V133.712L537.061,293.189Z"
-                            transform="translate(1.255 0.46)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-3"
+                            class="st0 svg-elem-3"
+                            d="M538.3,612.6l267.3-159.5v-319L538.3,293.6V612.6z"
                           ></path>
                           <path
                             id="Path_1193"
-                            data-name="Path 1193"
-                            d="M537.061,293.189,804.347,452.666l267.286-159.477L804.347,133.712Z"
-                            transform="translate(1.255 0.46)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-4"
+                            class="st0 svg-elem-4"
+                            d="M538.3,293.6l267.3,159.5l267.3-159.5L805.6,134.2L538.3,293.6z"
                           ></path>
                           <path
                             id="Path_1194"
-                            data-name="Path 1194"
-                            d="M537.061,608.25,804.347,767.727,1071.632,608.25,804.347,448.773Z"
-                            transform="translate(1.255 4.354)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-5"
+                            class="st0 svg-elem-5"
+                            d="M538.3,612.6l267.3,159.5l267.3-159.5L805.6,453.1L538.3,612.6z"
                           ></path>
                           <path
                             id="Path_1195"
-                            data-name="Path 1195"
-                            d="M804.347,769.674,537.061,291.242h534.572Z"
-                            transform="translate(1.255 2.407)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-6"
+                            class="st0 svg-elem-6"
+                            d="M805.6,772.1L538.3,293.6h534.6L805.6,772.1z"
                           ></path>
                           <path
                             id="Path_1196"
-                            data-name="Path 1196"
-                            d="M804.347,133.712,537.061,612.143h534.572Z"
-                            transform="translate(1.255 0.46)"
-                            fill="none"
-                            stroke="#ffffff"
-                            stroke-linejoin="round"
-                            stroke-width="9"
-                            class="svg-elem-7"
+                            class="st0 svg-elem-7"
+                            d="M805.6,134.2L538.3,612.6h534.6L805.6,134.2z"
                           ></path>
                         </g>
                       </svg>
@@ -152,7 +116,10 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={CAPABILITIES_CONTENT_DIGITAL} className="image-below" />
+                  <img
+                    src={CAPABILITIES_CONTENT_DIGITAL}
+                    className="image-below"
+                  />
                 </div>
 
                 <div className="column is-1"></div>
@@ -202,7 +169,10 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={CAPABILITIES_EXPERIENTIAL_MARKETING} className="image-below" />
+                  <img
+                    src={CAPABILITIES_EXPERIENTIAL_MARKETING}
+                    className="image-below"
+                  />
                 </div>
               </div>
             </div>
@@ -212,7 +182,10 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={CAPABILITIES_RETAIL_COMMERCE} className="image-below" />
+                  <img
+                    src={CAPABILITIES_RETAIL_COMMERCE}
+                    className="image-below"
+                  />
                 </div>
 
                 <div className="column is-1"></div>
@@ -242,7 +215,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-              <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.b2b.title" />
                   </h2>
@@ -271,8 +244,11 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-               <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={CAPABILITIES_ASSISTED_SELLING} className="image-below" />
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  <img
+                    src={CAPABILITIES_ASSISTED_SELLING}
+                    className="image-below"
+                  />
                 </div>
 
                 <div className="column is-1"></div>
@@ -302,7 +278,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-               <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.brand_development.title" />
                   </h2>
@@ -322,7 +298,10 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={CAPABILITIES_BRAND_DEVELOPMENT} className="image-below" />
+                  <img
+                    src={CAPABILITIES_BRAND_DEVELOPMENT}
+                    className="image-below"
+                  />
                 </div>
               </div>
             </div>

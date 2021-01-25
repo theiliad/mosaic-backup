@@ -120,7 +120,7 @@ class Header extends React.Component {
           className={
             'site-header' +
             (navIdleLight ? ' idle-light' : '') +
-            (scrollDir === 'down' ? ' hidden' : '') +
+            // (scrollDir === 'down' ? ' hidden' : '') +
             (whiteNav === true ? ' white' : '')
           }
         >
