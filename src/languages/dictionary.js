@@ -1134,24 +1134,11 @@ export default {
             </p>
 
             <p>
-<<<<<<< HEAD
             <b>Jennifer Rattan</b> <br />
             Acosta/Mosaic Sales Solutions <br />
             <a href="mailto:jennifer.rattan@mosaic.com">Jennifer.Rattan@mosaic.com</a> <br />
             905 238 8058 x6207
             </p>
-
-=======
-              <b>Jennifer Rattan</b>
-            </p>
-            <p>Acosta/Mosaic Sales Solutions</p>
-            <p>
-              <a href="mailto:jennifer.rattan@mosaic.com">
-                Jennifer.Rattan@mosaic.com
-              </a>
-            </p>
-            <p>905 238 8058 x6207</p>
->>>>>>> 800dbc13215e46330607dcc5c679fac5534b1510
           </>
         ),
         fr: FRFPO,
