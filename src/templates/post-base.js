@@ -130,7 +130,8 @@ function Post(props) {
                 >
                   <span>
                     <Text tid="thinking.panelist.linkedin" />
-                  </span>{' '}<RiArrowRightUpLine />
+                  </span>{' '}
+                  <RiArrowRightUpLine />
                 </a>
               )}
             </p>
@@ -196,14 +197,6 @@ function Post(props) {
                   <MDXRenderer>{post.body}</MDXRenderer>
                 </MDXProvider> */}
 
-                <div className="columns cp-sponsors is-mobile is-multiline">
-                  {frontmatter.sponsors && frontmatter.sponsors.map(sponsor => (
-                    <div className="column is-3-widescreen is-4-desktop is-4-tablet is-4-mobile">
-                      <img src={sponsor.image} alt={sponsor.alt} />
-                    </div>
-                  ))}
-                </div>
-
                 <MDX
                   components={{
                     a: aProps => {
@@ -234,6 +227,15 @@ function Post(props) {
                     },
                   })}
                 </MDX>
+
+                <div className="columns cp-sponsors is-mobile is-multiline">
+                  {frontmatter.sponsors &&
+                    frontmatter.sponsors.map(sponsor => (
+                      <div className="column is-3-widescreen is-4-desktop is-4-tablet is-4-mobile">
+                        <img src={sponsor.image} alt={sponsor.alt} />
+                      </div>
+                    ))}
+                </div>
 
                 {frontmatter.panel && (
                   <div className="cp-panel">

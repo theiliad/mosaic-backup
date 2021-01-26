@@ -9,6 +9,11 @@ featuredImage: /img/thinking/no-irl-no-problem.jpg
 category: oneeighty
 descriptionEN: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
 descriptionFR: frFPO
+sponsors:
+  - image: /img/oneeighty/sponsors/rbc.svg
+    alt: RBC
+  - image: /img/oneeighty/sponsors/bacardi.svg
+    alt: Bacardi
 panel:
   - image: /img/oneeighty/panel/matt-mcglynn.jpg
     name: Matt McGlynn

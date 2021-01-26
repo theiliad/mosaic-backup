@@ -7,7 +7,8 @@ div.sidenav {
   opacity: 0;
   visibility: hidden;
   z-index: 10000;
-  background: $colors_blue_primary;
+  background: $colors_blue_primary url('../img/matrix.svg') repeat;
+  background-size: 1.5em;
   padding: 1.4em 0 0 0;
   @include transition_default;
 
@@ -55,8 +56,15 @@ div.sidenav {
   }
 
   div.cp-content {
-    text-align: center;
+    display: flex;
+    min-height: 87vh;
+    text-align: right;
     margin-top: 2em;
+    flex-direction: column;
+
+    div.cp-spacer {
+      flex-grow: 1;
+    }
 
     a img {
       height: 6em;
@@ -66,6 +74,16 @@ div.sidenav {
       max-height: calc(100vh - 7em);
       overflow-y: auto;
       margin-top: 2em;
+	  padding-bottom: 2em;
+	  
+	  div.social-links {
+		  font-size: 0.6em;
+		  margin-top: 4em;
+
+		  a {
+			  @include Roobert_Medium;
+		  }
+	  }
 
       /* width */
       &::-webkit-scrollbar {
@@ -94,8 +112,9 @@ div.sidenav {
         font-style: normal;
         font-stretch: normal;
         font-size: 1.75em;
-        margin-bottom: 0.9em;
+        margin-bottom: 0.5em;
         @include transition_default;
+        @include Roobert_SemiBold;
 
         &:last-child {
           margin-bottom: 0em;
@@ -125,15 +144,15 @@ div.sidenav {
       div.links a {
         text-align: left;
         font-size: 1.25em;
-        
+
         &:hover {
-        border-bottom: 1px solid $colors_blue_primary;
+          border-bottom: 1px solid $colors_blue_primary;
         }
-		
-		&.active {
-			color: $colors_orange_primary;
-		  border-bottom: 1px solid $colors_blue_primary;
-		}
+
+        &.active {
+          color: $colors_orange_primary;
+          border-bottom: 1px solid $colors_blue_primary;
+        }
       }
     }
 
@@ -142,13 +161,12 @@ div.sidenav {
       bottom: 2em;
       left: 0;
       width: 100%;
-	  text-align: center;
-    text-transform: uppercase;
-    
-    &:hover {
-      border-bottom: 1px solid $colors_blue_primary;
-    }
-    
+      text-align: center;
+      text-transform: uppercase;
+
+      &:hover {
+        border-bottom: 1px solid $colors_blue_primary;
+      }
     }
   }
 }

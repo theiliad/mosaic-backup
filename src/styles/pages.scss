@@ -806,7 +806,11 @@ div.pages-contact {
     }
 
     div.cp-mobile {
-      display: none;
+	  display: none;
+	  
+	  h3 {
+		  margin-bottom: 2em;
+	  }
 
       @media screen and (max-width: 768px) {
         display: table;

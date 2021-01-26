@@ -99,7 +99,11 @@
       max-width: 600px;
     }
 
-    div.cp-hero {
+	div.bg div.cp-hero {
+      @media (max-width: 768px) {
+        position: static;
+      }
+
       div.cp-copy {
         flex-direction: column;
         display: flex;
