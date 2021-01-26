@@ -22,7 +22,7 @@ bodyEN: >-
   On game day, fans were invited to a custom microsite that showcased these mouthwatering bites. Fans were able to order a 6-pack of cold Stella Artois, their choice of food, and choose a delivery time slot between 4-10 pm on game day. Every order was delivered in Stella’s own premium way: with two custom engraved Chalices and a donation note made out on the fan’s behalf to the Food Bank of New York City.
 
 
-  The Stella Stadium Bites pilot program scored **5.2M social impressions, 100% positive consumer sentiment** and **27.1M PR impressions** from celebrities and media outlets, attracting the attention of new and potential team partnerships. Because of its success, the program continues to expand and evolve, converting a new consumer base – sports fans – to Stella.
+  The Stella Stadium Bites pilot program scored ***5.2M social impressions, 100% positive consumer sentiment*** and ***27.1M PR impressions*** from celebrities and media outlets, attracting the attention of new and potential team partnerships. Because of its success, the program continues to expand and evolve, converting a new consumer base – sports fans – to Stella.
 
 
   ![Stella Stadium Bites Box](/img/case-studies/stella/stella-stadium-bites-box.jpg)

@@ -31,13 +31,13 @@ class PrivacyPolicy extends React.Component {
 
           <div className="section-header">
             <div className="container">
-              <Text tid="pages.privacy.header" />
+              <Text tid="pages.accessibility.header" />
             </div>
           </div>
 
           <div className="section-content content">
             <div className="container">
-              <Text tid="pages.privacy.content" />
+              <Text tid="pages.accessibility.content" />
             </div>
           </div>
         </div>

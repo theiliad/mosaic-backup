@@ -32,19 +32,19 @@ bodyEN: >-
   ## Incorporate brand storytelling into the digital shelf
 
 
-  * Bring your brand to life beyond the packaging seen on a brick-and-mortar shelf. Don’t simply fill in the blank templates with images and copy. Allow your shoppers to experience your brand. In addition to packaging and ingredients, it’s important to demonstrate why your brand is the best. Why would I buy it, how would I use it? Is it for me, or for a party? Is it a gift?
+  Bring your brand to life beyond the packaging seen on a brick-and-mortar shelf. Don’t simply fill in the blank templates with images and copy. Allow your shoppers to experience your brand. In addition to packaging and ingredients, it’s important to demonstrate why your brand is the best. Why would I buy it, how would I use it? Is it for me, or for a party? Is it a gift?
 
 
   ## Pay attention to quality
 
 
-  * Showing up well online has never been more important. It is no longer acceptable to simply upload low quality pictures of packaging and ingredient labels. Pictures need to reflect the quality of your brand. Ensure your packaging images are easy to read and are mobile optimized. Include secondary images that highlight usage occasions. Make sure the copy is clear, succinct and seamlessly includes organic search terms.
+  Showing up well online has never been more important. It is no longer acceptable to simply upload low quality pictures of packaging and ingredient labels. Pictures need to reflect the quality of your brand. Ensure your packaging images are easy to read and are mobile optimized. Include secondary images that highlight usage occasions. Make sure the copy is clear, succinct and seamlessly includes organic search terms.
 
 
   ## Have a demand generation strategy
 
 
-  * Lastly, shoppers need to find your brand. To get prominent placement, you’ll
+  Lastly, shoppers need to find your brand. To get prominent placement, you’ll
   need to ensure you have a strong paid search strategy and media plan that
   drives demand to your products and delivers an efficient ROI. Ratings and
   reviews are also important to help drive search results and sales.

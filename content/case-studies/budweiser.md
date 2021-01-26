@@ -19,7 +19,7 @@ bodyEN: >-
   To that end, on its 20th anniversary, we resurrected the classic Whassup ad with the help of a socially integrated campaign, and orchestrated a moment in this year’s Super Bowl that broke records and borders to deliver record results for Budweiser and Uber. This showed Budweiser cares about its customers’ well-being and spread an important message that aligns brand strategy and purpose.
   
   
-  While the spot aired only during the Canadian broadcast of the game, it made headlines globally, ranking on over **70 lists of the best Super Bowl Ads** and appearing in over **400 news stories worldwide.** More importantly, Uber saw a **20% increase in rides** compared to last year, ensuring hundreds of thousands of Canadians chose the smart way home. That’s whassup.
+  While the spot aired only during the Canadian broadcast of the game, it made headlines globally, ranking on over *70 lists of the best Super Bowl Ads* and appearing in over *400 news stories worldwide.* More importantly, Uber saw a *20% increase in rides* compared to last year, ensuring hundreds of thousands of Canadians chose the smart way home. That’s whassup.
   
 bodyFR: >-
   FRFPO

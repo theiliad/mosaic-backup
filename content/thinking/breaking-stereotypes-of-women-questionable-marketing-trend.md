@@ -96,7 +96,7 @@ bodyEN: >-
 
 
 
-  ## “Reitmans. Really?”
+  ### “Reitmans. Really?”
 
 
   Reitmans needed to change the bias against their brand and convince consumers
@@ -129,7 +129,7 @@ bodyEN: >-
 
 
 
-  ## Make History – Jim Beam
+  ### Make History – Jim Beam
 
 
   “Whiskey and Women” was the research project that led to a new positioning for

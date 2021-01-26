@@ -186,9 +186,21 @@ div.pages-index {
     div.embla__slide {
       min-width: 320px;
 
+      @media screen and (max-width: 1024px) {
+        min-width: 33vw;
+      }
+
+     @media screen and (max-width: 768px) {
+       min-width: 64vw;
+     }
+
       &:first-child,
       &:last-child {
         min-width: 5em;
+
+      @media screen and (max-width: 768px) {
+        min-width: 5vw;
+      }
 
         img {
           opacity: 0;
@@ -601,29 +613,59 @@ div.pages-careers {
 div.pages-sup {
   .section-title {
     padding: 3em 0;
-    padding-top: 6em;
+    padding-top: 12em;
 
     h1 {
-      font-size: 2em;
+      font-size: 4em;
+      line-height: 1.2em;
+
+        @media screen and (max-width: 768px) {
+          font-size: 2.5em;
+        }
+    }
+  }
+
+  h2 {
+    font-size: 1.325em;
+    padding: 1em 0 0.5em 0;
+  }
+
+  h3 {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
+
+  p {
+    @include Roobert_Regular;
+  }
+
+  p a {
+    color: $colors_blue_primary;
+    border-bottom: 1px solid $colors_blue_primary;
+
+    &:hover {
+      color: $colors_red_primary;
+      border-bottom: 1px solid $colors_red_primary;
     }
   }
 
   .section-header {
-    padding: 3em 0;
+    padding: 2em 0 2em 0;
     background: $colors_blue_primary;
-    color: #fff;
+    color: $colors_white;
+
+    h2 {
+      font-size: 1.325em !important;
+      padding-bottom: 1em;
+    }
 
     p {
       margin-bottom: 1em;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 
   .section-content {
-    padding: 3em 0;
+    padding: 3em 0 8em 0;
   }
 }
 
@@ -650,7 +692,7 @@ div.post-single-heading.thinking.contact {
 
     h2 {
       font-size: 5vh;
-      line-height: 1.25em;
+      line-height: 1.125em;
 
        @media screen and (max-width: 768px) {
          font-size: 4vh;

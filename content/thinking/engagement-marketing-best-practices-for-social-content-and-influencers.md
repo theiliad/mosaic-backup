@@ -18,19 +18,20 @@ bodyEN: >-
   With channel algorithms constantly changing, cutting through the noise is key. Let’s take a look at how brands can use owned content and third-party endorsements to drive engagement with their customers. 
 
 
-  ### Have a Purpose
+  ## Have a Purpose
 
 
-  In 2019, the average American adult consumed just over [12 hours of media a day](https://www.emarketer.com/content/us-time-spent-with-media-in-2019-has-plateaued-with-digital-making-up-losses-by-old-media), mostly via digital channels. This number is set to grow exponentially now with consumers largely confined to their homes. Brands have a unique opportunity to cut through the clutter of the digital world and develop a deeper relationship with their audience. However, it must serve a purpose. The below pillars can provide general guidance around developing meaningful content.
+  In 2019, the average American adult consumed just over <a href="https://www.emarketer.com/content/us-time-spent-with-media-in-2019-has-plateaued-with-digital-making-up-losses-by-old-media" target="_blank">12 hours of media a day</a>, mostly via digital channels. This number is set to grow exponentially now with consumers largely confined to their homes. Brands have a unique opportunity to cut through the clutter of the digital world and develop a deeper relationship with their audience. However, it must serve a purpose. The below pillars can provide general guidance around developing meaningful content.
 
 
-  **1. Entertain**
+  ### 1. Entertain
 
 
-  Whether from a brand or one of their partners, consumers want an escape. Tik Tok’s popularity is a great example. Leaning into the video app’s dance routines and challenges, Chipotle created the #GuacDance challenge for National Avocado Day, which became one of the [most successful branded challenges in the U.S.](https://www.qsrmagazine.com/fast-casual/how-chipotle-took-over-tiktok)
+  Whether from a brand or one of their partners, consumers want an escape. Tik Tok’s popularity is a great example. Leaning into the video app’s dance routines and challenges, Chipotle created the #GuacDance challenge for National Avocado Day, which became one of the <a href="https://www.qsrmagazine.com/fast-casual/how-chipotle-took-over-tiktok" target="_blank">most successful branded challenges in the U.S.</a>
+  
 
 
-  **2. Inspire**
+  ### 2. Inspire
 
 
   Brands and influencers also have the power to inspire others through content. Most recently, Nike came out with its own take on how consumers can stay safe during the current global pandemic, and have used its partner athletes, including Serena Williams and Tiger Woods, to amplify the message: Play Inside, Play for the World. 
@@ -38,7 +39,7 @@ bodyEN: >-
   ![Nike: Play inside, play for the world.](/img/thinking/engagement-marketing-best-practices/nike.png)
 
 
-  **3. Bring Value**
+  ### 3. Bring Value
 
 
   Consumers are also looking for content that will improve their lifestyle. For example, our client Michelob ULTRA is bringing fitness to consumers’ living rooms by teaming up with fitness studios that have had to close as a result of the COVID crisis. Instructors teach a class and host a happy hour, and attendees donate to a virtual tip jar, which helps participating studios support their staff during this time.
@@ -47,7 +48,7 @@ bodyEN: >-
   ![Michelob Ultra: #MoveSweatBeer](/img/thinking/engagement-marketing-best-practices/michelob.png)
 
 
-  ### Practice Mindfulness
+  ## Practice Mindfulness
 
 
   Brands need to have a human touch if they want to see consumer engagement. Being mindful of brand tone is key to reminding your followers that a human is behind their favorite brand’s account.

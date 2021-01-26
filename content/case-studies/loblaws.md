@@ -22,7 +22,7 @@ bodyEN: >-
   Carefully crafted to encourage empathy through immersion, every home and experience was designed to represent real people—different family units, income levels, backgrounds and of course, different challenges.
   
 
-  With **1,400 attendees** (110% over benchmark) and **29,400+ engagements** (163% over benchmark), our experience resonated. **Internal feedback was extremely positive with 96% rating** it a 4+ out of 5. In total, employees walked **880,000+ steps in someone else’s shoes.**
+  With *1,400 attendees* (110% over benchmark) and *29,400+ engagements* (163% over benchmark), our experience resonated. *Internal feedback was extremely positive with 96% rating* it a 4+ out of 5. In total, employees walked *880,000+ steps in someone else’s shoes.*
 bodyFR: >-
   FRFPO
 ---

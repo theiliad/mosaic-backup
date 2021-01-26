@@ -90,7 +90,7 @@ bodyEN: >-
     ---
 
 
-    Edited and re-printed with permission from [Global Brand Management: A Guide to Developing, Building and Managing an International Brand](https://www.koganpage.com/product/global-brand-management-9780749483609), published in Nov. 2019 by Kogan Page.
+    Edited and re-printed with permission from <a href="https://www.koganpage.com/product/global-brand-management-9780749483609" target="_blank">Global Brand Management: A Guide to Developing, Building and Managing an International Brand</a>, published in Nov. 2019 by Kogan Page.
 bodyFR: >-
   frFPO
 ---

@@ -27,21 +27,21 @@ bodyEN: >-
     ‘Less is more’ is engrained into the minds of twenty-first century designers from the onset of their education and repeated throughout their careers. Echoed by professors and creative directors alike, “less is more” has become the roadmap to which designers ought to navigate their craft. At its best, the result is an Apple product. At its worst, it’s cliché hipster poster art featuring Helvetica set in black and white (designers insert eye roll emoji here).
 
 
-    ![](/img/thinking/minimalism-vs-maximalism/art_hack_day_berlin.jpg)
+    ![Art Hack Day Berlin](/img/thinking/minimalism-vs-maximalism/art_hack_day_berlin.jpg)
 
 
     But a decade-long period of widespread Scandinavian minimalism has created a (literal) chasmal whitespace in our world. Predictably, designers and artists are advancing on this empty canvas trying to make a name for themselves by filling it with expressive, anti-minimalist works, giving shape to the current trend of maximalism across the arts.
 
 
-    A growing number of visual artists are choosing to use an eclectic approach like @KahindeWiley and @HattieStewart.
+    A growing number of visual artists are choosing to use an eclectic approach like <a href="https://kehindewiley.com/" target="_blank">@KahindeWiley</a> and <a href="http://www.hattiestewart.com/" target="_blank">@HattieStewart.</a>
 
 
     Both artists use complex thematic patterns in their work to create visual tension. The resulting chaotic environments confront viewers with an array of concepts and emotions.
 
 
-    <img src="/img/thinking/minimalism-vs-maximalism/hattie.jpg" alt="enFPO" caption="Image by Hattie Stewart" />
+    <img src="/img/thinking/minimalism-vs-maximalism/hattie.jpg" alt="Collage of woman and flowers" caption="Image by Hattie Stewart" />
 
-    <img src="/img/thinking/minimalism-vs-maximalism/wiley_simeon_the_god_receiver.jpg" alt="enFPO" caption="Image by Kahinde Wiley" />
+    <img src="/img/thinking/minimalism-vs-maximalism/wiley_simeon_the_god_receiver.jpg" alt="Simeon the God Receiver, 2015" caption="Image by Kahinde Wiley" />
 
 
     In fashion, designers such as Versace, Gucci, and Moschino have been staunch supporters of loud patterns and textures for years, but in 2018, they’ve taken this devotion to the extreme. Fashion lovers and stylists worldwide are filling their shopping bags to the max, and high fashion maximalism has trickled down to mainstream retailers like H+M and Zara.
@@ -53,7 +53,7 @@ bodyEN: >-
     One brand who has embraced maximalist advertising design is Dropbox. This time last year they launched their new branding. It features a multitude of contrasting colors, a font family of 259+ weights, and equally as diverse illustration styles — and it certainly ruffled a few feathers within the design community.
 
 
-    ![](/img/thinking/minimalism-vs-maximalism/expressive_create.jpg)
+    ![Expressive Create](/img/thinking/minimalism-vs-maximalism/expressive_create.jpg)
 
 
     The idea behind their new advertising design system was “co-creation: artists joining forces to tell a story.” Unfortunately for Dropbox, this statement has largely been critiqued as inauthentic for a brand which ultimately provides an online portal to store and share documents. However, the overall essence of creativity and diversity has certainly been achieved. Personally, I find the identity intriguing. Some of the design elements can feel a bit disjointed at times, but at the very least it’s unique.

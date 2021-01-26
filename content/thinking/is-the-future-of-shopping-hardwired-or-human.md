@@ -62,7 +62,7 @@ bodyEN: >-
   On October 28 at 2PM EDT, industry experts from both data driven and behavioral backgrounds challenged each other and shared their insights on what the future of shopping has in store.
 
 
-  #### Audience takeaways
+  ## Audience takeaways
 
 
   - Insight into the drivers impacting what's next in shopping and retail  

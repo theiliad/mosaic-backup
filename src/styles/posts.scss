@@ -145,7 +145,10 @@ div.post-single-heading {
 
   &.thinking {
     padding-top: 0;
-    min-height: 100vh;
+
+    @media screen and (min-width: 769px) {
+      min-height: 100vh;
+    }
 
     & > div.columns {
       margin-top: 0;
@@ -282,7 +285,7 @@ div.post-single-heading {
 
       h1 {
         font-size: 5vh;
-        line-height: 1.25em;
+        line-height: 1.125em;
 
         @media screen and (max-width: 768px) {
           font-size: 4vh;
@@ -332,16 +335,20 @@ div.post-body {
     background-color: $colors_grey_light;
   }
 
+  iframe {
+    margin: 2em 0;
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    margin-top: 1em;
+    margin-top: 2em !important;
     color: $colors_midnight_primary;
-    line-height: 1.5em;
-    @include Roobert_Medium;
+    line-height: 1.325em;
+    @include Roobert_SemiBold;
   }
 
   h1 {
@@ -349,23 +356,23 @@ div.post-body {
   }
 
   h2 {
-    font-size: 1.875em;
-  }
-
-  h3 {
     font-size: 1.75em;
   }
 
-  h4 {
-    font-size: 1.625em;
-  }
-
-  h5 {
+  h3 {
     font-size: 1.5em;
   }
 
-  h6 {
+  h4 {
     font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 1.125em;
+  }
+
+  h6 {
+    font-size: 1em;
   }
 
   ol {
@@ -376,9 +383,13 @@ div.post-body {
   li {
     font-size: 1.25em;
     line-height: 2em;
-    @media screen and (max-width: 768px) {
-      font-size: 1em;
-    }
+      @media screen and (max-width: 768px) {
+        font-size: 1em;
+      }
+  }
+
+  strong {
+    color: $colors_midnight_primary;
   }
 
   p a {
@@ -400,9 +411,8 @@ div.post-body {
     margin-bottom: 2.5em !important;
   }
 
-  b,
-  strong {
-    display: inline-block;
+  em {
+    // display: inline-block;
     background: -webkit-linear-gradient(45deg, #1226aa, #d50057);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -411,21 +421,33 @@ div.post-body {
 
   blockquote {
     background: transparent;
-    border-left: 5px solid $colors_blue_primary;
+    border-left: 4px solid $colors_blue_primary;
     padding: 0 1.5em 0 2.5em;
     margin: 2em 0;
 
-    strong,
-    b {
+    em {
       display: block;
-      @include Roobert_Medium;
-      font-size: 1.5em;
+      @include Roobert_SemiBold;
+      font-size: 1.25em;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1em;
+          line-height: 1.5em;
+        }
+
     }
 
-    em {
+    strong, b {
       display: table;
       font-style: normal;
       margin-top: 2em;
+      @include Roobert_Medium;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.875em;
+          line-height: 1.5em;
+          margin-top: 1em;
+        }
     }
 
     @media screen and (max-width: 768px) {
@@ -667,7 +689,12 @@ div.post {
           div.cp-texts {
             width: 100%;
             padding-right: 3em;
-            font-size: 1.125em;
+            font-size: 1.5vw;
+
+            @media screen and (max-width: 768px) {
+              font-size: 1em;
+              padding-right: 0;
+            }
 
             @media screen and (min-width: 769px) {
               position: absolute;
@@ -676,23 +703,13 @@ div.post {
             }
 
             h6 {
-              font-size: 3.5vw;
+              font-size: 2.5vw;
               line-height: 1.2em;
               padding-top: 0.25em;
               @include Roobert_Medium;
 
-              @media screen and (min-width: 1260px) {
-                font-size: 2.75em;
-              }
-          
               @media screen and (max-width: 768px) {
-                font-size: 4.5vw;
-                line-height: 1.2em;
-              }
-
-              @media screen and (max-width: 400px) {
-                font-size: 6vw;
-                line-height: 1.2em;
+                font-size: 2em;
               }
 
 

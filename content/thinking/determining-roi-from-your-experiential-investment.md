@@ -17,7 +17,7 @@ bodyEN: >-
   One of the tools we lean on heavily through the Measurement First™ process is our historical results database. We have more than 15 years of programming results across all categories, business objectives, and activation types that we leverage to establish benchmarks and norms, that in turn allow us to set targets and KPIs by channel.
 
 
-  ## When setting KPIs, we always strive to look across 3 pillars of measurement**
+  ## When setting KPIs, we always strive to look across 3 pillars of measurement
 
 
   **1. REACH** (the numbers of consumers we reach through our activation)

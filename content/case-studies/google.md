@@ -28,7 +28,7 @@ bodyEN: >-
   Throughout the square, visitors collected limited-edition stickers and Google treats, before being handed off to a sales representative to learn more about how they could take their favorite product home.
 
 
-  In total, Pixelville surpassed its goals with **46% conversion from intercept to demo, +35pt lift in purchase consideration for Pixel 4,** and **+15pt lift in purchase consideration for Nest Mini.**
+  In total, Pixelville surpassed its goals with *46% conversion from intercept to demo, +35pt lift in purchase consideration for Pixel 4,* and *+15pt lift in purchase consideration for Nest Mini.*
 
     ![Google Pixelville Space](/img/case-studies/google/google-pixelville-space.jpg)
     ![Google Pixelville Activations](/img/case-studies/google/google-pixelville-activations.jpg)
