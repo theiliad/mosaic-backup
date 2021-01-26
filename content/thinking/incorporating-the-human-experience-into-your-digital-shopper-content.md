@@ -55,7 +55,9 @@ bodyEN: >-
 
   E-commerce trends are evolving faster than predicted, especially with the recent pandemic. Brands that deliver a compelling experience and get the digital shelf fundamentals right are poised to win the e-commerce sale.
 
+
   ---
+
 
   Think your brand might need to reshape its online shopping image? We’d love to
   chat. For more information, email us at <mailto:info@mosaic.com>.

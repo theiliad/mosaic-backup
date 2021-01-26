@@ -38,13 +38,6 @@ panel:
     textFR: >-
       frFPO
     linkedin: https://www.linkedin.com/in/ericbogart/
-sponsors:
-  - image: /img/oneeighty/sponsors/anheuser-busch.svg
-    alt: Anheuser Busch
-  - image: /img/oneeighty/sponsors/rbc.svg
-    alt: RBC
-  - image: /img/oneeighty/sponsors/bacardi.svg
-    alt: Bacardi    
 moderator:
   - image: /img/oneeighty/panel/jesse-lipscombe.jpg
     name: Jesse Lipscombe

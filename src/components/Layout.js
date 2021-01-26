@@ -23,6 +23,7 @@ import LOGO_BLUE_MIDNIGHT from '../img/logo/blue-midnight.svg'
 import LOGO_ORANGE_BLUE from '../img/logo/orange-blue.svg'
 import LOGO_WHITE_RED from '../img/logo/white-red.svg'
 import LOGO_WHITE_OUTLINE from '../img/logo/white-outline.svg'
+import LOGO_WORDMARK from '../img/logo/white-wordmark.svg'
 
 export const LOGO_OPTIONS = {
   aquaBlue: LOGO_AQUA_BLUE,
@@ -33,6 +34,22 @@ export const LOGO_OPTIONS = {
 }
 
 export const HOMEPAGE_NAV_HIDE_THRESHOLD = 450
+
+export const SOCIAL_LINKS = [
+  {
+    name: 'Facebook',
+    href: 'https://facebook.com/mosaic',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://instagram.com/mosaicna',
+  },
+  {
+    name: 'LinkedIn',
+    href:
+      'https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10',
+  },
+]
 
 class Header extends React.Component {
   state = {
@@ -136,7 +153,9 @@ class Header extends React.Component {
                   <img
                     src={
                       props.logo ||
-                      (navIdleLight && whiteNav ? LOGO_ORANGE_BLUE : LOGO_ORANGE_BLUE)
+                      (navIdleLight && whiteNav
+                        ? LOGO_ORANGE_BLUE
+                        : LOGO_ORANGE_BLUE)
                     }
                     id="cp_site_logo"
                     style={{
@@ -193,22 +212,6 @@ class Header extends React.Component {
   }
 }
 
-const FOOTER_SOCIAL_LINKS = [
-  {
-    name: 'Facebook',
-    href: 'https://facebook.com/mosaic',
-  },
-  {
-    name: 'Instagram',
-    href: 'https://instagram.com/mosaicna',
-  },
-  {
-    name: 'LinkedIn',
-    href:
-      'https://www.linkedin.com/company/mosaic-sales-solutions?trk=tyah&trkInfo=tarId%3A1414520343515%2Ctas%3Amosaic%2Cidx%3A3-2-10',
-  },
-]
-
 export const Footer = ({ footerCTA }) => {
   const { userLanguage, changeUserLanguage } = useContext(LanguageContext)
 
@@ -231,7 +234,7 @@ export const Footer = ({ footerCTA }) => {
                 <div className="columns is-vcentered">
                   <div className="column is-narrow cp-mobile">
                     <div className="columns">
-                      {FOOTER_SOCIAL_LINKS.map(footerSocialLink => (
+                      {SOCIAL_LINKS.map(footerSocialLink => (
                         <div className="column is-narrow">
                           <a
                             href={footerSocialLink.href}
@@ -244,8 +247,8 @@ export const Footer = ({ footerCTA }) => {
                       ))}
                     </div>
                   </div>
-                  
-                  {FOOTER_SOCIAL_LINKS.map(footerSocialLink => (
+
+                  {SOCIAL_LINKS.map(footerSocialLink => (
                     <div className="column is-narrow cp-wide">
                       <a
                         href={footerSocialLink.href}
@@ -431,8 +434,13 @@ const Layout = props => {
       <StickyContainer>
         <div className={'sidenav' + (sideNav ? ' open' : '')}>
           <div className="container">
-            <div className="columns is-mobile">
-              <div className="column is-narrow logo-wrapper"></div>
+            <div className="columns is-mobile is-vcentered">
+              <div className="column is-narrow logo-wrapper">
+                <Link onClick={handleSideNavToggle} to="/">
+                  <img src={LOGO_WORDMARK} />
+                </Link>
+              </div>
+
               <div className="column close-wrapper">
                 <div className="close">
                   <a
@@ -450,11 +458,13 @@ const Layout = props => {
             </div>
           </div>
           <div className="container cp-content">
-            <Link onClick={handleSideNavToggle} to="/">
-              <img src={LOGO_WHITE_RED} />
-            </Link>
+            <div className="cp-spacer"></div>
 
             <div className="links">
+              <Link to={`/`} onClick={handleSideNavToggle}>
+                <Text tid="navigation.items.home" />
+              </Link>
+
               <Link to={`/capabilities`} onClick={handleSideNavToggle}>
                 <Text tid="navigation.items.capabilities" />
               </Link>
@@ -474,6 +484,18 @@ const Layout = props => {
               <Link to={`/contact`} onClick={handleSideNavToggle}>
                 <Text tid="navigation.items.contact" />
               </Link>
+
+              <div className="social-links">
+                {SOCIAL_LINKS.map(footerSocialLink => (
+                  <a
+                    href={footerSocialLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {footerSocialLink.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

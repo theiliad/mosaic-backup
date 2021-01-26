@@ -10,6 +10,7 @@ import { getText, Text, LanguageContext } from '../containers/Language'
 // ICONS
 import { RiArrowRightUpLine } from 'react-icons/ri'
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
+import { FiArrowUpRight } from 'react-icons/fi'
 
 import { FormValidation } from 'calidation'
 
@@ -410,6 +411,20 @@ function Contact({ data, location }) {
           </div>
         </>
       }
+      footerCTA={
+        <>
+          <h6>
+            <Text tid="footerCTAs.instagram.text" />{' '}
+            <a
+              href="https://www.instagram.com/mosaicna/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Text tid="footerCTAs.instagram.linkText" /> <FiArrowUpRight />
+            </a>
+          </h6>
+        </>
+      }
       navIdleLight={true}
       location={location}
       title={siteTitle}
@@ -450,6 +465,10 @@ function Contact({ data, location }) {
             </div>
 
             <div className="container cp-mobile">
+              <h3>
+                <Text tid="pages.contact.contacts.title" />
+              </h3>
+
               <h5>
                 <Text tid="misc.countries.usa" />
               </h5>
@@ -475,14 +494,14 @@ function Contact({ data, location }) {
           <div className="form">
             <div className="container page">
               <div className="columns">
-              <div className="column is-1"></div>
+                <div className="column is-1"></div>
                 <div className="column is-3 contact-info">
                   <h5>
                     <Text tid="pages.contact.title" />
                   </h5>
                 </div>
 
-              <div className="column is-1"></div>
+                <div className="column is-1"></div>
 
                 <div className="column is-6-tablet">
                   {!success && (
