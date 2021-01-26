@@ -19,7 +19,6 @@ import HOME_HERO from '../img/home/hero.jpg'
 import HOME_CAPABILITIES from '../img/home/capabilities.jpg'
 import HOME_ONEEIGHTY from '../img/home/oneeighty.jpg'
 
-
 // icons
 import { FiArrowRight } from 'react-icons/fi'
 
@@ -77,7 +76,10 @@ const updateLogos = () => {
         : 0
 
     heroLogoElement.src = HOME_ANIMATED_LOGOS[nextLogoIndex].src
-    heroLogoElement.setAttribute('data-lname', HOME_ANIMATED_LOGOS[nextLogoIndex].name)
+    heroLogoElement.setAttribute(
+      'data-lname',
+      HOME_ANIMATED_LOGOS[nextLogoIndex].name
+    )
   }
 }
 
@@ -278,15 +280,24 @@ class BlogIndex extends React.Component {
                   style={{ marginBottom: '4em' }}
                 >
                   {cases.map(({ node }, i) => (
-                    <div
-                      className="column is-6 cp-photo"
-                      style={{ alignSelf: 'flex-end' }}
-                    >
-                      <Link to={node.fields.slug}>
+                    <div className="column is-6">
+                      <Link
+                        to={node.fields.slug}
+                        className="cp-photo"
+                        style={{ alignSelf: 'flex-end' }}
+                      >
                         <img
                           src={node.frontmatter.featuredImage}
                           style={{ width: '100%' }}
                         />
+
+                        <svg
+                          viewBox="0 0 2000 1125"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="2000" height="1125" fill="#e8eceb" />
+                        </svg>
                       </Link>
                     </div>
                   ))}
@@ -316,10 +327,20 @@ class BlogIndex extends React.Component {
                     style={{ alignSelf: 'flex-end' }}
                   >
                     <Link to={node.fields.slug}>
-                      <img
-                        src={node.frontmatter.featuredImage}
-                        style={{ width: '100%' }}
-                      />
+                      <div className="cp-photo">
+                        <img
+                          src={node.frontmatter.featuredImage}
+                          style={{ width: '100%' }}
+                        />
+
+                        <svg
+                          viewBox="0 0 2140 1203.76"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="2140" height="1203.76" fill="#e8eceb" />
+                        </svg>
+                      </div>
 
                       <CaseStudyMeta node={node} mobileVersion={true} />
                     </Link>
@@ -332,8 +353,6 @@ class BlogIndex extends React.Component {
           <div className="section-writeup" id="home-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-
-
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <img src={HOME_CAPABILITIES} className="image-below" />
                 </div>
@@ -350,7 +369,6 @@ class BlogIndex extends React.Component {
                     Explore our capabilities <FiArrowRight />
                   </Link>
                 </div>
-
               </div>
             </div>
           </div>
@@ -358,7 +376,6 @@ class BlogIndex extends React.Component {
           <div className="section-writeup2" id="home-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-
                 <div className="column is-6-tablet is-6-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
                     We love a good challenge and when we get one, we look at it
@@ -393,9 +410,11 @@ class BlogIndex extends React.Component {
                   alt: null,
                 },
                 {
-                  src: ANHEUSER_BUSCH, alt: 'Anheuser-Busch', },
-                  { src: STARBUCKS, alt: 'Starbucks' },
-                  { src: SAMSUNG, alt: 'Samsung' },
+                  src: ANHEUSER_BUSCH,
+                  alt: 'Anheuser-Busch',
+                },
+                { src: STARBUCKS, alt: 'Starbucks' },
+                { src: SAMSUNG, alt: 'Samsung' },
                 { src: GOOGLE, alt: 'Google' },
                 { src: IMPOSSIBLE, alt: 'Impossible' },
                 { src: LABATT, alt: 'Labatt' },

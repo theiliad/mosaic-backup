@@ -288,42 +288,6 @@ export function PostHeader({ post, play, setPlay }) {
                       }
                     />
                   </p>
-
-                  <p className="cp-controls">
-                    <a
-                      href="/"
-                      className="cp-watch-case-study"
-                      onClick={e => {
-                        e.preventDefault()
-                        setPlay(frontmatter.caseStudyVideoID)
-                      }}
-                    >
-                      <span>
-                        <BsPlayFill />
-                      </span>
-                      <i>
-                        <Text tid="caseStudies.watchCaseStudy" /> (
-                        {frontmatter.caseStudyVideoDuration})
-                      </i>
-                    </a>
-
-                    <a
-                      href="/"
-                      className="cp-watch-spot"
-                      onClick={e => {
-                        e.preventDefault()
-                        setPlay(frontmatter.spotVideoID)
-                      }}
-                    >
-                      <span>
-                        <BsPlayFill />
-                      </span>
-                      <i>
-                        <Text tid="caseStudies.watchSpot" /> (
-                        {frontmatter.spotVideoDuration})
-                      </i>
-                    </a>
-                  </p>
                 </div>
 
                 <div className="column is-2 cp-wide">

@@ -64,6 +64,8 @@ const ThinkingItem = ({ node, size }) => {
             >
               <rect width="800" height="1066.67" fill="#e8eceb" />
             </svg>
+
+            {isOneEighty && <div className="cp-arrow"></div>}
           </div>
 
           <p className="cp-title">
