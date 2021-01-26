@@ -762,7 +762,7 @@ export default {
               <li>all persons who participate in developing Acosta/Mosaic Sales Solutions’ policies; and,</li>
               <li>all other persons who provide goods, services or facilities on behalf of the company.</li>
 
-              <p><br></br>
+              <p> <br />
               The training will be appropriate to the duties of the employees, volunteers and other persons.
               </p>
 
@@ -887,10 +887,12 @@ export default {
             This policy has been developed to break down barriers and increase accessibility for persons with disabilities in the areas of information and communications and employment. If anyone has a question about the policy, or if the purpose of a policy is not understood, an explanation will be provided by:
             </p>
 
-            <p><b>Jennifer Rattan</b></p>
-            <p>Acosta/Mosaic Sales Solutions</p>
-            <p><a href="mailto:jennifer.rattan@mosaic.com">Jennifer.Rattan@mosaic.com</a></p>
-            <p>905 238 8058 x6207</p>
+            <p>
+            <b>Jennifer Rattan</b> <br />
+            Acosta/Mosaic Sales Solutions <br />
+            <a href="mailto:jennifer.rattan@mosaic.com">Jennifer.Rattan@mosaic.com</a> <br />
+            905 238 8058 x6207
+            </p>
 
           </>
         ),

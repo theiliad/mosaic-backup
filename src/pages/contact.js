@@ -72,7 +72,7 @@ const CONTACTS = {
       address: (
         <>
           383 Main Avenue <br />
-          7th Floor <br />
+          6th Floor <br />
           Norwalk, CT 06851
         </>
       ),
