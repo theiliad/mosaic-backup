@@ -28,7 +28,6 @@
 
   p {
     font-size: 1.5em;
-    margin: 2em 0;
   }
 
   &.home {
@@ -332,6 +331,11 @@
         display: none;
         background: $colors_midnight_primary;
         padding: 1.75em 1.25em;
+
+        &:hover {
+          background: $colors_blue_primary;
+          color: $colors_white;
+        }
 
         svg {
           font-size: 1.1em;

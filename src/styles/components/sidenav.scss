@@ -74,16 +74,43 @@ div.sidenav {
       max-height: calc(100vh - 7em);
       overflow-y: auto;
       margin-top: 2em;
-	  padding-bottom: 2em;
+      padding-bottom: 2em;
 	  
 	  div.social-links {
-		  font-size: 0.6em;
-		  margin-top: 4em;
+		  margin-top: 2em;
 
 		  a {
 			  @include Roobert_Medium;
+        font-size: 2.5vh;
+        margin-bottom: .75em;
+
 		  }
 	  }
+
+      a {
+        display: block;
+        color: $colors_white;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        font-size: 6vh;
+        margin-bottom: 0;
+        @include transition_default;
+        @include Roobert_SemiBold;
+
+        &:last-child {
+          margin-bottom: 0em;
+        }
+
+        &:hover {
+          color: $colors_orange_primary;
+        }
+
+        svg {
+          font-size: 1em;
+          padding-top: 0.3em;
+        }
+
 
       /* width */
       &::-webkit-scrollbar {
@@ -92,49 +119,30 @@ div.sidenav {
 
       /* Track */
       &::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: $colors_midnight_primary !important;
       }
 
       /* Handle */
       &::-webkit-scrollbar-thumb {
-        background: #888;
+        background: transparent !important;
       }
 
       /* Handle on hover */
       &::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: transparent !important;
       }
 
-      a {
-        display: block;
-        color: $colors_white;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        font-size: 1.75em;
-        margin-bottom: 0.5em;
-        @include transition_default;
-        @include Roobert_SemiBold;
-
-        &:last-child {
-          margin-bottom: 0em;
-        }
-
-        svg {
-          font-size: 1em;
-          padding-top: 0.3em;
-        }
       }
     }
   }
 
   &.thinking {
     background: $colors_midnight_primary url('../img/matrix.svg') repeat;
-    background-size: 1.4em;
+    background-size: 1.5em;
 
     h3 {
       font-size: 2.5em;
-      color: #fff;
+      color: $colors_white;
       text-align: left;
     }
 
@@ -146,12 +154,12 @@ div.sidenav {
         font-size: 1.25em;
 
         &:hover {
-          border-bottom: 1px solid $colors_blue_primary;
+          color: $colors_orange_primary;
         }
 
         &.active {
           color: $colors_orange_primary;
-          border-bottom: 1px solid $colors_blue_primary;
+          border-bottom: 1px solid;
         }
       }
     }
@@ -164,9 +172,13 @@ div.sidenav {
       text-align: center;
       text-transform: uppercase;
 
+      a {
+        @include Roobert_SemiBold;
+
       &:hover {
-        border-bottom: 1px solid $colors_blue_primary;
+        color: $colors_orange_primary;
       }
+    }
     }
   }
 }

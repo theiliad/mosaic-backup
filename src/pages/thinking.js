@@ -262,9 +262,9 @@ function Thinking({ data, location }) {
 
               {filter === 'oneeighty' && (
                 <div className="columns cp-desc">
-                  <div className="column is-6 cp-spacer"></div>
+                  <div className="column is-8-fullhd is-6-widescreen cp-spacer"></div>
 
-                  <div className="column is-6 cp-text">
+                  <div className="column is-4-fullhd is-6-widescreen cp-text">
                     <p>
                       <Text tid="thinking.title.oneEightyDescription" />
                     </p>
