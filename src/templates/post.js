@@ -29,10 +29,10 @@ export const pageQuery = graphql`
         descriptionFR
         featuredImage
         category
-        caseStudyVideoID
-        caseStudyVideoDuration
-        spotVideoID
-        spotVideoDuration
+        primaryVideoVimeoID
+        primaryVideoLocalURL
+        secondaryVideoVimeoID
+        secondaryVideoIMG
       }
       body
     }
