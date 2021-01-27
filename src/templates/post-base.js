@@ -11,6 +11,7 @@ import SEO from '../components/seo'
 import { NewsPostHeader, ThinkingPostHeader, PostHeader } from './post-headers'
 
 import YouTube from 'react-youtube'
+import ReactPlayer from 'react-player'
 
 // Locale
 import { Text } from '../containers/Language'
@@ -20,6 +21,7 @@ import CATEGORIES from '../data/categories'
 // Icons
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
 import { RiArrowRightUpLine } from 'react-icons/ri'
+import { BsPlay } from 'react-icons/bs'
 import { IoCloseOutline } from 'react-icons/io5'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { FiArrowRight } from 'react-icons/fi'
@@ -265,10 +267,70 @@ function Post(props) {
                 )}
               </div>
             </div>
+
+            {/*
+             *  Secondary video
+             */
+            frontmatter.secondaryVideoVimeoID && (
+              <div
+                className="columns post-single ui-grid"
+                style={{ marginTop: '6em' }}
+              >
+                <div className="column is-10">
+                  <div className="cp-video-wrapper">
+                    {play && play.type === 'secondary' && (
+                      <ReactPlayer
+                        playing
+                        url={`https://vimeo.com/${play.id}`}
+                        loop={true}
+                        playing={true}
+                        autoPlay={true}
+                        width="100%"
+                        height={null}
+                        className="cp-vimeo"
+                      />
+                    )}
+
+                    <img
+                      alt={frontmatter.titleEN}
+                      src={frontmatter.secondaryVideoIMG}
+                      style={{ width: '100%' }}
+                    />
+
+                    {(!play || play.type !== 'secondary') &&
+                      frontmatter.secondaryVideoVimeoID && (
+                        <div className="cp-overlay">
+                          <a
+                            href="/"
+                            onClick={e => {
+                              e.preventDefault()
+
+                              setPlay({
+                                id: frontmatter.secondaryVideoVimeoID,
+                                type: 'secondary',
+                              })
+                            }}
+                          >
+                            <span className="cp-icon">
+                              <BsPlay />
+                            </span>
+
+                            <span className="cp-text">
+                              <Text tid="caseStudies.watchSpot" />
+                            </span>
+                          </a>
+                        </div>
+                      )}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
-        {play && (
+        {/*
+         * Youtube player for 180 posts
+         */ play && !play.type && (
           <div
             className="video-overlay"
             onClick={e => {

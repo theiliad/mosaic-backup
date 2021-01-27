@@ -9246,7 +9246,7 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-"memoize-one@>=3.1.1 <6", memoize-one@^5.0.0:
+"memoize-one@>=3.1.1 <6", memoize-one@^5.0.0, memoize-one@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.1.1.tgz#047b6e3199b508eaec03504de71229b8eb1d75c0"
 
@@ -11678,6 +11678,11 @@ react-fast-compare@^2.0.2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
 
+react-fast-compare@^3.0.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
 react-frame-component@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-4.1.2.tgz#c88fcc1e73fbe83eea6c82d95d66eefe44cd1ea4"
@@ -11793,6 +11798,17 @@ react-owl-carousel@^2.3.1:
     owl.carousel "~2.3.4"
     react "15"
     react-dom "15"
+
+react-player@^2.8.2:
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.8.2.tgz#20fb5c4bcbf304ad719ca5566551ddb3ddefcd93"
+  integrity sha512-AiCvWJGpFxgxjwMxDMiaeTyL2IgDaKuPZfERzNULGPx7X67Mh9D0UqKZG6YHqJQ1KbpbCdE0VBtICrzRxr28pg==
+  dependencies:
+    deepmerge "^4.0.0"
+    load-script "^1.0.0"
+    memoize-one "^5.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.0.1"
 
 react-polyglot@^0.6.0:
   version "0.6.1"

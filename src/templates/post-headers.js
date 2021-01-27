@@ -7,11 +7,13 @@ import { Text, TextDate } from '../containers/Language'
 import CATEGORIES from '../data/categories'
 
 // Icons
-import { BsPlayFill, BsBellFill } from 'react-icons/bs'
+import { BsPlayFill, BsBellFill, BsPlay } from 'react-icons/bs'
 import { IoIosRadio } from 'react-icons/io'
 import { RiArrowRightUpLine } from 'react-icons/ri'
 
 import { isBefore, isAfter } from 'date-fns'
+
+import ReactPlayer from 'react-player'
 
 export function ThinkingPostHeader({ post, play, setPlay }) {
   const { frontmatter } = post
@@ -305,11 +307,70 @@ export function PostHeader({ post, play, setPlay }) {
         </div>
       </div>
 
-      <img
-        alt={frontmatter.titleEN}
-        src={frontmatter.featuredImage}
-        style={{ width: '100%' }}
-      />
+      {/*
+       *  Primary video
+       */}
+      <div className="cp-video-wrapper cp-top">
+        {play && play.type === 'primary' && (
+          <ReactPlayer
+            playing
+            url={`https://vimeo.com/${play.id}`}
+            loop={true}
+            playing={true}
+            autoPlay={true}
+            width="100%"
+            height={null}
+            className="cp-vimeo"
+          />
+        )}
+
+        {frontmatter.primaryVideoLocalURL && (
+          <ReactPlayer
+            playing
+            url={[frontmatter.primaryVideoLocalURL]}
+            loop={true}
+            playing={true}
+            playsinline={true}
+            autoPlay={true}
+            muted={true}
+            volume={0}
+            width="100%"
+            height={null}
+          />
+        )}
+
+        {!frontmatter.primaryVideoLocalURL && (
+          <img
+            alt={frontmatter.titleEN}
+            src={frontmatter.featuredImage}
+            style={{ width: '100%' }}
+          />
+        )}
+
+        {(!play || play.type !== 'primary') && frontmatter.primaryVideoVimeoID && (
+          <div className="cp-overlay">
+            <a
+              href="/"
+              onClick={e => {
+                e.preventDefault()
+
+                setPlay({
+                  type: 'primary',
+                  id: frontmatter.primaryVideoVimeoID,
+                })
+              }}
+            >
+              <span className="cp-icon">
+                <BsPlay />
+              </span>
+
+              <span className="cp-text">
+                <Text tid="caseStudies.watchCaseStudy" />
+              </span>
+            </a>
+          </div>
+        )}
+      </div>
     </>
   )
 }
