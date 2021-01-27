@@ -7,10 +7,10 @@ date: 2021-01-05T20:35:33.876Z
 descriptionEN: Bringing the stadium experience home
 descriptionFR: frFPO
 category: experiential-marketing
-caseStudyVideoID: _KK958OkD6g
-caseStudyVideoDuration: 0:45
-spotVideoID: SS9_6hCXu_0
-spotVideoDuration: 0:30
+primaryVideoVimeoID: 45064425
+primaryVideoLocalURL: /img/case-studies/stella/video.m4v
+secondaryVideoVimeoID: 45064425
+secondaryVideoIMG: /img/case-studies/google.jpg
 featuredImage: /img/case-studies/stella.jpg
 bodyEN: >-
   Football, one of North America’s favorite sports, delivers two million fans to stadiums on game day. Celebrating their city pride and team with beer and local food favorites. But in 2020, the global pandemic sidelined fans, forcing them to cheer from home as cardboard versions of themselves sat idle in the stadium seats. Preventing them to savor the one stadium experience they missed the most – the bites.

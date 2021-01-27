@@ -310,7 +310,7 @@ export function PostHeader({ post, play, setPlay }) {
       {/*
        *  Primary video
        */}
-      <div className="cp-video-wrapper">
+      <div className="cp-video-wrapper cp-top">
         {play && play.type === 'primary' && (
           <ReactPlayer
             playing

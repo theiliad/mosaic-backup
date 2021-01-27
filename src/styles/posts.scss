@@ -560,7 +560,17 @@ div.post-body {
 
 div.post {
   div.cp-video-wrapper {
-    position: relative;
+	position: relative;
+	
+	video, img {
+		display: table;
+	}
+
+    &.cp-top {
+      @media screen and (max-width: 768px) {
+        margin-top: 2em;
+      }
+    }
 
     div.cp-vimeo {
       width: 100%;
@@ -581,6 +591,10 @@ div.post {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.75em;
+      }
 
       a {
         color: #fff;
