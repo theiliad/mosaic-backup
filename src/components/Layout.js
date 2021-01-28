@@ -7,7 +7,7 @@ import '../styles/styles.scss'
 import { Text, LanguageContext } from '../containers/Language'
 
 // ICONS
-import { IoMdClose } from 'react-icons/io'
+import { CgClose } from 'react-icons/cg'
 import { FiArrowRight } from 'react-icons/fi'
 
 import ReactTooltip from 'react-tooltip'
@@ -451,7 +451,7 @@ const Layout = props => {
                       handleSideNavToggle()
                     }}
                   >
-                    <IoMdClose />
+                    <CgClose />
                   </a>
                 </div>
               </div>

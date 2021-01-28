@@ -6,7 +6,6 @@ date: 2020-10-30T03:14:12.599Z
 recap: true
 featuredImage: /img/thinking/the-future-of-shopping-is-both-hardwired-and-human.jpg
 category: oneeighty
-videoID: _KK958OkD6g
 descriptionEN: Learnings from our latest expert panel on the future of shopping
 descriptionFR:
 bodyEN: >-

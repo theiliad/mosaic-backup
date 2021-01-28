@@ -5,17 +5,10 @@ div.site-header {
   width: 100%;
   background: none;
   z-index: 99;
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
 
   &.idle-light nav.navbar a.navbar-item.link {
     color: $colors_white;
-  }
-
-  //   &:not(.white) nav.navbar a.navbar-item.link {
-  //     color: $colors_white;
-  //   }
-
-  @media (max-width: 768px) {
   }
 
   &.hidden {
@@ -23,9 +16,31 @@ div.site-header {
     transition: 0.2s ease-out;
   }
 
+  nav.navbar {
+    position: relative;
+  }
+
+  div.navbar-end {
+    position: absolute;
+    right: 0;
+	top: 45%;
+    transform: translateX(0) translateY(-50%);
+    transition: all 0.15s ease-out;
+  }
+
   div.navbar-brand {
     a.navbar-burger {
       border-radius: 50%;
+      transition: all 0.15s ease-out;
+      display: table;
+
+      @media screen and (min-width: 769px) {
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+      }
     }
   }
 
@@ -51,12 +66,23 @@ div.site-header {
         border-radius: 50%;
         transform: none;
         color: $colors_blue_primary;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.15s ease-out;
       }
     }
 
-    div.navbar-menu {
-      display: none;
+    div.navbar-end {
+      transform: translateX(15%) translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease-out;
     }
+
+    // div.navbar-menu {
+    //   display: none;
+    // }
   }
 }
 
@@ -78,6 +104,10 @@ nav.navbar {
     color: $colors_blue_primary;
     font-size: 1.125em;
     padding: 0.5rem 1rem;
+
+    &:last-child {
+      padding-right: 0;
+    }
 
     &:hover {
       color: $colors_red_primary;
@@ -174,7 +204,6 @@ nav.navbar {
 }
 
 div.site-header.idle-light {
-  
   transition: 5s ease-out;
 
   .navbar-burger {
@@ -192,7 +221,6 @@ div.navbar-brand {
 }
 
 div.navbar-end {
-
   div.navbar-dropdown {
     top: 95%;
     border-radius: 0.3em;
