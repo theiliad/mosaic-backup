@@ -8,10 +8,8 @@ descriptionEN: Imagining a more human conference
 descriptionFR: frFPO
 category: b2b
 primaryVideoVimeoID: 45064425
-primaryVideoLocalURL: /img/case-studies/loblaws/video.m4v
-secondaryVideoVimeoID: 45064425
-secondaryVideoIMG: /img/case-studies/google.jpg
-featuredImage: /img/case-studies/loblaws.jpg
+primaryVideoLocalURL: /img/case-studies/loblaws/hero.m4v
+featuredImage: /img/case-studies/loblaws/hero.jpg
 bodyEN: >-
   In early 2020, Loblaw announced their goal to be recognized as a truly customer-centric business, engaging Mosaic to launch this monumental shift at their National Kick Off – a biennial conference that unites store managers from coast to coast for 3 days of team building, leadership, innovation and company vision.
 

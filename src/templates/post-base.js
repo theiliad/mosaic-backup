@@ -20,7 +20,7 @@ import CATEGORIES from '../data/categories'
 // Icons
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
 import { RiArrowRightUpLine } from 'react-icons/ri'
-import { BsPlay } from 'react-icons/bs'
+import { BsPlayFill } from 'react-icons/bs'
 import { CgClose } from 'react-icons/cg'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { FiArrowRight } from 'react-icons/fi'
@@ -311,7 +311,7 @@ function Post(props) {
                             }}
                           >
                             <span className="cp-icon">
-                              <BsPlay />
+                              <BsPlayFill />
                             </span>
 
                             <span className="cp-text">

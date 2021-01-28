@@ -7,7 +7,7 @@ date: 2021-01-04T20:35:33.876Z
 descriptionEN: 'Rated R: radically redefined retail'
 descriptionFR: frFPO
 category: retail-commerce
-featuredImage: /img/case-studies/google.jpg
+featuredImage: /img/case-studies/google/hero.jpg
 bodyEN: >-
   To launch its radically helpful Pixel 4 smartphone, Google wanted a retail space where consumers could experience that helpfulness first hand. But what does a tangible environment look like for a brand that, until now, has lived in the cloud?
 

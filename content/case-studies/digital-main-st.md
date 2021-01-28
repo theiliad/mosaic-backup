@@ -7,7 +7,7 @@ date: 2021-01-02T20:35:33.876Z
 descriptionEN: Providing jobs, supporting small business
 descriptionFR: frFPO
 category: assisted-selling-training
-featuredImage: /img/case-studies/digital-main-st.jpg
+featuredImage: /img/case-studies/digital-main-st/hero.jpg
 bodyEN: >-
   At the height of the COVID-19 pandemic, small businesses were faced with unprecedented challenges, one of which was converting brick and mortar operations to ecommerce. Our client, Digital Main Street partnered with Google, Facebook, MasterCard, Shopify and more to focus on how they could support small businesses.
 

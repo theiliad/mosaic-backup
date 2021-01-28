@@ -7,7 +7,9 @@ date: 2021-01-01T20:35:33.876Z
 descriptionEN: Reimagining, repositioning, rebranding.
 descriptionFR: frFPO
 category: brand-development-design
-featuredImage: /img/case-studies/tishman-speyer.jpg
+primaryVideoVimeoID: 45064425
+primaryVideoLocalURL: /img/case-studies/tishman-speyer/hero.m4v
+featuredImage: /img/case-studies/tishman-speyer/hero.jpg
 bodyEN: >-
   International Square, an office building in the heart of Washington, DC, had a problem: they were struggling to attract tech tenants. In contrast to the sleek new developments they were competing with, the enormous 70s-era brutalist building felt gloomy and outdated. The size of the building turned off medium and small sized tenants who wanted smaller buildings where they could occupy an entire floor. On the verge of a modest renovation, the leasing team needed a new approach to attract the tech set without alienating their current conservative tenants.
 

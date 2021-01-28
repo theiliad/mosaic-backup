@@ -7,7 +7,8 @@ import { Text, TextDate } from '../containers/Language'
 import CATEGORIES from '../data/categories'
 
 // Icons
-import { BsPlayFill, BsBellFill, BsPlay } from 'react-icons/bs'
+import { BsPlayFill, BsBellFill } from 'react-icons/bs'
+import { AiOutlinePlayCircle } from 'react-icons/ai'
 import { IoIosRadio } from 'react-icons/io'
 import { RiArrowRightUpLine } from 'react-icons/ri'
 
@@ -361,7 +362,7 @@ export function PostHeader({ post, play, setPlay }) {
               }}
             >
               <span className="cp-icon">
-                <BsPlay />
+                <BsPlayFill />
               </span>
 
               <span className="cp-text">

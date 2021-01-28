@@ -575,8 +575,7 @@ div.post-body {
 }
 
 div.post {
-<<<<<<< HEAD
-=======
+
   div.cp-video-wrapper {
     position: relative;
 
@@ -616,7 +615,7 @@ div.post {
       }
 
       a {
-        color: #fff;
+        color: $colors_white;
         text-align: center;
 
         span {
@@ -627,16 +626,34 @@ div.post {
             display: block;
             margin: auto;
             border-radius: 50%;
-            border: 4px solid #fff;
+            background: rgba(0, 0, 0, 0.16) url('../img/matrix.svg') repeat;
+            background-size: 1em;
+            @include transition_default;
 
             svg {
               position: absolute;
               top: 52%;
-              left: 54%;
+              left: 52%;
               transform: translate(-50%, -50%);
-              font-size: 9em;
+              font-size: 8em;
+              @include transition_default;
+            }
+
+              &:hover {
+
+                &.cp-icon {
+                  background: $colors_orange_primary url('../img/matrix.svg') repeat;
+                  background-size: 1em;
+                  @include transition_default;
+                }
+
+                svg {
+                  fill: $colors_white;
+                  @include transition_default;
+                }
             }
           }
+          
 
           &.cp-text {
             display: table;
@@ -649,7 +666,6 @@ div.post {
     }
   }
 
->>>>>>> 83500aae05d084cd0b6301c007a672c42346d5eb
   div.cp-tag {
     margin-top: 6em;
     text-align: center;
