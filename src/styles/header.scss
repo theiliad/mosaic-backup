@@ -74,10 +74,10 @@ div.site-header {
     }
 
     div.navbar-end {
-      transform: translateX(15%) translateY(-50%);
+      transform: translateX(-15%) translateY(-50%);
       opacity: 0;
       visibility: hidden;
-      transition: all 0.2s ease-out;
+      transition: all 0.15s ease-out;
     }
 
     // div.navbar-menu {
