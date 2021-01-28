@@ -176,7 +176,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
             style={{ backgroundImage: `url(${frontmatter.featuredImage})` }}
           ></div>
 
-          <div className="column is-5 cp-meta">
+          <div className="column is-5 cp-meta cp-centered">
             <PostMeta />
           </div>
         </div>

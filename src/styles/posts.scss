@@ -144,15 +144,18 @@ div.post-single-heading {
   }
 
   &.thinking {
+    position: relative;
     padding-top: 0;
 
     @media screen and (min-width: 769px) {
-      min-height: 100vh;
+      height: 100vh;
+    //   min-height: 530px;
     }
 
     & > div.columns {
       margin-top: 0;
-      min-height: 100vh;
+      height: 100vh;
+    //   min-height: 530px;
     }
 
     div.cp-desktop {
@@ -229,6 +232,7 @@ div.post-single-heading {
 
           &:hover {
             text-decoration: none;
+            border: none;
           }
         }
 
@@ -277,6 +281,18 @@ div.post-single-heading {
     div.cp-meta {
       margin: 14em 0 0 5em;
       padding-bottom: 6em;
+
+      @media screen and (min-width: 769px) {
+        &.cp-centered {
+          position: absolute;
+          top: 50%;
+          left: 43%;
+          transform: translateY(-50%);
+          margin: 0 0 0 5em;
+          padding-top: 4em;
+          padding-bottom: 0;
+        }
+      }
 
       @media screen and (max-width: 768px) {
         margin: 1.5em 0 0 0;
@@ -559,6 +575,81 @@ div.post-body {
 }
 
 div.post {
+<<<<<<< HEAD
+=======
+  div.cp-video-wrapper {
+    position: relative;
+
+    video,
+    img {
+      display: table;
+    }
+
+    &.cp-top {
+      @media screen and (max-width: 768px) {
+        margin-top: 2em;
+      }
+    }
+
+    div.cp-vimeo {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 3;
+      background: #000;
+
+      iframe {
+        margin: 0;
+      }
+    }
+
+    div.cp-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.75em;
+      }
+
+      a {
+        color: #fff;
+        text-align: center;
+
+        span {
+          &.cp-icon {
+            width: 12em;
+            height: 12em;
+            position: relative;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            border: 4px solid #fff;
+
+            svg {
+              position: absolute;
+              top: 52%;
+              left: 54%;
+              transform: translate(-50%, -50%);
+              font-size: 9em;
+            }
+          }
+
+          &.cp-text {
+            display: table;
+            margin: auto;
+            margin-top: 0.9em;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+>>>>>>> 83500aae05d084cd0b6301c007a672c42346d5eb
   div.cp-tag {
     margin-top: 6em;
     text-align: center;
@@ -774,6 +865,10 @@ div.video-overlay {
       ifram {
         height: calc(100% - 3em);
       }
+    }
+
+    div.cp-vimeo {
+      background: #000;
     }
   }
 }

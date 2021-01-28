@@ -17,9 +17,9 @@ import CATEGORIES from '../data/categories'
 // Icons
 import { BsPlayFill } from 'react-icons/bs'
 import { VscChevronDown } from 'react-icons/vsc'
-import { IoIosRadio } from 'react-icons/io'
-import { GiBackwardTime } from 'react-icons/gi'
-import { AiOutlineCalendar } from 'react-icons/ai'
+import { IoCalendarClearOutline } from 'react-icons/io5'
+import { BiHistory } from 'react-icons/bi'
+import { RiRecordCircleFill } from 'react-icons/ri'
 import { FiArrowRight } from 'react-icons/fi'
 
 import Fade from 'react-reveal/Fade'
@@ -117,7 +117,7 @@ const ThinkingItem = ({ node, size }) => {
               {isLiveSession && (
                 <span className="cp-date cp-live">
                   <span>
-                    <IoIosRadio />
+                    <RiRecordCircleFill />
                     <Text tid="thinking.liveSession" />
                   </span>
                 </span>
@@ -126,7 +126,7 @@ const ThinkingItem = ({ node, size }) => {
               {isUpcomingSession && (
                 <span className="cp-date">
                   <span>
-                    <AiOutlineCalendar />
+                    <IoCalendarClearOutline />
                     <Text tid="thinking.upcomingSession" />
                   </span>
                 </span>
@@ -146,7 +146,7 @@ const ThinkingItem = ({ node, size }) => {
             <Link to={itemLink} className="column is-narrow">
               <span className="cp-date">
                 <span>
-                  <GiBackwardTime />
+                  <BiHistory />
                   <Text tid="thinking.recap" />
                 </span>
               </span>

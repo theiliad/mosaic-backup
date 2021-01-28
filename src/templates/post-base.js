@@ -10,7 +10,6 @@ import SEO from '../components/seo'
 // Components
 import { NewsPostHeader, ThinkingPostHeader, PostHeader } from './post-headers'
 
-import YouTube from 'react-youtube'
 import ReactPlayer from 'react-player'
 
 // Locale
@@ -22,7 +21,7 @@ import CATEGORIES from '../data/categories'
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
 import { RiArrowRightUpLine } from 'react-icons/ri'
 import { BsPlay } from 'react-icons/bs'
-import { IoCloseOutline } from 'react-icons/io5'
+import { CgClose } from 'react-icons/cg'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { FiArrowRight } from 'react-icons/fi'
 
@@ -329,7 +328,7 @@ function Post(props) {
         </div>
 
         {/*
-         * Youtube player for 180 posts
+         * Vimeo player for 180 posts
          */ play && !play.type && (
           <div
             className="video-overlay"
@@ -341,19 +340,18 @@ function Post(props) {
           >
             <div className="cp-content">
               <a href="/" onClick={e => setPlay(null)}>
-                <IoCloseOutline />
+                <CgClose />
               </a>
 
-              <YouTube
-                videoId={play}
-                opts={{
-                  height: '100%',
-                  width: '100%',
-                  playerVars: {
-                    // https://developers.google.com/youtube/player_parameters
-                    autoplay: true,
-                  },
-                }}
+              <ReactPlayer
+                playing
+                url={`https://vimeo.com/${play}`}
+                loop={true}
+                playing={true}
+                autoPlay={true}
+                width="100%"
+                height={null}
+                className="cp-vimeo"
               />
             </div>
           </div>
@@ -431,11 +429,9 @@ function Post(props) {
                   minHeight: isNewsPost ? '15em' : null,
                 }}
               >
-                {!isNewsPost && (
-                  <div className="column is-narrow cp-img">
-                    <img src={previousPost.frontmatter.featuredImage} />
-                  </div>
-                )}
+                <div className="column is-narrow cp-img">
+                  <img src={previousPost.frontmatter.featuredImage} />
+                </div>
 
                 <div className="column cp-text">
                   <div className="cp-texts">

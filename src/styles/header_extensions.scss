@@ -330,7 +330,11 @@
       a.button.primary {
         display: none;
         background: $colors_midnight_primary;
-        padding: 1.75em 1.25em;
+		padding: 1.75em 1.25em;
+		
+		&:hover {
+			color: #fff;
+		}
 
         &:hover {
           background: $colors_blue_primary;

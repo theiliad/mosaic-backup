@@ -150,8 +150,10 @@ div.sidenav {
       padding-top: 2em;
 
       div.links a {
+        display: table;
         text-align: left;
         font-size: 1.25em;
+        border-bottom: 1px solid transparent;
 
         &:hover {
           color: $colors_orange_primary;
