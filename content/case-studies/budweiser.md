@@ -8,7 +8,7 @@ descriptionEN: Reimagining a classic with a smart twist.
 descriptionFR: frFPO
 category: content-digital
 primaryVideoVimeoID: 45064425
-primaryVideoLocalURL: /img/case-studies/budweiser/hero.m4v
+primaryVideoLocalURL: /img/case-studies/budweiser/hero.mp4
 secondaryVideoVimeoID: 45064425
 secondaryVideoIMG: /img/case-studies/budweiser/spot.jpg
 featuredImage: /img/case-studies/budweiser/hero.jpg
