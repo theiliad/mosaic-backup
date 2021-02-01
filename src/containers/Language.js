@@ -21,14 +21,10 @@ export const LanguageContext = createContext({
   dictionary: DICTIONARY,
 })
 
-const AVAILABLE_LOCALES = ['en', 'fr']
+const AVAILABLE_LOCALES = Object.keys(languageOptions)
 
 // it provides the language context to app
 export function LanguageProvider({ children }) {
-  console.log(
-    'window.localStorage.setItem',
-    window.localStorage.getItem('rcml-lang')
-  )
   const [lang, setLang] = useQueryParam('lang', StringParam)
 
   let entryLanguage = 'en'
@@ -43,6 +39,8 @@ export function LanguageProvider({ children }) {
   if (lang && AVAILABLE_LOCALES.indexOf(lang) !== -1) {
     entryLanguage = lang
   }
+
+  setLang(entryLanguage)
 
   const [userLanguage, setUserLanguage] = useState(entryLanguage)
 
