@@ -18,6 +18,13 @@ import CAPABILITIES_BRAND_DEVELOPMENT from '../img/capabilities/brand-developmen
 import { FiArrowRight } from 'react-icons/fi'
 
 class Capabilities extends React.Component {
+  componentDidMount() {
+    setTimeout(
+      () => document.getElementById('animated_svg').classList.add('active'),
+      300
+    )
+  }
+
   render() {
     const { data } = this.props
 
@@ -48,7 +55,7 @@ class Capabilities extends React.Component {
                     <div className="column cp-img">
                       <svg
                         version="1.1"
-                        id="Layer_1"
+                        id="animated_svg"
                         xmlns="http://www.w3.org/2000/svg"
                         // xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px"

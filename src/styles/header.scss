@@ -34,7 +34,7 @@ div.site-header {
       transition: all 0.15s ease-out;
       display: table;
 
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 1024px) {
         position: absolute;
         right: 0;
         opacity: 0;

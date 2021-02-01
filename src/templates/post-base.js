@@ -279,11 +279,12 @@ function Post(props) {
                   <div className="cp-video-wrapper">
                     {play && play.type === 'secondary' && (
                       <ReactPlayer
-                        playing
                         url={`https://vimeo.com/${play.id}`}
                         loop={true}
                         playing={true}
-                        autoPlay={true}
+						autoPlay={true}
+						volume={0}
+						muted={true}
                         width="100%"
                         height={null}
                         className="cp-vimeo"

@@ -177,6 +177,48 @@ function Contact({ data, location }) {
       }),
       name: 'subject',
       type: 'select',
+      items: [
+        {
+          value: 'general-inquiries',
+          title: 'General inquiries',
+        },
+        {
+          value: 'marketing-canada',
+          title: 'Marketing services (Canada)',
+        },
+        {
+          value: 'marketing-us',
+          title: 'Marketing services (US)',
+        },
+        {
+          value: 'marketing-other',
+          title: 'Marketing services (other)',
+        },
+        {
+          value: 'rst-canada',
+          title: 'Retail, sales & training (Canada)',
+        },
+        {
+          value: 'rst-us',
+          title: 'Retail, sales & training (US)',
+        },
+        {
+          value: 'rst-other',
+          title: 'Retail, sales & training (other)',
+        },
+        {
+          value: 'media-relations',
+          title: 'Media relations',
+        },
+        {
+          value: 'talent-acquisition',
+          title: 'Talent acquisition',
+        },
+        {
+          value: 'human-resources',
+          title: 'Human resources',
+        },
+      ],
     },
     {
       title: getText({
@@ -530,8 +572,9 @@ function Contact({ data, location }) {
                             {formItem.type === 'select' && (
                               <div class="select">
                                 <select id={formItem.name} name={formItem.name}>
-                                  <option>General inquiries</option>
-                                  <option>Support</option>
+                                  {formItem.items.map(item => (
+                                    <option>{item.title}</option>
+                                  ))}
                                 </select>
                               </div>
                             )}
@@ -549,7 +592,10 @@ function Contact({ data, location }) {
                       <FormValidation
                         onSubmit={handleSubmit}
                         config={config}
-                        onSubmit={handleSubmit}
+						onSubmit={handleSubmit}
+						initialValues={{
+							subject: "general-inquiries"
+						}}
                       >
                         {({ fields, errors, submitted }) => (
                           <>
@@ -597,8 +643,9 @@ function Contact({ data, location }) {
                                           id={`mc-${formItem.name}`}
                                           name={formItem.name}
                                         >
-                                          <option>General inquiries</option>
-                                          <option>Support</option>
+                                          {formItem.items.map(item => (
+                                            <option>{item.title}</option>
+                                          ))}
                                         </select>
                                       </div>
                                     )}
