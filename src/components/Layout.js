@@ -375,9 +375,20 @@ const Layout = props => {
         element: document.getElementById(divID),
       }))
 
-      divsWithBackgroundColors.forEach(div =>
+      divsWithBackgroundColors.forEach(div => {
         div.element.classList.remove('scroll-focused')
-      )
+
+        const previousSibling = div.element.previousSibling
+        const nextSibling = div.element.nextSibling
+
+        if (previousSibling) {
+          previousSibling.classList.remove('sibling-scroll-focused')
+        }
+
+        if (nextSibling) {
+          nextSibling.classList.remove('sibling-scroll-focused')
+        }
+      })
 
       const scrolledElements = divsWithBackgroundColors.filter(div =>
         isBottom(div.element)
@@ -399,6 +410,17 @@ const Layout = props => {
         document.body.style.backgroundColor = secondaryColor
 
         matchingElement.element.classList.add('scroll-focused')
+
+        const previousSibling = matchingElement.element.previousSibling
+        const nextSibling = matchingElement.element.nextSibling
+
+        if (previousSibling) {
+          previousSibling.classList.add('sibling-scroll-focused')
+        }
+
+        if (nextSibling) {
+          nextSibling.classList.add('sibling-scroll-focused')
+        }
       } else {
         document.body.style.backgroundColor = '#fff'
       }
