@@ -122,7 +122,7 @@ class Header extends React.Component {
 
   render() {
     const { props } = this
-    const { HeaderExtension, location, navIdleLight } = props
+    const { HeaderExtension, location, navIdleLight, navigationCTA } = props
     const { scrollDir, whiteNav } = this.state
 
     const isHomepage = location.pathname === '/'
@@ -165,16 +165,20 @@ class Header extends React.Component {
                   />
                 </Link>
 
-                <a
-                  role="button"
-                  className="navbar-burger burger"
-                  aria-label="menu"
-                  aria-expanded="false"
-                  onClick={this.props.handleSideNavToggle}
-                >
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                </a>
+                <div className="ctas">
+                  <a
+                    role="button"
+                    className="navbar-burger burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    onClick={this.props.handleSideNavToggle}
+                  >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+
+                  {navigationCTA}
+                </div>
               </div>
 
               <div className="navbar-menu">
