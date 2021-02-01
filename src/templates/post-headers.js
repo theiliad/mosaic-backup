@@ -169,7 +169,8 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
       <div
         className={`post-single-heading thinking ${
           isOneEightyPost && !isRecap ? 'oneeighty' : ''
-        }`}
+		}`}
+		id="thinking-post-header"
       >
         <div className="columns post-single cp-desktop">
           <div

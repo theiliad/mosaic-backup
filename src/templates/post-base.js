@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 // import { MDXRenderer } from 'gatsby-plugin-mdx'
 // import { MDXProvider } from '@mdx-js/react'
@@ -57,6 +57,8 @@ function Post(props) {
     props.location.search === '?playVideo=true' ? frontmatter.videoID : null
   )
 
+  const [ctaVisible, setCTAVisible] = useState(false)
+
   // Type of the post
   const isNewsPost = frontmatter.posttype === 'news'
   const isThinkingPost = frontmatter.posttype === 'thinking'
@@ -68,6 +70,22 @@ function Post(props) {
 
   const languageContext = useContext(LanguageContext)
   const { dictionary, userLanguage } = languageContext
+
+  const elementInViewport = el => el.getBoundingClientRect().bottom >= 0
+
+  const trackScrolling = () =>
+    setCTAVisible(
+      !elementInViewport(document.getElementById('thinking-post-header'))
+    )
+
+  useEffect(() => {
+    document.addEventListener('scroll', trackScrolling)
+
+    // will be called on component unmount
+    return () => {
+      document.removeEventListener('scroll', trackScrolling)
+    }
+  }, [])
 
   const EventMember = ({ member, isModerator }) => (
     <AccordionItem>
@@ -151,6 +169,19 @@ function Post(props) {
       title={siteTitle}
       logo={LOGO_OPTIONS.orangeBlue}
       navIdleLight={isOneEightyPost && !isRecap}
+      navigationCTA={
+        <a
+          role="button"
+          className={`cp-cta ${ctaVisible ? 'visible' : ''}`}
+          onClick={e => {
+            e.preventDefault()
+
+            setPlay(frontmatter.videoID)
+          }}
+        >
+          <BsPlayFill />
+        </a>
+      }
       footerCTA={
         isNewsPost ? (
           <h6>

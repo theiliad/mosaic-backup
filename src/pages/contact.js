@@ -274,6 +274,52 @@ function Contact({ data, location }) {
     },
   }
 
+  const HERO_CONTACTS = [
+    {
+      titleTID: 'pages.contact.meta.contacts.newBusiness',
+      country: 'U.S.',
+      name: 'Mike Pennington',
+      email: 'USNewBusiness@mosaic.com',
+    },
+    {
+      titleTID: 'pages.contact.meta.contacts.newBusiness',
+      country: 'Canada',
+      name: 'Terri Truscello',
+      email: 'CADNewBusiness@mosaic.com',
+    },
+    {
+      titleTID: 'pages.contact.meta.contacts.mediaInquiries',
+      email: 'Media@mosaic.com',
+    },
+    {
+      titleTID: 'pages.contact.meta.contacts.general',
+      email: 'Info@mosaic.com',
+    },
+  ]
+
+  const HeroContactAccordionItem = ({ contact }) => (
+    <AccordionItem>
+      <AccordionItemHeading>
+        <AccordionItemButton>
+          <Text tid={contact.titleTID} /> {contact.country}
+          <AccordionItemState>
+            {({ expanded }) => (
+              <span>{expanded ? <VscChevronDown /> : <VscChevronLeft />}</span>
+            )}
+          </AccordionItemState>
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
+        <div className="cp-contact">
+          <p>{contact.name}</p>
+          <p>
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          </p>
+        </div>
+      </AccordionItemPanel>
+    </AccordionItem>
+  )
+
   const Meta = () => (
     <>
       <h2>
@@ -287,72 +333,34 @@ function Contact({ data, location }) {
       </p>
 
       <div className="cp-contacts">
-        <div className="columns is-mobile">
-          <div className="column is-4">
-            <p>
-              <Text tid="pages.contact.meta.contacts.newBusiness" />
-            </p>
+        <div className="cp-wide">
+          {HERO_CONTACTS.map(contact => (
+            <div className="columns is-mobile">
+              <div className="column is-4">
+                <p>
+                  <Text tid={contact.titleTID} />
+                </p>
 
-            <p>U.S.</p>
-          </div>
+                {contact.country && <p>{contact.country}</p>}
+              </div>
 
-          <div className="column is-7">
-            <p>Mike Pennington</p>
+              <div className="column is-7">
+                {contact.name && <p>{contact.name}</p>}
 
-            <p>
-              <a href="mailto:USNewBusiness@mosaic.com">
-                USNewBusiness@mosaic.com
-              </a>
-            </p>
-          </div>
+                <p>
+                  <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="columns is-mobile">
-          <div className="column is-4">
-            <p>
-              <Text tid="pages.contact.meta.contacts.newBusiness" />
-            </p>
-
-            <p>Canada</p>
-          </div>
-
-          <div className="column is-7">
-            <p>Terri Truscello</p>
-
-            <p>
-              <a href="mailto:CADNewBusiness@mosaic.com">
-                CADNewBusiness@mosaic.com
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div className="columns is-mobile">
-          <div className="column is-4">
-            <p>
-              <Text tid="pages.contact.meta.contacts.mediaInquiries" />
-            </p>
-          </div>
-
-          <div className="column is-7">
-            <p>
-              <a href="mailto:Media@mosaic.com">Media@mosaic.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div className="columns is-mobile">
-          <div className="column is-4">
-            <p>
-              <Text tid="pages.contact.meta.contacts.general" />
-            </p>
-          </div>
-
-          <div className="column is-7">
-            <p>
-              <a href="mailto:Info@mosaic.com">Info@mosaic.com</a>
-            </p>
-          </div>
+        <div className="cp-mobile">
+          <Accordion allowZeroExpanded={true}>
+            {HERO_CONTACTS.map(contact => (
+              <HeroContactAccordionItem contact={contact} />
+            ))}
+          </Accordion>
         </div>
       </div>
     </>
