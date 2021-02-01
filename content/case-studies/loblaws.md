@@ -7,7 +7,7 @@ date: 2021-01-03T20:35:33.876Z
 descriptionEN: Imagining a more human conference
 descriptionFR: Imaginer une conférence plus humaine
 category: b2b
-primaryVideoVimeoID: 45064425
+primaryVideoVimeoID: 449905474
 primaryVideoLocalURL: /img/case-studies/loblaws/hero.mp4
 featuredImage: /img/case-studies/loblaws/hero.jpg
 bodyEN: >-
