@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'gatsby'
 // import { MDXRenderer } from 'gatsby-plugin-mdx'
 // import { MDXProvider } from '@mdx-js/react'
@@ -13,7 +13,7 @@ import { NewsPostHeader, ThinkingPostHeader, PostHeader } from './post-headers'
 import ReactPlayer from 'react-player'
 
 // Locale
-import { Text } from '../containers/Language'
+import { getText, Text, LanguageContext } from '../containers/Language'
 
 import CATEGORIES from '../data/categories'
 
@@ -65,6 +65,9 @@ function Post(props) {
   const isRecap = frontmatter.recap === true
 
   const previousPost = props.pageContext.previous
+
+  const languageContext = useContext(LanguageContext)
+  const { dictionary, userLanguage } = languageContext
 
   const EventMember = ({ member, isModerator }) => (
     <AccordionItem>
@@ -282,9 +285,9 @@ function Post(props) {
                         url={`https://vimeo.com/${play.id}`}
                         loop={true}
                         playing={true}
-						autoPlay={true}
-						volume={0}
-						muted={true}
+                        autoPlay={true}
+                        volume={0}
+                        muted={true}
                         width="100%"
                         height={null}
                         className="cp-vimeo"
@@ -398,20 +401,27 @@ function Post(props) {
                   onClick={e => {
                     copyToClipboard(`https://mosaic.com/${post.fields.slug}`)
 
-                    toast('Copied!', {
-                      position: 'bottom-right',
-                      autoClose: 3000,
-                      hideProgressBar: false,
-                      closeOnClick: true,
-                      pauseOnHover: true,
-                      draggable: true,
-                      progress: undefined,
-                      type: toast.TYPE.SUCCESS,
-                      transition: Slide,
-                    })
+                    toast(
+                      getText({
+                        tid: 'misc.copyLink.success',
+                        dictionary,
+                        userLanguage,
+                      }),
+                      {
+                        position: 'bottom-right',
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        type: toast.TYPE.SUCCESS,
+                        transition: Slide,
+                      }
+                    )
                   }}
                 >
-                  Copy link
+                  <Text tid="misc.copyLink" />
                 </button>{' '}
               </div>
             </div>

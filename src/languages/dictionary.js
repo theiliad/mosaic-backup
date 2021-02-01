@@ -923,9 +923,12 @@ export default {
               behalf of the company.
             </li>
 
-              <p> <br />
-              The training will be appropriate to the duties of the employees, volunteers and other persons.
-              </p>
+            <p>
+              {' '}
+              <br />
+              The training will be appropriate to the duties of the employees,
+              volunteers and other persons.
+            </p>
 
             <p>
               Employees will be trained when changes are made to the
@@ -1134,10 +1137,13 @@ export default {
             </p>
 
             <p>
-            <b>Jennifer Rattan</b> <br />
-            Acosta/Mosaic Sales Solutions <br />
-            <a href="mailto:jennifer.rattan@mosaic.com">Jennifer.Rattan@mosaic.com</a> <br />
-            905 238 8058 x6207
+              <b>Jennifer Rattan</b> <br />
+              Acosta/Mosaic Sales Solutions <br />
+              <a href="mailto:jennifer.rattan@mosaic.com">
+                Jennifer.Rattan@mosaic.com
+              </a>{' '}
+              <br />
+              905 238 8058 x6207
             </p>
           </>
         ),
@@ -1191,6 +1197,14 @@ export default {
       },
       usa: {
         en: 'United States',
+        fr: FRFPO,
+      },
+    },
+    copyLink: {
+      en: 'Copy link',
+      fr: FRFPO,
+      success: {
+        en: 'Copied!',
         fr: FRFPO,
       },
     },
