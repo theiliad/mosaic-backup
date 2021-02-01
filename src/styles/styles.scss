@@ -43,9 +43,9 @@ html {
 // }
 
 // French temp toggle
-.fr-toggle {
-  display: none;
-}
+//.fr-toggle {
+//  display: none;
+//}
 
 body {
   background: $colors_white;
@@ -97,7 +97,7 @@ b {
 }
 
 p a:hover {
-  border-bottom: 1px solid $colors_blue_primary;
+  border-bottom: 1px solid;
   @include transition_default;
   box-shadow: none;
 }
@@ -153,7 +153,7 @@ p a:hover {
   }
 
   &:hover {
-    border-bottom: 1px solid $colors_blue_primary;
+    border-bottom: 1px solid;
     @include transition_default;
   }
 }

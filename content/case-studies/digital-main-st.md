@@ -1,11 +1,11 @@
 ---
 posttype: case-study
 titleEN: ShopHERE powered by Google
-titleFR: frFPO
+titleFR: ShopHERE powered by Google
 companyName: Digital Main St
 date: 2021-01-02T20:35:33.876Z
 descriptionEN: Providing jobs, supporting small business
-descriptionFR: frFPO
+descriptionFR: Fournir des emplois, soutenir les petites entreprises
 category: assisted-selling-training
 featuredImage: /img/case-studies/digital-main-st/hero.jpg
 bodyEN: >-
@@ -21,5 +21,19 @@ bodyEN: >-
     ![Digital Main St Laptop](/img/case-studies/digital-main-st/digital-main-st-laptop.jpg)
     ![Digital Main St Grid](/img/case-studies/digital-main-st/digital-main-st-grid.jpg)
 bodyFR: >-
- FRFPO
+  Au plus fort de la pandémie de la COVID-19, les petites entreprises ont été confrontées à des défis sans précédent, dont l’un était la conversion des opérations en magasin en commerce électronique. Notre client, Digital Main Street, s’est associé à Google, Facebook, MasterCard, Shopify et plus encore pour réfléchir à la manière de soutenir les petites entreprises.
+
+
+  En associant des étudiants et des diplômés récents à des propriétaires de petites entreprises, nous avons aidé Digital Main Street à fournir les bons outils et ressources afin d’aider les entreprises à passer à la vente en ligne et à réaliser leur transformation numérique. 
+
+
+  Présentation de ShopHERE powered by Google : un programme qui offre aux petites entreprises indépendantes un moyen rapide, facile et gratuit de passer immédiatement à la vente en ligne.
+
+
+  Nous avons travaillé en collaboration avec Digital Main Street pour aider *à faire évoluer l’initiative dans le but d’aider 50 000 petites entreprises en ligne.* Nous avons mis en œuvre *une stratégie d’embauche, basée sur la diversité et l’inclusion, en formant ainsi plus de 500 étudiants* et jeunes diplômés à devenir des ressources fondamentales pour les propriétaires de petites entreprises, et les aider à mettre leur entreprise en ligne et à maintenir leur croissance.
+
+
+    ![Digital Main St Phones](/img/case-studies/digital-main-st/digital-main-st-phones.jpg)
+    ![Digital Main St Laptop](/img/case-studies/digital-main-st/digital-main-st-laptop.jpg)
+    ![Digital Main St Grid](/img/case-studies/digital-main-st/digital-main-st-grid.jpg)
 ---

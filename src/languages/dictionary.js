@@ -6,94 +6,108 @@ export default {
   footerCTAs: {
     letsChat: {
       en: "Let's chat",
-      fr: FRFPO,
+      fr: "Discutons-en.",
     },
     instagram: {
       text: {
         en: 'Follow us on',
-        fr: FRFPO,
+        fr: 'Suivez-nous sur',
       },
       linkText: {
         en: 'Instagram',
-        fr: FRFPO,
+        fr: 'Instagram',
       },
     },
     driveConversion: {
       en: 'Looking to drive conversion?',
-      fr: FRFPO,
+      fr: 'Vous souhaitez générer des conversions ?',
     },
     joinTheTeam: {
       en: 'Thinking about joining our team?',
-      fr: FRFPO,
+      fr: 'Vous envisagez de vous joindre à notre équipe ?',
     },
     oneEighty: {
       en: 'Have a question about OneEighty?',
-      fr: FRFPO,
+      fr: 'Vous avez une question sur OneEighty ?',
     },
     shout: {
       en: 'Give us a shout.',
-      fr: FRFPO,
+      fr: 'Faites-nous signe',
     },
     viewOpenRoles: {
       en: 'View open roles',
-      fr: FRFPO,
+      fr: 'Voir les postes ouverts',
     },
   },
   navigation: {
     items: {
       home: {
         en: 'Home',
-        fr: FRFPO,
+        fr: 'Accueil',
       },
       capabilities: {
         en: 'Capabilities',
-        fr: FRFPO,
+        fr: 'Compétences',
       },
       thinking: {
         en: 'Thinking',
-        fr: FRFPO,
+        fr: 'Réflexion',
       },
       news: {
         en: 'News',
-        fr: FRFPO,
+        fr: 'Nouvelles',
       },
       careers: {
         en: 'Careers',
-        fr: FRFPO,
+        fr: 'Carrières',
       },
       contact: {
         en: 'Contact',
-        fr: FRFPO,
+        fr: 'Contact',
+      },
+    },
+    footer: {
+      privacyPolicy: {
+        en: 'Privacy Policy',
+        fr: 'Politique de confidentialité',
+      },
+      termsOfUse: {
+        en: 'Terms of Use',
+        fr: 'Conditions d’utilisation',
+      },
+      accessibility: {
+        en: 'Accessibility',
+        fr: 'Accessibilité',
       },
     },
   },
   caseStudies: {
     watchCaseStudy: {
       en: 'Watch case study',
-      fr: FRFPO,
+      fr: 'Regarder l’étude de cas',
     },
     watchSpot: {
       en: 'Watch spot',
-      fr: FRFPO,
+      fr: 'Regarder le clip',
     },
     next: {
       en: 'Next project',
-      fr: FRFPO,
+      fr: 'Projet suivant',
     },
   },
   thinking: {
     title: {
       en: 'Thinking',
-      fr: FRFPO,
+      fr: 'Réflexion',
       oneEightyDescription: {
         en:
           'OneEighty is our digital conference that is flipping the script to rewrite the future of culture, commerce and creativity.',
-        fr: FRFPO,
+        fr: 'OneEighty est notre conférence numérique visant à réécrire l’avenir de la culture, du commerce et de la créativité.'
       },
     },
     loadMore: {
       en: 'Load more',
-      fr: FRFPO,
+      fr: 'En savoir plus',
     },
     next: {
       en: 'Next in Thinking',
@@ -137,19 +151,19 @@ export default {
     },
     watchNow: {
       en: 'Watch now',
-      fr: FRFPO,
+      fr: 'Regardez maintenant',
     },
     panelist: {
       en: 'Panelist',
-      fr: FRFPO,
+      fr: 'Panéliste',
       linkedin: {
         en: 'View LinkedIn',
-        fr: FRFPO,
+        fr: 'Voir LinkedIn',
       },
     },
     moderator: {
       en: 'Moderator',
-      fr: FRFPO,
+      fr: 'Modérateur',
     },
     defaultAuthor: {
       en: 'Mosaic staff',
@@ -159,11 +173,11 @@ export default {
   news: {
     title: {
       en: 'News',
-      fr: FRFPO,
+      fr: 'Actualités',
     },
     next: {
       en: 'Next in news',
-      fr: FRFPO,
+      fr: 'À venir',
     },
   },
   pages: {
@@ -175,205 +189,286 @@ export default {
             in dimension.
           </>
         ),
-        fr: FRFPO,
+        fr: (
+          <>
+            Nous construisons des <br />
+            marques en dimension.
+          </>
+        ),
       },
       why: {
         title: {
           en: 'We do this by using creativity to drive conversion.',
-          fr: FRFPO,
-        },
-        description: {
-          en:
-            '[remove] As a truly integrated North American marketing agency, we add depth and meaning to our brands and deliver powerful results by taking every possible consumer touchpoint into consideration.',
-          fr: FRFPO,
+          fr: 'C’est grâce à notre créativité que nous favorisons la conversion.',
         },
       },
+      capabilities: {
+        body: {
+          en:
+            'To effectively drive conversion, we assess every business challenge through six specialized capabilities.',
+          fr:
+            'Pour favoriser efficacement la conversion, nous évaluons chaque défi commercial à travers six compétences spécialisées.',
+        },
+        cta: {
+          en: 'Explore our capabilities',
+          fr: 'Découvrez nos compétences',
+        },
+      },
+      oneEighty: {
+        body: {
+          en:
+            'We love a good challenge and when we get one, we look at it with a 180 view. It’s why we created the OneEighty conference to analyze the future of culture, commerce and creativity from all angles.',
+          fr:
+            'Nous adorons les défis et quand l’un d’entre eux se présente à nous, nous l’abordons à 180 degrés. C’est pourquoi nous avons créé la conférence OneEighty pour analyser l’avenir de la culture, du commerce et de la créativité sous tous les angles.',
+        },
+        cta: {
+          en: 'See OneEighty streams',
+          fr: 'Voir les flux OneEighty',
+        },
+      },
+      ourPartners: {
+          en:
+            'Our partners',
+          fr:
+            'Nos partenaires',
+        },
     },
     capabilities: {
       title: {
         en: 'Capabilities',
-        fr: FRFPO,
+        fr: 'Compétences',
         text: {
           en:
             'We see every touchpoint as an opportunity to strengthen a brand’s purpose and drive purchase simultaneously.',
-          fr: FRFPO,
+          fr:
+            'Nous considérons chaque point de contact comme une opportunité de renforcer l’objectif de la marque et de simultanément stimuler l’achat.',
         },
       },
       content_digital: {
         title: {
           en: 'Content & Digital',
-          fr: FRFPO,
+          fr: 'Contenu et numérique',
         },
         text: {
           en:
             'We tell brand stories through purposeful content that drives connection, conversation and conversion. We also integrate our digital and media teams to ensure the message reaches the right people to produce the right results.',
-          fr: FRFPO,
+          fr:
+            'Nous racontons l’histoire de chaque marque à travers un contenu ciblé favorisant la connexion, la discussion et la conversion. Nous intégrons également nos équipes numériques et médias pour nous assurer que le message parvient aux bonnes personnes, avec pour objectif de produire les meilleurs résultats possibles.',
         },
         cta: {
           en: 'View Budweiser’s case study',
-          fr: FRFPO,
+          fr: 'Voir l’étude de cas de Budweiser',
         },
       },
       experiential_marketing: {
         title: {
           en: 'Experiential Marketing',
-          fr: FRFPO,
+          fr: 'Marketing expérientiel',
         },
         text: {
           en:
             'With over 30 years of experience in building effective, captivating brand experiences, our capabilities and track record are unmatched. We’re fascinated by the power of human connection and culture, and it’s what drives us to create deeper meaning through experiences that immerse, inform and illuminate brand value.',
-          fr: FRFPO,
+          fr:
+            'Après plus de 30 ans d’expertise dans l’univers de la création d’expériences de marque efficaces et captivantes, nos compétences et nos antécédents sont inégalables sur le marché. Nous sommes fascinés par le pouvoir du contact humain et de la culture, et c’est ce qui nous pousse à toujours créer un sentiment plus profond à nos campagnes, grâce à des expériences qui immergent, informent et éclairent les valeurs de la marque.',
         },
         cta: {
           en: 'View Stella’s case study',
-          fr: FRFPO,
+          fr: 'Voir l’étude de cas de Stella',
         },
       },
       retail_commerce: {
         title: {
           en: 'Retail & Commerce',
-          fr: FRFPO,
+          fr: 'Vente au détail et commerce',
         },
         text: {
           en:
             'We know the path to purchase is no longer linear - and it’s never been more true for in-store and online marketing. We make shopping more human by guiding consumers to brands they’ll love with a compelling creative concept, standout visuals, easier navigation, and helpful interactions.',
-          fr: FRFPO,
+          fr:
+            'Nous savons que le commerce n’est plus linéaire — et cela n’a jamais été aussi vrai pour le marketing en magasin et en ligne. Nous rendons les achats plus humains en guidant les consommateurs vers les marques qu’ils apprendront à adorer grâce à un concept créatif convaincant, des visuels percutants, une navigation plus facile et des interactions pertinentes.',
         },
         cta: {
           en: 'View Google’s case study',
-          fr: FRFPO,
+          fr: 'Voir l’étude de cas de Google',
         },
       },
       b2b: {
         title: {
           en: 'B2B',
-          fr: FRFPO,
+          fr: 'B2B',
         },
         text: {
           en:
             'Whether it’s a large-scale conference, corporate event or employee engagement program, our B2B team delves deep beneath the surface to deliver business-to-business experiences that are creatively driven and executionally sound.',
-          fr: FRFPO,
+          fr: 
+            'Qu’il s’agisse d’une conférence à grande échelle, d’un événement d’entreprise ou d’un programme d’engagement des employés, notre équipe B2B n’hésite pas à tout analyser en profondeur pour offrir des expériences interentreprises créatives et efficaces.',
         },
         cta: {
           en: `View Loblaw's case study`,
-          fr: FRFPO,
+          fr: 'Voir l’étude de cas de Loblaws',
         },
       },
       assisted_selling: {
         title: {
           en: 'Assisted Selling & Training',
-          fr: FRFPO,
+          fr: 'Vente et formation assistées',
         },
         text: {
           en:
             'When a business ventures to new heights, we can help by closing the knowledge gap with our own omnichannel approach or by training your employees to acquire new marketing skills. You can think of us as additional limbs in your strategy.',
-          fr: FRFPO,
+          fr:
+            'Lorsqu’une entreprise vise des objectifs plus ambitieux, nous pouvons l’aider à développer des connaissances grâce à notre approche omnicanal ou en formant ses employés à acquérir de nouvelles compétences en marketing. Considérez-nous comme des alliés dans votre stratégie.',
         },
         cta: {
           en: 'View Digital Main Street’s case study',
-          fr: FRFPO,
+          fr: 'Voir l’étude de cas de Digital Main Street',
         },
       },
       brand_development: {
         title: {
           en: 'Brand Development & Design',
-          fr: FRFPO,
+          fr: 'Développement et conception de marque',
         },
         text: {
           en:
             'We’re proud to have one of North America’s largest creative and design departments with award-winning, channel-agnostic thinkers and creators who take big ideas from concept to execution. Flawlessly.',
-          fr: FRFPO,
+          fr:
+            'Nous sommes fiers d’avoir l’un des plus grands départements de création et de design d’Amérique du Nord, avec des penseurs et des créateurs distingués et indépendants d’esprit qui donnent vie au projet de l’idée jusqu’à l’exécution. Parfaitement.',
         },
         cta: {
           en: 'View Tishman Speyer’s case study',
-          fr: FRFPO,
+          fr: 'Voir l’étude de cas de Tishman Speyer',
         },
       },
     },
     careers: {
       title: {
         en: 'We cover a lot of bases, both in what we do and where we are.',
-        fr: FRFPO,
+        fr: 'Nous évoluons, à la fois dans ce que nous faisons et où nous en sommes.',
       },
       description: {
         en:
           'We’re also big fans of fresh talent in both different spaces and places.',
-        fr: FRFPO,
+        fr: 'Nous sommes toujours à la recherche de nouveaux talents dans différents domaines et lieux.'
       },
       cta: {
         en: 'View open roles',
-        fr: FRFPO,
+        fr: 'Voir les postes ouverts',
       },
     },
     contact: {
       title: {
         en: (
-          <>
-            Let’s{` `}
-            <br />
-            chat.
+          <>  
+          Hi. Hello. {` `}
+          <br />
+          Bonjour. Howdy.
           </>
         ),
-        fr: FRFPO,
+        fr: (
+          <>  
+          Allo. Bonjour. {` `}
+          <br />
+          Salut.
+          </>
+        ),
       },
       meta: {
         description: {
           en: 'See where you can reach us across North America.',
-          fr: FRFPO,
+          fr: 'Découvrez où vous pouvez nous joindre à travers l’Amérique du Nord.',
         },
         contacts: {
-          newBusiness: {
-            en: 'New business',
-            fr: FRFPO,
+          newBusinessUS: {
+            en: (
+              <>
+                New business{` `}
+                <br />
+                US
+              </>
+            ),
+            fr: (
+              <>
+                Nouvelles entreprises{` `}
+                <br />
+                aux États-Unis
+              </>
+            ),
+          },
+          newBusinessCanada: {
+            en: (
+              <>
+                New business{` `}
+                <br />
+                Canada
+              </>
+            ),
+            fr: (
+              <>
+                Nouvelles entreprises{` `}
+                <br />
+                au Canada
+              </>
+            ),
           },
           mediaInquiries: {
             en: 'Media inquiries',
-            fr: FRFPO,
+            fr: 'Demandes de renseignements des médias',
           },
           general: {
             en: 'General inquiries',
-            fr: FRFPO,
+            fr: 'Renseignements généraux',
           },
         },
       },
       contacts: {
         title: {
           en: 'Our offices',
-          fr: FRFPO,
+          fr: 'Nos bureaux',
+        },
+        formTitle: {
+          en: (
+            <>
+              Let’s{` `}
+              <br />
+              chat.
+            </>
+          ),
+          fr: 'Discutons-en',
         },
       },
       formItems: {
         email: {
           en: 'Email address',
-          fr: FRFPO,
+          fr: 'Courriel',
         },
         subject: {
           en: 'Subject',
-          fr: FRFPO,
+          fr: 'Sujet',
         },
         name: {
           en: 'Name',
-          fr: FRFPO,
+          fr: 'Nom',
         },
         company: {
           en: 'Company',
-          fr: FRFPO,
+          fr: 'Entreprise',
         },
         phone: {
           en: 'Phone number',
-          fr: FRFPO,
+          fr: 'Téléphone',
         },
         message: {
           en: 'Message',
-          fr: FRFPO,
+          fr: 'Votre message',
         },
         optional: {
           en: 'optional',
-          fr: FRFPO,
+          fr: 'optionnel',
         },
         send: {
           en: 'Send message',
-          fr: FRFPO,
+          fr: 'Envoyer un message',
         },
         error: {
           en: 'Something went wrong, please try again!',
@@ -385,12 +480,17 @@ export default {
           en: (
             <>
               <p>
-                Sent! Thanks for the message. We’ll get back to you as soon as
-                we can.
+                Sent! Thanks for the message. We’ll get back to you as soon as we can.
               </p>
             </>
           ),
-          fr: FRFPO,
+          fr: (
+            <>
+              <p>
+              Envoyé ! Merci pour votre message. Nous vous répondrons dès que possible.
+              </p>
+            </>
+          ),
         },
         cta: {
           en: 'Start another message',
@@ -398,10 +498,40 @@ export default {
         },
       },
     },
+    notFound: {
+      title: {
+        en: '404',
+        fr: '404',
+      },
+      body: {
+        en: (
+          <>
+            <p>
+            Sorry, it looks like you broke the internet. <br />
+            Luckily, we can help you fix it.
+            </p>
+          </>
+        ),
+        fr: (
+          <>
+            <p>
+            Désolé, on dirait que vous avez un problème. <br />
+            Heureusement, nous pouvons vous aider à le résoudre.
+            </p>
+          </>
+        ),
+      },
+      cta: {
+          en:
+            'Go home',
+          fr:
+            'Aller à l’accueil',
+      },
+    },
     privacy: {
       title: {
         en: 'Privacy policy',
-        fr: FRFPO,
+        fr: 'Politique de confidentialité',
       },
       header: {
         en: (
@@ -1147,7 +1277,7 @@ export default {
     terms: {
       title: {
         en: 'Terms of Use',
-        fr: FRFPO,
+        fr: 'Conditions d’utilisation',
       },
       header: {
         en: (
@@ -1171,27 +1301,27 @@ export default {
     workArchive: {
       title: {
         en: 'Work archive',
-        fr: FRFPO,
+        fr: 'Archive',
       },
     },
   },
   misc: {
     all: {
       en: 'All posts',
-      fr: FRFPO,
+      fr: 'Toutes les publications',
     },
     cancel: {
       en: 'Cancel',
-      fr: FRFPO,
+      fr: 'Annuler',
     },
     countries: {
       canada: {
         en: 'Canada',
-        fr: FRFPO,
+        fr: 'Canada',
       },
       usa: {
         en: 'United States',
-        fr: FRFPO,
+        fr: 'États-Unis',
       },
     },
   },

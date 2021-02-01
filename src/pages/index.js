@@ -361,12 +361,11 @@ class BlogIndex extends React.Component {
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
-                    To effectively drive conversion, we assess every business
-                    challenge through six specialized capabilities.
+                  <Text tid="pages.index.capabilities.body" />
                   </p>
 
                   <Link to="/capabilities" className="button light">
-                    Explore our capabilities <FiArrowRight />
+                  <Text tid="pages.index.capabilities.cta" /><FiArrowRight />
                   </Link>
                 </div>
               </div>
@@ -378,14 +377,11 @@ class BlogIndex extends React.Component {
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-6-tablet is-6-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
-                    We love a good challenge and when we get one, we look at it
-                    with a 180 view. It’s why we created the OneEighty
-                    conference to analyze the future of culture, commerce and
-                    creativity from all angles.
+                  <Text tid="pages.index.oneEighty.body" />
                   </p>
 
                   <Link to="/thinking/oneeighty" className="button light">
-                    See OneEighty streams <FiArrowRight />
+                  <Text tid="pages.index.oneEighty.cta" /><FiArrowRight />
                   </Link>
                 </div>
 
@@ -400,7 +396,9 @@ class BlogIndex extends React.Component {
 
           <div className="section-partners">
             <div className="container">
-              <h3>Our partners</h3>
+              <h3>
+              <Text tid="pages.index.ourPartners" />
+              </h3>
             </div>
 
             <Carousel

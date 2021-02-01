@@ -288,13 +288,19 @@ export const Footer = ({ footerCTA }) => {
                       </a>
                     </div>
                     <div>
-                      <Link to="/accessibility">Accessibility</Link>
+                      <Link to="/accessibility">
+                        <Text tid="navigation.footer.accessibility" />
+                      </Link>
                     </div>
                     <div>
-                      <Link to="/terms-of-use">Terms of Use</Link>
+                      <Link to="/terms-of-use">
+                       <Text tid="navigation.footer.termsOfUse" />
+                      </Link>
                     </div>
                     <div>
-                      <Link to="/privacy-policy">Privacy policy</Link>
+                      <Link to="/privacy-policy">
+                       <Text tid="navigation.footer.privacyPolicy" />
+                      </Link>
                     </div>
                   </div>
                 </div>

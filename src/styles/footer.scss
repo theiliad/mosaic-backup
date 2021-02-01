@@ -34,14 +34,14 @@ footer {
 
     &:hover {
       color: $colors_aqua_primary;
-      border-bottom: 1px solid $colors_aqua_primary;
+      border-bottom: 1px solid;
       @include transition_default;
     }
 
     &.cp-lang-switcher {
       &.active {
         padding-bottom: 2px;
-        border-bottom: 1px solid $colors_white;
+        border-bottom: 1px solid;
         @include transition_default;
         &:hover {
           color: $colors_white;
@@ -76,7 +76,7 @@ footer {
     a {
       color: $colors_white;
       padding-bottom: 0.15em;
-      border-bottom: 1px solid $colors_white;
+      border-bottom: 1px solid;
       @include transition_default;
 
       svg {
@@ -85,7 +85,7 @@ footer {
 
       &:hover {
         color: $colors_orange_primary;
-        border-bottom: 1px solid $colors_orange_primary;
+        border-bottom: 1px solid;
 
         svg {
           color: $colors_orange_primary;

@@ -4,15 +4,17 @@ import { Link } from 'gatsby'
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
+// Locale
+import { Text, LanguageContext } from '../containers/Language'
+
 const Meta = () => (
   <div className="cp-meta-wrap">
-    <p>
-      Sorry, it looks like you broke the internet.<br />Luckily, we can help you fix
-      it.
+    <p>  
+    <Text tid="pages.notFound.body" />
     </p>
 
     <Link to="/" className="button primary">
-      Go home
+      <Text tid="pages.notFound.cta" />
     </Link>
   </div>
 )
@@ -32,7 +34,9 @@ class NotFoundPage extends React.Component {
                 </div>
               </div>
 
-              <p className="cp-ftext">404</p>
+              <p className="cp-ftext">
+                <Text tid="pages.notFound.title" />
+                </p>
             </div>
           </>
         }

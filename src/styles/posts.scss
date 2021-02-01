@@ -419,7 +419,7 @@ div.post-body {
 
     &:hover {
       color: $colors_red_primary;
-      border-bottom: 1px solid $colors_red_primary;
+      border-bottom: 1px solid;
     }
   }
 
@@ -763,6 +763,13 @@ div.post {
     position: relative;
     background: $colors_white;
 
+    &:hover {
+        h6 {
+        color: $colors_aqua_primary;
+        @include transition_default;
+      }
+    }
+
     div.cp-bg {
       position: absolute;
       background: $colors_midnight_primary;
@@ -823,10 +830,12 @@ div.post {
               line-height: 1.2em;
               padding-top: 0.25em;
               @include Roobert_Medium;
+              @include transition_default;
 
               @media screen and (max-width: 768px) {
                 font-size: 2em;
               }
+
 
 
             }

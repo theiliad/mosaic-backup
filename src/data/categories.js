@@ -4,49 +4,49 @@ module.exports = {
   'case-studies': {
     'content-digital': {
       en: 'Content & Digital',
-      fr: FRFPO,
+      fr: 'Contenu et numérique',
     },
     'experiential-marketing': {
       en: 'Experiential Marketing',
-      fr: FRFPO,
+      fr: 'Marketing expérientiel',
     },
     'retail-commerce': {
       en: 'Retail & Commerce',
-      fr: FRFPO,
+      fr: 'Vente au détail et commerce',
     },
     'b2b': {
       en: 'B2B',
-      fr: FRFPO,
+      fr: 'B2B',
     },
     'assisted-selling-training': {
       en: 'Assisted Selling & Training',
-      fr: FRFPO,
+      fr: 'Vente et formation assistées',
     },
     'brand-development-design': {
       en: 'Brand Development & Design',
-      fr: FRFPO,
+      fr: 'Développement et conception de marque',
     },
   },
   thinking: {
     'oneeighty': {
       en: 'OneEighty',
-      fr: FRFPO,
+      fr: 'OneEighty',
     },
     strategy: {
       en: 'Strategy',
-      fr: FRFPO,
+      fr: 'Stratégie',
     },
     creative: {
       en: 'Creative',
-      fr: FRFPO,
+      fr: 'Création',
     },
     measurement: {
       en: 'Measurement',
-      fr: FRFPO,
+      fr: 'Mesure',
     },
     'thought-leadership': {
       en: 'Thought Leadership',
-      fr: FRFPO,
+      fr: 'Leadership éclairé',
     },
   },
 }

@@ -265,10 +265,10 @@ function Contact({ data, location }) {
 
   const config = {
     name: {
-      isRequired: 'Let us know your name please!',
+      isRequired: 'Please enter your name',
     },
     company: {},
-    subject: { isRequired: 'Please choose a subject' },
+    subject: {},
     email: {
       isRequired: 'Email field is required!',
       isEmail: 'Please enter a valid email address',
@@ -287,9 +287,7 @@ function Contact({ data, location }) {
   const Meta = () => (
     <>
       <h2>
-        Hi. Hello.
-        <br />
-        Bonjour. Howdy.
+        <Text tid="pages.contact.title" />
       </h2>
 
       <p className="cp-desc">
@@ -300,10 +298,8 @@ function Contact({ data, location }) {
         <div className="columns is-mobile">
           <div className="column is-4">
             <p>
-              <Text tid="pages.contact.meta.contacts.newBusiness" />
+              <Text tid="pages.contact.meta.contacts.newBusinessCanada" />
             </p>
-
-            <p>U.S.</p>
           </div>
 
           <div className="column is-7">
@@ -319,11 +315,9 @@ function Contact({ data, location }) {
 
         <div className="columns is-mobile">
           <div className="column is-4">
-            <p>
-              <Text tid="pages.contact.meta.contacts.newBusiness" />
+          <p>
+              <Text tid="pages.contact.meta.contacts.newBusinessUS" />
             </p>
-
-            <p>Canada</p>
           </div>
 
           <div className="column is-7">
@@ -477,8 +471,8 @@ function Contact({ data, location }) {
         <div className="pages-index pages-contact">
           <div className="section-contacts">
             <div className="container cp-wide">
-              <h3>
-                <Text tid="pages.contact.contacts.title" />
+              <h3>                
+              <Text tid="pages.contact.contacts.title" />
               </h3>
 
               <h5>
@@ -539,7 +533,7 @@ function Contact({ data, location }) {
                 <div className="column is-1"></div>
                 <div className="column is-3 contact-info">
                   <h5>
-                    <Text tid="pages.contact.title" />
+                    <Text tid="pages.contact.contacts.formTitle" />
                   </h5>
                 </div>
 
