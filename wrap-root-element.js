@@ -4,7 +4,8 @@ import React from 'react'
 // import { Code } from './src/components/code'
 // import { preToCodeBlock } from 'mdx-utils'
 
-import { LanguageProvider } from './src/containers/Language';
+import { LanguageProvider } from './src/containers/Language'
+import { QueryParamProvider } from 'use-query-params'
 
 // // components is its own object outside of render so that the references to
 // // components are stable
@@ -25,5 +26,7 @@ import { LanguageProvider } from './src/containers/Language';
 // )
 
 export const wrapRootElement = ({ element }) => (
-  <LanguageProvider>{element}</LanguageProvider>
+  <QueryParamProvider>
+    <LanguageProvider>{element}</LanguageProvider>
+  </QueryParamProvider>
 )

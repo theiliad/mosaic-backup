@@ -343,6 +343,32 @@ export default {
         },
       },
       formItems: {
+        errors: {
+          nameIsRequired: {
+            en: 'Please enter your name',
+            fr: 'Veuillez entrer un nom.',
+          },
+          subjectIsRequired: {
+            en: 'Please choose a subject',
+            fr: FRFPO,
+          },
+          emailIsRequired: {
+            en: 'Email field is required!',
+            fr: FRFPO,
+          },
+          emailIsInvalid: {
+            en: 'Please enter a valid email address',
+            fr: 'S’il vous plaît, veuillez entrer une adresse courriel valide.',
+          },
+          phoneNumberIsInvalid: {
+            en: 'Please enter a valid phone number',
+            fr: FRFPO,
+          },
+          messageIsRequired: {
+            en: 'Please write a message!',
+            fr: 'Veuillez entrer un message.',
+          },
+        },
         email: {
           en: 'Email address',
           fr: FRFPO,
@@ -350,6 +376,48 @@ export default {
         subject: {
           en: 'Subject',
           fr: FRFPO,
+          items: {
+            'general-inquiries': {
+              en: 'General inquiries',
+              fr: FRFPO,
+            },
+            'marketing-canada': {
+              en: 'Marketing services (Canada)',
+              fr: FRFPO,
+            },
+            'marketing-us': {
+              en: 'Marketing services (US)',
+              fr: FRFPO,
+            },
+            'marketing-other': {
+              en: 'Marketing services (other)',
+              fr: FRFPO,
+            },
+            'rst-canada': {
+              en: 'Retail, sales & training (Canada)',
+              fr: FRFPO,
+            },
+            'rst-us': {
+              en: 'Retail, sales & training (US)',
+              fr: FRFPO,
+            },
+            'rst-other': {
+              en: 'Retail, sales & training (other)',
+              fr: FRFPO,
+            },
+            'media-relations': {
+              en: 'Media relations',
+              fr: FRFPO,
+            },
+            'talent-acquisition': {
+              en: 'Talent acquisition',
+              fr: FRFPO,
+            },
+            'human-resources': {
+              en: 'Human resources',
+              fr: FRFPO,
+            },
+          },
         },
         name: {
           en: 'Name',

@@ -179,44 +179,34 @@ function Contact({ data, location }) {
       type: 'select',
       items: [
         {
-          value: 'general-inquiries',
-          title: 'General inquiries',
+          value: 'pages.contact.formItems.subject.items.general-inquiries',
         },
         {
-          value: 'marketing-canada',
-          title: 'Marketing services (Canada)',
+          value: 'pages.contact.formItems.subject.items.marketing-canada',
         },
         {
-          value: 'marketing-us',
-          title: 'Marketing services (US)',
+          value: 'pages.contact.formItems.subject.items.marketing-us',
         },
         {
-          value: 'marketing-other',
-          title: 'Marketing services (other)',
+          value: 'pages.contact.formItems.subject.items.marketing-other',
         },
         {
-          value: 'rst-canada',
-          title: 'Retail, sales & training (Canada)',
+          value: 'pages.contact.formItems.subject.items.rst-canada',
         },
         {
-          value: 'rst-us',
-          title: 'Retail, sales & training (US)',
+          value: 'pages.contact.formItems.subject.items.rst-us',
         },
         {
-          value: 'rst-other',
-          title: 'Retail, sales & training (other)',
+          value: 'pages.contact.formItems.subject.items.rst-other',
         },
         {
-          value: 'media-relations',
-          title: 'Media relations',
+          value: 'pages.contact.formItems.subject.items.media-relations',
         },
         {
-          value: 'talent-acquisition',
-          title: 'Talent acquisition',
+          value: 'pages.contact.formItems.subject.items.talent-acquisition',
         },
         {
-          value: 'human-resources',
-          title: 'Human resources',
+          value: 'pages.contact.formItems.subject.items.human-resources',
         },
       ],
     },
@@ -265,22 +255,22 @@ function Contact({ data, location }) {
 
   const config = {
     name: {
-      isRequired: 'Let us know your name please!',
+      isRequired: 'pages.contact.formItems.errors.nameIsRequired',
     },
     company: {},
-    subject: { isRequired: 'Please choose a subject' },
+    subject: { isRequired: 'pages.contact.formItems.errors.subjectIsRequired' },
     email: {
-      isRequired: 'Email field is required!',
-      isEmail: 'Please enter a valid email address',
+      isRequired: 'pages.contact.formItems.errors.emailIsRequired',
+      isEmail: 'pages.contact.formItems.errors.emailIsInvalid',
     },
     'phone-number': {
       isRegexMatch: {
-        message: 'Please enter a valid phone number',
+        message: 'pages.contact.formItems.errors.phoneNumberIsInvalid',
         regex: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im,
       },
     },
     message: {
-      isRequired: 'Please write a message!',
+      isRequired: 'pages.contact.formItems.errors.messageIsRequired',
     },
   }
 
@@ -573,7 +563,13 @@ function Contact({ data, location }) {
                               <div class="select">
                                 <select id={formItem.name} name={formItem.name}>
                                   {formItem.items.map(item => (
-                                    <option>{item.title}</option>
+                                    <option>
+                                      {getText({
+                                        tid: item.value,
+                                        dictionary,
+                                        userLanguage,
+                                      })}
+                                    </option>
                                   ))}
                                 </select>
                               </div>
@@ -592,10 +588,10 @@ function Contact({ data, location }) {
                       <FormValidation
                         onSubmit={handleSubmit}
                         config={config}
-						onSubmit={handleSubmit}
-						initialValues={{
-							subject: "general-inquiries"
-						}}
+                        onSubmit={handleSubmit}
+                        initialValues={{
+                          subject: 'general-inquiries',
+                        }}
                       >
                         {({ fields, errors, submitted }) => (
                           <>
@@ -644,7 +640,13 @@ function Contact({ data, location }) {
                                           name={formItem.name}
                                         >
                                           {formItem.items.map(item => (
-                                            <option>{item.title}</option>
+                                            <option>
+                                              {getText({
+                                                tid: item.value,
+                                                dictionary,
+                                                userLanguage,
+                                              })}
+                                            </option>
                                           ))}
                                         </select>
                                       </div>
@@ -665,7 +667,7 @@ function Contact({ data, location }) {
 
                                   {submitted && errors[formItem.name] && (
                                     <p className="help is-danger">
-                                      {errors[formItem.name]}
+                                      <Text tid={errors[formItem.name]} />
                                     </p>
                                   )}
                                 </div>

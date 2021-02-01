@@ -286,8 +286,6 @@ function Post(props) {
                         loop={true}
                         playing={true}
                         autoPlay={true}
-                        volume={0}
-                        muted={true}
                         width="100%"
                         height={null}
                         className="cp-vimeo"

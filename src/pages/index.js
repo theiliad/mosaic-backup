@@ -209,8 +209,14 @@ class BlogIndex extends React.Component {
 
           heroLogoElement.style.transformOrigin = 'left top'
 
-          heroLogoElement.style.opacity =
+          const heroLogoElementOpacity =
             st > HOMEPAGE_NAV_HIDE_THRESHOLD ? 0 : 1
+          heroLogoElement.style.opacity = heroLogoElementOpacity
+          if (heroLogoElementOpacity === 0) {
+            heroLogoElement.style.visibility = 'hidden'
+          } else {
+            heroLogoElement.style.visibility = 'visible'
+          }
         }
       }
     }
