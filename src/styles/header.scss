@@ -7,6 +7,44 @@ div.site-header {
   z-index: 99;
   transition: all 0.1s ease-out;
 
+  div.ctas {
+    margin-left: auto;
+    display: flex;
+
+    a.cp-cta {
+      position: absolute;
+      right: 3.5rem;
+      display: table;
+      margin-left: auto;
+      background: $colors_orange_primary;
+      border-radius: 50%;
+      color: $colors_blue_primary;
+      height: 3rem;
+      width: 3rem;
+      margin-top: 0.25rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(75%);
+      transition: all 0.15s ease-out;
+
+      svg {
+        position: absolute;
+        left: 53%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+        color: #fff;
+      }
+
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition: all 0.15s ease-out;
+      }
+    }
+  }
+
   &.idle-light nav.navbar a.navbar-item.link {
     color: $colors_white;
   }

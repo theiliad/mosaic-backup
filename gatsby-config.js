@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mosaic`,
-    description: `TODO`,
+    description: `Mosaic is an integrated marketing agency with offices across North America. We build brands in dimension by using creativity to drive conversion.`,
     siteUrl: `https://mosaic.com`,
   },
   plugins: [
@@ -43,6 +43,7 @@ module.exports = {
     },
     // `gatsby-plugin-sharp`,
     // `gatsby-transformer-sharp`,
+    'gatsby-plugin-use-query-params',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

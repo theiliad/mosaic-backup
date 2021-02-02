@@ -113,10 +113,10 @@ class Capabilities extends React.Component {
               </div>
             </div>
           </div>
-        }
+        } 
         navIdleLight={true}
       >
-        <SEO title="Home" keywords={['TODO']} description="TODO" />
+        <SEO title="Capabilities" keywords={['TODO']} description="TODO" />
 
         <div className="pages-index pages-capabilities">
           <div className="section-writeup">

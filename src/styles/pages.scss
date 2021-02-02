@@ -74,7 +74,8 @@ div.pages-index {
       font-size: 1em;
 
       div.column {
-        a.cp-photo, div.cp-photo {
+        a.cp-photo,
+        div.cp-photo {
           display: table;
           padding-bottom: 0;
           overflow: hidden;
@@ -725,6 +726,37 @@ div.post-single-heading.thinking.contact {
     margin-top: 3em;
     padding-bottom: 4em;
     padding-left: 0;
+
+    div.accordion__button {
+      color: #fff;
+
+      svg {
+        color: #fff;
+      }
+    }
+
+    div.accordion__item {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    div.accordion__panel {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      color: #fff;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          border-color: #fff;
+        }
+      }
+    }
 
     h2 {
       font-size: 5vh;

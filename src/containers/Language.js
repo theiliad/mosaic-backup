@@ -9,16 +9,40 @@ import { get } from 'lodash-es'
 import { format as dateFnsFormat } from 'date-fns'
 import { fr as frLocale } from 'date-fns/locale'
 
+// Utils
+import { updateQueryStringParameter } from '../utils'
+
+// Query params
+import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
+
 // create the language context with default selected language
 export const LanguageContext = createContext({
   userLanguage: 'en',
   dictionary: DICTIONARY,
 })
 
+const AVAILABLE_LOCALES = Object.keys(languageOptions)
+
 // it provides the language context to app
 export function LanguageProvider({ children }) {
-	console.log("window.localStorage.setItem", window.localStorage.getItem('rcml-lang'))
-  const [userLanguage, setUserLanguage] = useState('en')
+  const [lang, setLang] = useQueryParam('lang', StringParam)
+
+  let entryLanguage = 'en'
+  const localStorageValue = window.localStorage.getItem('rcml-lang')
+  if (
+    localStorageValue &&
+    AVAILABLE_LOCALES.indexOf(localStorageValue) !== -1
+  ) {
+    entryLanguage = localStorageValue
+  }
+
+  if (lang && AVAILABLE_LOCALES.indexOf(lang) !== -1) {
+    entryLanguage = lang
+  }
+
+  setLang(entryLanguage)
+
+  const [userLanguage, setUserLanguage] = useState(entryLanguage)
 
   const provider = {
     userLanguage,
@@ -28,6 +52,11 @@ export function LanguageProvider({ children }) {
       setUserLanguage(newLanguage)
 
       window.localStorage.setItem('rcml-lang', newLanguage)
+      console.log(
+        updateQueryStringParameter(window.location.href, 'lang', newLanguage)
+      )
+
+      setLang(newLanguage)
     },
   }
 

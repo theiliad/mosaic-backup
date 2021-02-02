@@ -438,6 +438,28 @@ export default {
         },
       },
       formItems: {
+        errors: {
+          nameIsRequired: {
+            en: 'Please enter your name',
+            fr: 'Veuillez entrer un nom.',
+          },
+          emailIsRequired: {
+            en: 'Email field is required!',
+            fr: 'S’il vous plaît, veuillez entrer une adresse courriel valide.',
+          },
+          emailIsInvalid: {
+            en: 'Please enter a valid email address',
+            fr: 'S’il vous plaît, veuillez entrer une adresse courriel valide.',
+          },
+          phoneNumberIsInvalid: {
+            en: 'Please enter a valid phone number',
+            fr: 'FRFPO,'
+          },
+          messageIsRequired: {
+            en: 'Please write a message!',
+            fr: 'Veuillez entrer un message.',
+          },
+        },
         email: {
           en: 'Email address',
           fr: 'Courriel',
@@ -445,6 +467,48 @@ export default {
         subject: {
           en: 'Subject',
           fr: 'Sujet',
+          items: {
+            'general-inquiries': {
+              en: 'General inquiries',
+              fr: 'Renseignements généraux',
+            },
+            'marketing-canada': {
+              en: 'Marketing services (Canada)',
+              fr: 'Services de marketing (Canada)',
+            },
+            'marketing-us': {
+              en: 'Marketing services (US)',
+              fr: 'Services de marketing (États-Unis)',
+            },
+            'marketing-other': {
+              en: 'Marketing services (other)',
+              fr: 'Services de marketing (autres)',
+            },
+            'rst-canada': {
+              en: 'Retail, sales & training (Canada)',
+              fr: 'Vente au détail, vente et formation (Canada)',
+            },
+            'rst-us': {
+              en: 'Retail, sales & training (US)',
+              fr: 'Vente au détail, vente et formation (États-Unis)',
+            },
+            'rst-other': {
+              en: 'Retail, sales & training (other)',
+              fr: 'Vente au détail, vente et formation (autres)',
+            },
+            'media-relations': {
+              en: 'Media relations',
+              fr: 'Relations avec les médias',
+            },
+            'talent-acquisition': {
+              en: 'Talent acquisition',
+              fr: 'Attraction de talents',
+            },
+            'human-resources': {
+              en: 'Human resources',
+              fr: 'Ressources humaines',
+            },
+          },
         },
         name: {
           en: 'Name',

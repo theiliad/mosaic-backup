@@ -48,7 +48,7 @@ class News extends React.Component {
           </div>
         }
       >
-        <SEO title="TODO" keywords={['TODO']} image={null} />
+        <SEO title="News" keywords={['TODO']} image={null} />
 
         <div className="pages-news">
           <div className="section-news">

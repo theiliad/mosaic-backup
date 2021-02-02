@@ -20,6 +20,17 @@ div.sidenav {
     transform: translate(-50%, -50%);
   }
 
+  div.container {
+    padding-right: 6em;
+    padding-left: 4em;
+
+    // Phone
+    @media (max-width: 768px) {
+      padding-right: 64px;
+      padding-left: 32px;
+    }
+  }
+
   div.logo-wrapper {
     img {
       width: 7.5em;
@@ -75,17 +86,16 @@ div.sidenav {
       overflow-y: auto;
       margin-top: 2em;
       padding-bottom: 2em;
-	  
-	  div.social-links {
-		  margin-top: 2em;
 
-		  a {
-			  @include Roobert_Medium;
-        font-size: 2.5vh;
-        margin-bottom: .75em;
+      div.social-links {
+        margin-top: 2em;
 
-		  }
-	  }
+        a {
+          @include Roobert_Medium;
+          font-size: 2.5vh;
+          margin-bottom: 0.75em;
+        }
+      }
 
       a {
         display: block;
@@ -111,27 +121,25 @@ div.sidenav {
           padding-top: 0.3em;
         }
 
+        /* width */
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
 
-      /* width */
-      &::-webkit-scrollbar {
-        width: 10px;
-      }
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: $colors_midnight_primary !important;
+        }
 
-      /* Track */
-      &::-webkit-scrollbar-track {
-        background: $colors_midnight_primary !important;
-      }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: transparent !important;
+        }
 
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
-        background: transparent !important;
-      }
-
-      /* Handle on hover */
-      &::-webkit-scrollbar-thumb:hover {
-        background: transparent !important;
-      }
-
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: transparent !important;
+        }
       }
     }
   }
@@ -178,10 +186,10 @@ div.sidenav {
       a {
         @include Roobert_SemiBold;
 
-      &:hover {
-        color: $colors_orange_primary;
+        &:hover {
+          color: $colors_orange_primary;
+        }
       }
-    }
     }
   }
 }
