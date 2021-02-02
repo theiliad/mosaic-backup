@@ -4,6 +4,7 @@ titleEN: 'The wellness pandemic: How will the new normal drive brand purpose?'
 titleFR: FRFPO
 date: 2020-05-20T03:14:12.599Z
 featuredImage: /img/thinking/the-wellness-pandemic.jpg
+videoID: 449905474
 category: oneeighty
 descriptionEN: 'Marketing experts debate best practices for brands helping consumers adapt to their new normal: maintaining physical and mental wellness at home.'
 descriptionFR: frFPO

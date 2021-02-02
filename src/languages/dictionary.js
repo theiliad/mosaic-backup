@@ -384,7 +384,7 @@ export default {
               <>
                 New business{` `}
                 <br />
-                US
+                U.S.
               </>
             ),
             fr: (
