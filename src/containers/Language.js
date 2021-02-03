@@ -23,12 +23,16 @@ export const LanguageContext = createContext({
 
 const AVAILABLE_LOCALES = Object.keys(languageOptions)
 
+const isBrowser = typeof window !== `undefined`
+
 // it provides the language context to app
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useQueryParam('lang', StringParam)
 
   let entryLanguage = 'en'
-  const localStorageValue = window.localStorage.getItem('rcml-lang')
+  const localStorageValue = isBrowser
+    ? window.localStorage.getItem('rcml-lang')
+    : null
   if (
     localStorageValue &&
     AVAILABLE_LOCALES.indexOf(localStorageValue) !== -1
@@ -51,10 +55,9 @@ export function LanguageProvider({ children }) {
       const newLanguage = languageOptions[selected] ? selected : 'en'
       setUserLanguage(newLanguage)
 
-      window.localStorage.setItem('rcml-lang', newLanguage)
-      console.log(
-        updateQueryStringParameter(window.location.href, 'lang', newLanguage)
-      )
+      if (isBrowser) {
+        window.localStorage.setItem('rcml-lang', newLanguage)
+      }
 
       setLang(newLanguage)
     },
