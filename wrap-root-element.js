@@ -7,6 +7,8 @@ import React from 'react'
 import { LanguageProvider } from './src/containers/Language'
 import { QueryParamProvider } from 'use-query-params'
 
+import { globalHistory, Location } from '@reach/router'
+
 // // components is its own object outside of render so that the references to
 // // components are stable
 // const components = {
@@ -26,7 +28,13 @@ import { QueryParamProvider } from 'use-query-params'
 // )
 
 export const wrapRootElement = ({ element }) => (
-  <QueryParamProvider>
-    <LanguageProvider>{element}</LanguageProvider>
-  </QueryParamProvider>
+  <Location>
+    {({ location }) => {
+      return (
+        <QueryParamProvider location={location} reachHistory={globalHistory}>
+          <LanguageProvider>{element}</LanguageProvider>
+        </QueryParamProvider>
+      )
+    }}
+  </Location>
 )
