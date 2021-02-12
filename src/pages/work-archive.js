@@ -53,7 +53,7 @@ class News extends React.Component {
                       className="column is-6 cp-photo"
                       style={{ alignSelf: 'flex-end' }}
                     >
-                      <Link to={node.fields.slug}>
+                      <Link to={`/${node.fields.slug}`}>
                         <img
                           src={node.frontmatter.featuredImage}
                           style={{ width: '100%' }}
@@ -67,7 +67,7 @@ class News extends React.Component {
                       className="column is-6"
                       style={{ alignSelf: 'flex-end' }}
                     >
-                      <Link to={node.fields.slug}>
+                      <Link to={`/${node.fields.slug}`}>
                         <CaseStudyMeta node={node} />
                       </Link>
                     </div>
@@ -86,7 +86,7 @@ class News extends React.Component {
                     className="column is-6 is-mobile"
                     style={{ alignSelf: 'flex-end' }}
                   >
-                    <Link to={node.fields.slug}>
+                    <Link to={`/${node.fields.slug}`}>
                       <img
                         src={node.frontmatter.featuredImage}
                         style={{ width: '100%' }}

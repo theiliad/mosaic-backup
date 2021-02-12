@@ -79,13 +79,15 @@ function Post(props) {
     )
 
   useEffect(() => {
-    document.addEventListener('scroll', trackScrolling)
+    if (isThinkingPost) {
+      document.addEventListener('scroll', trackScrolling)
 
-    // will be called on component unmount
-    return () => {
-      document.removeEventListener('scroll', trackScrolling)
+      // will be called on component unmount
+      return () => {
+        document.removeEventListener('scroll', trackScrolling)
+      }
     }
-  }, [])
+  }, [isThinkingPost])
 
   const EventMember = ({ member, isModerator }) => (
     <AccordionItem>

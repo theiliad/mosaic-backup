@@ -288,7 +288,7 @@ class BlogIndex extends React.Component {
                   {cases.map(({ node }, i) => (
                     <div className="column is-6">
                       <Link
-                        to={node.fields.slug}
+                        to={`/${node.fields.slug}`}
                         className="cp-photo"
                         style={{ alignSelf: 'flex-end' }}
                       >
@@ -313,7 +313,7 @@ class BlogIndex extends React.Component {
                       className="column is-6"
                       style={{ alignSelf: 'flex-end' }}
                     >
-                      <Link to={node.fields.slug}>
+                      <Link to={`/${node.fields.slug}`}>
                         <CaseStudyMeta node={node} />
                       </Link>
                     </div>
@@ -332,7 +332,7 @@ class BlogIndex extends React.Component {
                     className="column is-6 is-mobile"
                     style={{ alignSelf: 'flex-end' }}
                   >
-                    <Link to={node.fields.slug}>
+                    <Link to={`/${node.fields.slug}`}>
                       <div className="cp-photo">
                         <img
                           src={node.frontmatter.featuredImage}
@@ -367,11 +367,12 @@ class BlogIndex extends React.Component {
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
-                  <Text tid="pages.index.capabilities.body" />
+                    <Text tid="pages.index.capabilities.body" />
                   </p>
 
                   <Link to="/capabilities" className="button light">
-                  <Text tid="pages.index.capabilities.cta" /><FiArrowRight />
+                    <Text tid="pages.index.capabilities.cta" />
+                    <FiArrowRight />
                   </Link>
                 </div>
               </div>
@@ -383,11 +384,12 @@ class BlogIndex extends React.Component {
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-6-tablet is-6-desktop is-5-widescreen is-5-fullhd">
                   <p className="secondary">
-                  <Text tid="pages.index.oneEighty.body" />
+                    <Text tid="pages.index.oneEighty.body" />
                   </p>
 
                   <Link to="/thinking/oneeighty" className="button light">
-                  <Text tid="pages.index.oneEighty.cta" /><FiArrowRight />
+                    <Text tid="pages.index.oneEighty.cta" />
+                    <FiArrowRight />
                   </Link>
                 </div>
 
@@ -403,7 +405,7 @@ class BlogIndex extends React.Component {
           <div className="section-partners">
             <div className="container">
               <h3>
-              <Text tid="pages.index.ourPartners" />
+                <Text tid="pages.index.ourPartners" />
               </h3>
             </div>
 
