@@ -9,9 +9,6 @@ import { get } from 'lodash-es'
 import { format as dateFnsFormat } from 'date-fns'
 import { fr as frLocale } from 'date-fns/locale'
 
-// Utils
-import { updateQueryStringParameter } from '../utils'
-
 // Query params
 import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
 
@@ -24,6 +21,8 @@ export const LanguageContext = createContext({
 const AVAILABLE_LOCALES = Object.keys(languageOptions)
 
 const isBrowser = typeof window !== `undefined`
+
+let entryLang
 
 // it provides the language context to app
 export function LanguageProvider({ children }) {
@@ -44,7 +43,10 @@ export function LanguageProvider({ children }) {
     entryLanguage = lang
   }
 
-  setLang(entryLanguage)
+  if (!entryLang) {
+    entryLang = entryLanguage
+    setLang(entryLanguage)
+  }
 
   const [userLanguage, setUserLanguage] = useState(entryLanguage)
 

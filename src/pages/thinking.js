@@ -53,7 +53,7 @@ const ThinkingItem = ({ node, size }) => {
   return (
     <Fade key={node.fields.slug} duration={300}>
       <div className={`column thinking-item ${size}`}>
-        <Link to={node.fields.slug} className="cp-full-link">
+        <Link to={`/${node.fields.slug}`} className="cp-full-link">
           <div className="cp-image">
             <img src={node.frontmatter.featuredImage} />
 
