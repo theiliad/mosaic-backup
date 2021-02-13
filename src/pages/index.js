@@ -85,7 +85,7 @@ const updateLogos = () => {
 
 export const CaseStudyMeta = ({ node, mobileVersion }) => (
   <>
-    <div className={'columns' + (mobileVersion ? ' is-mobile' : '')}>
+    <div className="cp-meta columns is-mobile">
       <div className="column is-8">
         <p className="cp-company">{node.frontmatter.companyName}</p>
 
@@ -279,76 +279,33 @@ class BlogIndex extends React.Component {
             </div>
           </div>
           <div className="section-cases">
-            <div className="container cp-wide">
-              {chunk(caseStudies, 2).map(cases => (
-                <div
-                  className="columns is-multiline"
-                  style={{ marginBottom: '4em' }}
-                >
-                  {cases.map(({ node }, i) => (
-                    <div className="column is-6">
-                      <Link
-                        to={`/${node.fields.slug}`}
-                        className="cp-photo"
-                        style={{ alignSelf: 'flex-end' }}
-                      >
-                        <img
-                          src={node.frontmatter.featuredImage}
-                          style={{ width: '100%' }}
-                        />
-
-                        <svg
-                          viewBox="0 0 2000 1125"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect width="2000" height="1125" fill="#e8eceb" />
-                        </svg>
-                      </Link>
-                    </div>
-                  ))}
-
-                  {cases.map(({ node }) => (
-                    <div
-                      className="column is-6"
-                      style={{ alignSelf: 'flex-end' }}
-                    >
-                      <Link to={`/${node.fields.slug}`}>
-                        <CaseStudyMeta node={node} />
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-
-            <div className="container cp-mobile">
+            <div className="container">
               <div
                 className="columns is-multiline"
-                style={{ marginBottom: '4em' }}
               >
                 {caseStudies.map(({ node }, i) => (
-                  <div
-                    className="column is-6 is-mobile"
-                    style={{ alignSelf: 'flex-end' }}
-                  >
+                  <div className="column is-6">
+                    <Link
+                      to={`/${node.fields.slug}`}
+                      className="cp-photo"
+                      style={{ alignSelf: 'flex-end' }}
+                    >
+                      <img
+                        src={node.frontmatter.featuredImage}
+                        style={{ width: '100%' }}
+                      />
+
+                      <svg
+                        viewBox="0 0 2000 1125"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="2000" height="1125" fill="#e8eceb" />
+                      </svg>
+                    </Link>
+
                     <Link to={`/${node.fields.slug}`}>
-                      <div className="cp-photo">
-                        <img
-                          src={node.frontmatter.featuredImage}
-                          style={{ width: '100%' }}
-                        />
-
-                        <svg
-                          viewBox="0 0 2140 1203.76"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect width="2140" height="1203.76" fill="#e8eceb" />
-                        </svg>
-                      </div>
-
-                      <CaseStudyMeta node={node} mobileVersion={true} />
+                      <CaseStudyMeta node={node} />
                     </Link>
                   </div>
                 ))}
