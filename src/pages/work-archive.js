@@ -17,9 +17,9 @@ class News extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
-    const caseStudies = get(data, "allMdx.group[0].edges")
+    const caseStudies = get(data, 'allMdx.group[0].edges')
 
-	return (
+    return (
       <Layout
         location={this.props.location}
         title={siteTitle}
@@ -41,58 +41,32 @@ class News extends React.Component {
         <SEO title="TODO" keywords={['TODO']} image={null} />
 
         <div className="pages-index">
-          <div className="section-cases">
-            <div className="container cp-wide" style={{ marginTop: "3em" }}>
-              {chunk(caseStudies, 2).map(cases => (
-                <div
-                  className="columns is-multiline"
-                  style={{ marginBottom: '4em' }}
-                >
-                  {cases.map(({ node }, i) => (
-                    <div
-                      className="column is-6 cp-photo"
-                      style={{ alignSelf: 'flex-end' }}
-                    >
-                      <Link to={`/${node.fields.slug}`}>
-                        <img
-                          src={node.frontmatter.featuredImage}
-                          style={{ width: '100%' }}
-                        />
-                      </Link>
-                    </div>
-                  ))}
-
-                  {cases.map(({ node }) => (
-                    <div
-                      className="column is-6"
-                      style={{ alignSelf: 'flex-end' }}
-                    >
-                      <Link to={`/${node.fields.slug}`}>
-                        <CaseStudyMeta node={node} />
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-
-            <div className="container cp-mobile">
-              <div
-                className="columns is-multiline"
-                style={{ marginBottom: '4em' }}
-              >
+          <div className="section-cases" style={{ marginTop: "3em" }}>
+            <div className="container">
+              <div className="columns is-multiline">
                 {caseStudies.map(({ node }, i) => (
-                  <div
-                    className="column is-6 is-mobile"
-                    style={{ alignSelf: 'flex-end' }}
-                  >
-                    <Link to={`/${node.fields.slug}`}>
+                  <div className="column is-6">
+                    <Link
+                      to={`/${node.fields.slug}`}
+                      className="cp-photo"
+                      style={{ alignSelf: 'flex-end' }}
+                    >
                       <img
                         src={node.frontmatter.featuredImage}
                         style={{ width: '100%' }}
                       />
 
-                      <CaseStudyMeta node={node} mobileVersion={true} />
+                      <svg
+                        viewBox="0 0 2000 1125"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="2000" height="1125" fill="#e8eceb" />
+                      </svg>
+                    </Link>
+
+                    <Link to={`/${node.fields.slug}`}>
+                      <CaseStudyMeta node={node} />
                     </Link>
                   </div>
                 ))}
