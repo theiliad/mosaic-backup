@@ -183,8 +183,8 @@ function Thinking({ data, location }) {
   const postsToShow = allPosts.slice(0, page * postsPerPage)
 
   const [sideNav, setSideNav] = useState(false)
-  const handleSideNavToggle = e => {
-    if (e) e.preventDefault()
+  const handleSideNavToggle = (e, shouldPreventDefault) => {
+    if (e && shouldPreventDefault) e.preventDefault()
 
     if (sideNav === true) {
       document.querySelector('html').style.overflowY = 'auto'
@@ -246,7 +246,7 @@ function Thinking({ data, location }) {
                     <a
                       className="button primary"
                       href="/"
-                      onClick={handleSideNavToggle}
+                      onClick={e => handleSideNavToggle(e, true)}
                     >
                       {filter === null ? (
                         <Text tid="misc.all" />
@@ -285,12 +285,17 @@ function Thinking({ data, location }) {
           </h3>
 
           <div className="links">
-            <Link to={`/thinking/`} className={filter === null ? 'active' : ''}>
+            <Link
+              onClick={handleSideNavToggle}
+              to={`/thinking/`}
+              className={filter === null ? 'active' : ''}
+            >
               <Text tid="misc.all" />
             </Link>
 
             {Object.keys(CATEGORIES.thinking).map(categoryKey => (
               <Link
+                onClick={handleSideNavToggle}
                 to={`/thinking/${categoryKey}`}
                 className={filter === categoryKey ? 'active' : ''}
               >

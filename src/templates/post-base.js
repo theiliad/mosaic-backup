@@ -464,7 +464,7 @@ function Post(props) {
           <div className="cp-bg"></div>
 
           <div className="container">
-            <Link to={previousPost.fields.slug}>
+            <Link to={`/${previousPost.fields.slug}`}>
               <div
                 className="columns"
                 style={{
