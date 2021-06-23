@@ -157,6 +157,7 @@ class Header extends React.Component {
                         ? LOGO_ORANGE_BLUE
                         : LOGO_ORANGE_BLUE)
                     }
+                    alt="Logo"
                     id="cp_site_logo"
                     style={{
                       opacity:
@@ -298,12 +299,12 @@ export const Footer = ({ footerCTA }) => {
                     </div>
                     <div>
                       <Link to="/terms-of-use">
-                       <Text tid="navigation.footer.termsOfUse" />
+                        <Text tid="navigation.footer.termsOfUse" />
                       </Link>
                     </div>
                     <div>
                       <Link to="/privacy-policy">
-                       <Text tid="navigation.footer.privacyPolicy" />
+                        <Text tid="navigation.footer.privacyPolicy" />
                       </Link>
                     </div>
                   </div>
@@ -469,14 +470,13 @@ const Layout = props => {
             <div className="columns is-mobile is-vcentered">
               <div className="column is-narrow logo-wrapper">
                 <Link onClick={handleSideNavToggle} to="/">
-                  <img src={LOGO_WORDMARK} />
+                  <img src={LOGO_WORDMARK} alt="Logo" />
                 </Link>
               </div>
 
               <div className="column close-wrapper">
                 <div className="close">
                   <a
-                    href="/"
                     onClick={e => {
                       e.preventDefault()
 

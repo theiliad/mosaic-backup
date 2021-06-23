@@ -277,13 +277,13 @@ function Contact({ data, location }) {
   const HERO_CONTACTS = [
     {
       titleTID: 'pages.contact.meta.contacts.newBusinessUS',
-     // country: 'U.S.',
+      // country: 'U.S.',
       name: 'Mike Pennington',
       email: 'USNewBusiness@mosaic.com',
     },
     {
       titleTID: 'pages.contact.meta.contacts.newBusinessCanada',
-    //  country: 'Canada',
+      //  country: 'Canada',
       name: 'Terri Truscello',
       email: 'CADNewBusiness@mosaic.com',
     },
@@ -437,7 +437,7 @@ function Contact({ data, location }) {
 
             <div className="post-single cp-mobile">
               <div className="cp-image">
-                <img src={HERO} />
+                <img src={HERO} alt="Contact us" />
               </div>
 
               <div className="cp-meta">
@@ -473,8 +473,8 @@ function Contact({ data, location }) {
         <div className="pages-index pages-contact">
           <div className="section-contacts">
             <div className="container cp-wide">
-              <h3>                
-              <Text tid="pages.contact.contacts.title" />
+              <h3>
+                <Text tid="pages.contact.contacts.title" />
               </h3>
 
               <h5>
@@ -561,6 +561,8 @@ function Contact({ data, location }) {
 
                         {formItems.map(formItem => (
                           <>
+                            <label for={formItem.name}>{formItem.name}</label>
+
                             {!formItem.type && (
                               <input id={formItem.name} name={formItem.name} />
                             )}

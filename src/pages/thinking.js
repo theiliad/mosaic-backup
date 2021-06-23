@@ -45,7 +45,7 @@ const ThinkingItem = ({ node, size }) => {
   const isOneEighty = node.frontmatter.category === 'oneeighty'
   const isRecap = node.frontmatter.recap === true
 
-  let itemLink = node.fields.slug
+  let itemLink = `/${node.fields.slug}`
   if (isOneEighty && !isRecap && isPastSession) {
     itemLink = itemLink + '?playVideo=true'
   }
@@ -55,7 +55,7 @@ const ThinkingItem = ({ node, size }) => {
       <div className={`column thinking-item ${size}`}>
         <Link to={`/${node.fields.slug}`} className="cp-full-link">
           <div className="cp-image">
-            <img src={node.frontmatter.featuredImage} />
+            <img src={node.frontmatter.featuredImage} alt={node.frontmatter.titleEN} />
 
             <svg
               viewBox="0 0 800 1066.67"
@@ -95,7 +95,6 @@ const ThinkingItem = ({ node, size }) => {
                 <>
                   <span className="cp-play">
                     <a
-                      href="/"
                       onClick={e => {
                         e.preventDefault()
                       }}
@@ -339,7 +338,6 @@ function Thinking({ data, location }) {
 
             {allPosts.length > page * postsPerPage && (
               <a
-                href="/"
                 className="cp-load-more"
                 onClick={e => {
                   e.preventDefault()

@@ -207,7 +207,7 @@ function Post(props) {
       }
     >
       <SEO
-        title={frontmatter.title}
+        title={frontmatter.titleEN}
         image={`https://mosaic.com${frontmatter.shareImage ||
           frontmatter.featuredImage}`}
       />
@@ -472,7 +472,10 @@ function Post(props) {
                 }}
               >
                 <div className="column is-narrow cp-img">
-                  <img src={previousPost.frontmatter.featuredImage} />
+                  <img
+                    src={previousPost.frontmatter.featuredImage}
+                    alt={previousPost.frontmatter.titleEN}
+                  />
                 </div>
 
                 <div className="column cp-text">

@@ -293,6 +293,7 @@ class BlogIndex extends React.Component {
                       <img
                         src={node.frontmatter.featuredImage}
                         style={{ width: '100%' }}
+						alt={node.frontmatter.titleEN}
                       />
 
                       <svg
@@ -370,7 +371,7 @@ class BlogIndex extends React.Component {
               slides={[
                 {
                   src: null,
-                  alt: null,
+                  alt: "Empty",
                 },
                 {
                   src: ANHEUSER_BUSCH,
