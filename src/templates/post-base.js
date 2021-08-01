@@ -246,7 +246,7 @@ function Post(props) {
                     },
                     img: imgProps => (
                       <div className="cp-el-img">
-                        <img {...imgProps} />
+                        <img {...imgProps} alt={imgProps.caption} />
 
                         {imgProps.caption && (
                           <p className="cp-caption subtitle is-6">

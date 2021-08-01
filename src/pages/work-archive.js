@@ -41,7 +41,7 @@ class News extends React.Component {
         <SEO title="TODO" keywords={['TODO']} image={null} />
 
         <div className="pages-index">
-          <div className="section-cases" style={{ marginTop: "3em" }}>
+          <div className="section-cases" style={{ marginTop: '3em' }}>
             <div className="container">
               <div className="columns is-multiline">
                 {caseStudies.map(({ node }, i) => (
@@ -52,6 +52,7 @@ class News extends React.Component {
                       style={{ alignSelf: 'flex-end' }}
                     >
                       <img
+                        alt={node.frontmatter.titleEN}
                         src={node.frontmatter.featuredImage}
                         style={{ width: '100%' }}
                       />

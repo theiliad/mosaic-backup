@@ -52,7 +52,8 @@ class Careers extends React.Component {
               </div>
             </div>
 
-            <img src={CAREERS} style={{ width: '100%' }} />
+            {/* TODO - alt text should be confirmed */}
+            <img src={CAREERS} style={{ width: '100%' }} alt="Careers" />
           </div>
         </div>
       </Layout>

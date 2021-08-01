@@ -246,8 +246,9 @@ class BlogIndex extends React.Component {
           <div className="header_extension home">
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
-                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo" />
-                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo_hidden" />
+                {/* TODO - alt text should be confirmed */}
+                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo" alt="Mosaic logo" />
+                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo_hidden" alt="Mosaic logo" />
 
                 <div className="container">
                   <h1>
@@ -264,7 +265,9 @@ class BlogIndex extends React.Component {
         <SEO title="Home" keywords={['TODO']} description="TODO" />
 
         <div className="pages-index">
-          <img src={HOME_HERO} style={{ width: '100%' }} />
+          {/* TODO - alt text should be confirmed */}
+          <img src={HOME_HERO} style={{ width: '100%' }} alt="Homepage hero" />
+
           <div className="section-why">
             <div className="container">
               <div className="columns">
@@ -280,9 +283,7 @@ class BlogIndex extends React.Component {
           </div>
           <div className="section-cases">
             <div className="container">
-              <div
-                className="columns is-multiline"
-              >
+              <div className="columns is-multiline">
                 {caseStudies.map(({ node }, i) => (
                   <div className="column is-6">
                     <Link
@@ -293,7 +294,7 @@ class BlogIndex extends React.Component {
                       <img
                         src={node.frontmatter.featuredImage}
                         style={{ width: '100%' }}
-						alt={node.frontmatter.titleEN}
+                        alt={node.frontmatter.titleEN}
                       />
 
                       <svg
@@ -318,7 +319,12 @@ class BlogIndex extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={HOME_CAPABILITIES} className="image-below" />
+                  {/* TODO - alt text should be confirmed */}
+                  <img
+                    src={HOME_CAPABILITIES}
+                    className="image-below"
+                    alt="Capabilities"
+                  />
                 </div>
 
                 <div className="column is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd"></div>
@@ -354,7 +360,12 @@ class BlogIndex extends React.Component {
                 <div className="column is-1-tablet is-1-desktop is-2-widescreen is-2-fullhd"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={HOME_ONEEIGHTY} className="image-below" />
+                  {/* TODO - alt text should be confirmed */}
+                  <img
+                    src={HOME_ONEEIGHTY}
+                    className="image-below"
+                    alt="OneEighty"
+                  />
                 </div>
               </div>
             </div>
@@ -371,7 +382,7 @@ class BlogIndex extends React.Component {
               slides={[
                 {
                   src: null,
-                  alt: "Empty",
+                  alt: 'Empty',
                 },
                 {
                   src: ANHEUSER_BUSCH,

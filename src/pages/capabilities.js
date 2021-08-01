@@ -113,7 +113,7 @@ class Capabilities extends React.Component {
               </div>
             </div>
           </div>
-        } 
+        }
         navIdleLight={true}
       >
         <SEO title="Capabilities" keywords={['TODO']} description="TODO" />
@@ -123,9 +123,11 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={CAPABILITIES_CONTENT_DIGITAL}
                     className="image-below"
+                    alt="Content & Digital"
                   />
                 </div>
 
@@ -176,9 +178,11 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={CAPABILITIES_EXPERIENTIAL_MARKETING}
                     className="image-below"
+                    alt="Experiential Marketing"
                   />
                 </div>
               </div>
@@ -189,9 +193,11 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={CAPABILITIES_RETAIL_COMMERCE}
                     className="image-below"
+                    alt="Retail & Commerce"
                   />
                 </div>
 
@@ -242,7 +248,12 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  <img src={CAPABILITIES_B2B} className="image-below" />
+                  {/* TODO - alt text should be confirmed */}
+                  <img
+                    src={CAPABILITIES_B2B}
+                    className="image-below"
+                    alt="B2B"
+                  />
                 </div>
               </div>
             </div>
@@ -252,9 +263,11 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={CAPABILITIES_ASSISTED_SELLING}
                     className="image-below"
+                    alt="Assisted Selling & Training"
                   />
                 </div>
 
@@ -305,9 +318,11 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={CAPABILITIES_BRAND_DEVELOPMENT}
                     className="image-below"
+                    alt="Brand Development & Design"
                   />
                 </div>
               </div>
