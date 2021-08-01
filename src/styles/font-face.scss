@@ -10,11 +10,13 @@
   //     url('./fonts/regular.woff') format('woff'),
   //     url('./fonts/regular.woff2') format('woff2'),
   //     url('./fonts/regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roobert_Medium';
   src: url('./fonts/Roobert-Medium.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
   src: url('./fonts/Roobert-SemiBold.eot?#iefix') format('embedded-opentype'),
     url('./fonts/Roobert-SemiBold.woff') format('woff'),
     url('./fonts/Roobert-SemiBold.woff2') format('woff2');
+  font-display: swap;
 }
 
 @mixin Roobert_Regular {
