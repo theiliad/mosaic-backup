@@ -11,14 +11,9 @@ import Carousel from '../components/Carousel'
 import { Text } from '../containers/Language'
 
 // Lodash
-import { get, chunk } from 'lodash-es'
+import { get } from 'lodash-es'
 
 import CATEGORIES from '../data/categories'
-
-// Assets
-import LOGO_WHITE from '../img/logo/white-outline.svg'
-import HOME_CAPABILITIES from '../img/home/capabilities.jpg'
-import HOME_ONEEIGHTY from '../img/home/oneeighty.jpg'
 
 // icons
 import { FiArrowRight } from 'react-icons/fi'
@@ -276,7 +271,7 @@ class BlogIndex extends React.Component {
         <div className="pages-index">
           {/* TODO - alt text should be confirmed */}
           <StaticImage
-            src={"../img/home/hero.jpg"}
+            src={'../img/home/hero.jpg'}
             style={{ width: '100%' }}
             alt="Homepage hero"
           />
@@ -333,8 +328,8 @@ class BlogIndex extends React.Component {
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   {/* TODO - alt text should be confirmed */}
-                  <img
-                    src={HOME_CAPABILITIES}
+                  <StaticImage
+                    src={'../img/home/capabilities.jpg'}
                     className="image-below"
                     alt="Capabilities"
                   />
@@ -374,8 +369,8 @@ class BlogIndex extends React.Component {
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   {/* TODO - alt text should be confirmed */}
-                  <img
-                    src={HOME_ONEEIGHTY}
+                  <StaticImage
+                    src={'../img/home/oneeighty.jpg'}
                     className="image-below"
                     alt="OneEighty"
                   />
