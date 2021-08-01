@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
+import { StaticImage } from 'gatsby-plugin-image'
+
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import Carousel from '../components/Carousel'
@@ -247,8 +249,16 @@ class BlogIndex extends React.Component {
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
                 {/* TODO - alt text should be confirmed */}
-                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo" alt="Mosaic logo" />
-                <img src={HOME_LOGO_AQUAMIDNIGHT} id="cp_hero_logo_hidden" alt="Mosaic logo" />
+                <img
+                  src={HOME_LOGO_AQUAMIDNIGHT}
+                  id="cp_hero_logo"
+                  alt="Mosaic logo"
+                />
+                <img
+                  src={HOME_LOGO_AQUAMIDNIGHT}
+                  id="cp_hero_logo_hidden"
+                  alt="Mosaic logo"
+                />
 
                 <div className="container">
                   <h1>
@@ -266,7 +276,11 @@ class BlogIndex extends React.Component {
 
         <div className="pages-index">
           {/* TODO - alt text should be confirmed */}
-          <img src={HOME_HERO} style={{ width: '100%' }} alt="Homepage hero" />
+          <StaticImage
+            src={HOME_HERO}
+            style={{ width: '100%' }}
+            alt="Homepage hero"
+          />
 
           <div className="section-why">
             <div className="container">
