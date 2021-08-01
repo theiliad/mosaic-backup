@@ -154,13 +154,13 @@ div.post-single-heading {
 
     @media screen and (min-width: 769px) {
       height: 100vh;
-    //   min-height: 530px;
+      //   min-height: 530px;
     }
 
     & > div.columns {
       margin-top: 0;
       height: 100vh;
-    //   min-height: 530px;
+      //   min-height: 530px;
     }
 
     div.cp-desktop {
@@ -404,9 +404,9 @@ div.post-body {
   li {
     font-size: 1.25em;
     line-height: 2em;
-      @media screen and (max-width: 768px) {
-        font-size: 1em;
-      }
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
   }
 
   strong {
@@ -451,24 +451,24 @@ div.post-body {
       @include Roobert_SemiBold;
       font-size: 1.25em;
 
-        @media screen and (max-width: 768px) {
-          font-size: 1em;
-          line-height: 1.5em;
-        }
-
+      @media screen and (max-width: 768px) {
+        font-size: 1em;
+        line-height: 1.5em;
+      }
     }
 
-    strong, b {
+    strong,
+    b {
       display: table;
       font-style: normal;
       margin-top: 2em;
       @include Roobert_Medium;
 
-        @media screen and (max-width: 768px) {
-          font-size: 0.875em;
-          line-height: 1.5em;
-          margin-top: 1em;
-        }
+      @media screen and (max-width: 768px) {
+        font-size: 0.875em;
+        line-height: 1.5em;
+        margin-top: 1em;
+      }
     }
 
     @media screen and (max-width: 768px) {
@@ -580,7 +580,6 @@ div.post-body {
 }
 
 div.post {
-
   div.cp-video-wrapper {
     position: relative;
 
@@ -644,25 +643,23 @@ div.post {
               font-size: 8em;
               fill: none;
               stroke: $colors_white;
-              stroke-width: .4;
+              stroke-width: 0.4;
               @include transition_default;
             }
 
-              &:hover {
+            &:hover {
+              &.cp-icon {
+                background: rgba(0, 0, 0, 0.32) url('../img/matrix.svg') repeat;
+                background-size: 1em;
+                @include transition_default;
+              }
 
-                &.cp-icon {
-                  background: rgba(0, 0, 0, 0.32) url('../img/matrix.svg') repeat;
-                  background-size: 1em;
-                  @include transition_default;
-                }
-
-                svg {
-                  fill: $colors_white;
-                  @include transition_default;
-                }
+              svg {
+                fill: $colors_white;
+                @include transition_default;
+              }
             }
           }
-          
 
           &.cp-text {
             display: table;
@@ -764,7 +761,7 @@ div.post {
     background: $colors_white;
 
     &:hover {
-        h6 {
+      h6 {
         color: $colors_aqua_primary;
         @include transition_default;
       }
@@ -835,9 +832,6 @@ div.post {
               @media screen and (max-width: 768px) {
                 font-size: 2em;
               }
-
-
-
             }
           }
         }
@@ -849,7 +843,7 @@ div.post {
             padding-top: 3em;
           }
 
-          img {
+          div.gatsby-image-wrapper {
             display: table;
             max-width: 504px;
 

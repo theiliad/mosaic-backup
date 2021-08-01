@@ -51,7 +51,14 @@ exports.createPages = ({ graphql, actions }) => {
                 titleFR
                 companyName
                 date(formatString: "MMMM DD, YYYY")
-                featuredImage
+                featuredImage {
+                  childImageSharp {
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
                 posttype
                 bodyEN
                 bodyFR

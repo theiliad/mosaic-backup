@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 // Locale
 import { Text, TextDate } from '../containers/Language'
@@ -8,11 +10,12 @@ import CATEGORIES from '../data/categories'
 
 // Icons
 import { BsPlayFill, BsBellFill } from 'react-icons/bs'
-import { AiOutlinePlayCircle } from 'react-icons/ai'
 import { IoIosRadio } from 'react-icons/io'
 import { RiArrowRightUpLine } from 'react-icons/ri'
 
 import { isBefore, isAfter } from 'date-fns'
+
+import { get } from 'lodash-es'
 
 import ReactPlayer from 'react-player'
 
@@ -46,6 +49,8 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
   } else if (isUpcomingSession) {
     categoryTID = 'thinking.upcomingSession'
   }
+
+  const image = getImage(frontmatter.featuredImage)
 
   const PostMeta = () => (
     <>
@@ -123,7 +128,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
               <p className="cp-play">
                 <a
                   href="/"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault()
                     setPlay(frontmatter.videoID)
                   }}
@@ -164,18 +169,25 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
     </>
   )
 
+  console.log('geag', frontmatter.featuredImage)
+
   return (
     <>
       <div
         className={`post-single-heading thinking ${
           isOneEightyPost && !isRecap ? 'oneeighty' : ''
-		}`}
-		id="thinking-post-header"
+        }`}
+        id="thinking-post-header"
       >
         <div className="columns post-single cp-desktop">
           <div
             className="column is-5 cp-image"
-            style={{ backgroundImage: `url(${frontmatter.featuredImage})` }}
+            style={{
+              backgroundImage: `url(${get(
+                frontmatter,
+                'featuredImage.childImageSharp.gatsbyImageData.images.fallback.src'
+              )})`,
+            }}
           ></div>
 
           <div className="column is-5 cp-meta cp-centered">
@@ -185,7 +197,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
 
         <div className="post-single cp-mobile">
           <div className="cp-image">
-            <img alt={frontmatter.titleEN} src={frontmatter.featuredImage} />
+            <GatsbyImage image={image} alt={frontmatter.titleEN} />
           </div>
 
           <div className="cp-meta">
@@ -201,6 +213,8 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
 
 export function NewsPostHeader({ post }) {
   const { frontmatter } = post
+
+  const image = getImage(frontmatter.featuredImage)
 
   return (
     <>
@@ -241,10 +255,10 @@ export function NewsPostHeader({ post }) {
                 </p>
               </div>
 
-              <img
-                alt={frontmatter.titleEN}
-                src={frontmatter.featuredImage}
+              <GatsbyImage
+                image={image}
                 style={{ width: '100%', marginTop: '1.5em' }}
+                alt={frontmatter.titleEN}
               />
             </div>
           </div>
@@ -256,6 +270,8 @@ export function NewsPostHeader({ post }) {
 
 export function PostHeader({ post, play, setPlay }) {
   const { frontmatter } = post
+
+  const image = getImage(frontmatter.featuredImage)
 
   return (
     <>
@@ -342,10 +358,10 @@ export function PostHeader({ post, play, setPlay }) {
         )}
 
         {!frontmatter.primaryVideoLocalURL && (
-          <img
-            alt={frontmatter.titleEN}
-            src={frontmatter.featuredImage}
+          <GatsbyImage
+            image={image}
             style={{ width: '100%' }}
+            alt={frontmatter.titleEN}
           />
         )}
 
@@ -353,7 +369,7 @@ export function PostHeader({ post, play, setPlay }) {
           <div className="cp-overlay">
             <a
               href="/"
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
 
                 setPlay({

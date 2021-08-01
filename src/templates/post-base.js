@@ -1,5 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
+
 import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
 // import { MDXRenderer } from 'gatsby-plugin-mdx'
 // import { MDXProvider } from '@mdx-js/react'
 import MDX from '@mdx-js/runtime'
@@ -16,6 +19,8 @@ import ReactPlayer from 'react-player'
 import { getText, Text, LanguageContext } from '../containers/Language'
 
 import CATEGORIES from '../data/categories'
+
+import { get } from 'lodash-es'
 
 // Icons
 import { VscChevronLeft, VscChevronDown } from 'react-icons/vsc'
@@ -46,8 +51,6 @@ import {
 import { Slide, toast } from 'react-toastify'
 import { copyToClipboard } from '../utils'
 
-import { get } from 'lodash-es'
-
 function Post(props) {
   const post = props.data.mdx
   const { frontmatter } = post
@@ -71,7 +74,7 @@ function Post(props) {
   const languageContext = useContext(LanguageContext)
   const { dictionary, userLanguage } = languageContext
 
-  const elementInViewport = el => el.getBoundingClientRect().bottom >= 0
+  const elementInViewport = (el) => el.getBoundingClientRect().bottom >= 0
 
   const trackScrolling = () =>
     setCTAVisible(
@@ -165,6 +168,8 @@ function Post(props) {
     </AccordionItem>
   )
 
+  const previousPostImage = getImage(previousPost.frontmatter.featuredImage)
+
   return (
     <Layout
       location={props.location}
@@ -175,7 +180,7 @@ function Post(props) {
         <a
           role="button"
           className={`cp-cta ${ctaVisible ? 'visible' : ''}`}
-          onClick={e => {
+          onClick={(e) => {
             e.preventDefault()
 
             setPlay(frontmatter.videoID)
@@ -208,8 +213,9 @@ function Post(props) {
     >
       <SEO
         title={frontmatter.titleEN}
-        image={`https://mosaic.com${frontmatter.shareImage ||
-          frontmatter.featuredImage}`}
+        image={`https://mosaic.com${
+          frontmatter.shareImage || frontmatter.featuredImage
+        }`}
       />
 
       <div className="post">
@@ -235,6 +241,27 @@ function Post(props) {
                 </MDXProvider> */}
 
                 <MDX
+                  components={{
+                    a: (aProps) => {
+                      const aText =
+                        get(aProps, 'children.props.parentName') === 'p'
+                          ? get(aProps, 'children.props.children')
+                          : aProps.children
+
+                      return <a {...aProps}>{aText}</a>
+                    },
+                    img: (imgProps) => (
+                      <div className="cp-el-img">
+                        <img {...imgProps} />
+
+                        {imgProps.caption && (
+                          <p className="cp-caption subtitle is-6">
+                            {imgProps.caption}
+                          </p>
+                        )}
+                      </div>
+                    ),
+                  }}
                 >
                   {Text({
                     variations: {
@@ -246,7 +273,7 @@ function Post(props) {
 
                 <div className="columns cp-sponsors is-mobile is-multiline">
                   {frontmatter.sponsors &&
-                    frontmatter.sponsors.map(sponsor => (
+                    frontmatter.sponsors.map((sponsor) => (
                       <div className="column is-3-widescreen is-4-desktop is-4-tablet is-4-mobile">
                         <img src={sponsor.image} alt={sponsor.alt} />
                       </div>
@@ -256,11 +283,11 @@ function Post(props) {
                 {frontmatter.panel && (
                   <div className="cp-panel">
                     <Accordion allowZeroExpanded={true}>
-                      {frontmatter.panel.map(panelist => (
+                      {frontmatter.panel.map((panelist) => (
                         <EventMember member={panelist} />
                       ))}
 
-                      {frontmatter.moderator.map(moderator => (
+                      {frontmatter.moderator.map((moderator) => (
                         <EventMember member={moderator} isModerator={true} />
                       ))}
                     </Accordion>
@@ -282,94 +309,98 @@ function Post(props) {
               </div>
             </div>
 
-            {/*
-             *  Secondary video
-             */
-            frontmatter.secondaryVideoVimeoID && (
-              <div
-                className="columns post-single ui-grid"
-                style={{ marginTop: '6em' }}
-              >
-                <div className="column is-10">
-                  <div className="cp-video-wrapper">
-                    {play && play.type === 'secondary' && (
-                      <ReactPlayer
-                        url={`https://vimeo.com/${play.id}`}
-                        loop={true}
-                        playing={true}
-                        autoPlay={true}
-                        width="100%"
-                        height={null}
-                        className="cp-vimeo"
-                      />
-                    )}
-
-                    <img
-                      alt={frontmatter.titleEN}
-                      src={frontmatter.secondaryVideoIMG}
-                      style={{ width: '100%' }}
-                    />
-
-                    {(!play || play.type !== 'secondary') &&
-                      frontmatter.secondaryVideoVimeoID && (
-                        <div className="cp-overlay">
-                          <a
-                            href="/"
-                            onClick={e => {
-                              e.preventDefault()
-
-                              setPlay({
-                                id: frontmatter.secondaryVideoVimeoID,
-                                type: 'secondary',
-                              })
-                            }}
-                          >
-                            <span className="cp-icon">
-                              <BsPlayFill />
-                            </span>
-
-                            <span className="cp-text">
-                              <Text tid="caseStudies.watchSpot" />
-                            </span>
-                          </a>
-                        </div>
+            {
+              /*
+               *  Secondary video
+               */
+              frontmatter.secondaryVideoVimeoID && (
+                <div
+                  className="columns post-single ui-grid"
+                  style={{ marginTop: '6em' }}
+                >
+                  <div className="column is-10">
+                    <div className="cp-video-wrapper">
+                      {play && play.type === 'secondary' && (
+                        <ReactPlayer
+                          url={`https://vimeo.com/${play.id}`}
+                          loop={true}
+                          playing={true}
+                          autoPlay={true}
+                          width="100%"
+                          height={null}
+                          className="cp-vimeo"
+                        />
                       )}
+
+                      <img
+                        alt={frontmatter.titleEN}
+                        src={frontmatter.secondaryVideoIMG}
+                        style={{ width: '100%' }}
+                      />
+
+                      {(!play || play.type !== 'secondary') &&
+                        frontmatter.secondaryVideoVimeoID && (
+                          <div className="cp-overlay">
+                            <a
+                              href="/"
+                              onClick={(e) => {
+                                e.preventDefault()
+
+                                setPlay({
+                                  id: frontmatter.secondaryVideoVimeoID,
+                                  type: 'secondary',
+                                })
+                              }}
+                            >
+                              <span className="cp-icon">
+                                <BsPlayFill />
+                              </span>
+
+                              <span className="cp-text">
+                                <Text tid="caseStudies.watchSpot" />
+                              </span>
+                            </a>
+                          </div>
+                        )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )
+            }
           </div>
         </div>
 
-        {/*
-         * Vimeo player for 180 posts
-         */ play && !play.type && (
-          <div
-            className="video-overlay"
-            onClick={e => {
-              e.preventDefault()
-              setPlay(null)
-            }}
-            role="presentation"
-          >
-            <div className="cp-content">
-              <a href="/" onClick={e => setPlay(null)}>
-                <CgClose />
-              </a>
+        {
+          /*
+           * Vimeo player for 180 posts
+           */ play && !play.type && (
+            <div
+              className="video-overlay"
+              onClick={(e) => {
+                e.preventDefault()
+                setPlay(null)
+              }}
+              role="presentation"
+            >
+              <div className="cp-content">
+                <a href="/" onClick={(e) => setPlay(null)}>
+                  <CgClose />
+                </a>
 
-              <ReactPlayer
-                playing
-                url={`https://vimeo.com/${play}`}
-                loop={true}
-                playing={true}
-                autoPlay={true}
-                width="100%"
-                height={null}
-                className="cp-vimeo"
-              />
+                <ReactPlayer
+                  playing
+                  url={`https://vimeo.com/${play}`}
+                  loop={true}
+                  playing={true}
+                  autoPlay={true}
+                  width="100%"
+                  height={null}
+                  className="cp-vimeo"
+                />
+              </div>
             </div>
-          </div>
-        )}
+          )
+        }
 
         <div className="share-wrapper">
           <div className="container">
@@ -408,7 +439,7 @@ function Post(props) {
               <div className="column">
                 <button
                   class="button is-medium"
-                  onClick={e => {
+                  onClick={(e) => {
                     copyToClipboard(`https://mosaic.com/${post.fields.slug}`)
 
                     toast(
@@ -451,8 +482,9 @@ function Post(props) {
                 }}
               >
                 <div className="column is-narrow cp-img">
-                  <img
-                    src={previousPost.frontmatter.featuredImage}
+                  <GatsbyImage
+                    image={previousPostImage}
+                    style={{ width: '100%' }}
                     alt={previousPost.frontmatter.titleEN}
                   />
                 </div>

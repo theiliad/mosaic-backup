@@ -9,6 +9,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/static/img`,
+        name: 'img',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/news`,
         name: `news`,
       },
@@ -41,42 +48,50 @@ module.exports = {
         name: `assets`,
       },
     },
-    // `gatsby-plugin-sharp`,
-    // `gatsby-transformer-sharp`,
     'gatsby-plugin-use-query-params',
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-remark-images`,
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        extensions: ['.mdx', '.md'],
-        // a workaround to solve mdx-remark plugin compat issue
-        // https://github.com/gatsbyjs/gatsby/issues/15486
-        plugins: [`gatsby-remark-images`],
-        gatsbyRemarkPlugins: [
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              // [Optional] Include the following fields, use dot notation for nested fields
+              // All fields are included by default
+              include: ['featuredImage'],
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              quality: 80,
+              //   maxWidth: 800,
             },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-          },
-
-          {
-            resolve: `gatsby-remark-smartypants`,
           },
         ],
       },
     },
-	`gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md'],
+        options: {
+          gatsbyRemarkPlugins: [
+            {
+              resolve: `gatsby-remark-images`,
+              options: {
+                quality: 80,
+                // maxWidth: 1200,
+              },
+            },
+          ],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -101,7 +116,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
+              return allMdx.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   data: edge.node.frontmatter.date,
@@ -131,7 +146,7 @@ module.exports = {
                       title
                       date
                     }
-                    html
+                    body
                   }
                 }
               }

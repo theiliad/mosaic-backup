@@ -22,8 +22,8 @@ export const pageQuery = graphql`
         author
         category
         companyName
-		posttype
-		videoID
+        posttype
+        videoID
         panel {
           name
           textEN
@@ -34,8 +34,8 @@ export const pageQuery = graphql`
           image
         }
         sponsors {
-		  image
-		  alt
+          image
+          alt
         }
         moderator {
           name
@@ -48,14 +48,21 @@ export const pageQuery = graphql`
         }
         date
         streamStartDate
-		streamEndDate
-		recap
-		reminderURL
+        streamEndDate
+        recap
+        reminderURL
         bodyEN
         bodyFR
         descriptionEN
         descriptionFR
-        featuredImage
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
         category
         videoID
       }

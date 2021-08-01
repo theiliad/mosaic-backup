@@ -1,2 +1,2 @@
 [build]
-environment = {NODE_VERSION = "14.16.1"}
+environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16.1"}

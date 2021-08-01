@@ -28,7 +28,14 @@ export const pageQuery = graphql`
         bodyFR
         descriptionEN
         descriptionFR
-        featuredImage
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
         category
         primaryVideoVimeoID
         primaryVideoLocalURL

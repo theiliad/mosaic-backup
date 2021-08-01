@@ -67,7 +67,7 @@ div.pages-index {
           overflow: hidden;
           position: relative;
 
-          img {
+          div.gatsby-image-wrapper {
             position: absolute;
             top: 0;
             left: 0;
@@ -75,6 +75,9 @@ div.pages-index {
             display: table;
             width: 100%;
             height: 100%;
+          }
+
+          img {
             @include transition_default;
             -webkit-transform: scale(1);
             transform: scale(1);
@@ -375,13 +378,18 @@ div.pages-thinking {
 
       img {
         margin-bottom: 1em;
+        @include transition_default;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-out;
+        transition: 0.3s ease-out;
       }
 
       div.cp-image {
         overflow: hidden;
         position: relative;
 
-        img {
+        div.gatsby-image-wrapper {
           position: absolute;
           top: 0;
           left: 0;
@@ -389,11 +397,6 @@ div.pages-thinking {
           display: table;
           width: 100%;
           height: 100%;
-          @include transition_default;
-          -webkit-transform: scale(1);
-          transform: scale(1);
-          -webkit-transition: 0.3s ease-out;
-          transition: 0.3s ease-out;
         }
 
         div.cp-arrow {

@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Link, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
@@ -44,33 +46,37 @@ class News extends React.Component {
           <div className="section-cases" style={{ marginTop: '3em' }}>
             <div className="container">
               <div className="columns is-multiline">
-                {caseStudies.map(({ node }, i) => (
-                  <div className="column is-6">
-                    <Link
-                      to={`/${node.fields.slug}`}
-                      className="cp-photo"
-                      style={{ alignSelf: 'flex-end' }}
-                    >
-                      <img
-                        alt={node.frontmatter.titleEN}
-                        src={node.frontmatter.featuredImage}
-                        style={{ width: '100%' }}
-                      />
+                {caseStudies.map(({ node }, i) => {
+                  const image = getImage(node.frontmatter.featuredImage)
 
-                      <svg
-                        viewBox="0 0 2000 1125"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                  return (
+                    <div className="column is-6">
+                      <Link
+                        to={`/${node.fields.slug}`}
+                        className="cp-photo"
+                        style={{ alignSelf: 'flex-end' }}
                       >
-                        <rect width="2000" height="1125" fill="#e8eceb" />
-                      </svg>
-                    </Link>
+                        <GatsbyImage
+                          image={image}
+                          style={{ width: '100%' }}
+                          alt={node.frontmatter.titleEN}
+                        />
 
-                    <Link to={`/${node.fields.slug}`}>
-                      <CaseStudyMeta node={node} />
-                    </Link>
-                  </div>
-                ))}
+                        <svg
+                          viewBox="0 0 2000 1125"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="2000" height="1125" fill="#e8eceb" />
+                        </svg>
+                      </Link>
+
+                      <Link to={`/${node.fields.slug}`}>
+                        <CaseStudyMeta node={node} />
+                      </Link>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -107,7 +113,14 @@ export const pageQuery = graphql`
               companyName
               posttype
               descriptionEN
-              featuredImage
+              featuredImage {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
               category
             }
           }

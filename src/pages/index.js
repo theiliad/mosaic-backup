@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -64,7 +65,7 @@ const updateLogos = () => {
   const heroLogoElement = document.getElementById('cp_hero_logo')
   if (heroLogoElement) {
     const currentLogoIndex = HOME_ANIMATED_LOGOS.findIndex(
-      logo => logo.name === heroLogoElement.getAttribute('data-lname')
+      (logo) => logo.name === heroLogoElement.getAttribute('data-lname')
     )
     const nextLogoIndex =
       currentLogoIndex < HOME_ANIMATED_LOGOS.length - 1
@@ -144,8 +145,8 @@ class BlogIndex extends React.Component {
       const siteLogoElement = document.getElementById('cp_site_logo')
 
       if (heroLogoElement && hiddenHeroLogoElement && siteLogoElement) {
-        const hiddenLogoTopDistance = hiddenHeroLogoElement.getBoundingClientRect()
-          .top
+        const hiddenLogoTopDistance =
+          hiddenHeroLogoElement.getBoundingClientRect().top
         const siteLogoTopDistance = siteLogoElement.getBoundingClientRect().top
 
         const st = window.pageYOffset || document.documentElement.scrollTop
@@ -225,7 +226,7 @@ class BlogIndex extends React.Component {
 
     const caseStudies =
       data.allMdx.group.find(
-        group =>
+        (group) =>
           get(group, 'edges[0].node.frontmatter.posttype') === 'case-study'
       ).edges || []
 
@@ -292,33 +293,37 @@ class BlogIndex extends React.Component {
           <div className="section-cases">
             <div className="container">
               <div className="columns is-multiline">
-                {caseStudies.map(({ node }, i) => (
-                  <div className="column is-6">
-                    <Link
-                      to={`/${node.fields.slug}`}
-                      className="cp-photo"
-                      style={{ alignSelf: 'flex-end' }}
-                    >
-                      <img
-                        src={node.frontmatter.featuredImage}
-                        style={{ width: '100%' }}
-                        alt={node.frontmatter.titleEN}
-                      />
+                {caseStudies.map(({ node }, i) => {
+                  const image = getImage(node.frontmatter.featuredImage)
 
-                      <svg
-                        viewBox="0 0 2000 1125"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                  return (
+                    <div className="column is-6">
+                      <Link
+                        to={`/${node.fields.slug}`}
+                        className="cp-photo"
+                        style={{ alignSelf: 'flex-end' }}
                       >
-                        <rect width="2000" height="1125" fill="#e8eceb" />
-                      </svg>
-                    </Link>
+                        <GatsbyImage
+                          image={image}
+                          style={{ width: '100%' }}
+                          alt={node.frontmatter.titleEN}
+                        />
 
-                    <Link to={`/${node.fields.slug}`}>
-                      <CaseStudyMeta node={node} />
-                    </Link>
-                  </div>
-                ))}
+                        <svg
+                          viewBox="0 0 2000 1125"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="2000" height="1125" fill="#e8eceb" />
+                        </svg>
+                      </Link>
+
+                      <Link to={`/${node.fields.slug}`}>
+                        <CaseStudyMeta node={node} />
+                      </Link>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -390,7 +395,7 @@ class BlogIndex extends React.Component {
               slides={[
                 {
                   src: null,
-                  alt: 'Empty',
+                  alt: 'Empty slide',
                 },
                 {
                   src: ANHEUSER_BUSCH,
@@ -412,7 +417,7 @@ class BlogIndex extends React.Component {
                 { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' },
                 {
                   src: null,
-                  alt: null,
+                  alt: 'Empty slide',
                 },
               ]}
             />
@@ -447,7 +452,14 @@ export const pageQuery = graphql`
               companyName
               posttype
               descriptionEN
-              featuredImage
+              featuredImage {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
               category
             }
           }

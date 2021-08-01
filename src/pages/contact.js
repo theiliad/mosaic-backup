@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'

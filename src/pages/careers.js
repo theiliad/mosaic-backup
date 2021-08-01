@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { StaticImage } from 'gatsby-plugin-image'
+
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
 
@@ -8,8 +10,6 @@ import { Text } from '../containers/Language'
 
 // ICONS
 import { RiArrowRightUpLine } from 'react-icons/ri'
-
-import CAREERS from '../img/careers.jpg'
 
 class Careers extends React.Component {
   render() {
@@ -53,7 +53,11 @@ class Careers extends React.Component {
             </div>
 
             {/* TODO - alt text should be confirmed */}
-            <img src={CAREERS} style={{ width: '100%' }} alt="Careers" />
+            <StaticImage
+              src={'../img/careers.jpg'}
+              style={{ width: '100%' }}
+              alt="Careers"
+            />
           </div>
         </div>
       </Layout>

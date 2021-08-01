@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react'
-import { Link, graphql, navigate } from 'gatsby'
+
+import { Link, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
@@ -50,12 +52,14 @@ const ThinkingItem = ({ node, size }) => {
     itemLink = itemLink + '?playVideo=true'
   }
 
+  const image = getImage(node.frontmatter.featuredImage)
+
   return (
     <Fade key={node.fields.slug} duration={300}>
       <div className={`column thinking-item ${size}`}>
         <Link to={`/${node.fields.slug}`} className="cp-full-link">
           <div className="cp-image">
-            <img src={node.frontmatter.featuredImage} alt={node.frontmatter.titleEN} />
+            <GatsbyImage image={image} alt={node.frontmatter.titleEN} />
 
             <svg
               viewBox="0 0 800 1066.67"
@@ -95,7 +99,7 @@ const ThinkingItem = ({ node, size }) => {
                 <>
                   <span className="cp-play">
                     <a
-                      onClick={e => {
+                      onClick={(e) => {
                         e.preventDefault()
                       }}
                     >
@@ -167,14 +171,14 @@ function Thinking({ data, location }) {
   let allPosts = data.allMdx.edges
 
   let filter = null
-  Object.keys(CATEGORIES.thinking).map(categoryKey => {
+  Object.keys(CATEGORIES.thinking).map((categoryKey) => {
     if (location.pathname.indexOf(`thinking/${categoryKey}`) !== -1) {
       filter = categoryKey
     }
   })
   if (filter) {
     allPosts = allPosts.filter(
-      post => post.node.frontmatter.category === filter
+      (post) => post.node.frontmatter.category === filter
     )
   }
 
@@ -231,7 +235,7 @@ function Thinking({ data, location }) {
                         </Link>
                       </li>
 
-                      {Object.keys(CATEGORIES.thinking).map(categoryKey => (
+                      {Object.keys(CATEGORIES.thinking).map((categoryKey) => (
                         <li className={filter === categoryKey ? 'active' : ''}>
                           <Link to={`/thinking/${categoryKey}`}>
                             <Text
@@ -245,7 +249,7 @@ function Thinking({ data, location }) {
                     <a
                       className="button primary"
                       href="/"
-                      onClick={e => handleSideNavToggle(e, true)}
+                      onClick={(e) => handleSideNavToggle(e, true)}
                     >
                       {filter === null ? (
                         <Text tid="misc.all" />
@@ -292,7 +296,7 @@ function Thinking({ data, location }) {
               <Text tid="misc.all" />
             </Link>
 
-            {Object.keys(CATEGORIES.thinking).map(categoryKey => (
+            {Object.keys(CATEGORIES.thinking).map((categoryKey) => (
               <Link
                 onClick={handleSideNavToggle}
                 to={`/thinking/${categoryKey}`}
@@ -306,7 +310,7 @@ function Thinking({ data, location }) {
         <div className="close">
           <a
             href="/"
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault()
 
               handleSideNavToggle()
@@ -339,7 +343,7 @@ function Thinking({ data, location }) {
             {allPosts.length > page * postsPerPage && (
               <a
                 className="cp-load-more"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault()
 
                   setPage(page + 1)
@@ -381,7 +385,14 @@ export const pageQuery = graphql`
             recap
             titleEN
             titleFR
-            featuredImage
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
             category
           }
         }
