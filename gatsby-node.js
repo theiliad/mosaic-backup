@@ -1,4 +1,5 @@
 const path = require(`path`)
+const webpack = require('webpack')
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -114,9 +115,39 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  const resolveConfigs = {
+    target: 'node',
+    node: {
+      global: true,
+    },
+    resolve: {
+      extensions: ['.tsx', '.ts', '.js', '.json'],
+      fallback: {
+        path: require.resolve('path-browserify'),
+        assert: false,
+      },
+    },
+  }
+
+  if (stage === 'build-javascript' || stage === 'develop') {
+    actions.setWebpackConfig({
+      ...resolveConfigs,
+      plugins: [
+        new webpack.ProvidePlugin({
+          process: 'process/browser',
+          Buffer: ['buffer', 'Buffer'],
+        }),
+      ],
+    })
+  }
+
+  actions.setWebpackConfig(resolveConfigs)
+
   if (stage === 'build-html') {
     actions.setWebpackConfig({
+      target: 'node',
       node: {
+        global: true,
         fs: 'empty',
       },
       module: {
@@ -130,7 +161,9 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     })
   } else {
     actions.setWebpackConfig({
+      target: 'node',
       node: {
+        global: true,
         fs: 'empty',
       },
     })

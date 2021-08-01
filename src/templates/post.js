@@ -1,4 +1,5 @@
 import Post from './post-base'
+import { graphql } from 'gatsby'
 
 export default Post
 

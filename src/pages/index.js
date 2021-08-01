@@ -17,7 +17,6 @@ import CATEGORIES from '../data/categories'
 
 // Assets
 import LOGO_WHITE from '../img/logo/white-outline.svg'
-import HOME_HERO from '../img/home/hero.jpg'
 import HOME_CAPABILITIES from '../img/home/capabilities.jpg'
 import HOME_ONEEIGHTY from '../img/home/oneeighty.jpg'
 
@@ -277,7 +276,7 @@ class BlogIndex extends React.Component {
         <div className="pages-index">
           {/* TODO - alt text should be confirmed */}
           <StaticImage
-            src={HOME_HERO}
+            src={"../img/home/hero.jpg"}
             style={{ width: '100%' }}
             alt="Homepage hero"
           />

@@ -235,27 +235,6 @@ function Post(props) {
                 </MDXProvider> */}
 
                 <MDX
-                  components={{
-                    a: aProps => {
-                      const aText =
-                        get(aProps, 'children.props.parentName') === 'p'
-                          ? get(aProps, 'children.props.children')
-                          : aProps.children
-
-                      return <a {...aProps}>{aText}</a>
-                    },
-                    img: imgProps => (
-                      <div className="cp-el-img">
-                        <img {...imgProps} alt={imgProps.caption} />
-
-                        {imgProps.caption && (
-                          <p className="cp-caption subtitle is-6">
-                            {imgProps.caption}
-                          </p>
-                        )}
-                      </div>
-                    ),
-                  }}
                 >
                   {Text({
                     variations: {
