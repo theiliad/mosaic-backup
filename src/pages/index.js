@@ -112,10 +112,10 @@ export const CaseStudyMeta = ({ node, mobileVersion }) => (
 
 class BlogIndex extends React.Component {
   componentDidMount() {
-    document.addEventListener('scroll', this.trackScrolling)
+    document.addEventListener('scroll', this.trackScrolling, { passive: true })
 
     if (typeof window !== 'undefined') {
-      window.addEventListener('resize', this.trackScrolling)
+      window.addEventListener('resize', this.trackScrolling, { passive: true })
     }
 
     this.updateLogosIntervalID = setInterval(updateLogos, 400)

@@ -80,7 +80,7 @@ function Post(props) {
 
   useEffect(() => {
     if (isThinkingPost) {
-      document.addEventListener('scroll', trackScrolling)
+      document.addEventListener('scroll', trackScrolling, { passive: true })
 
       // will be called on component unmount
       return () => {

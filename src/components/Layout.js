@@ -59,10 +59,10 @@ class Header extends React.Component {
 
   componentDidMount() {
     this.lastScrollTop = null
-    document.addEventListener('scroll', this.trackScrolling)
+    document.addEventListener('scroll', this.trackScrolling, { passive: true })
 
     if (typeof window !== 'undefined') {
-      window.addEventListener('resize', this.trackScrolling)
+      window.addEventListener('resize', this.trackScrolling, { passive: true })
     }
   }
 
@@ -349,7 +349,7 @@ const Layout = props => {
     getVerticalCenterPositionOfElement(el) <= window.innerHeight
 
   useEffect(() => {
-    document.addEventListener('scroll', trackScrolling)
+    document.addEventListener('scroll', trackScrolling, { passive: true })
     trackScrolling()
 
     // returned function will be called on component unmount
