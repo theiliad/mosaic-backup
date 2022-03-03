@@ -7,7 +7,7 @@ date: 2021-01-06T20:35:33.876Z
 descriptionEN: Reimagining a classic with a smart twist.
 descriptionFR: Réinventer un classique avec une touche intelligente.
 category: content-digital
-primaryVideoVimeoID: 449905474
+primaryVideoVimeoID: 401342966
 primaryVideoLocalURL: /img/case-studies/budweiser/hero.mp4
 secondaryVideoVimeoID: 449905474
 secondaryVideoIMG: /img/case-studies/budweiser/spot.jpg

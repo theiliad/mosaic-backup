@@ -190,13 +190,13 @@ class Header extends React.Component {
                     <Text tid="navigation.items.capabilities" />
                   </Link>
 
-                  <Link className="navbar-item link" to="/thinking">
+                  {/* <Link className="navbar-item link" to="/thinking">
                     <Text tid="navigation.items.thinking" />
-                  </Link>
+                  </Link> */}
 
-                  <Link className="navbar-item link" to="/news">
+                  {/* <Link className="navbar-item link" to="/news">
                     <Text tid="navigation.items.news" />
-                  </Link>
+                  </Link> */}
 
                   <Link className="navbar-item link" to="/careers">
                     <Text tid="navigation.items.careers" />
@@ -239,7 +239,7 @@ export const Footer = ({ footerCTA }) => {
                 <div className="columns is-vcentered">
                   <div className="column is-narrow cp-mobile">
                     <div className="columns">
-                      {SOCIAL_LINKS.map(footerSocialLink => (
+                      {SOCIAL_LINKS.map((footerSocialLink) => (
                         <div className="column is-narrow">
                           <a
                             href={footerSocialLink.href}
@@ -253,7 +253,7 @@ export const Footer = ({ footerCTA }) => {
                     </div>
                   </div>
 
-                  {SOCIAL_LINKS.map(footerSocialLink => (
+                  {SOCIAL_LINKS.map((footerSocialLink) => (
                     <div className="column is-narrow cp-wide">
                       <a
                         href={footerSocialLink.href}
@@ -273,7 +273,7 @@ export const Footer = ({ footerCTA }) => {
                           'cp-lang-switcher ' +
                           (userLanguage === 'en' ? 'active' : '')
                         }
-                        onClick={e => {
+                        onClick={(e) => {
                           changeUserLanguage('en')
                         }}
                       >
@@ -285,7 +285,7 @@ export const Footer = ({ footerCTA }) => {
                           'cp-lang-switcher ' +
                           (userLanguage === 'fr' ? 'active' : '')
                         }
-                        onClick={e => {
+                        onClick={(e) => {
                           changeUserLanguage('fr')
                         }}
                       >
@@ -318,7 +318,7 @@ export const Footer = ({ footerCTA }) => {
   )
 }
 
-const Layout = props => {
+const Layout = (props) => {
   const { children, location } = props
 
   const [sideNav, setSideNav] = useState(false)
@@ -345,7 +345,7 @@ const Layout = props => {
 
   const { userLanguage, changeUserLanguage } = useContext(LanguageContext)
 
-  const isBottom = el =>
+  const isBottom = (el) =>
     getVerticalCenterPositionOfElement(el) <= window.innerHeight
 
   useEffect(() => {
@@ -363,7 +363,7 @@ const Layout = props => {
     handlePageBGColor()
   }
 
-  const getVerticalCenterPositionOfElement = element =>
+  const getVerticalCenterPositionOfElement = (element) =>
     element.getBoundingClientRect().bottom -
     (element.getBoundingClientRect().bottom -
       element.getBoundingClientRect().top) /
@@ -373,14 +373,14 @@ const Layout = props => {
     const { backgroundColorsOnScroll } = props
 
     if (backgroundColorsOnScroll) {
-      const divsWithBackgroundColors = Object.keys(
-        backgroundColorsOnScroll
-      ).map(divID => ({
-        color: backgroundColorsOnScroll[divID],
-        element: document.getElementById(divID),
-      }))
+      const divsWithBackgroundColors = Object.keys(backgroundColorsOnScroll)
+        .map((divID) => ({
+          color: backgroundColorsOnScroll[divID],
+          element: document.getElementById(divID),
+        }))
+        .filter((div) => div.element)
 
-      divsWithBackgroundColors.forEach(div => {
+      divsWithBackgroundColors.forEach((div) => {
         div.element.classList.remove('scroll-focused')
 
         const previousSibling = div.element.previousSibling
@@ -395,7 +395,7 @@ const Layout = props => {
         }
       })
 
-      const scrolledElements = divsWithBackgroundColors.filter(div =>
+      const scrolledElements = divsWithBackgroundColors.filter((div) =>
         isBottom(div.element)
       )
 
@@ -444,7 +444,7 @@ const Layout = props => {
             zIndex: 100000000,
             borderRadius: 0,
           }}
-          onClick={e => {
+          onClick={(e) => {
             changeUserLanguage(userLanguage === 'en' ? 'fr' : 'en')
           }}
         >
@@ -477,7 +477,7 @@ const Layout = props => {
               <div className="column close-wrapper">
                 <div className="close">
                   <a
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault()
 
                       handleSideNavToggle()
@@ -501,13 +501,14 @@ const Layout = props => {
                 <Text tid="navigation.items.capabilities" />
               </Link>
 
+              {/* 
               <Link to={`/thinking`} onClick={handleSideNavToggle}>
                 <Text tid="navigation.items.thinking" />
-              </Link>
+              </Link> */}
 
-              <Link to={`/news`} onClick={handleSideNavToggle}>
+              {/* <Link to={`/news`} onClick={handleSideNavToggle}>
                 <Text tid="navigation.items.news" />
-              </Link>
+              </Link> */}
 
               <Link to={`/careers`} onClick={handleSideNavToggle}>
                 <Text tid="navigation.items.careers" />
@@ -518,7 +519,7 @@ const Layout = props => {
               </Link>
 
               <div className="social-links">
-                {SOCIAL_LINKS.map(footerSocialLink => (
+                {SOCIAL_LINKS.map((footerSocialLink) => (
                   <a
                     href={footerSocialLink.href}
                     target="_blank"

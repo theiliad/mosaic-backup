@@ -7,7 +7,7 @@ date: 2021-01-05T20:35:33.876Z
 descriptionEN: Bringing the stadium experience home
 descriptionFR: Une expérience du stade à la maison
 category: experiential-marketing
-primaryVideoVimeoID: 449905474
+primaryVideoVimeoID: 668405645
 primaryVideoLocalURL: /img/case-studies/stella/hero.mp4
 featuredImage: /img/case-studies/stella/hero.jpg
 bodyEN: >-

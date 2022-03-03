@@ -145,8 +145,8 @@ class BlogIndex extends React.Component {
       const siteLogoElement = document.getElementById('cp_site_logo')
 
       if (heroLogoElement && hiddenHeroLogoElement && siteLogoElement) {
-        const hiddenLogoTopDistance =
-          hiddenHeroLogoElement.getBoundingClientRect().top
+        const hiddenLogoTopDistance = hiddenHeroLogoElement.getBoundingClientRect()
+          .top
         const siteLogoTopDistance = siteLogoElement.getBoundingClientRect().top
 
         const st = window.pageYOffset || document.documentElement.scrollTop
@@ -271,11 +271,11 @@ class BlogIndex extends React.Component {
 
         <div className="pages-index">
           {/* TODO - alt text should be confirmed */}
-          <StaticImage
+          {/* <StaticImage
             src={'../img/home/hero.jpg'}
             style={{ width: '100%' }}
             alt="Homepage hero"
-          />
+          /> */}
 
           <div className="section-why">
             <div className="container">
@@ -356,7 +356,7 @@ class BlogIndex extends React.Component {
             </div>
           </div>
 
-          <div className="section-writeup2" id="home-writeup2">
+          {/* <div className="section-writeup2" id="home-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-6-tablet is-6-desktop is-5-widescreen is-5-fullhd">
@@ -373,16 +373,15 @@ class BlogIndex extends React.Component {
                 <div className="column is-1-tablet is-1-desktop is-2-widescreen is-2-fullhd"></div>
 
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <StaticImage
                     src={'../img/home/oneeighty.jpg'}
                     className="image-below"
-                    alt="OneEighty"
+                    alt="OneEighty - TODO"
                   />
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="section-partners">
             <div className="container">
