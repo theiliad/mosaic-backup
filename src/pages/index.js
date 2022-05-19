@@ -145,8 +145,8 @@ class BlogIndex extends React.Component {
       const siteLogoElement = document.getElementById('cp_site_logo')
 
       if (heroLogoElement && hiddenHeroLogoElement && siteLogoElement) {
-        const hiddenLogoTopDistance = hiddenHeroLogoElement.getBoundingClientRect()
-          .top
+        const hiddenLogoTopDistance =
+          hiddenHeroLogoElement.getBoundingClientRect().top
         const siteLogoTopDistance = siteLogoElement.getBoundingClientRect().top
 
         const st = window.pageYOffset || document.documentElement.scrollTop
