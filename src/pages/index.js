@@ -382,45 +382,6 @@ class BlogIndex extends React.Component {
               </div>
             </div>
           </div> */}
-
-          <div className="section-partners">
-            <div className="container">
-              <h3>
-                <Text tid="pages.index.ourPartners" />
-              </h3>
-            </div>
-
-            <Carousel
-              slides={[
-                {
-                  src: null,
-                  alt: 'Empty slide',
-                },
-                {
-                  src: ANHEUSER_BUSCH,
-                  alt: 'Anheuser-Busch',
-                },
-                { src: STARBUCKS, alt: 'Starbucks' },
-                { src: SAMSUNG, alt: 'Samsung' },
-                { src: GOOGLE, alt: 'Google' },
-                { src: IMPOSSIBLE, alt: 'Impossible' },
-                { src: LABATT, alt: 'Labatt' },
-                { src: LOBLAWS, alt: 'Loblaws' },
-                { src: SHOPPERS_DRUG_MART, alt: 'Shoppers Drug Mart' },
-                { src: MACKENZIE_INVESTMENTS, alt: 'Mackenzie Investments' },
-                { src: DR_OETKER, alt: 'Dr. Oetker' },
-                { src: IG_WEALTH_MANAGEMENT, alt: 'IG Wealth Management' },
-                { src: KRAFT_HEINZ, alt: 'Kraft Heinz' },
-                { src: GENERAL_MILLS, alt: 'General Mills' },
-                { src: RBC, alt: 'RBC' },
-                { src: TISHMAN_SPEYER, alt: 'Tishman Speyer' },
-                {
-                  src: null,
-                  alt: 'Empty slide',
-                },
-              ]}
-            />
-          </div>
         </div>
       </Layout>
     )
