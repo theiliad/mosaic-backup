@@ -6,7 +6,7 @@ export default {
   footerCTAs: {
     letsChat: {
       en: "Let's chat",
-      fr: "Discutons-en.",
+      fr: 'Discutons-en.',
     },
     instagram: {
       text: {
@@ -100,9 +100,8 @@ export default {
       en: 'Thinking',
       fr: 'Réflexion',
       oneEightyDescription: {
-        en:
-          'OneEighty is our digital conference that is flipping the script to rewrite the future of culture, commerce and creativity.',
-        fr: 'OneEighty est notre conférence numérique visant à réécrire l’avenir de la culture, du commerce et de la créativité.'
+        en: 'OneEighty is our digital conference that is flipping the script to rewrite the future of culture, commerce and creativity.',
+        fr: 'OneEighty est notre conférence numérique visant à réécrire l’avenir de la culture, du commerce et de la créativité.',
       },
     },
     loadMore: {
@@ -204,10 +203,8 @@ export default {
       },
       capabilities: {
         body: {
-          en:
-            'To effectively drive conversion, we assess every business challenge through six specialized capabilities.',
-          fr:
-            'Pour favoriser efficacement la conversion, nous évaluons chaque défi commercial à travers six compétences spécialisées.',
+          en: 'To effectively drive conversion, we assess every business challenge through six specialized capabilities.',
+          fr: 'Pour favoriser efficacement la conversion, nous évaluons chaque défi commercial à travers six compétences spécialisées.',
         },
         cta: {
           en: 'Explore our capabilities',
@@ -216,10 +213,8 @@ export default {
       },
       oneEighty: {
         body: {
-          en:
-            'We love a good challenge and when we get one, we look at it with a 180 view. It’s why we created the OneEighty conference to analyze the future of culture, commerce and creativity from all angles.',
-          fr:
-            'Nous adorons les défis et quand l’un d’entre eux se présente à nous, nous l’abordons à 180 degrés. C’est pourquoi nous avons créé la conférence OneEighty pour analyser l’avenir de la culture, du commerce et de la créativité sous tous les angles.',
+          en: 'We love a good challenge and when we get one, we look at it with a 180 view. It’s why we created the OneEighty conference to analyze the future of culture, commerce and creativity from all angles.',
+          fr: 'Nous adorons les défis et quand l’un d’entre eux se présente à nous, nous l’abordons à 180 degrés. C’est pourquoi nous avons créé la conférence OneEighty pour analyser l’avenir de la culture, du commerce et de la créativité sous tous les angles.',
         },
         cta: {
           en: 'See OneEighty streams',
@@ -227,21 +222,17 @@ export default {
         },
       },
       ourPartners: {
-          en:
-            'Our partners',
-          fr:
-            'Nos partenaires',
-        },
+        en: 'Our partners',
+        fr: 'Nos partenaires',
+      },
     },
     capabilities: {
       title: {
         en: 'Capabilities',
         fr: 'Compétences',
         text: {
-          en:
-            'We see every touchpoint as an opportunity to strengthen a brand’s purpose and drive purchase simultaneously.',
-          fr:
-            'Nous considérons chaque point de contact comme une opportunité de renforcer l’objectif de la marque et de simultanément stimuler l’achat.',
+          en: 'We see every touchpoint as an opportunity to strengthen a brand’s purpose and drive purchase simultaneously.',
+          fr: 'Nous considérons chaque point de contact comme une opportunité de renforcer l’objectif de la marque et de simultanément stimuler l’achat.',
         },
       },
       content_digital: {
@@ -250,10 +241,8 @@ export default {
           fr: 'Contenu et numérique',
         },
         text: {
-          en:
-            'We tell brand stories through purposeful content that drives connection, conversation and conversion. We also integrate our digital and media teams to ensure the message reaches the right people to produce the right results.',
-          fr:
-            'Nous racontons l’histoire de chaque marque à travers un contenu ciblé favorisant la connexion, la discussion et la conversion. Nous intégrons également nos équipes numériques et médias pour nous assurer que le message parvient aux bonnes personnes, avec pour objectif de produire les meilleurs résultats possibles.',
+          en: 'We tell brand stories through purposeful content that drives connection, conversation and conversion. We also integrate our digital and media teams to ensure the message reaches the right people to produce the right results.',
+          fr: 'Nous racontons l’histoire de chaque marque à travers un contenu ciblé favorisant la connexion, la discussion et la conversion. Nous intégrons également nos équipes numériques et médias pour nous assurer que le message parvient aux bonnes personnes, avec pour objectif de produire les meilleurs résultats possibles.',
         },
         cta: {
           en: 'View Budweiser’s case study',
@@ -266,10 +255,8 @@ export default {
           fr: 'Marketing expérientiel',
         },
         text: {
-          en:
-            'With over 30 years of experience in building effective, captivating brand experiences, our capabilities and track record are unmatched. We’re fascinated by the power of human connection and culture, and it’s what drives us to create deeper meaning through experiences that immerse, inform and illuminate brand value.',
-          fr:
-            'Après plus de 30 ans d’expertise dans l’univers de la création d’expériences de marque efficaces et captivantes, nos compétences et nos antécédents sont inégalables sur le marché. Nous sommes fascinés par le pouvoir du contact humain et de la culture, et c’est ce qui nous pousse à toujours créer un sentiment plus profond à nos campagnes, grâce à des expériences qui immergent, informent et éclairent les valeurs de la marque.',
+          en: 'With over 30 years of experience in building effective, captivating brand experiences, our capabilities and track record are unmatched. We’re fascinated by the power of human connection and culture, and it’s what drives us to create deeper meaning through experiences that immerse, inform and illuminate brand value.',
+          fr: 'Après plus de 30 ans d’expertise dans l’univers de la création d’expériences de marque efficaces et captivantes, nos compétences et nos antécédents sont inégalables sur le marché. Nous sommes fascinés par le pouvoir du contact humain et de la culture, et c’est ce qui nous pousse à toujours créer un sentiment plus profond à nos campagnes, grâce à des expériences qui immergent, informent et éclairent les valeurs de la marque.',
         },
         cta: {
           en: 'View Stella’s case study',
@@ -282,10 +269,8 @@ export default {
           fr: 'Vente au détail et commerce',
         },
         text: {
-          en:
-            'We know the path to purchase is no longer linear - and it’s never been more true for in-store and online marketing. We make shopping more human by guiding consumers to brands they’ll love with a compelling creative concept, standout visuals, easier navigation, and helpful interactions.',
-          fr:
-            'Nous savons que le commerce n’est plus linéaire — et cela n’a jamais été aussi vrai pour le marketing en magasin et en ligne. Nous rendons les achats plus humains en guidant les consommateurs vers les marques qu’ils apprendront à adorer grâce à un concept créatif convaincant, des visuels percutants, une navigation plus facile et des interactions pertinentes.',
+          en: 'We know the path to purchase is no longer linear - and it’s never been more true for in-store and online marketing. We make shopping more human by guiding consumers to brands they’ll love with a compelling creative concept, standout visuals, easier navigation, and helpful interactions.',
+          fr: 'Nous savons que le commerce n’est plus linéaire — et cela n’a jamais été aussi vrai pour le marketing en magasin et en ligne. Nous rendons les achats plus humains en guidant les consommateurs vers les marques qu’ils apprendront à adorer grâce à un concept créatif convaincant, des visuels percutants, une navigation plus facile et des interactions pertinentes.',
         },
         cta: {
           en: 'View Google’s case study',
@@ -298,10 +283,8 @@ export default {
           fr: 'B2B',
         },
         text: {
-          en:
-            'Whether it’s a large-scale conference, corporate event or employee engagement program, our B2B team delves deep beneath the surface to deliver business-to-business experiences that are creatively driven and executionally sound.',
-          fr: 
-            'Qu’il s’agisse d’une conférence à grande échelle, d’un événement d’entreprise ou d’un programme d’engagement des employés, notre équipe B2B n’hésite pas à tout analyser en profondeur pour offrir des expériences interentreprises créatives et efficaces.',
+          en: 'Whether it’s a large-scale conference, corporate event or employee engagement program, our B2B team delves deep beneath the surface to deliver business-to-business experiences that are creatively driven and executionally sound.',
+          fr: 'Qu’il s’agisse d’une conférence à grande échelle, d’un événement d’entreprise ou d’un programme d’engagement des employés, notre équipe B2B n’hésite pas à tout analyser en profondeur pour offrir des expériences interentreprises créatives et efficaces.',
         },
         cta: {
           en: `View Loblaw's case study`,
@@ -314,10 +297,8 @@ export default {
           fr: 'Vente et formation assistées',
         },
         text: {
-          en:
-            'When a business ventures to new heights, we can help by closing the knowledge gap with our own omnichannel approach or by training your employees to acquire new marketing skills. You can think of us as additional limbs in your strategy.',
-          fr:
-            'Lorsqu’une entreprise vise des objectifs plus ambitieux, nous pouvons l’aider à développer des connaissances grâce à notre approche omnicanal ou en formant ses employés à acquérir de nouvelles compétences en marketing. Considérez-nous comme des alliés dans votre stratégie.',
+          en: 'When a business ventures to new heights, we can help by closing the knowledge gap with our own omnichannel approach or by training your employees to acquire new marketing skills. You can think of us as additional limbs in your strategy.',
+          fr: 'Lorsqu’une entreprise vise des objectifs plus ambitieux, nous pouvons l’aider à développer des connaissances grâce à notre approche omnicanal ou en formant ses employés à acquérir de nouvelles compétences en marketing. Considérez-nous comme des alliés dans votre stratégie.',
         },
         cta: {
           en: 'View Digital Main Street’s case study',
@@ -330,10 +311,8 @@ export default {
           fr: 'Développement et conception de marque',
         },
         text: {
-          en:
-            'We’re proud to have one of North America’s largest creative and design departments with award-winning, channel-agnostic thinkers and creators who take big ideas from concept to execution. Flawlessly.',
-          fr:
-            'Nous sommes fiers d’avoir l’un des plus grands départements de création et de design d’Amérique du Nord, avec des penseurs et des créateurs distingués et indépendants d’esprit qui donnent vie au projet de l’idée jusqu’à l’exécution. Parfaitement.',
+          en: 'We’re proud to have one of North America’s largest creative and design departments with award-winning, channel-agnostic thinkers and creators who take big ideas from concept to execution. Flawlessly.',
+          fr: 'Nous sommes fiers d’avoir l’un des plus grands départements de création et de design d’Amérique du Nord, avec des penseurs et des créateurs distingués et indépendants d’esprit qui donnent vie au projet de l’idée jusqu’à l’exécution. Parfaitement.',
         },
         cta: {
           en: 'View Tishman Speyer’s case study',
@@ -347,9 +326,8 @@ export default {
         fr: 'Nous évoluons, à la fois dans ce que nous faisons et où nous en sommes.',
       },
       description: {
-        en:
-          'We’re also big fans of fresh talent in both different spaces and places.',
-        fr: 'Nous sommes toujours à la recherche de nouveaux talents dans différents domaines et lieux.'
+        en: 'We’re also big fans of fresh talent in both different spaces and places.',
+        fr: 'Nous sommes toujours à la recherche de nouveaux talents dans différents domaines et lieux.',
       },
       cta: {
         en: 'View open roles',
@@ -359,17 +337,17 @@ export default {
     contact: {
       title: {
         en: (
-          <>  
-          Hi. Hello. {` `}
-          <br />
-          Bonjour. Howdy.
+          <>
+            Hi. Hello. {` `}
+            <br />
+            Bonjour. Howdy.
           </>
         ),
         fr: (
-          <>  
-          Allo. Bonjour. {` `}
-          <br />
-          Salut.
+          <>
+            Allo. Bonjour. {` `}
+            <br />
+            Salut.
           </>
         ),
       },
@@ -453,7 +431,7 @@ export default {
           },
           phoneNumberIsInvalid: {
             en: 'Please enter a valid phone number',
-            fr: 'FRFPO,'
+            fr: 'FRFPO,',
           },
           messageIsRequired: {
             en: 'Please write a message!',
@@ -544,14 +522,16 @@ export default {
           en: (
             <>
               <p>
-                Sent! Thanks for the message. We’ll get back to you as soon as we can.
+                Sent! Thanks for the message. We’ll get back to you as soon as
+                we can.
               </p>
             </>
           ),
           fr: (
             <>
               <p>
-              Envoyé ! Merci pour votre message. Nous vous répondrons dès que possible.
+                Envoyé ! Merci pour votre message. Nous vous répondrons dès que
+                possible.
               </p>
             </>
           ),
@@ -571,25 +551,23 @@ export default {
         en: (
           <>
             <p>
-            Sorry, it looks like you broke the internet. <br />
-            Luckily, we can help you fix it.
+              Sorry, it looks like you broke the internet. <br />
+              Luckily, we can help you fix it.
             </p>
           </>
         ),
         fr: (
           <>
             <p>
-            Désolé, on dirait que vous avez un problème. <br />
-            Heureusement, nous pouvons vous aider à le résoudre.
+              Désolé, on dirait que vous avez un problème. <br />
+              Heureusement, nous pouvons vous aider à le résoudre.
             </p>
           </>
         ),
       },
       cta: {
-          en:
-            'Go home',
-          fr:
-            'Aller à l’accueil',
+        en: 'Go home',
+        fr: 'Aller à l’accueil',
       },
     },
     privacy: {
