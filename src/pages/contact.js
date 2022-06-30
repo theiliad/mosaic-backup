@@ -55,31 +55,6 @@ const CONTACTS = {
       link: 'https://goo.gl/maps/mUqWvoGd94WDh2iY8',
     },
     {
-      name: 'Bentonville',
-      number: '479.268.2775',
-      address: (
-        <>
-          4204 S. Pinnacle Hills Pkwy <br />
-          Suite 101 <br />
-          Rogers, AR 72758
-        </>
-      ),
-      link: 'https://goo.gl/maps/UZwCaAmLP6uC8McGA',
-    },
-    {
-      name: 'Norwalk',
-      description: 'FrontLine Marketing',
-      number: '203.662.5252',
-      address: (
-        <>
-          383 Main Avenue <br />
-          6th Floor <br />
-          Norwalk, CT 06851
-        </>
-      ),
-      link: 'https://goo.gl/maps/eJ8bGtrxC5h2tTAn7',
-    },
-    {
       name: 'Jacksonville',
       description: 'Mosaic Pro',
       number: '904.470.4196',
@@ -478,7 +453,7 @@ function Contact({ data, location }) {
               </h3>
 
               <h5>
-                <Text tid="misc.countries.usa" />
+                <Text tid="misc.offices" />
               </h5>
 
               <div className="columns is-multiline">
@@ -488,10 +463,6 @@ function Contact({ data, location }) {
                   </div>
                 ))}
               </div>
-
-              <h5 className="cp-2nd-h5">
-                <Text tid="misc.countries.canada" />
-              </h5>
 
               <div className="columns is-multiline">
                 {CONTACTS.CANADA.map((contact) => (
@@ -508,7 +479,7 @@ function Contact({ data, location }) {
               </h3>
 
               <h5>
-                <Text tid="misc.countries.usa" />
+                <Text tid="misc.offices" />
               </h5>
 
               <Accordion allowZeroExpanded={true}>
@@ -516,10 +487,6 @@ function Contact({ data, location }) {
                   <ContactAccordionItem contact={contact} />
                 ))}
               </Accordion>
-
-              <h5 className="cp-2nd-h5">
-                <Text tid="misc.countries.canada" />
-              </h5>
 
               <Accordion allowZeroExpanded={true}>
                 {CONTACTS.CANADA.map((contact) => (

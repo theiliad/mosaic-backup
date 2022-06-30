@@ -1364,6 +1364,10 @@ export default {
       en: 'Cancel',
       fr: 'Annuler',
     },
+    offices: {
+      en: 'Main Offices',
+      fr: 'Bureaux Principaux',
+    },
     countries: {
       canada: {
         en: 'Canada',
