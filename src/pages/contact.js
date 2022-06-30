@@ -151,12 +151,12 @@ function Contact({ data, location }) {
 
       // Submit to Netlify
       axios(axiosOptions)
-        .then(response => {
+        .then((response) => {
           setLoading(false)
           setSuccess(true)
           setError(false)
         })
-        .catch(err => {
+        .catch((err) => {
           setLoading(false)
           setError(true)
         })
@@ -332,7 +332,7 @@ function Contact({ data, location }) {
 
       <div className="cp-contacts">
         <div className="cp-wide">
-          {HERO_CONTACTS.map(contact => (
+          {HERO_CONTACTS.map((contact) => (
             <div className="columns is-mobile">
               <div className="column is-4">
                 <p>
@@ -355,7 +355,7 @@ function Contact({ data, location }) {
 
         <div className="cp-mobile">
           <Accordion allowZeroExpanded={true}>
-            {HERO_CONTACTS.map(contact => (
+            {HERO_CONTACTS.map((contact) => (
               <HeroContactAccordionItem contact={contact} />
             ))}
           </Accordion>
@@ -482,7 +482,7 @@ function Contact({ data, location }) {
               </h5>
 
               <div className="columns is-multiline">
-                {CONTACTS.USA.map(contact => (
+                {CONTACTS.USA.map((contact) => (
                   <div className="column is-4 cp-contact">
                     <Contact contact={contact} />
                   </div>
@@ -494,7 +494,7 @@ function Contact({ data, location }) {
               </h5>
 
               <div className="columns is-multiline">
-                {CONTACTS.CANADA.map(contact => (
+                {CONTACTS.CANADA.map((contact) => (
                   <div className="column is-4 cp-contact">
                     <Contact contact={contact} />
                   </div>
@@ -512,7 +512,7 @@ function Contact({ data, location }) {
               </h5>
 
               <Accordion allowZeroExpanded={true}>
-                {CONTACTS.USA.map(contact => (
+                {CONTACTS.USA.map((contact) => (
                   <ContactAccordionItem contact={contact} />
                 ))}
               </Accordion>
@@ -522,7 +522,7 @@ function Contact({ data, location }) {
               </h5>
 
               <Accordion allowZeroExpanded={true}>
-                {CONTACTS.CANADA.map(contact => (
+                {CONTACTS.CANADA.map((contact) => (
                   <ContactAccordionItem contact={contact} />
                 ))}
               </Accordion>
@@ -559,7 +559,7 @@ function Contact({ data, location }) {
                       >
                         <input type="hidden" name="form-name" value="contact" />
 
-                        {formItems.map(formItem => (
+                        {formItems.map((formItem) => (
                           <>
                             <label for={formItem.name}>{formItem.name}</label>
 
@@ -570,7 +570,7 @@ function Contact({ data, location }) {
                             {formItem.type === 'select' && (
                               <div class="select">
                                 <select id={formItem.name} name={formItem.name}>
-                                  {formItem.items.map(item => (
+                                  {formItem.items.map((item) => (
                                     <option>
                                       {getText({
                                         tid: item.value,
@@ -596,7 +596,6 @@ function Contact({ data, location }) {
                       <FormValidation
                         onSubmit={handleSubmit}
                         config={config}
-                        onSubmit={handleSubmit}
                         initialValues={{
                           subject: 'general-inquiries',
                         }}
@@ -604,7 +603,7 @@ function Contact({ data, location }) {
                         {({ fields, errors, submitted }) => (
                           <>
                             <div>
-                              {formItems.map(formItem => (
+                              {formItems.map((formItem) => (
                                 <div
                                   className="field"
                                   key={`formItem-${formItem.name}`}
@@ -616,8 +615,7 @@ function Contact({ data, location }) {
                                     {formItem.title +
                                       (!config[formItem.name].isRequired
                                         ? ` (${getText({
-                                            tid:
-                                              'pages.contact.formItems.optional',
+                                            tid: 'pages.contact.formItems.optional',
                                             dictionary,
                                             userLanguage,
                                           })})`
@@ -647,7 +645,7 @@ function Contact({ data, location }) {
                                           id={`mc-${formItem.name}`}
                                           name={formItem.name}
                                         >
-                                          {formItem.items.map(item => (
+                                          {formItem.items.map((item) => (
                                             <option>
                                               {getText({
                                                 tid: item.value,
@@ -713,7 +711,7 @@ function Contact({ data, location }) {
                       <a
                         href="/"
                         className="button primary"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault()
 
                           if (typeof window !== undefined) {
