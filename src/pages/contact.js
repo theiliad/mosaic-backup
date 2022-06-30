@@ -33,7 +33,7 @@ const CONTACTS = {
   USA: [
     {
       name: 'Dallas',
-      number: '877.870.4800',
+      number: '312.526.3126',
       address: (
         <>
           220 East Las Colinas Blvd <br />
@@ -57,7 +57,7 @@ const CONTACTS = {
     {
       name: 'Jacksonville',
       description: 'Mosaic Pro',
-      number: '904.470.4196',
+      number: '312.526.3126',
       address: (
         <>
           8500 Baycenter Road <br />
@@ -83,7 +83,7 @@ const CONTACTS = {
     },
     {
       name: 'Missisauga',
-      number: '905.238.8422',
+      number: '647.100.1000',
       address: (
         <>
           2700 Matheson Blvd East <br />
@@ -95,7 +95,7 @@ const CONTACTS = {
     },
     {
       name: 'Montreal',
-      number: '514.228.8950',
+      number: '647.100.1000',
       address: (
         <>
           2075, Boulevard Robert-Bourassa <br />
