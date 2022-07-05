@@ -266,7 +266,7 @@ export const Footer = ({ footerCTA }) => {
                   ))}
 
                   <div className="column right-links">
-                    <div className="last">© Mosaic 2020</div>
+                    <div className="last">© Mosaic 2022</div>
                     <div className="cp-lang-switcher">
                       <a
                         className={

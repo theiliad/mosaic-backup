@@ -7,7 +7,7 @@ const { groupBy } = require('lodash')
 
 const CATEGORIES = require('./src/data/categories')
 
-const getNodePrefix = (postType) => {
+const getNodePrefix = postType => {
   let prefix = ''
   if (postType === 'news') {
     prefix = 'news'
@@ -23,16 +23,16 @@ const getNodePrefix = (postType) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  //   const ThinkingPage = path.resolve(`./src/pages/thinking.js`)
-  //   Object.keys(CATEGORIES.thinking).map(categoryKey => {
-  //     createPage({
-  //       path: `/thinking/${categoryKey}`,
-  //       component: ThinkingPage,
-  //     })
-  //   })
+  const ThinkingPage = path.resolve(`./src/pages/thinking.js`)
+  Object.keys(CATEGORIES.thinking).map(categoryKey => {
+    createPage({
+      path: `/thinking/${categoryKey}`,
+      component: ThinkingPage,
+    })
+  })
 
   const postTemplate = path.resolve(`./src/templates/post.js`)
-  //   const thinkingPostTemplate = path.resolve(`./src/templates/thinking-post.js`)
+  const thinkingPostTemplate = path.resolve(`./src/templates/thinking-post.js`)
   return graphql(
     `
       {
@@ -69,7 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then((result) => {
+  ).then(result => {
     if (result.errors) {
       throw result.errors
     }
@@ -78,31 +78,28 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMdx.edges
     const postsGroupedByPosttype = groupBy(
       posts,
-      (post) => post.node.frontmatter.posttype
+      post => post.node.frontmatter.posttype
     )
 
-    Object.keys(postsGroupedByPosttype).forEach((postType) => {
-      if (['news', 'thinking'].indexOf(postType) === -1) {
-        const posts = postsGroupedByPosttype[postType]
-        posts.forEach((post, index) => {
-          const previous =
-            index === posts.length - 1 ? posts[0].node : posts[index + 1].node
-          const next = index === 0 ? null : posts[index - 1].node
+    Object.keys(postsGroupedByPosttype).forEach(postType => {
+      const posts = postsGroupedByPosttype[postType]
+      posts.forEach((post, index) => {
+        const previous =
+          index === posts.length - 1 ? posts[0].node : posts[index + 1].node
+        const next = index === 0 ? null : posts[index - 1].node
 
-          const prefix = getNodePrefix(postType)
-          createPage({
-            path: post.node.fields.slug,
-            //   component:
-            //     postType === 'thinking' ? thinkingPostTemplate : postTemplate,
-            component: postTemplate,
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          })
+        const prefix = getNodePrefix(postType)
+        createPage({
+          path: post.node.fields.slug,
+          component:
+            postType === 'thinking' ? thinkingPostTemplate : postTemplate,
+          context: {
+            slug: post.node.fields.slug,
+            previous,
+            next,
+          },
         })
-      }
+      })
     })
   })
 }
