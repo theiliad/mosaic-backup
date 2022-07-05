@@ -24,6 +24,17 @@ footer {
   color: $colors_white;
   padding: 8em 0 0;
 
+  ::-moz-selection {
+	color: $colors_white;
+	background: $colors_red_primary;
+  }
+  
+  ::selection {
+	color: $colors_white;
+	background: $colors_red_primary;
+  }
+  
+
   @media screen and (max-width: 768px) {
     height: 37em;
   }
@@ -76,7 +87,7 @@ footer {
     a {
       color: $colors_white;
       padding-bottom: 0.15em;
-      border-bottom: 1px solid;
+      border-bottom: 2px solid;
       @include transition_default;
 
       svg {
@@ -85,7 +96,7 @@ footer {
 
       &:hover {
         color: $colors_orange_primary;
-        border-bottom: 1px solid;
+        border-bottom: 2px solid;
 
         svg {
           color: $colors_orange_primary;
