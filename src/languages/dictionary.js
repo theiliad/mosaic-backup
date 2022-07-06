@@ -364,36 +364,12 @@ export default {
         },
         contacts: {
           newBusinessUS: {
-            en: (
-              <>
-                New business{` `}
-                <br />
-                U.S.
-              </>
-            ),
-            fr: (
-              <>
-                Nouvelles entreprises{` `}
-                <br />
-                aux États-Unis
-              </>
-            ),
+            en: <>New business U.S.</>,
+            fr: <>Nouvelles entreprises aux États-Unis</>,
           },
           newBusinessCanada: {
-            en: (
-              <>
-                New business{` `}
-                <br />
-                Canada
-              </>
-            ),
-            fr: (
-              <>
-                Nouvelles entreprises{` `}
-                <br />
-                au Canada
-              </>
-            ),
+            en: <>New business Canada</>,
+            fr: <>Nouvelles entreprises au Canada</>,
           },
           mediaInquiries: {
             en: 'Media inquiries',
@@ -402,6 +378,10 @@ export default {
           general: {
             en: 'General inquiries',
             fr: 'Renseignements généraux',
+          },
+          employee: {
+            en: 'Employee services',
+            fr: 'Services aux employés',
           },
         },
       },

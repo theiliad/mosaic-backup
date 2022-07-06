@@ -270,6 +270,10 @@ function Contact({ data, location }) {
       titleTID: 'pages.contact.meta.contacts.general',
       email: 'Info@mosaic.com',
     },
+    {
+      titleTID: 'pages.contact.meta.contacts.employee',
+      email: 'employeeservices@acosta.com',
+    },
   ]
 
   const HeroContactAccordionItem = ({ contact }) => (
@@ -318,8 +322,6 @@ function Contact({ data, location }) {
               </div>
 
               <div className="column is-7">
-                {contact.name && <p>{contact.name}</p>}
-
                 <p>
                   <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 </p>
