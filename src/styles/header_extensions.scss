@@ -271,7 +271,7 @@
   }
 
   &.news {
-	padding: 9em 0 0 0;
+    padding: 9em 0 0 0;
   }
 
   &.thinking {
@@ -338,7 +338,7 @@
           }
 
           &.active {
-            border-bottom: 2px solid;
+            border-bottom: 2px solid $colors_blue_primary;
             @include transition_default;
 
             a {
