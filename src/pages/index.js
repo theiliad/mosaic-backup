@@ -99,13 +99,12 @@ export const CaseStudyMeta = ({ node, mobileVersion }) => {
 
             <div className="column columns is-12">
               <p className="cp-description">
-                {/* <Text
-            variations={{
-              en: node.frontmatter.contentEN,
-              fr: node.frontmatter.contentFR,
-            }}
-          /> */}
-                BLAH BLAH BLAH... OK BLAH BLAH BLAH BLAH!!!! ????????
+                <Text
+                  variations={{
+                    en: node.frontmatter.contentEN,
+                    fr: node.frontmatter.contentFR,
+                  }}
+                />
               </p>
             </div>
           </p>
@@ -435,6 +434,8 @@ export const pageQuery = graphql`
             frontmatter {
               titleEN
               titleFR
+              contentEN
+              contentFR
               date
               companyName
               posttype

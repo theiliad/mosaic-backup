@@ -2,6 +2,8 @@
 posttype: case-study
 titleEN: International Square
 titleFR: International Square
+contentEN: How rebranding and repositioning attracted new audiences.
+contentFR: Comment le rebranding et le repositionnement ont attiré de nouveaux publics.
 companyName: Tishman Speyer
 date: 2021-01-01T20:35:33.876Z
 descriptionEN: Reimagining, repositioning, rebranding.
@@ -36,7 +38,7 @@ bodyFR: >-
 
 
   Pour présenter le tout, nous avons exposé les nouveautés sur un microsite, des panneaux publicitaires, des brochures et même jusqu’à la création de nouvelles cartes professionnelles très chics.
-  
+
 
     ![International Square Books](/img/case-studies/tishman-speyer/international-square-books.jpg)
     ![International Square Outdoor](/img/case-studies/tishman-speyer/international-square-outdoor.jpg)

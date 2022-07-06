@@ -100,6 +100,8 @@ export const pageQuery = graphql`
             date
             titleEN
             titleFR
+            contentEN
+            contentFR
           }
         }
       }

@@ -2,6 +2,8 @@
 posttype: case-study
 titleEN: Pixelville
 titleFR: Pixelville
+contentEN: How an immersive new product launch drove demand.
+contentFR: Comment le lancement d'un nouveau produit immersif a stimulé la demande.
 companyName: Google
 date: 2021-01-04T20:35:33.876Z
 descriptionEN: 'Rated R: radically redefined retail'

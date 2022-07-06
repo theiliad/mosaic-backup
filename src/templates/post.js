@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 export default Post
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
@@ -19,6 +19,8 @@ export const pageQuery = graphql`
       frontmatter {
         titleEN
         titleFR
+        contentEN
+        contentFR
         author
         category
         companyName
@@ -30,10 +32,7 @@ export const pageQuery = graphql`
         descriptionFR
         featuredImage {
           childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
         category

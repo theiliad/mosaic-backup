@@ -109,6 +109,8 @@ export const pageQuery = graphql`
             frontmatter {
               titleEN
               titleFR
+              contentEN
+              contentFR
               date
               companyName
               posttype
