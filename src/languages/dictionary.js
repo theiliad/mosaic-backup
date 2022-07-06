@@ -19,8 +19,8 @@ export default {
       },
     },
     driveConversion: {
-      en: 'Looking to drive conversion?',
-      fr: 'Vous souhaitez générer des conversions ?',
+      en: 'Looking to drive results?',
+      fr: 'Vous cherchez à générer des résultats ?',
     },
     joinTheTeam: {
       en: 'Thinking about joining our team?',
