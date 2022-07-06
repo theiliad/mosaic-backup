@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import Acosta from '../components/Acosta'
 
 // Locale
 import { getText, Text, LanguageContext } from '../containers/Language'
@@ -497,6 +498,8 @@ function Contact({ data, location }) {
               </Accordion>
             </div>
           </div>
+
+          <Acosta />
 
           <div className="form">
             <div className="container page">
