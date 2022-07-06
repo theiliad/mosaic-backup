@@ -401,6 +401,16 @@ export default {
           fr: 'Discutons-en',
         },
       },
+      acosta: {
+        title: {
+          en: 'Mosaic is part of the Acosta Family',
+          fr: 'Mosaic fait partie de la famille Acosta',
+        },
+        description: {
+          en: 'Acosta provides integrated, progressive, sales & marketing solutions that enable clients to win in the modern marketplace. Discover more at acosta.com',
+          fr: 'Acosta fournit des solutions de vente et de marketing intégrées et progressives qui permettent aux clients de gagner sur le marché moderne. Découvrez-en plus sur acosta.com',
+        },
+      },
       formItems: {
         errors: {
           nameIsRequired: {
