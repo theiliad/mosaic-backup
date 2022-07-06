@@ -280,11 +280,22 @@ class BlogIndex extends React.Component {
           <div className="section-why">
             <div className="container">
               <div className="columns">
-                <div className="column is-1"></div>
-
-                <div className="column is-5">
+                <div className="column is-9 is-offset-2">
                   <h2 className="primary heading_lg">
                     <Text tid="pages.index.why.title" />
+                    <div
+                      className="button-wrapper"
+                      style={{ marginTop: '22px' }}
+                    >
+                      <Link
+                        to="/capabilities"
+                        className="button primary"
+                        style={{ fontSize: '.4em' }}
+                      >
+                        <Text tid="pages.index.why.buttonText" />
+                        <FiArrowRight />
+                      </Link>
+                    </div>
                   </h2>
                 </div>
               </div>

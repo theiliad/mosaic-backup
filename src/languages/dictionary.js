@@ -199,8 +199,12 @@ export default {
       },
       why: {
         title: {
-          en: 'We do this by using creativity to drive conversion.',
-          fr: 'C’est grâce à notre créativité que nous favorisons la conversion.',
+          en: 'We look at the nexus between culture, creativity and context to build brand experiences that drive action and inspire reaction.',
+          fr: "Nous examinons le lien entre la culture, la créativité et le contexte pour créer des expériences de marque qui stimulent l'action et inspirent la réaction.",
+        },
+        buttonText: {
+          en: 'See how',
+          fr: 'Regarde comment',
         },
       },
       capabilities: {
