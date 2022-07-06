@@ -80,32 +80,48 @@ const updateLogos = () => {
   }
 }
 
-export const CaseStudyMeta = ({ node, mobileVersion }) => (
-  <>
-    <div className="cp-meta columns is-mobile">
-      <div className="column is-8">
-        <p className="cp-company">{node.frontmatter.companyName}</p>
+export const CaseStudyMeta = ({ node, mobileVersion }) => {
+  console.log(node.frontmatter)
 
-        <p className="cp-project">
-          <Text
+  return (
+    <>
+      <div className="cp-meta columns is-mobile">
+        <div className="column is-8">
+          <p className="cp-company">{node.frontmatter.companyName}</p>
+
+          <p className="cp-project">
+            <Text
+              variations={{
+                en: node.frontmatter.titleEN,
+                fr: node.frontmatter.titleFR,
+              }}
+            />
+
+            <div className="column columns is-12">
+              <p className="cp-description">
+                {/* <Text
             variations={{
-              en: node.frontmatter.titleEN,
-              fr: node.frontmatter.titleFR,
+              en: node.frontmatter.contentEN,
+              fr: node.frontmatter.contentFR,
             }}
-          />
-        </p>
-      </div>
+          /> */}
+                BLAH BLAH BLAH... OK BLAH BLAH BLAH BLAH!!!! ????????
+              </p>
+            </div>
+          </p>
+        </div>
 
-      <div className="column is-4">
-        <p className="cp-category">
-          <Text
-            variations={CATEGORIES['case-studies'][node.frontmatter.category]}
-          />
-        </p>
+        <div className="column is-4">
+          <p className="cp-category">
+            <Text
+              variations={CATEGORIES['case-studies'][node.frontmatter.category]}
+            />
+          </p>
+        </div>
       </div>
-    </div>
-  </>
-)
+    </>
+  )
+}
 
 class BlogIndex extends React.Component {
   componentDidMount() {

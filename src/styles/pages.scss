@@ -93,6 +93,11 @@ div.pages-index {
 
         div.cp-meta {
           margin-bottom: 2em;
+          margin-bottom: 0;
+          @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
         }
 
         &:last-child {
@@ -130,9 +135,17 @@ div.pages-index {
     }
 
     p.cp-project {
-      font-size: 1.125em;
+      font-size: 1em;
+      color: $colors_blue_primary;
+      padding-top: 0.125em;
+    }
+    p.cp-description {
+      font-size: 1.5em;
       color: $colors_midnight_primary;
       padding-top: 0.125em;
+      @media screen and (max-width: 768px) {
+        margin-bottom: -0.725em;
+      }
     }
 
     p.cp-category {
