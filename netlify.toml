@@ -18,3 +18,9 @@ environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16
   to = "/capabilities/?lang=fr"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  force = true
