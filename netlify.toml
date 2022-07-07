@@ -20,7 +20,31 @@ environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16
   force = true
 
 [[redirects]]
-  from = "/*"
+  from = "/work/bud-light"
+  to = "/case-studies/budweiser"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/budweiser"
+  to = "/case-studies/budweiser"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/google-pixelville"
+  to = "/case-studies/google/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/google-sincerely-peter"
+  to = "/case-studies/google"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/*"
   to = "/:splat"
   status = 301
   force = true
