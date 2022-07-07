@@ -1,7 +1,7 @@
 ---
 posttype: thinking
 titleEN: 'No IRL? No problem: Virtualizing the human experience'
-titleFR: FRFPO
+titleFR: 'No IRL? No problem: Virtualizing the human experience'
 date: 2020-06-24T03:14:12.599Z
 streamStartDate: 2020-01-18T03:14:12.599Z
 streamEndDate: 2022-01-18T03:14:12.599Z
@@ -9,7 +9,7 @@ featuredImage: /img/thinking/no-irl-no-problem.jpg
 videoID: 449905474
 category: oneeighty
 descriptionEN: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
-descriptionFR: frFPO
+descriptionFR: Industry experts discuss the rise of the virtual brand activation and debate the future of the experience economy.
 sponsors:
   - image: /img/oneeighty/sponsors/rbc.svg
     alt: RBC
@@ -56,5 +56,8 @@ moderator:
 bodyEN: >-
   From Coachella to the NBA, Nascar to the Olympics, the experience economy has changed forever. Have physical distancing, travel constraints and consumer fears left a void for brand activations and sponsorships? Or has COVID-19 been the much-needed catalyst to push beyond possible to discover the next evolution of experiential? Join us as some of today’s biggest brands and industry experts flip the script on ‘virtual’, sharing powerful insights to drive brand experiences forward in the not-so-new world.
 bodyFR: >-
-  frFPO
+  Désolé, la traduction de cette publication en français n’est pas disponible.
+
+
+  From Coachella to the NBA, Nascar to the Olympics, the experience economy has changed forever. Have physical distancing, travel constraints and consumer fears left a void for brand activations and sponsorships? Or has COVID-19 been the much-needed catalyst to push beyond possible to discover the next evolution of experiential? Join us as some of today’s biggest brands and industry experts flip the script on ‘virtual’, sharing powerful insights to drive brand experiences forward in the not-so-new world.
 ---
