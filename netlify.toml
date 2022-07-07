@@ -2,25 +2,19 @@
 environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16.1"}
 
 [[redirects]]
-  from = "/accessibility"
-  to = "/accessibility/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/capabilities"
-  to = "/capabilities/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/fr"
-  to = "/"
+  to = "/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/accessibility"
+  to = "/accessibility/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/capabilities"
+  to = "/capabilities/?lang=fr"
   status = 301
   force = true
