@@ -2,12 +2,10 @@
 posttype: case-study
 titleEN: National Kickoff
 titleFR: Lancement national
-contentEN: How a business conference was made more human.
-contentFR: Comment une conférence d'affaires a été rendue plus humaine.
 companyName: Loblaw Companies Limited
 date: 2021-01-03T20:35:33.876Z
-descriptionEN: Imagining a more human conference
-descriptionFR: Imaginer une conférence plus humaine
+descriptionEN: How a business conference was made more human.
+descriptionFR: Comment une conférence d’affaires a-t-elle pris un virage plus humain?
 category: b2b
 primaryVideoVimeoID: 482643663
 primaryVideoLocalURL: /img/case-studies/loblaws/hero.mp4

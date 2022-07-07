@@ -3,11 +3,9 @@ posttype: case-study
 titleEN: Whassup Again
 titleFR: Whassup Again
 companyName: Budweiser
-contentEN: How a Super Bowl campaign changed cultural behavior.
-contentFR: Comment une campagne du Super Bowl a changé le comportement culturel.
 date: 2021-01-06T20:35:33.876Z
-descriptionEN: Reimagining a classic with a smart twist.
-descriptionFR: Réinventer un classique avec une touche intelligente.
+descriptionEN: How a Super Bowl campaign changed cultural behavior.
+descriptionFR: Comment une campagne du Super Bowl a-t-elle réussi à modifier le comportement culturel?
 category: content-digital
 primaryVideoVimeoID: 401342966
 primaryVideoLocalURL: /img/case-studies/budweiser/hero.mp4

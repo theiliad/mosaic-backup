@@ -2,12 +2,10 @@
 posttype: case-study
 titleEN: Stadium Bites
 titleFR: Stadium Bites
-contentEN: How a brand converted a new consumer base into big fans.
-contentFR: Comment une marque a converti une nouvelle base de consommateurs en grands fans.
 companyName: Stella
 date: 2021-01-05T20:35:33.876Z
-descriptionEN: Bringing the stadium experience home
-descriptionFR: Une expérience du stade à la maison
+descriptionEN: How a brand converted a new consumer base into big fans.
+descriptionFR: Comment une marque a-t-elle su transformer une nouvelle base de consommateurs en partisans invétérés?
 category: experiential-marketing
 primaryVideoVimeoID: 668405645
 primaryVideoLocalURL: /img/case-studies/stella/hero.mp4

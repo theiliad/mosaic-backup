@@ -355,8 +355,6 @@ export const pageQuery = graphql`
               date(formatString: "MMMM DD, YYYY")
               titleEN
               titleFR
-              contentEN
-              contentFR
               companyName
               posttype
               descriptionEN

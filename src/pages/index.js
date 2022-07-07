@@ -101,8 +101,8 @@ export const CaseStudyMeta = ({ node, mobileVersion }) => {
               <p className="cp-description">
                 <Text
                   variations={{
-                    en: node.frontmatter.contentEN,
-                    fr: node.frontmatter.contentFR,
+                    en: node.frontmatter.descriptionEN,
+                    fr: node.frontmatter.descriptionFR,
                   }}
                 />
               </p>
@@ -434,8 +434,6 @@ export const pageQuery = graphql`
             frontmatter {
               titleEN
               titleFR
-              contentEN
-              contentFR
               date
               companyName
               posttype

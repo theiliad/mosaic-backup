@@ -19,8 +19,6 @@ export const pageQuery = graphql`
       frontmatter {
         titleEN
         titleFR
-        contentEN
-        contentFR
         author
         category
         companyName

@@ -2,12 +2,10 @@
 posttype: case-study
 titleEN: ShopHERE powered by Google
 titleFR: ShopHERE powered by Google
-contentEN: How a marketing program created jobs and supported small businesses.
-contentFR: Comment un programme de marketing a créé des emplois et soutenu les petites entreprises.
 companyName: Digital Main St
 date: 2021-01-02T20:35:33.876Z
-descriptionEN: Providing jobs, supporting small business
-descriptionFR: Fournir des emplois, soutenir les petites entreprises
+descriptionEN: How a marketing program created jobs and supported small businesses.
+descriptionFR: Comment un programme de marketing a-t-il permis de créer des emplois et de soutenir les petites entreprises?
 category: assisted-selling-training
 featuredImage: /img/case-studies/digital-main-st/hero.jpg
 bodyEN: >-
