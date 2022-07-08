@@ -1,5 +1,13 @@
 .header_extension {
   padding: 5em 0 0 0;
+  .cp-hero_video {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    video {
+      object-fit: cover;
+    }
+  }
 
   @media (max-width: 768px) {
     padding: 6em 0 0 0;
@@ -54,13 +62,7 @@
         }
 
         img {
-          height: 26.375em;
-          transform: translateY(270px);
-          z-index: 9999;
-          @media (max-width: 768px) {
-            margin-top: -17em;
-            height: 100%;
-          }
+          height: 11.375em;
 
           &#cp_hero_logo {
             position: fixed;
@@ -75,6 +77,16 @@
           &#cp_hero_logo_hidden {
             opacity: 0;
             transform-origin: bottom left;
+          }
+        }
+
+        .gauge-hero-image {
+          height: 26.375em;
+          transform: translateY(270px);
+          z-index: 9999;
+          @media (max-width: 768px) {
+            margin-top: -17em;
+            height: 100%;
           }
         }
 

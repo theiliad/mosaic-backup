@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+import ReactPlayer from 'react-player'
+
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import Carousel from '../components/Carousel'
@@ -256,6 +258,18 @@ class BlogIndex extends React.Component {
         }}
         HeaderExtension={
           <div className="header_extension home">
+            <ReactPlayer
+              url="/hero.mp4"
+              playing
+              loop
+              muted
+              width="100%"
+              height="100vh"
+              className="cp-hero_video"
+              controlsList="nofullscreen nodownload"
+              controls
+            />
+
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
                 {/* TODO - alt text should be confirmed */}
@@ -353,7 +367,6 @@ class BlogIndex extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="section-writeup" id="home-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
@@ -381,7 +394,6 @@ class BlogIndex extends React.Component {
               </div>
             </div>
           </div>
-
           {/* <div className="section-writeup2" id="home-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">

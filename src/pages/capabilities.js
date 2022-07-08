@@ -50,7 +50,11 @@ class Capabilities extends React.Component {
                     </div>
 
                     <div className="column cp-img">
-                      <img src={GAUGE_BLUE} alt="" />
+                      <img
+                        className="gauge-hero-image"
+                        src={GAUGE_BLUE}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
