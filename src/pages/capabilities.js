@@ -3,12 +3,14 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import PreFooter from '../components/PreFooter'
 
 // Locale
 import { Text } from '../containers/Language'
 
 // Assets
 import GAUGE from '../img/capabilities/capabilities-guage.svg'
+import GAUGE_BLUE from '../img/capabilities/gauge-blue.png'
 
 import IMG01 from '../img/capabilities/experiential-marketing.jpg'
 import IMG02 from '../img/capabilities/02.jpg'
@@ -20,13 +22,6 @@ import IMG06 from '../img/capabilities/06.jpg'
 import { FiArrowRight } from 'react-icons/fi'
 
 class Capabilities extends React.Component {
-  componentDidMount() {
-    setTimeout(
-      () => document.getElementById('animated_svg').classList.add('active'),
-      300
-    )
-  }
-
   render() {
     const { data } = this.props
 
@@ -55,60 +50,7 @@ class Capabilities extends React.Component {
                     </div>
 
                     <div className="column cp-img">
-                      <svg
-                        version="1.1"
-                        id="animated_svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        // xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 543.6 646.9"
-                        style={{ enableBackground: 'new 0 0 543.6 646.9' }}
-                        // xml:space="preserve"
-                        width="543.5999755859375"
-                        height="646.9000244140625"
-                      >
-                        <g
-                          id="Group_997"
-                          transform="translate(-533.816 -129.672)"
-                        >
-                          <path
-                            id="Path_1190"
-                            class="st0 svg-elem-1"
-                            d="M805.6,772.1L538.3,612.6v-319l267.3,159.5V772.1z"
-                          ></path>
-                          <path
-                            id="Path_1191"
-                            class="st0 svg-elem-2"
-                            d="M805.6,772.1l267.3-159.5v-319L805.6,453.1V772.1z"
-                          ></path>
-                          <path
-                            id="Path_1192"
-                            class="st0 svg-elem-3"
-                            d="M538.3,612.6l267.3-159.5v-319L538.3,293.6V612.6z"
-                          ></path>
-                          <path
-                            id="Path_1193"
-                            class="st0 svg-elem-4"
-                            d="M538.3,293.6l267.3,159.5l267.3-159.5L805.6,134.2L538.3,293.6z"
-                          ></path>
-                          <path
-                            id="Path_1194"
-                            class="st0 svg-elem-5"
-                            d="M538.3,612.6l267.3,159.5l267.3-159.5L805.6,453.1L538.3,612.6z"
-                          ></path>
-                          <path
-                            id="Path_1195"
-                            class="st0 svg-elem-6"
-                            d="M805.6,772.1L538.3,293.6h534.6L805.6,772.1z"
-                          ></path>
-                          <path
-                            id="Path_1196"
-                            class="st0 svg-elem-7"
-                            d="M805.6,134.2L538.3,612.6h534.6L805.6,134.2z"
-                          ></path>
-                        </g>
-                      </svg>
+                      <img src={GAUGE_BLUE} alt="" />
                     </div>
                   </div>
                 </div>
@@ -307,6 +249,8 @@ class Capabilities extends React.Component {
               <div className="dots"></div>
             </div>
           </div>
+
+          <PreFooter />
         </div>
       </Layout>
     )
