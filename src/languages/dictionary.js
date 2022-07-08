@@ -237,18 +237,67 @@ export default {
         en: 'Capabilities',
         fr: 'Compétences',
         text: {
-          en: 'We see every touchpoint as an opportunity to strengthen a brand’s purpose and drive purchase simultaneously.',
-          fr: 'Nous considérons chaque point de contact comme une opportunité de renforcer l’objectif de la marque et de simultanément stimuler l’achat.',
+          en: 'We are a North American Integrated Marketing Agency. We use our collective creativity to drive commerce and conversion',
+          fr: 'Nous sommes une agence de marketing intégrée nord-américaine. Nous utilisons notre créativité collective pour stimuler le commerce et la conversion',
+        },
+      },
+      gauge: {
+        title: {
+          en: 'This is our gauge.',
+          fr: "C'est notre jauge.",
+        },
+        text: {
+          en: 'It represents every point of possibility for Mosaic’s integrated capabilities. It symbolizes how we build effective brand experiences.  We put people’s needs and desires at the center and use our cross-channel capabilities to engage people with brands at the moments that will have the most impact.',
+          fr: "Il représente tous les points de possibilité pour les capacités intégrées de Mosaic. Il symbolise la façon dont nous créons des expériences de marque efficaces. Nous plaçons les besoins et les désirs des gens au centre et utilisons nos capacités cross-canal pour engager les gens avec les marques aux moments qui auront le plus d'impact.",
         },
       },
       content_digital: {
         title: {
-          en: 'Content & Digital',
-          fr: 'Contenu et numérique',
+          en: '01. Experiential Marketing',
+          fr: '01. Marketing expérientiel',
         },
         text: {
-          en: 'We tell brand stories through purposeful content that drives connection, conversation and conversion. We also integrate our digital and media teams to ensure the message reaches the right people to produce the right results.',
-          fr: 'Nous racontons l’histoire de chaque marque à travers un contenu ciblé favorisant la connexion, la discussion et la conversion. Nous intégrons également nos équipes numériques et médias pour nous assurer que le message parvient aux bonnes personnes, avec pour objectif de produire les meilleurs résultats possibles.',
+          en: (
+            <>
+              With over 30 years of experience in building captivating,
+              immersive brand experiences, our capabilities and track record are
+              unmatched. But traditional experiential isn’t enough.
+              <hr />
+              We’re obsessed with how a consumer experiences a hrand across
+              multiple channels and fascinated by the power of human connection
+              and culture. It’s what drives us to create deeper meaning through
+              integrated experiences that immerse, inform, and illuminate brand
+              value, and drive measurable results.
+              <h4>Snapshot of service offerings:</h4>
+              <ul>
+                <li>Live, virtual & hybrid immersive events</li>
+                <li>B2B events</li>
+                <li>Mobile tours</li>
+                <li>Sponsorship activation</li>
+              </ul>
+            </>
+          ),
+          fr: (
+            <>
+              Avec plus de 30 ans d'expérience dans la création d'expériences de
+              marque captivantes et immersives, nos capacités et nos antécédents
+              sont inégalés. Mais l'expérience traditionnelle ne suffit pas.
+              <hr />
+              Nous sommes obsédés par la façon dont un consommateur expérimente
+              une marque sur plusieurs canaux et fascinés par le pouvoir de la
+              connexion humaine et de la culture. C'est ce qui nous pousse à
+              créer un sens plus profond grâce à des expériences intégrées qui
+              immergent, informent et illuminent la valeur de la marque et
+              génèrent des résultats mesurables.
+              <h4>Aperçu des offres de services :</h4>
+              <ul>
+                <li>Événements immersifs en direct, virtuels et hybrides</li>
+                <li>Événements B2B</li>
+                <li>Visites mobiles</li>
+                <li>Activation du parrainage</li>
+              </ul>
+            </>
+          ),
         },
         cta: {
           en: 'View Budweiser’s case study',
@@ -257,12 +306,49 @@ export default {
       },
       experiential_marketing: {
         title: {
-          en: 'Experiential Marketing',
-          fr: 'Marketing expérientiel',
+          en: '02. Brand Design & Content',
+          fr: '02. Conception et contenu de la marque',
         },
         text: {
-          en: 'With over 30 years of experience in building effective, captivating brand experiences, our capabilities and track record are unmatched. We’re fascinated by the power of human connection and culture, and it’s what drives us to create deeper meaning through experiences that immerse, inform and illuminate brand value.',
-          fr: 'Après plus de 30 ans d’expertise dans l’univers de la création d’expériences de marque efficaces et captivantes, nos compétences et nos antécédents sont inégalables sur le marché. Nous sommes fascinés par le pouvoir du contact humain et de la culture, et c’est ce qui nous pousse à toujours créer un sentiment plus profond à nos campagnes, grâce à des expériences qui immergent, informent et éclairent les valeurs de la marque.',
+          en: (
+            <>
+              We’re proud to have one of North America’s largest creative and
+              design departments. Our award-winning, channel-agnostic thinkers
+              and creators build insight-driven ideas from concept to execution.
+              Flawlessly.
+              <hr />
+              We tell brand stories that drive connection, conversation, and
+              conversion.
+              <h4>Snapshot of service offerings:</h4>
+              <ul>
+                <li>Brand development</li>
+                <li>Creative development: Ideation, writing, art direction</li>
+                <li>Digital, environmental & package design</li>
+                <li>Content development & production</li>
+              </ul>
+            </>
+          ),
+          fr: (
+            <>
+              Nous sommes fiers d'avoir l'un des plus grands départements de
+              création et de design en Amérique du Nord. Nos penseurs et
+              créateurs primés et indépendants du canal élaborent des idées
+              axées sur la perspicacité, du concept à l'exécution. Parfaitement.
+              <hr />
+              Nous racontons des histoires de marque qui stimulent la connexion,
+              la conversation et la conversion.
+              <h4>Aperçu des offres de services :</h4>
+              <ul>
+                <li>Développement de marque</li>
+                <li>
+                  Développement créatif : Idéation, écriture, direction
+                  artistique
+                </li>
+                <li>Conception numérique, environnementale et d'emballage</li>
+                <li>Développement et production de contenu</li>
+              </ul>
+            </>
+          ),
         },
         cta: {
           en: 'View Stella’s case study',
@@ -271,12 +357,53 @@ export default {
       },
       retail_commerce: {
         title: {
-          en: 'Retail & Commerce',
-          fr: 'Vente au détail et commerce',
+          en: '03. Integrated Commerce',
+          fr: '03. Commerce intégré',
         },
         text: {
-          en: 'We know the path to purchase is no longer linear - and it’s never been more true for in-store and online marketing. We make shopping more human by guiding consumers to brands they’ll love with a compelling creative concept, standout visuals, easier navigation, and helpful interactions.',
-          fr: 'Nous savons que le commerce n’est plus linéaire — et cela n’a jamais été aussi vrai pour le marketing en magasin et en ligne. Nous rendons les achats plus humains en guidant les consommateurs vers les marques qu’ils apprendront à adorer grâce à un concept créatif convaincant, des visuels percutants, une navigation plus facile et des interactions pertinentes.',
+          en: (
+            <>
+              It’s never been more important to have an agile, nimble approach
+              to commerce. It’s why we’ve created an integrated model that
+              offers a one-stop shop of omnichannel expertise that seamlessly
+              connects consumers to brands in the right place at the right time.
+              <hr />
+              We start by mapping out a measurable consumer journey. Then
+              develop compelling concepts based on retailer and shopper insights
+              that inform brand experiences at key points along the journey;
+              ultimately driving conversion where there wasn’t before.
+              <h4>Snapshot of service offerings:</h4>
+              <ul>
+                <li>Omnichannel & shopper marketing</li>
+                <li>Assisted selling & associate training</li>
+                <li>Consumer promotions, demos & sampling (DTC)</li>
+                <li>Merchandising</li>
+              </ul>
+            </>
+          ),
+          fr: (
+            <>
+              Il n'a jamais été aussi important d'avoir une approche agile et
+              agile du commerce. C'est pourquoi nous avons créé un modèle
+              intégré qui offre un guichet unique d'expertise omnicanal qui
+              connecte de manière transparente les consommateurs aux marques au
+              bon endroit et au bon moment.
+              <hr />
+              Nous commençons par tracer un parcours client mesurable.
+              Développez ensuite des concepts convaincants basés sur les
+              informations des détaillants et des acheteurs qui informent les
+              expériences de la marque à des moments clés du parcours ; en fin
+              de compte, conduire la conversion là où il n'y en avait pas
+              auparavant.
+              <h4>Aperçu des offres de services :</h4>
+              <ul>
+                <li>Marketing omnicanal et client</li>
+                <li>Vente assistée et formation des associés</li>
+                <li>Promotions consommateurs, démos & échantillonnage (DTC)</li>
+                <li>Marchandisage</li>
+              </ul>
+            </>
+          ),
         },
         cta: {
           en: 'View Google’s case study',
@@ -285,12 +412,49 @@ export default {
       },
       b2b: {
         title: {
-          en: 'B2B',
-          fr: 'B2B',
+          en: '04. Strategy & Innovation',
+          fr: '04. Stratégie & Innovation',
         },
         text: {
-          en: 'Whether it’s a large-scale conference, corporate event or employee engagement program, our B2B team delves deep beneath the surface to deliver business-to-business experiences that are creatively driven and executionally sound.',
-          fr: 'Qu’il s’agisse d’une conférence à grande échelle, d’un événement d’entreprise ou d’un programme d’engagement des employés, notre équipe B2B n’hésite pas à tout analyser en profondeur pour offrir des expériences interentreprises créatives et efficaces.',
+          en: (
+            <>
+              United by purpose and unified by data-driven insights, our experts
+              leverage best-in-class qualitative and quantitative tools to
+              deconstruct your business challenge. Through deconstruction we
+              develop the strategic vision and blueprint for how to best build
+              brand affinity and drive conversion.
+              <hr />
+              Our strategy, media, measurement and analytics team work together
+              with you to lay the solid foundation needed to build brands in
+              dimension.
+              <h4>Snapshot of service offerings:</h4>
+              <ul>
+                <li>Omni-experience planning</li>
+                <li>Brand strategy</li>
+                <li>Content development & production</li>
+              </ul>
+            </>
+          ),
+          fr: (
+            <>
+              Unis par objectif et unifiés par des informations basées sur les
+              données, nos experts exploitent les meilleurs outils qualitatifs
+              et quantitatifs pour déconstruire votre défi commercial. Grâce à
+              la déconstruction, nous développons la vision stratégique et le
+              plan directeur sur la meilleure façon de renforcer l'affinité avec
+              la marque et de stimuler la conversion.
+              <hr />
+              Notre équipe de stratégie, de médias, de mesure et d'analyse
+              travaille avec vous pour jeter les bases solides nécessaires pour
+              construire des marques en dimension.
+              <h4>Aperçu des offres de services :</h4>
+              <ul>
+                <li>Planification omni-expérience</li>
+                <li>Stratégie de marque</li>
+                <li>Développement et production de contenu</li>
+              </ul>
+            </>
+          ),
         },
         cta: {
           en: `View Loblaw's case study`,
@@ -299,12 +463,49 @@ export default {
       },
       assisted_selling: {
         title: {
-          en: 'Assisted Selling & Training',
-          fr: 'Vente et formation assistées',
+          en: '05. Performance Media',
+          fr: '05. Média de performance',
         },
         text: {
-          en: 'When a business ventures to new heights, we can help by closing the knowledge gap with our own omnichannel approach or by training your employees to acquire new marketing skills. You can think of us as additional limbs in your strategy.',
-          fr: 'Lorsqu’une entreprise vise des objectifs plus ambitieux, nous pouvons l’aider à développer des connaissances grâce à notre approche omnicanal ou en formant ses employés à acquérir de nouvelles compétences en marketing. Considérez-nous comme des alliés dans votre stratégie.',
+          en: (
+            <>
+              Through hyper-relevant, data-driven insights we create highly
+              personalized moments that are tailored to your brand. When
+              optimized for campaign objectives, this allows us to reach the
+              right person at exactly the right moment, with a message that
+              compels them to action.
+              <hr />
+              With our Acosta and third-party media partners, we can connect
+              consumers with targeted ads that compel purchase and ensure that
+              our digital media investments are yielding measurable results.
+              <h4>Snapshot of service offerings:</h4>
+              <ul>
+                <li>Content channel planning & programmatic</li>
+                <li>Social media & influencer marketing</li>
+                <li>Retail media & digital shopper</li>
+              </ul>
+            </>
+          ),
+          fr: (
+            <>
+              Grâce à des informations hyper pertinentes et basées sur des
+              données, nous créons des moments hautement personnalisés adaptés à
+              votre marque. Lorsqu'il est optimisé pour les objectifs de la
+              campagne, cela nous permet d'atteindre la bonne personne au bon
+              moment, avec un message qui la pousse à l'action.
+              <hr />
+              Avec nos partenaires médias Acosta et tiers, nous pouvons nous
+              connecter consommateurs avec des publicités ciblées qui incitent à
+              l'achat et garantissent que nos investissements dans les médias
+              numériques donnent des résultats mesurables.
+              <h4>Aperçu des offres de services :</h4>
+              <ul>
+                <li>Planification et programmation des canaux de contenu</li>
+                <li>Médias sociaux et marketing d'influence</li>
+                <li>Retail media & digital shopper</li>
+              </ul>
+            </>
+          ),
         },
         cta: {
           en: 'View Digital Main Street’s case study',
@@ -313,12 +514,61 @@ export default {
       },
       brand_development: {
         title: {
-          en: 'Brand Development & Design',
-          fr: 'Développement et conception de marque',
+          en: '06. Measurement & Analytics',
+          fr: '06. Mesure et analyse',
         },
         text: {
-          en: 'We’re proud to have one of North America’s largest creative and design departments with award-winning, channel-agnostic thinkers and creators who take big ideas from concept to execution. Flawlessly.',
-          fr: 'Nous sommes fiers d’avoir l’un des plus grands départements de création et de design d’Amérique du Nord, avec des penseurs et des créateurs distingués et indépendants d’esprit qui donnent vie au projet de l’idée jusqu’à l’exécution. Parfaitement.',
+          en: (
+            <>
+              Beginning with two simple building blocks, a well-defined
+              objective and a measurable plan to deliver on those objectives,
+              our measurement team will identify marketing channels and levels
+              of investment that will work hardest to change consumer behavior
+              and deliver on your business objectives.
+              <hr />
+              We inform tactical and strategic decision making around marketing
+              investments by assessing what’s working, where opportunities for
+              growth exist, and what we can do to best address our client’s
+              business problems. Our scale allows us to invest in and integrate
+              datasets that will be unavailable through other organizations. We
+              galvanize those datasets into meaningful, actionable insights to
+              more effectively maximize your total marketing investment – we
+              call this Return on Impact.
+              <h4>Snapshot of service offerings:</h4>
+              <ul>
+                <li>Audience & business scenario planning</li>
+                <li>Integrated, location & geographic analytics</li>
+                <li>Return on investment</li>
+              </ul>
+            </>
+          ),
+          fr: (
+            <>
+              En commençant par deux blocs de construction simples, un bien
+              défini objectif et un plan mesurable pour atteindre ces objectifs,
+              notre équipe de mesure identifiera les canaux et les niveaux de
+              commercialisation des investissements qui contribueront le plus à
+              modifier le comportement des consommateurs et atteindre vos
+              objectifs commerciaux.
+              <hr />
+              Nous informons la prise de décision tactique et stratégique autour
+              du marketing investissements en évaluant ce qui fonctionne, où les
+              opportunités croissance existent, et ce que nous pouvons faire
+              pour mieux répondre aux besoins de nos clients problèmes
+              commerciaux. Notre taille nous permet d'investir et d'intégrer
+              ensembles de données qui ne seront pas disponibles auprès d'autres
+              organisations. Nous galvaniser ces ensembles de données en
+              informations significatives et exploitables pour maximiser plus
+              efficacement votre investissement marketing total - nous appelons
+              cela le retour sur impact.
+              <h4>Aperçu des offres de services :</h4>
+              <ul>
+                <li>Planification de scénarios d'audience et d'affaires</li>
+                <li>Analyse intégrée, de localisation et géographique</li>
+                <li>Return on investment</li>
+              </ul>
+            </>
+          ),
         },
         cta: {
           en: 'View Tishman Speyer’s case study',
