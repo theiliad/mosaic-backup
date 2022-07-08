@@ -1,6 +1,10 @@
 [build]
 environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16.1"}
 
+
+# FRENCH REDIRECTS
+# ______________________________________________________________________________________________
+
 [[redirects]]
   from = "/fr"
   to = "/?lang=fr"
@@ -16,6 +20,277 @@ environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16
 [[redirects]]
   from = "/fr/capabilities"
   to = "/capabilities/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/contact"
+  to = "/contact/?lang=fr"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/fr/journal"
+  to = "/thinking/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/acosta-reveals-top-20-cpg-industry-predictions-for-2020"
+  to = "/thinking/top-20-cpg-industry-predictions-for-2020/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/the-future-of-shopping-is-both-hardwired-and-human-a-mosaic-oneeighty-session-recap"
+  to = "/thinking/the-future-of-shopping-is-both-hardwired-and-human/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/can-any-brand-be-a-wellness-brand-mosaic-oneeighty-reveals-the-significance-of-marketing-wellness"
+  to = "/thinking/can-any-brand-be-a-wellness-brand/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/mosaic-north-america-appoints-lee-esmond-to-lead-u-s-shopper-marketing"
+  to = "/news/mosaic-north-america-appoints-lee-esmond-to-lead-us-shopper-marketing/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/the-show-must-go-on-how-to-create-a-virtual-attendee-experience-for-live-events"
+  to = "/thinking/the-show-must-go-on/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/bill-haveron-joins-mosaic-as-shopper-marketing-group-director"
+  to = "/news/bill-haveron-joins-mosaic-as-shopper-marketing-group-director/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/mosaic-names-john-manley-north-american-strategy-innovation-lead"
+  to = "/news/mosaic-names-john-manley-north-american-strategy-innovation-lead/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/mosaic-names-justine-greenwald-executive-creative-director"
+  to = "/news/mosaic-names-justine-greenwald-executive-creative-director/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/mosaic-north-america-names-jason-dubroy-canadian-commerce-marketing-and-retail-lead"
+  to = "/news/mosaic-north-america-names-jason-dubroy-canadian-commerce-marketing-and-retail-lead/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/mosaic-north-america-names-subtej-nijjar-canada-president"
+  to = "/news/mosaic-north-america-names-subtej-nijjar-canada-president/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/journal/what-is-c-o"
+  to = "/thinking/?lang=fr"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/fr/journal/*"
+  to = "/thinking/:splat/?lang=fr"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/fr/privacy"
+  to = "/privacy-policy/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/terms"
+  to = "/terms-of-use/?lang=fr"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/fr/work"
+  to = "/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/bud-light"
+  to = "/case-studies/budweiser/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/budweiser"
+  to = "/case-studies/budweiser/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/google-pixelville"
+  to = "/case-studies/google/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/google-sincerely-peter"
+  to = "/case-studies/google/?lang=fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/*"
+  to = "/?lang=fr"
+  status = 301
+  force = true
+
+
+# ENGLISH REDIRECTS
+# ______________________________________________________________________________________________
+
+[[redirects]]
+  from = "/journal"
+  to = "/thinking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journal/acosta-reveals-top-20-cpg-industry-predictions-for-2020"
+  to = "/thinking/top-20-cpg-industry-predictions-for-2020"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/can-any-brand-be-a-wellness-brand-mosaic-oneeighty-reveals-the-significance-of-marketing-wellness"
+  to = "/thinking/can-any-brand-be-a-wellness-brand"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journal/the-future-of-shopping-is-both-hardwired-and-human-a-mosaic-oneeighty-session-recap"
+  to = "/thinking/the-future-of-shopping-is-both-hardwired-and-human"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/the-show-must-go-on-how-to-create-a-virtual-attendee-experience-for-live-events"
+  to = "/thinking/the-show-must-go-on"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/mosaic-north-america-appoints-lee-esmond-to-lead-u-s-shopper-marketing"
+  to = "/news/mosaic-north-america-appoints-lee-esmond-to-lead-us-shopper-marketing"
+  status = 301
+  force = true
+
+
+
+[[redirects]]
+  from = "/journal/bill-haveron-joins-mosaic-as-shopper-marketing-group-director"
+  to = "/news/bill-haveron-joins-mosaic-as-shopper-marketing-group-director"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/mosaic-names-john-manley-north-american-strategy-innovation-lead"
+  to = "/news/mosaic-names-john-manley-north-american-strategy-innovation-lead"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/mosaic-names-justine-greenwald-executive-creative-director"
+  to = "/news/mosaic-names-justine-greenwald-executive-creative-director"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/mosaic-north-america-names-jason-dubroy-canadian-commerce-marketing-and-retail-lead"
+  to = "/news/mosaic-north-america-names-jason-dubroy-canadian-commerce-marketing-and-retail-lead"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/journal/mosaic-north-america-names-subtej-nijjar-canada-president"
+  to = "/news/mosaic-north-america-names-subtej-nijjar-canada-president"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journal/what-is-c-o"
+  to = "/thinking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journal/*"
+  to = "/thinking/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/oneeighty/future-of-shopping"
+  to = "/thinking/shopper-marketing-past-present-future"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/oneeighty/session-no-irl"
+  to = "/thinking/no-irl-no-problem"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/oneeighty/the-wellness-pandemic-how-will-the-new-normal-drive-new-brand-purpose"
+  to = "/thinking/the-wellness-pandemic"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/oneeighty"
+  to = "/thinking/oneeighty"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms-of-use"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/work"
+  to = "/"
   status = 301
   force = true
 
@@ -45,6 +320,6 @@ environment = {YARN_FLAGS = "--offline --ignore-optional", NODE_VERSION = "14.16
 
 [[redirects]]
   from = "/work/*"
-  to = "/:splat"
+  to = "/"
   status = 301
   force = true
