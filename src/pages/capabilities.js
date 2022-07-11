@@ -37,7 +37,7 @@ class Capabilities extends React.Component {
               <div className="cp-hero" id="cp_hero">
                 <div className="container">
                   <div className="columns">
-                    <div className="column cp-copy">
+                    <div className="column is-6 cp-copy">
                       <h1>
                         <span>
                           <Text tid="pages.capabilities.title" />
@@ -49,7 +49,9 @@ class Capabilities extends React.Component {
                       </p>
                     </div>
 
-                    <div className="column cp-img">
+                    <div className="column is-1"></div>
+
+                    <div className="column is-5 cp-img">
                       <img
                         className="gauge-hero-image"
                         src={GAUGE_BLUE}
