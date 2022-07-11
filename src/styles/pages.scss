@@ -400,6 +400,10 @@ div.pages-capabilities {
         li {
           font-size: 0.875em;
           margin-bottom: 0.75em;
+          &::before {
+            position: relative;
+            top: 3px;
+          }
         }
       }
     }
