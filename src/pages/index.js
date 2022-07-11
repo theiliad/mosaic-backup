@@ -450,6 +450,7 @@ export const pageQuery = graphql`
               companyName
               posttype
               descriptionEN
+              descriptionFR
               featuredImage {
                 childImageSharp {
                   gatsbyImageData(
