@@ -53,9 +53,12 @@ div.pages-index {
   div.section-cases {
     @include section_padding;
     padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 70px;
 
     div.columns {
       font-size: 1em;
+      margin-bottom: 70px;
 
       div.column {
         a.cp-photo,
