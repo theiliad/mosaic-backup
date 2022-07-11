@@ -356,13 +356,17 @@ div.pages-capabilities {
   div.section-writeup,
   div.section-writeup2 {
     padding: 12em 0;
-
     @media screen and (max-width: 768px) {
       padding: 4em 0;
     }
 
     .column {
       margin: 0;
+    }
+
+    .writeup-image {
+      display: grid;
+      place-items: center;
     }
 
     //&:last-child {
