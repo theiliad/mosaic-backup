@@ -322,6 +322,8 @@ div.pages-capabilities {
   }
   div.gauge {
     padding: 125px 0;
+    padding-bottom: 0;
+    margin-bottom: -90px;
     .gauge-text {
       display: flex;
       flex-direction: column;

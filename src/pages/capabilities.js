@@ -72,7 +72,7 @@ class Capabilities extends React.Component {
           <div className="gauge">
             <div className="container">
               <div className="columns">
-                <div className="column is-4 is-offset-2 gauge-text">
+                <div className="column is-4 is-offset-1 gauge-text">
                   <h1>
                     <Text tid="pages.capabilities.gauge.title" />
                   </h1>
