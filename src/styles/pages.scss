@@ -323,6 +323,17 @@ div.pages-capabilities {
       margin-bottom: -60px;
     }
   }
+  div.dots-top {
+    background: url('../img/matrix-grey.svg');
+    background-repeat: repeat;
+    background-size: 1.5em;
+    height: 50px;
+    margin-top: 130px;
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  }
   div.gauge {
     padding: 125px 0;
     padding-bottom: 0;

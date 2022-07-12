@@ -87,7 +87,7 @@ class Capabilities extends React.Component {
                   <img src={GAUGE} alt="Image of six strategy steps." />
                 </div>
               </div>
-              <div className="dots"></div>
+              <div className="dots dots-top"></div>
             </div>
           </div>
 
