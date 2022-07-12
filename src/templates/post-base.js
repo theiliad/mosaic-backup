@@ -82,7 +82,7 @@ function Post(props) {
     )
 
   useEffect(() => {
-    if (isThinkingPost) {
+    if (isThinkingPost && isOneEightyPost) {
       document.addEventListener('scroll', trackScrolling, { passive: true })
 
       // will be called on component unmount
@@ -214,7 +214,14 @@ function Post(props) {
       <SEO
         title={frontmatter.titleEN}
         image={`https://mosaic.com${
-          frontmatter.shareImage || frontmatter.featuredImage
+          get(
+            frontmatter,
+            'shareImage.childImageSharp.gatsbyImageData.images.fallback.src'
+          ) ||
+          get(
+            frontmatter,
+            'featuredImage.childImageSharp.gatsbyImageData.images.fallback.src'
+          )
         }`}
       />
 
@@ -391,7 +398,6 @@ function Post(props) {
                   playing
                   url={`https://vimeo.com/${play}`}
                   loop={true}
-                  playing={true}
                   autoPlay={true}
                   width="100%"
                   height={null}

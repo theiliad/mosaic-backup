@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, graphql } from 'gatsby'
 
 import { StaticImage } from 'gatsby-plugin-image'
@@ -9,7 +9,7 @@ import SEO from '../components/seo'
 import Carousel from '../components/Carousel'
 
 // Locale
-import { Text } from '../containers/Language'
+import { LanguageContext, Text } from '../containers/Language'
 
 // Lodash
 import { get } from 'lodash-es'
@@ -106,6 +106,22 @@ export const CaseStudyMeta = ({ node, mobileVersion }) => (
     </div>
   </>
 )
+
+const HomeHead = () => {
+  const languageContext = useContext(LanguageContext)
+  const { userLanguage } = languageContext
+
+  return (
+    <SEO
+      title={userLanguage === 'fr' ? 'Accueil' : 'Home'}
+      description={
+        userLanguage === 'fr'
+          ? 'Mosaic est une agence de marketing intégrée qui a des bureaux partout en Amérique du Nord. Nous bâtissons des marques en dimension en utilisant la créativité pour stimuler la conversion'
+          : 'Mosaic is an integrated marketing agency with offices across North America. We build brands in dimension by using creativity to drive conversion'
+      }
+    />
+  )
+}
 
 class BlogIndex extends React.Component {
   componentDidMount() {
@@ -267,7 +283,7 @@ class BlogIndex extends React.Component {
           </div>
         }
       >
-        <SEO title="Home" keywords={['TODO']} description="TODO" />
+        <HomeHead />
 
         <div className="pages-index">
           {/* TODO - alt text should be confirmed */}

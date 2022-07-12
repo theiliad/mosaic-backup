@@ -62,7 +62,7 @@ module.exports = {
             options: {
               // [Optional] Include the following fields, use dot notation for nested fields
               // All fields are included by default
-              include: ['featuredImage'],
+              include: ['featuredImage', 'shareImage'],
             },
           },
           {

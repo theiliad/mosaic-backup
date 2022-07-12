@@ -7,7 +7,7 @@ const { groupBy } = require('lodash')
 
 const CATEGORIES = require('./src/data/categories')
 
-const getNodePrefix = postType => {
+const getNodePrefix = (postType) => {
   let prefix = ''
   if (postType === 'news') {
     prefix = 'news'
@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const ThinkingPage = path.resolve(`./src/pages/thinking.js`)
-  Object.keys(CATEGORIES.thinking).map(categoryKey => {
+  Object.keys(CATEGORIES.thinking).map((categoryKey) => {
     createPage({
       path: `/thinking/${categoryKey}`,
       component: ThinkingPage,
@@ -59,6 +59,14 @@ exports.createPages = ({ graphql, actions }) => {
                     )
                   }
                 }
+                shareImage {
+                  childImageSharp {
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
                 posttype
                 bodyEN
                 bodyFR
@@ -69,7 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     if (result.errors) {
       throw result.errors
     }
@@ -78,10 +86,10 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMdx.edges
     const postsGroupedByPosttype = groupBy(
       posts,
-      post => post.node.frontmatter.posttype
+      (post) => post.node.frontmatter.posttype
     )
 
-    Object.keys(postsGroupedByPosttype).forEach(postType => {
+    Object.keys(postsGroupedByPosttype).forEach((postType) => {
       const posts = postsGroupedByPosttype[postType]
       posts.forEach((post, index) => {
         const previous =

@@ -25,7 +25,7 @@ class Careers extends React.Component {
           </div>
         }
       >
-        <SEO title="Careers" keywords={['TODO']} image={null} />
+        <SEO title="Careers" />
 
         <div className="pages-careers">
           <div className="section-careers">
