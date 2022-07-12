@@ -1,0 +1,43 @@
+.prefooter {
+  margin-top: -40px;
+  padding-bottom: 165px;
+  position: relative;
+  @media (max-width: 768px) {
+    margin-top: 0;
+    padding-bottom: 47px;
+  }
+  h4 {
+    font-size: 0.875em;
+    margin-bottom: 1em;
+  }
+  ul {
+    position: relative;
+    z-index: 1;
+  }
+  li {
+    font-size: 0.875em;
+    margin-bottom: 0.5em;
+  }
+  li:last-of-type {
+    margin-bottom: 2em;
+  }
+
+  .big {
+    font-size: 18vw;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: #f5f6f8;
+    @media (max-width: 768px) {
+      color: unset;
+      position: unset;
+      left: 0;
+      top: 0;
+      transform: unset;
+      font-size: 2.5em;
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+  }
+}

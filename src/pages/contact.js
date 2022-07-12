@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import Acosta from '../components/Acosta'
 
 // Locale
 import { getText, Text, LanguageContext } from '../containers/Language'
@@ -33,7 +34,7 @@ const CONTACTS = {
   USA: [
     {
       name: 'Dallas',
-      number: '877.870.4800',
+      number: '312.526.3126',
       address: (
         <>
           220 East Las Colinas Blvd <br />
@@ -55,34 +56,9 @@ const CONTACTS = {
       link: 'https://goo.gl/maps/mUqWvoGd94WDh2iY8',
     },
     {
-      name: 'Bentonville',
-      number: '479.268.2775',
-      address: (
-        <>
-          4204 S. Pinnacle Hills Pkwy <br />
-          Suite 101 <br />
-          Rogers, AR 72758
-        </>
-      ),
-      link: 'https://goo.gl/maps/UZwCaAmLP6uC8McGA',
-    },
-    {
-      name: 'Norwalk',
-      description: 'FrontLine Marketing',
-      number: '203.662.5252',
-      address: (
-        <>
-          383 Main Avenue <br />
-          6th Floor <br />
-          Norwalk, CT 06851
-        </>
-      ),
-      link: 'https://goo.gl/maps/eJ8bGtrxC5h2tTAn7',
-    },
-    {
       name: 'Jacksonville',
       description: 'Mosaic Pro',
-      number: '904.470.4196',
+      number: '312.526.3126',
       address: (
         <>
           8500 Baycenter Road <br />
@@ -108,7 +84,7 @@ const CONTACTS = {
     },
     {
       name: 'Missisauga',
-      number: '905.238.8422',
+      number: '647.100.1000',
       address: (
         <>
           2700 Matheson Blvd East <br />
@@ -120,7 +96,7 @@ const CONTACTS = {
     },
     {
       name: 'Montreal',
-      number: '514.228.8950',
+      number: '647.100.1000',
       address: (
         <>
           2075, Boulevard Robert-Bourassa <br />
@@ -295,6 +271,10 @@ function Contact({ data, location }) {
       titleTID: 'pages.contact.meta.contacts.general',
       email: 'Info@mosaic.com',
     },
+    {
+      titleTID: 'pages.contact.meta.contacts.employee',
+      email: 'employeeservices@acosta.com',
+    },
   ]
 
   const HeroContactAccordionItem = ({ contact }) => (
@@ -343,8 +323,6 @@ function Contact({ data, location }) {
               </div>
 
               <div className="column is-7">
-                {contact.name && <p>{contact.name}</p>}
-
                 <p>
                   <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 </p>
@@ -478,7 +456,7 @@ function Contact({ data, location }) {
               </h3>
 
               <h5>
-                <Text tid="misc.countries.usa" />
+                <Text tid="misc.offices" />
               </h5>
 
               <div className="columns is-multiline">
@@ -488,10 +466,6 @@ function Contact({ data, location }) {
                   </div>
                 ))}
               </div>
-
-              <h5 className="cp-2nd-h5">
-                <Text tid="misc.countries.canada" />
-              </h5>
 
               <div className="columns is-multiline">
                 {CONTACTS.CANADA.map((contact) => (
@@ -508,7 +482,7 @@ function Contact({ data, location }) {
               </h3>
 
               <h5>
-                <Text tid="misc.countries.usa" />
+                <Text tid="misc.offices" />
               </h5>
 
               <Accordion allowZeroExpanded={true}>
@@ -517,10 +491,6 @@ function Contact({ data, location }) {
                 ))}
               </Accordion>
 
-              <h5 className="cp-2nd-h5">
-                <Text tid="misc.countries.canada" />
-              </h5>
-
               <Accordion allowZeroExpanded={true}>
                 {CONTACTS.CANADA.map((contact) => (
                   <ContactAccordionItem contact={contact} />
@@ -528,6 +498,8 @@ function Contact({ data, location }) {
               </Accordion>
             </div>
           </div>
+
+          <Acosta />
 
           <div className="form">
             <div className="container page">

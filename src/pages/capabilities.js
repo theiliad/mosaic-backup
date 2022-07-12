@@ -3,28 +3,25 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import PreFooter from '../components/PreFooter'
 
 // Locale
 import { Text } from '../containers/Language'
 
 // Assets
-import CAPABILITIES_CONTENT_DIGITAL from '../img/capabilities/content-digital.jpg'
-import CAPABILITIES_EXPERIENTIAL_MARKETING from '../img/capabilities/experiential-marketing.jpg'
-import CAPABILITIES_RETAIL_COMMERCE from '../img/capabilities/retail-commerce.jpg'
-import CAPABILITIES_B2B from '../img/capabilities/b2b.jpg'
-import CAPABILITIES_ASSISTED_SELLING from '../img/capabilities/assisted-selling.jpg'
-import CAPABILITIES_BRAND_DEVELOPMENT from '../img/capabilities/brand-development.jpg'
+import GAUGE from '../img/capabilities/capabilities-guage.svg'
+import GAUGE_BLUE from '../img/capabilities/gauge-blue.png'
+
+import IMG01 from '../img/capabilities/experiential-marketing.jpg'
+import IMG02 from '../img/capabilities/02.jpg'
+import IMG03 from '../img/capabilities/03.jpg'
+import IMG04 from '../img/capabilities/04.jpg'
+import IMG05 from '../img/capabilities/05.jpg'
+import IMG06 from '../img/capabilities/06.jpg'
 
 import { FiArrowRight } from 'react-icons/fi'
 
 class Capabilities extends React.Component {
-  componentDidMount() {
-    setTimeout(
-      () => document.getElementById('animated_svg').classList.add('active'),
-      300
-    )
-  }
-
   render() {
     const { data } = this.props
 
@@ -40,7 +37,7 @@ class Capabilities extends React.Component {
               <div className="cp-hero" id="cp_hero">
                 <div className="container">
                   <div className="columns">
-                    <div className="column cp-copy">
+                    <div className="column is-6 cp-copy">
                       <h1>
                         <span>
                           <Text tid="pages.capabilities.title" />
@@ -52,61 +49,14 @@ class Capabilities extends React.Component {
                       </p>
                     </div>
 
-                    <div className="column cp-img">
-                      <svg
-                        version="1.1"
-                        id="animated_svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        // xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 543.6 646.9"
-                        style={{ enableBackground: 'new 0 0 543.6 646.9' }}
-                        // xml:space="preserve"
-                        width="543.5999755859375"
-                        height="646.9000244140625"
-                      >
-                        <g
-                          id="Group_997"
-                          transform="translate(-533.816 -129.672)"
-                        >
-                          <path
-                            id="Path_1190"
-                            class="st0 svg-elem-1"
-                            d="M805.6,772.1L538.3,612.6v-319l267.3,159.5V772.1z"
-                          ></path>
-                          <path
-                            id="Path_1191"
-                            class="st0 svg-elem-2"
-                            d="M805.6,772.1l267.3-159.5v-319L805.6,453.1V772.1z"
-                          ></path>
-                          <path
-                            id="Path_1192"
-                            class="st0 svg-elem-3"
-                            d="M538.3,612.6l267.3-159.5v-319L538.3,293.6V612.6z"
-                          ></path>
-                          <path
-                            id="Path_1193"
-                            class="st0 svg-elem-4"
-                            d="M538.3,293.6l267.3,159.5l267.3-159.5L805.6,134.2L538.3,293.6z"
-                          ></path>
-                          <path
-                            id="Path_1194"
-                            class="st0 svg-elem-5"
-                            d="M538.3,612.6l267.3,159.5l267.3-159.5L805.6,453.1L538.3,612.6z"
-                          ></path>
-                          <path
-                            id="Path_1195"
-                            class="st0 svg-elem-6"
-                            d="M805.6,772.1L538.3,293.6h534.6L805.6,772.1z"
-                          ></path>
-                          <path
-                            id="Path_1196"
-                            class="st0 svg-elem-7"
-                            d="M805.6,134.2L538.3,612.6h534.6L805.6,134.2z"
-                          ></path>
-                        </g>
-                      </svg>
+                    <div className="column is-1"></div>
+
+                    <div className="column is-5 cp-img">
+                      <img
+                        className="gauge-hero-image"
+                        src={GAUGE_BLUE}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -119,13 +69,35 @@ class Capabilities extends React.Component {
         <SEO title="Capabilities" />
 
         <div className="pages-index pages-capabilities">
+          <div className="gauge">
+            <div className="container">
+              <div className="columns">
+                <div className="column is-4 is-offset-1 gauge-text">
+                  <h1>
+                    <Text tid="pages.capabilities.gauge.title" />
+                  </h1>
+
+                  <p>
+                    <Text tid="pages.capabilities.gauge.text" />
+                  </p>
+                </div>
+
+                <div className="gauge-image">
+                  {/* TODO - alt text should be confirmed */}
+                  <img src={GAUGE} alt="Image of six strategy steps." />
+                </div>
+              </div>
+              <div className="dots dots-top"></div>
+            </div>
+          </div>
+
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
                   {/* TODO - alt text should be confirmed */}
                   <img
-                    src={CAPABILITIES_CONTENT_DIGITAL}
+                    src={IMG01}
                     className="image-below"
                     alt="Content & Digital"
                   />
@@ -138,19 +110,10 @@ class Capabilities extends React.Component {
                     <Text tid="pages.capabilities.content_digital.title" />
                   </h2>
 
-                  <p className="secondary">
+                  <p className="secondary secondary-blue">
                     <Text tid="pages.capabilities.content_digital.text" />
                   </p>
-
-                  <Link to="/case-studies/budweiser/">
-                    <span>
-                      <Text tid="pages.capabilities.content_digital.cta" />
-                    </span>
-                    <FiArrowRight />
-                  </Link>
                 </div>
-
-                <div className="column is-1"></div>
               </div>
             </div>
           </div>
@@ -158,29 +121,22 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.experiential_marketing.title" />
                   </h2>
 
-                  <p className="secondary">
+                  <p className="secondary secondary-orange">
                     <Text tid="pages.capabilities.experiential_marketing.text" />
                   </p>
-
-                  <Link to="/case-studies/stella/">
-                    <span>
-                      <Text tid="pages.capabilities.experiential_marketing.cta" />
-                    </span>
-                    <FiArrowRight />
-                  </Link>
                 </div>
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
                   {/* TODO - alt text should be confirmed */}
                   <img
-                    src={CAPABILITIES_EXPERIENTIAL_MARKETING}
+                    src={IMG02}
                     className="image-below"
                     alt="Experiential Marketing"
                   />
@@ -192,10 +148,10 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
                   {/* TODO - alt text should be confirmed */}
                   <img
-                    src={CAPABILITIES_RETAIL_COMMERCE}
+                    src={IMG03}
                     className="image-below"
                     alt="Retail & Commerce"
                   />
@@ -203,24 +159,15 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.retail_commerce.title" />
                   </h2>
 
-                  <p className="secondary">
+                  <p className="secondary secondary-red">
                     <Text tid="pages.capabilities.retail_commerce.text" />
                   </p>
-
-                  <Link to="/case-studies/google/">
-                    <span>
-                      <Text tid="pages.capabilities.retail_commerce.cta" />
-                    </span>
-                    <FiArrowRight />
-                  </Link>
                 </div>
-
-                <div className="column is-1"></div>
               </div>
             </div>
           </div>
@@ -228,32 +175,21 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.b2b.title" />
                   </h2>
 
-                  <p className="secondary">
+                  <p className="secondary secondary-cyan">
                     <Text tid="pages.capabilities.b2b.text" />
                   </p>
-
-                  <Link to="/case-studies/loblaws/">
-                    <span>
-                      <Text tid="pages.capabilities.b2b.cta" />
-                    </span>
-                    <FiArrowRight />
-                  </Link>
                 </div>
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
                   {/* TODO - alt text should be confirmed */}
-                  <img
-                    src={CAPABILITIES_B2B}
-                    className="image-below"
-                    alt="B2B"
-                  />
+                  <img src={IMG04} className="image-below" alt="B2B" />
                 </div>
               </div>
             </div>
@@ -262,10 +198,10 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
                   {/* TODO - alt text should be confirmed */}
                   <img
-                    src={CAPABILITIES_ASSISTED_SELLING}
+                    src={IMG05}
                     className="image-below"
                     alt="Assisted Selling & Training"
                   />
@@ -273,21 +209,14 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.assisted_selling.title" />
                   </h2>
 
-                  <p className="secondary">
+                  <p className="secondary secondary-blue">
                     <Text tid="pages.capabilities.assisted_selling.text" />
                   </p>
-
-                  <Link to="/case-studies/digital-main-st/">
-                    <span>
-                      <Text tid="pages.capabilities.assisted_selling.cta" />
-                    </span>
-                    <FiArrowRight />
-                  </Link>
                 </div>
 
                 <div className="column is-1"></div>
@@ -297,37 +226,33 @@ class Capabilities extends React.Component {
 
           <div className="section-writeup2">
             <div className="container">
-              <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+              <div className="columns post-single ui-grid home-featured columns-reverse-mobile ">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
                   <h2>
                     <Text tid="pages.capabilities.brand_development.title" />
                   </h2>
 
-                  <p className="secondary">
+                  <p className="secondary secondary-orange">
                     <Text tid="pages.capabilities.brand_development.text" />
                   </p>
-
-                  <Link to="/case-studies/tishman-speyer/">
-                    <span>
-                      <Text tid="pages.capabilities.brand_development.cta" />
-                    </span>
-                    <FiArrowRight />
-                  </Link>
                 </div>
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
                   {/* TODO - alt text should be confirmed */}
                   <img
-                    src={CAPABILITIES_BRAND_DEVELOPMENT}
+                    src={IMG06}
                     className="image-below"
                     alt="Brand Development & Design"
                   />
                 </div>
               </div>
+              <div className="dots"></div>
             </div>
           </div>
+
+          <PreFooter />
         </div>
       </Layout>
     )

@@ -1,5 +1,21 @@
 .header_extension {
   padding: 5em 0 0 0;
+  .cp-hero_video {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: 84vh;
+    max-height: 650px;
+    @media (max-width: 768px) {
+      min-height: 87vh;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      display: none;
+    }
+    video {
+      object-fit: cover;
+    }
+  }
 
   @media (max-width: 768px) {
     padding: 6em 0 0 0;
@@ -38,6 +54,7 @@
       position: relative;
       min-height: 75vh;
       max-height: 650px;
+      overflow: hidden;
 
       div.cp-hero {
         position: absolute;
@@ -54,7 +71,6 @@
 
         img {
           height: 11.375em;
-          z-index: 9999;
 
           &#cp_hero_logo {
             position: fixed;
@@ -72,6 +88,17 @@
           }
         }
 
+        .gauge-hero-image {
+          height: unset;
+          transform: translateY(270px);
+          z-index: 9999;
+          width: 100%;
+          @media (max-width: 768px) {
+            margin-top: -17em;
+            height: 100%;
+          }
+        }
+
         h1 {
           font-size: 5em;
           line-height: 1em;
@@ -79,7 +106,7 @@
           margin-left: -3px;
 
           @media (max-width: 768px) {
-            font-size: 4em;
+            font-size: 2em;
 
             br {
               display: none;
@@ -91,7 +118,7 @@
   }
 
   &.capabilities {
-    background: $colors_midnight_primary url('../img/matrix.svg') repeat;
+    background: $colors_blue_primary url('../img/matrix.svg') repeat;
     background-size: 1.5em;
 
     p {
@@ -271,7 +298,7 @@
   }
 
   &.news {
-	padding: 9em 0 0 0;
+    padding: 9em 0 0 0;
   }
 
   &.thinking {
@@ -338,7 +365,7 @@
           }
 
           &.active {
-            border-bottom: 2px solid;
+            border-bottom: 2px solid $colors_blue_primary;
             @include transition_default;
 
             a {

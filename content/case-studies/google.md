@@ -4,8 +4,8 @@ titleEN: Pixelville
 titleFR: Pixelville
 companyName: Google
 date: 2021-01-04T20:35:33.876Z
-descriptionEN: 'Rated R: radically redefined retail'
-descriptionFR: 'Classé R : le commerce de détail radicalement transformé'
+descriptionEN: How an immersive new product launch drove demand.
+descriptionFR: Comment le lancement d’un nouveau produit immersif a-t-il réussi à stimuler la demande?
 category: retail-commerce
 featuredImage: /img/case-studies/google/hero.jpg
 primaryVideoVimeoID: 579907246

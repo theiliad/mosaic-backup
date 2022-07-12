@@ -1,13 +1,13 @@
 ---
 posttype: thinking
 titleEN: 'The wellness pandemic: How will the new normal drive brand purpose?'
-titleFR: FRFPO
+titleFR: 'The wellness pandemic: How will the new normal drive brand purpose?'
 date: 2020-05-20T03:14:12.599Z
 featuredImage: /img/thinking/the-wellness-pandemic.jpg
 videoID: 449905474
 category: oneeighty
 descriptionEN: 'Marketing experts debate best practices for brands helping consumers adapt to their new normal: maintaining physical and mental wellness at home.'
-descriptionFR: frFPO
+descriptionFR: 'Marketing experts debate best practices for brands helping consumers adapt to their new normal: maintaining physical and mental wellness at home.'
 sponsors:
   - image: /img/oneeighty/sponsors/anheuser-busch.svg
     alt: Anheuser Busch
@@ -56,5 +56,8 @@ moderator:
 bodyEN: >-
   The need to stay at home has driven the need for consumers to find new ways to stay safe, healthy, fit and seek holistic wellness for body, mind and soul. This panel will discuss ways brands can live their purpose and help consumers as they adapt to their new normal. You'll hear from unconventional wellness brands who have successfully made the shift, moderated by Nikolas Badminton.
 bodyFR: >-
-  FRFPO
+  Désolé, la traduction de cette publication en français n’est pas disponible.
+
+
+  The need to stay at home has driven the need for consumers to find new ways to stay safe, healthy, fit and seek holistic wellness for body, mind and soul. This panel will discuss ways brands can live their purpose and help consumers as they adapt to their new normal. You'll hear from unconventional wellness brands who have successfully made the shift, moderated by Nikolas Badminton.
 ---

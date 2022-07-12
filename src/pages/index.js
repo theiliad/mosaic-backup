@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+import ReactPlayer from 'react-player'
+
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import Carousel from '../components/Carousel'
@@ -80,32 +82,47 @@ const updateLogos = () => {
   }
 }
 
-export const CaseStudyMeta = ({ node, mobileVersion }) => (
-  <>
-    <div className="cp-meta columns is-mobile">
-      <div className="column is-8">
-        <p className="cp-company">{node.frontmatter.companyName}</p>
+export const CaseStudyMeta = ({ node, mobileVersion }) => {
+  console.log(node.frontmatter)
 
-        <p className="cp-project">
-          <Text
-            variations={{
-              en: node.frontmatter.titleEN,
-              fr: node.frontmatter.titleFR,
-            }}
-          />
-        </p>
-      </div>
+  return (
+    <>
+      <div className="cp-meta columns is-mobile">
+        <div className="column is-8">
+          <p className="cp-company">{node.frontmatter.companyName}</p>
 
-      <div className="column is-4">
-        <p className="cp-category">
-          <Text
-            variations={CATEGORIES['case-studies'][node.frontmatter.category]}
-          />
-        </p>
+          <p className="cp-project">
+            <Text
+              variations={{
+                en: node.frontmatter.titleEN,
+                fr: node.frontmatter.titleFR,
+              }}
+            />
+
+            <div className="column columns is-12">
+              <p className="cp-description">
+                <Text
+                  variations={{
+                    en: node.frontmatter.descriptionEN,
+                    fr: node.frontmatter.descriptionFR,
+                  }}
+                />
+              </p>
+            </div>
+          </p>
+        </div>
+
+        <div className="column is-4">
+          <p className="cp-category">
+            <Text
+              variations={CATEGORIES['case-studies'][node.frontmatter.category]}
+            />
+          </p>
+        </div>
       </div>
-    </div>
-  </>
-)
+    </>
+  )
+}
 
 const HomeHead = () => {
   const languageContext = useContext(LanguageContext)
@@ -257,6 +274,16 @@ class BlogIndex extends React.Component {
         }}
         HeaderExtension={
           <div className="header_extension home">
+            <ReactPlayer
+              url="/hero.mp4"
+              playing
+              loop
+              muted
+              width="100%"
+              height="75vh"
+              className="cp-hero_video"
+            />
+
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
                 {/* TODO - alt text should be confirmed */}
@@ -296,11 +323,22 @@ class BlogIndex extends React.Component {
           <div className="section-why">
             <div className="container">
               <div className="columns">
-                <div className="column is-1"></div>
-
-                <div className="column is-5">
+                <div className="column is-9 is-offset-2">
                   <h2 className="primary heading_lg">
                     <Text tid="pages.index.why.title" />
+                    <div
+                      className="button-wrapper"
+                      style={{ marginTop: '22px' }}
+                    >
+                      <Link
+                        to="/capabilities"
+                        className="button primary"
+                        style={{ fontSize: '.4em' }}
+                      >
+                        <Text tid="pages.index.why.buttonText" />
+                        <FiArrowRight />
+                      </Link>
+                    </div>
                   </h2>
                 </div>
               </div>
@@ -343,7 +381,6 @@ class BlogIndex extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="section-writeup" id="home-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
@@ -371,7 +408,6 @@ class BlogIndex extends React.Component {
               </div>
             </div>
           </div>
-
           {/* <div className="section-writeup2" id="home-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
@@ -428,6 +464,7 @@ export const pageQuery = graphql`
               companyName
               posttype
               descriptionEN
+              descriptionFR
               featuredImage {
                 childImageSharp {
                   gatsbyImageData(

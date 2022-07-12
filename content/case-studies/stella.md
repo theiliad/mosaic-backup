@@ -4,8 +4,8 @@ titleEN: Stadium Bites
 titleFR: Stadium Bites
 companyName: Stella
 date: 2021-01-05T20:35:33.876Z
-descriptionEN: Bringing the stadium experience home
-descriptionFR: Une expérience du stade à la maison
+descriptionEN: How a brand converted a new consumer base into big fans.
+descriptionFR: Comment une marque a-t-elle su transformer une nouvelle base de consommateurs en partisans invétérés?
 category: experiential-marketing
 primaryVideoVimeoID: 668405645
 primaryVideoLocalURL: /img/case-studies/stella/hero.mp4
@@ -28,19 +28,18 @@ bodyEN: >-
   ![Stella Stadium Bites Food and Packaging](/img/case-studies/stella/stella-stadium-bites-packaging.jpg)
 bodyFR: >-
   Le football, l’un des sports préférés en Amérique du Nord, accueille deux millions de partisans dans les stades le jour du match. Tous se réunissent pour exprimer la fierté de leur ville et de leur équipe, avec de la bière et des plats locaux. Mais en 2020, la pandémie mondiale a mis les spectateurs hors-jeu, les forçant à applaudir de chez eux pendant que de faux partisans en carton restaient inactifs sur les sièges du stade. Les empêchant de savourer l’expérience du stade qui leur a le plus manqué : les bouchées.
- 
+
 
   Stella Artois a créé Stella Stadium Bites : une nouvelle version de l’expérience d’une suite au stade qui consiste à livrer des plats populaires chez les partisans le jour du match. Soutenue par l’un des clubs les plus populaires de la NFL, les New York Giants, Stella s’est remonté les manches avec l’ancienne vedette des New York Giants, Victor Cruz, et Daniela Soto-Innes, la célèbre chef mondialement reconnue par le prix James Beard. Cette initiative lui a même permis d’inspirer et partager des idées de son propre livre de recettes.
 
- 
+
   Le jour du match, les partisans ont été invités à se rendre sur un microsite personnalisé qui présentait ces bouchées alléchantes. Ils ont pu commander une caisse de 6 Stella Artois froides, leur sélection de nourriture, et choisir un intervalle de livraison entre 16 h et 22 h le jour du match. Chaque commande a été livrée à la manière de Stella, c’est-à-dire avec un souci de qualité : accompagnés de deux verres engravés et personnalisés, en plus d’une note de don, faite au nom du partisan, à l’attention banque alimentaire de New York.
 
- 
+
   Le programme pilote Stella Stadium Bites a enregistré *5,2 millions d’impressions sociales, 100 % de sentiment positif des consommateurs et 27,1 millions d’impressions* de relations publiques de la part de célébrités et des médias, attirant l’attention de nouveaux partenaires d’équipe potentiels. En raison de son succès, le programme continue de s’étendre et d’évoluer, convertissant une nouvelle base de consommateurs — les partisans de sport — à Stella.
 
 
   ![Stella Stadium Bites Box](/img/case-studies/stella/stella-stadium-bites-box.jpg)
   ![Stella Stadium Bites Video Stills](/img/case-studies/stella/stella-stadium-bites-stills.jpg)
   ![Stella Stadium Bites Food and Packaging](/img/case-studies/stella/stella-stadium-bites-packaging.jpg)
-
 ---

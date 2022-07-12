@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 
 import { Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout, { LOGO_OPTIONS } from '../components/Layout'
 import SEO from '../components/seo'
@@ -59,7 +60,10 @@ const ThinkingItem = ({ node, size }) => {
       <div className={`column thinking-item ${size}`}>
         <Link to={`/${node.fields.slug}`} className="cp-full-link">
           <div className="cp-image">
-            <GatsbyImage image={image} alt={node.frontmatter.titleEN} />
+            <StaticImage
+              src={'../img/thinking/thinking-default.jpg'}
+              alt="Mosaic logo background."
+            />
 
             <svg
               viewBox="0 0 800 1066.67"
@@ -385,14 +389,6 @@ export const pageQuery = graphql`
             recap
             titleEN
             titleFR
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
             category
           }
         }

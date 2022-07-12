@@ -4,8 +4,8 @@ titleEN: ShopHERE powered by Google
 titleFR: ShopHERE powered by Google
 companyName: Digital Main St
 date: 2021-01-02T20:35:33.876Z
-descriptionEN: Providing jobs, supporting small business
-descriptionFR: Fournir des emplois, soutenir les petites entreprises
+descriptionEN: How a marketing program created jobs and supported small businesses.
+descriptionFR: Comment un programme de marketing a-t-il permis de créer des emplois et de soutenir les petites entreprises?
 category: assisted-selling-training
 featuredImage: /img/case-studies/digital-main-st/hero.jpg
 bodyEN: >-
@@ -24,7 +24,7 @@ bodyFR: >-
   Au plus fort de la pandémie de la COVID-19, les petites entreprises ont été confrontées à des défis sans précédent, dont l’un était la conversion des opérations en magasin en commerce électronique. Notre client, Digital Main Street, s’est associé à Google, Facebook, MasterCard, Shopify et plus encore pour réfléchir à la manière de soutenir les petites entreprises.
 
 
-  En associant des étudiants et des diplômés récents à des propriétaires de petites entreprises, nous avons aidé Digital Main Street à fournir les bons outils et ressources afin d’aider les entreprises à passer à la vente en ligne et à réaliser leur transformation numérique. 
+  En associant des étudiants et des diplômés récents à des propriétaires de petites entreprises, nous avons aidé Digital Main Street à fournir les bons outils et ressources afin d’aider les entreprises à passer à la vente en ligne et à réaliser leur transformation numérique.
 
 
   Présentation de ShopHERE powered by Google : un programme qui offre aux petites entreprises indépendantes un moyen rapide, facile et gratuit de passer immédiatement à la vente en ligne.
