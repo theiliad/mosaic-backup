@@ -151,12 +151,12 @@ function Contact({ data, location }) {
 
       // Submit to Netlify
       axios(axiosOptions)
-        .then(response => {
+        .then((response) => {
           setLoading(false)
           setSuccess(true)
           setError(false)
         })
-        .catch(err => {
+        .catch((err) => {
           setLoading(false)
           setError(true)
         })
@@ -332,7 +332,7 @@ function Contact({ data, location }) {
 
       <div className="cp-contacts">
         <div className="cp-wide">
-          {HERO_CONTACTS.map(contact => (
+          {HERO_CONTACTS.map((contact) => (
             <div className="columns is-mobile">
               <div className="column is-4">
                 <p>
@@ -355,7 +355,7 @@ function Contact({ data, location }) {
 
         <div className="cp-mobile">
           <Accordion allowZeroExpanded={true}>
-            {HERO_CONTACTS.map(contact => (
+            {HERO_CONTACTS.map((contact) => (
               <HeroContactAccordionItem contact={contact} />
             ))}
           </Accordion>
@@ -482,7 +482,7 @@ function Contact({ data, location }) {
               </h5>
 
               <div className="columns is-multiline">
-                {CONTACTS.USA.map(contact => (
+                {CONTACTS.USA.map((contact) => (
                   <div className="column is-4 cp-contact">
                     <Contact contact={contact} />
                   </div>
@@ -494,7 +494,7 @@ function Contact({ data, location }) {
               </h5>
 
               <div className="columns is-multiline">
-                {CONTACTS.CANADA.map(contact => (
+                {CONTACTS.CANADA.map((contact) => (
                   <div className="column is-4 cp-contact">
                     <Contact contact={contact} />
                   </div>
@@ -512,7 +512,7 @@ function Contact({ data, location }) {
               </h5>
 
               <Accordion allowZeroExpanded={true}>
-                {CONTACTS.USA.map(contact => (
+                {CONTACTS.USA.map((contact) => (
                   <ContactAccordionItem contact={contact} />
                 ))}
               </Accordion>
@@ -522,7 +522,7 @@ function Contact({ data, location }) {
               </h5>
 
               <Accordion allowZeroExpanded={true}>
-                {CONTACTS.CANADA.map(contact => (
+                {CONTACTS.CANADA.map((contact) => (
                   <ContactAccordionItem contact={contact} />
                 ))}
               </Accordion>
@@ -543,89 +543,50 @@ function Contact({ data, location }) {
 
                 <div className="column is-6-tablet">
                   {!success && (
-                    <>
-                      <form
-                        name="contact"
-                        method="post"
-                        action="/thanks/"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        style={{
-                          display: 'block',
-                          height: 0,
-                          visibility: 'hidden',
-                          opacity: '0',
-                        }}
-                      >
-                        <input type="hidden" name="form-name" value="contact" />
-
-                        {formItems.map(formItem => (
-                          <>
-                            <label for={formItem.name}>{formItem.name}</label>
-
-                            {!formItem.type && (
-                              <input id={formItem.name} name={formItem.name} />
-                            )}
-
-                            {formItem.type === 'select' && (
-                              <div class="select">
-                                <select id={formItem.name} name={formItem.name}>
-                                  {formItem.items.map(item => (
-                                    <option>
-                                      {getText({
-                                        tid: item.value,
-                                        dictionary,
-                                        userLanguage,
-                                      })}
-                                    </option>
-                                  ))}
-                                </select>
-                              </div>
-                            )}
-
-                            {formItem.type === 'textarea' && (
-                              <textarea
-                                id={formItem.name}
-                                name={formItem.name}
-                              ></textarea>
-                            )}
-                          </>
-                        ))}
-                      </form>
-
-                      <FormValidation
-                        onSubmit={handleSubmit}
-                        config={config}
-                        onSubmit={handleSubmit}
-                        initialValues={{
-                          subject: 'general-inquiries',
-                        }}
-                      >
-                        {({ fields, errors, submitted }) => (
-                          <>
-                            <div>
-                              {formItems.map(formItem => (
-                                <div
-                                  className="field"
-                                  key={`formItem-${formItem.name}`}
+                    <FormValidation
+                      onSubmit={handleSubmit}
+                      config={config}
+                      initialValues={{
+                        subject: 'general-inquiries',
+                      }}
+                    >
+                      {({ fields, errors, submitted }) => (
+                        <>
+                          <div>
+                            {formItems.map((formItem) => (
+                              <div
+                                className="field"
+                                key={`formItem-${formItem.name}`}
+                              >
+                                <label
+                                  className="label"
+                                  for={`mc-${formItem.name}`}
                                 >
-                                  <label
-                                    className="label"
-                                    for={`mc-${formItem.name}`}
-                                  >
-                                    {formItem.title +
-                                      (!config[formItem.name].isRequired
-                                        ? ` (${getText({
-                                            tid:
-                                              'pages.contact.formItems.optional',
-                                            dictionary,
-                                            userLanguage,
-                                          })})`
-                                        : '')}
-                                  </label>
-                                  <div className="control">
-                                    {!formItem.type && (
-                                      <input
+                                  {formItem.title +
+                                    (!config[formItem.name].isRequired
+                                      ? ` (${getText({
+                                          tid: 'pages.contact.formItems.optional',
+                                          dictionary,
+                                          userLanguage,
+                                        })})`
+                                      : '')}
+                                </label>
+                                <div className="control">
+                                  {!formItem.type && (
+                                    <input
+                                      className={`input ${
+                                        submitted && errors[formItem.name]
+                                          ? 'is-danger'
+                                          : ''
+                                      }`}
+                                      id={`mc-${formItem.name}`}
+                                      name={formItem.name}
+                                    />
+                                  )}
+
+                                  {formItem.type === 'select' && (
+                                    <div class="select">
+                                      <select
                                         className={`input ${
                                           submitted && errors[formItem.name]
                                             ? 'is-danger'
@@ -633,77 +594,63 @@ function Contact({ data, location }) {
                                         }`}
                                         id={`mc-${formItem.name}`}
                                         name={formItem.name}
-                                      />
-                                    )}
+                                      >
+                                        {formItem.items.map((item) => (
+                                          <option>
+                                            {getText({
+                                              tid: item.value,
+                                              dictionary,
+                                              userLanguage,
+                                            })}
+                                          </option>
+                                        ))}
+                                      </select>
+                                    </div>
+                                  )}
 
-                                    {formItem.type === 'select' && (
-                                      <div class="select">
-                                        <select
-                                          className={`input ${
-                                            submitted && errors[formItem.name]
-                                              ? 'is-danger'
-                                              : ''
-                                          }`}
-                                          id={`mc-${formItem.name}`}
-                                          name={formItem.name}
-                                        >
-                                          {formItem.items.map(item => (
-                                            <option>
-                                              {getText({
-                                                tid: item.value,
-                                                dictionary,
-                                                userLanguage,
-                                              })}
-                                            </option>
-                                          ))}
-                                        </select>
-                                      </div>
-                                    )}
-
-                                    {formItem.type === 'textarea' && (
-                                      <textarea
-                                        className={`textarea ${
-                                          submitted && errors[formItem.name]
-                                            ? 'is-danger'
-                                            : ''
-                                        }`}
-                                        id={`mc-${formItem.name}`}
-                                        name={formItem.name}
-                                      ></textarea>
-                                    )}
-                                  </div>
-
-                                  {submitted && errors[formItem.name] && (
-                                    <p className="help is-danger">
-                                      <Text tid={errors[formItem.name]} />
-                                    </p>
+                                  {formItem.type === 'textarea' && (
+                                    <textarea
+                                      className={`textarea ${
+                                        submitted && errors[formItem.name]
+                                          ? 'is-danger'
+                                          : ''
+                                      }`}
+                                      id={`mc-${formItem.name}`}
+                                      name={formItem.name}
+                                    ></textarea>
                                   )}
                                 </div>
-                              ))}
-                            </div>
 
-                            <div>
-                              <button
-                                type="submit"
-                                className={`cp-button button primary ${
-                                  loading ? 'is-loading' : ''
-                                }`}
-                              >
-                                <Text tid="pages.contact.formItems.send" />
-                              </button>
-                            </div>
-
-                            {error && (
-                              <div className="notification is-danger marginTop">
-                                <span>
-                                  <Text tid="pages.contact.formItems.error" />
-                                </span>
+                                {submitted && errors[formItem.name] && (
+                                  <p className="help is-danger">
+                                    <Text tid={errors[formItem.name]} />
+                                  </p>
+                                )}
                               </div>
-                            )}
-                          </>
-                        )}
-                      </FormValidation>
-                    </>
+                            ))}
+                          </div>
+
+                          <div>
+                            <button
+                              type="submit"
+                              className={`cp-button button primary ${
+                                loading ? 'is-loading' : ''
+                              }`}
+                            >
+                              <Text tid="pages.contact.formItems.send" />
+                            </button>
+                          </div>
+
+                          {error && (
+                            <div className="notification is-danger marginTop">
+                              <span>
+                                <Text tid="pages.contact.formItems.error" />
+                              </span>
+                            </div>
+                          )}
+                        </>
+                      )}
+                    </FormValidation>
                   )}
 
                   {success && (
@@ -713,7 +660,7 @@ function Contact({ data, location }) {
                       <a
                         href="/"
                         className="button primary"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault()
 
                           if (typeof window !== undefined) {
@@ -731,6 +678,52 @@ function Contact({ data, location }) {
           </div>
         </div>
       </div>
+
+      <form
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        style={{
+          display: 'block',
+          height: 0,
+          visibility: 'hidden',
+          opacity: '0',
+        }}
+      >
+        <input type="hidden" name="form-name" value="contact" />
+
+        {formItems.map((formItem) => (
+          <>
+            <label for={formItem.name}>{formItem.name}</label>
+
+            {!formItem.type && (
+              <input id={formItem.name} name={formItem.name} />
+            )}
+
+            {formItem.type === 'select' && (
+              <div class="select">
+                <select id={formItem.name} name={formItem.name}>
+                  {formItem.items.map((item) => (
+                    <option>
+                      {getText({
+                        tid: item.value,
+                        dictionary,
+                        userLanguage,
+                      })}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {formItem.type === 'textarea' && (
+              <textarea id={formItem.name} name={formItem.name}></textarea>
+            )}
+          </>
+        ))}
+      </form>
     </Layout>
   )
 }
