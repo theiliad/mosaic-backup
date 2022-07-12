@@ -1335,14 +1335,538 @@ export default {
             <h2>Welcome</h2>
 
             <p>
-              Welcome to the Mosaic website (the "Website"). This Website is
+              Welcome to the Mosaic website (the “Website”). This Website is
               built upon a social media software platform designed by Mosaic
               Sales Solutions that connects brands and consumers. Please read
-              the following terms of use ("Terms of Use") before using the
+              the following terms of use (“Terms of Use”) before using the
               Website. By accessing and using the Website, you agree to be bound
               by all these Terms of Use. If you do not agree with these Terms of
               Use, your sole recourse is to leave this Website immediately.
             </p>
+          </>
+        ),
+        fr: FRFPO,
+      },
+      content: {
+        en: (
+          <>
+            <p>1. Ownership / Restrictions On Use </p>
+            <p>
+              Any and all content, data, graphics, photographs, images, audio,
+              video, text, multimedia elements, music, editorials, designs,
+              reports, documents, formulae, patterns, data, software,
+              trademarks, service marks, trade names and any other information
+              or works (collectively, the “Content”) contained in this Website
+              are proprietary to us and/or our third-party licensors. The
+              Content is protected by Canadian, United States and international
+              copyright, trademark and other proprietary laws.{' '}
+            </p>
+            <p>
+              Except as outlined below, you may not modify, copy, reproduce,
+              publish, post, transmit, distribute, display, perform, create
+              derivative works from, publicly display, perform, attempt to
+              decompile or reverse engineer any software or database contained
+              in or accessed through the Website, use for any commercial
+              purpose, transfer or sell any Content without our express prior
+              written consent. You may download, print and reproduce the Content
+              for your own personal purposes, provided that you agree to
+              maintain any and all copyright or other proprietary notices
+              contained in such Content, and that you cite the URL source of
+              such Content. Reproduction of multiple copies of the Content, in
+              whole or in part, for resale or distribution is strictly
+              prohibited except with our prior written permission. To obtain
+              written consent for such reproduction, please contact us at
+              MosaicCommunications@mosaic.com.{' '}
+            </p>
+            <p>
+              You are permitted to provide links to the Website through email,
+              social media, or other similar methods, but you must make sure
+              that such methods do not (i) involve framing or embedding of any
+              portion of the Website within another website or service, (ii)
+              imply any affiliation between you and us, or you and the Website,
+              (iii) portray us or the Website in in a false, misleading,
+              derogatory or otherwise defamatory manner, or (iv) use the Website
+              in a commercial context.{' '}
+            </p>
+            <p>
+              This Website is intended solely for users who are at least the
+              legal age of majority and reside in a jurisdiction where the
+              Content of this Website is legally permissible. Any use of this
+              Website by anyone who does not meet these criteria is
+              unauthorized, unlicensed and in violation of these Terms of Use.{' '}
+            </p>
+            <p>2. Registration And Passwords </p>
+            <p>
+              To access certain portions of the Website, including without
+              limitation, to upload and submit content, you will be asked to
+              register and create a profile.{' '}
+            </p>
+            <p>
+              In consideration for your use of this Website and the services
+              provided through it, you agree to provide true, current, complete
+              and accurate information as requested on any registration form to{' '}
+            </p>
+            <p>
+              which this Website may direct you, and to update that registration
+              information as soon as possible after any information on such
+              registration form changes. Any personal information which you
+              provide in registering for the Website will be subject to our
+              Privacy Policy.{' '}
+            </p>
+            <p>
+              As part of the registration process, you will choose a username
+              and password. You alone are responsible for keeping that password
+              confidential, and you alone are legally responsible for any and
+              all activity that occurs on this Website under such username. You
+              agree to immediately notify us of any unauthorized use of your
+              username or password, if you become aware of any activity you did
+              not approve, or any other breach of security relating to the
+              Website. You must also provide us with reasonable assistance, as
+              requested, to stop or remedy those occurrences. We have no
+              obligation to investigate the authorization or source of any
+              access or use of the Website that purports to be you, such as
+              activity through your registered account.{' '}
+            </p>
+            <p>
+              You must not register or access an account on this Website on
+              behalf of any individual or entity other than yourself, except for
+              legal entities that are not individuals (such as companies,
+              partnerships, or societies), in which case you must register or
+              access an account on behalf of that entity unless you are duly
+              authorized to act for that entity.{' '}
+            </p>
+            <p>
+              If your registered account is linked to a third party service,
+              like a payment processor, we may update your information with
+              information provided through that third party service. We are not
+              responsible for that third party information as the third party
+              payment processor (or you, through your agreement with them) are
+              responsible for it.{' '}
+            </p>
+            <p>3. Code Of Conduct </p>
+            <p>
+              As a condition of your continued access to and use of this
+              Website, you agree to abide by all applicable federal, provincial,
+              territorial, state and other laws and regulations. In addition,
+              without limiting the foregoing, you agree not to:{' '}
+            </p>
+            <p>
+              ▪ upload, post, e-mail or otherwise transmit any material that:{' '}
+            </p>
+            <p>
+              ▪ constitutes unsolicited or unauthorized advertising, promotional
+              materials, “junk mail,” “spam,” “chain letters,” “pyramid
+              schemes,” or any other form of solicitation;{' '}
+            </p>
+            <p>
+              ▪ infringes any patent, trademark, trade secret, copyright or
+              other proprietary or privacy rights of any party;{' '}
+            </p>
+            <p>
+              ▪ is unlawful, harmful, threatening, abusive, harassing, tortious,
+              defamatory, vulgar, obscene, libelous, invasive of another’s
+              privacy, hateful, racially, ethnically or otherwise objectionable;
+              or{' '}
+            </p>
+            <p>
+              ▪ contains any form of destructive software such as a virus, worm,
+              Trojan horse or any other harmful components or any other computer
+              file, program or code, designed to interrupt, destroy or limit the
+              functionality of any computer software, hardware or
+              telecommunications equipment;{' '}
+            </p>
+            <p>
+              ▪ harvest or otherwise collect or store any information (including
+              personally identifiable information) about other users of the
+              Website, including e-mail addresses;
+            </p>
+            <p>
+              ▪ for the purpose of misleading others, create a false identity of
+              the sender or the origin of a message, forge headers or otherwise
+              manipulate identifiers in order to disguise the origin of any
+              material transmitted through the Website;{' '}
+            </p>
+            <p>
+              ▪ impersonate any person or entity or falsely state or otherwise
+              misrepresent your affiliation with a person or entity;{' '}
+            </p>
+            <p>
+              ▪ attempt to gain unauthorized access to the Website, other
+              computer systems or networks connected to the Website, through
+              password mining or any other means;{' '}
+            </p>
+            <p>
+              ▪ interfere with or disrupt networks or servers connected to the
+              Website or violate the regulations, policies or procedures of such
+              networks; and{' '}
+            </p>
+            <p>
+              ▪ use, download or otherwise copy, or provide to any person or
+              entity any Website users directory or other user or usage
+              information or any portion thereof other than in the context of
+              your use of the Website,{' '}
+            </p>
+            <p>(collectively referred to as the “Code of Conduct”). </p>
+            <p>
+              4. Interactive Pages, Forums, User Submissions, And Copyright
+              Assignment{' '}
+            </p>
+            <p>
+              We may from time to time make pages, discussion forums,
+              message/bulletin boards, and other online areas where users may
+              submit content to the Website (collectively, the “Interactive
+              Pages”) available to you, provided that, in connecting to and
+              using such Interactive Pages, you abide by the Code of Conduct,
+              the other conditions of these Terms of Use, and any other rules
+              that may be published from time to time.{' '}
+            </p>
+            <p>
+              We are not responsible for material posted on such Interactive
+              Pages, and will not have any liability related to the content of
+              any such communications, whether or not arising under the laws of
+              copyright, libel, privacy, obscenity, or otherwise. We may, but
+              are not obligated to, monitor or review activity and the content
+              of any communications on these Interactive Pages. We reserve the
+              right to terminate the privilege of any user to post on an
+              Interactive Page or to participate in other Website services, if
+              such users violate these Terms of Use and/or the Code of Conduct.
+              You represent and warrant that you have the full right, title and
+              interest, as well as the power and authority necessary, to grant
+              us the licenses contemplated herein with respect to the Material.{' '}
+            </p>
+            <p>
+              Subject to the terms and conditions of our Privacy Policy (as
+              defined below) and to the other conditions contained in these
+              Terms of Use, by submitting any material (“Material”) to the
+              Website, including without limitation all written materials,
+              photographs, drawings, and video, you grant us a worldwide,
+              non-exclusive, unrestricted, royalty-free, perpetual, irrevocable,
+              assignable right and license to use, reproduce, modify, publish,
+              create derivative works from, translate, license, publicly perform
+              and display the Material (in whole or in part) and/or to
+              incorporate it in other works in any form, media or technology now
+              known or later developed (collectively, “Fully Use”), without your
+              prior approval, and you further waive any “moral rights” that you
+              may have in the Material. In addition, by submitting the Material
+              to the Website, you represent and warrant that you own, control or
+              have been granted all necessary right, title and interest in, to
+              or associated with the Material and that you have all rights
+              necessary to grant the foregoing rights to us. You further grant
+              us a license to Fully Use the Material in order to{' '}
+            </p>
+            <p>
+              ensure adherence to, or enforce, these Terms of Use, or to comply
+              with any applicable law. We are not responsible for the content of
+              any submission to the Website. Submissions represent the views and
+              opinions of the person(s) submitting same.{' '}
+            </p>
+            <p>
+              Any Materials you submit, upload, post, input, provide or
+              otherwise transfer through the Website is your and we do not claim
+              any ownership over such material.{' '}
+            </p>
+            <p>
+              You agree to indemnify us from (and disclaim our responsibility
+              for) any actions proceedings, claims, liabilities, damages and
+              reasonable expenses (including legal expenses) relating to or
+              arising from the Materials, including instances where the
+              Materials infringe any intellectual property rights or is
+              inappropriate, profane, defamatory, infringing, obscene, indecent
+              or unlawful.{' '}
+            </p>
+            <p>
+              You acknowledge that we may establish general practices and limits
+              concerning use of the Website, including, without limitation, the
+              maximum number of days that e-mail messages, message board
+              postings, or other uploaded content will be retained on the
+              Website. You agree that we have no responsibility or liability for
+              the deletion or failure to store any messages and other
+              communications or other content maintained on or transmitted by
+              the Website.{' '}
+            </p>
+            <p>
+              If you cannot provide the Materials in accordance with these Terms
+              of Use, then we prohibit you form using such Material in
+              connection with the Website.{' '}
+            </p>
+            <p>5. Indemnity </p>
+            <p>
+              You agree to indemnify us (and disclaim our responsibility for)
+              and hold us and our employees, agents, and licensors harmless from
+              and against any and all actions, proceedings, claims, losses,
+              expenses, damages, claims, fines, penalties, costs and liabilities
+              (including reasonable legal and accounting fees), relating to or
+              resulting from (a) any content you (or anyone acting under any
+              password or username that may be issued to you) submit, post,
+              transmit or make available on the Website; (b) access to or use,
+              by you or permitted by you, of the Website or your account under
+              the Website; (c) any of your acts or omissions, including breach
+              or non-performance of these Terms of Use and any violation of any
+              third party rights; or (d) your (or anyone acting under any
+              password or username that may be issued to you) use of this
+              Website, connection thereto, or any alleged violation by you (or
+              anyone acting under any password or username that may be issued to
+              you) of these Terms of Use.{' '}
+            </p>
+            <p>6. Linking </p>
+            <p>
+              The Website may offer you links to other sites on the Internet
+              that are owned and operated by third parties, and therefore not
+              affiliated with us. You acknowledge and agree: (i) that such
+              linked websites are independent from the Website and that we have
+              no control over the conduct or content of such third party
+              websites; (ii) we will not be liable or responsible in any way
+              whatsoever, nor do we make no warranty or representation
+              whatsoever, as to the security, accuracy, timeliness, verification
+              and/or completeness of those third party websites or the
+              information contained on, accessible through, available on, or
+              related to such third party websites.
+            </p>
+            <p>
+              The links that we might place on our Website do not imply in any
+              way whatsoever that we sponsor, endorse or are affiliated or
+              associated with, or have been legally authorized to use, any
+              trademark, trade name, service mark, design, logo, symbol or other
+              copyrighted materials displayed on or accessible through such
+              sites.{' '}
+            </p>
+            <p>
+              We welcome any feedback that you may have concerning the external
+              links that we have placed on our Website.{' '}
+            </p>
+            <p>7. Disclaimer / Limitation Of Liability </p>
+            <p>
+              Although we strive to update and keep the Content on the Website
+              as accurate as possible, errors and/or omissions may occur.{' '}
+            </p>
+            <p>
+              ACCORDINGLY, YOUR USE OF THE WEBSITE AND ALL CONTENT OR SERVICES
+              PROVIDED THROUGH THIS WEBSITE ARE AT YOUR OWN RISK. THIS WEBSITE,
+              INCLUDING THE CONTENT AND SERVICES PROVIDED HEREIN, IS BEING
+              PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS AND WITHOUT
+              REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND WHATSOEVER
+              ABOUT THE SUITABILITY, RELIABILITY, USABILITY, SECURITY, QUALITY,
+              CAPACITY, PERFORMANCE, AVAILABILITY, TIMELINESS OR ACCURACY OF THE
+              WEBSITE. WE EXPRESSLY DISCLAIM ALL WARRANTIES, EXPRESS, IMPLIED OR
+              STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES AND
+              CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+              DURABILITY, TITLE AND NON-INFRINGEMENT WHETHER ARISING BY USAGE OF
+              TRADE, BY COURSE OF DEALING, BY COURSE OF PERFORMANCE, AT LAW, IN
+              EQUITY, BY STATUTE OR OTHERWISE HOWSOEVER. FURTHER, WE DO NOT
+              WARRANT THAT THE FUNCTIONS ON THE SITE WILL BE UNINTERRUPTED,
+              ERROR-FREE OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.{' '}
+            </p>
+            <p>
+              NOTWITHSTANDING ANY OTHER PROVISION OF THESE TERMS OF USE, AND TO
+              THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+              WE, OUR AFFILIATES OR OUR CONTROLLOING PARTIES, AGENTS, EMPLOYEES,
+              SUPPLIERS, LLICENSORS, RESELLERS OR DISTRIBUTORS (FOR THE PURPOSES
+              OF THIS PARAGRAPH, “WE” OR “US”) BE LIABLE FOR ANY DIRECT,
+              INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES
+              FOR LOSS OF PROFITS, GOODWILL, OPPORTUNITY, EARNINGS, USE OR DATA,
+              ARISING FROM OR RELATED TO THESE TERMS OF USE, THE WEBSITE, THE
+              CONTENT OR ANY SERVICES IN ASSOCIATION WITH THIS WEBSITE,
+              REGARDLESS OF THE CAUSE OF ACTION AND EVEN IF ONE OR MORE OF US
+              HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR LOSSES, OR
+              IF SUCH DAMAGES OR LOSSES WOULD BE REASONABLY FORESEEABLE.{' '}
+            </p>
+            <p>
+              SOME JURISDICTIONS PROHIBIT THE DISCLAIMER OF CERTAIN WARRANTIES
+              OR CONDITIONS OR THE LIMITATION OR EXCLUSION OF CERTAIN TYPES OF
+              LIABILITY, SUCH AS THOSE WE HAVE SET OUT IN THIS SECTION 8. IN
+              SUCH CIRCUMSTANCES, TO THE EXTENT THAT SUCH PROHIBITIONS PROHIBIT
+              ANY DISCLAIMERS, EXCLUSIONS AND LIMITATIONS IN THESE TERMS OF USE,
+              SUCH{' '}
+            </p>
+            <p>
+              DISCLAIMERS, EXCLUSIONS AND LIMITATIONS WILL NOT APPLY TO YOU
+              STRICTLY TO TH EEXTENT NECESSARY TO MAKE THESE TERMS OF USE
+              CONSISTENT WITH SUCH PROHIBITIONS.{' '}
+            </p>
+            <p>8. Privacy </p>
+            <p>
+              We respect your right to the privacy of your personal information.
+              Please review our Website privacy statement (“Privacy Policy”) for
+              details on the manner in which we collect, use, disclose, and
+              otherwise manage your personal information. We may update that
+              Privacy Policy from time to time but we will make sure that the
+              link stays active in these Terms of Use.{' '}
+            </p>
+            <p>
+              By using the Website, you consent to the collection, use and
+              disclosure by us and our agents of your personal information for
+              the purposes identified in our Privacy Policy. We will onlyuse
+              your personal information in accordance with our Privacy Policy.{' '}
+            </p>
+            <p>
+              If you are from a jurisdiction where your implied consent cannot
+              be inferred from your use of the Website, or if we do not
+              otherwise under the laws applicable to you have the ability to use
+              your personal information as set out in the Privacy Policy, your
+              use of the Website is prohibited unless we provide you with our
+              express consent to use the Website. You may contact us with any
+              privacy questions as set out in the Privacy Policy.{' '}
+            </p>
+            <p>9. Changes And Termination </p>
+            <p>
+              We reserve the right at any time and from time to time to modify
+              or discontinue, temporarily or permanently, the Website (or any
+              part thereof) with or without notice. Further, we reserve the
+              right to change these Terms of Use at any time and to notify you
+              by posting an updated version of the Terms of Use on this Website.
+              You are responsible for regularly reviewing the Terms of Use,
+              including, without limitation, by checking the date of “Last
+              Update” at the bottom of this document. Continued use of the
+              Website after any such changes shall constitute your consent to be
+              bound by such changes, with continued provision of the use of the
+              Website constituting consideration from us to you for so being
+              bound. Your only right with respect to any dissatisfaction with
+              (1) these Terms of Use (2) any policy or practice of ours in
+              operating the Website or (3) any content available through the
+              Website, is to stop visiting and using the Website.{' '}
+            </p>
+            <p>
+              We further reserve the right in our sole discretion to suspend,
+              restrict or terminate your use of the Website, including your
+              account and your Material, effective at any time, without notice
+              to you, for any reason.{' '}
+            </p>
+            <p>
+              You acknowledge and agree that our termination, curtailment, or
+              suspension of the Website for any reason may result in
+              restrictions of, disruptions to or cessation of your or third
+              party access to your account and your Material. We claim no
+              responsibility for any liability or claims of loss resulting from
+              restrictions, disruptions or cessations, and by using the Website
+              we will deem you to have agreed to release us from any and all
+              such claims. If your use of the Website is suspended or
+              restricted, we will have no obligation to forward any of your
+              Material to you or any third party unless required by applicable
+              law.{' '}
+            </p>
+            <p>10. Intellectual Property</p>
+            <p>
+              All trademarks, logos and service marks displayed or appearing on
+              the Website are the property (whether registered or unregistered)
+              of us, our licensors or other third parties. You are not permitted
+              to use such trademarks, logos or service marks in any manner or
+              for any purpose without our express prior written consent.{' '}
+            </p>
+            <p>
+              Except as expressly indicated on this Website, no endorsement,
+              sponsorship, affiliation or other authorization is implied by any
+              use of third party trademarks.{' '}
+            </p>
+            <p>
+              This Website and all Content is owned and copyrighted by us and/or
+              our licensors, and is licensed to you in accordance with these
+              Terms of Use only. All rights are reserved.{' '}
+            </p>
+            <p>11. Applicable Laws </p>
+            <p>
+              (a) If you are located in the United States, the following
+              applicable law provision applies to you:{' '}
+            </p>
+            <p>
+              These Terms of Use are governed by and construed in accordance
+              with the laws in effect in the State of Delaware, and any dispute
+              is to be submitted to the U. S. District Court for the Northern
+              District of Texas. If any provision of the present Terms of Use
+              shall be unlawful, void, or for any reason unenforceable, then
+              such provision shall be severable from these Terms of Use and
+              shall not affect the validity and enforceability of any remaining
+              provisions.{' '}
+            </p>
+            <p>
+              (b) If you are located in Canada, the following applicable law
+              provision applies to you:{' '}
+            </p>
+            <p>
+              These Terms of Use and the rights of the parties hereto are
+              governed by, and will at all times be construed in accordance
+              with, the laws in force in the Province of Ontario and the laws of
+              Canada applicable therein, without reference to its conflict of
+              laws principles. You hereby irrevocably consent to the exclusive
+              jurisdiction of the courts of the Province of Ontario in
+              connection with any matter arising out of or in connection with
+              these Terms of Use, without limiting our ability to seek
+              injunctive relief from any court of competent jurisdiction or to
+              enforce an Ontario judgment against you{' '}
+            </p>
+            <p>12. Entire Agreement </p>
+            <p>
+              These Terms of Use and any and all other legal notices or
+              statements posted on the Website constitute the entire agreement
+              between us and you with respect to the use of the Website,
+              including the Content.{' '}
+            </p>
+            <p>13. No Waiver </p>
+            <p>
+              Our failure to insist upon or enforce strict performance of any
+              provision of these Terms of Use will not be construed as a waiver
+              of any provision or right. Neither the course of conduct between
+              you and us nor trade practice shall act to modify any provision of
+              these Terms of Use. Our rights, powers and remedies in these Terms
+              of Use, including without limitation the right to suspend,
+              restrict or terminate your access to any portion of the Website,
+              are cumulative and in{' '}
+            </p>
+            <p>
+              addition to and not in substitution for any right, power or remedy
+              that may be available to us at law or in equity.{' '}
+            </p>
+            <p>14. Severability </p>
+            <p>
+              If any provision of these Terms of Use is determined to be invalid
+              or unenforceable in whole or in part, such invalidity or
+              unenforceability will attach only to such provision or part
+              thereof and the remaining part of such provision and all other
+              provisions hereof will continue in full force and effect.{' '}
+            </p>
+            <p>15. Assignment </p>
+            <p>
+              We may at any time assign our rights and obligations under these
+              Terms of Use, in whole or in part, without your consent or advance
+              notice, but we will use reasonable means to notify you. You may
+              not assign these Terms of Use or any of your rights or obligations
+              under them without our prior, written consent. These Terms of Use
+              will inure to the benefit of and bind you and us and our
+              respective personal and legal representatives, successors and
+              permitted assigns.{' '}
+            </p>
+            <p>16. Survival </p>
+            <p>
+              All provisions of these Terms of Use that, by their meaning or
+              nature, are intended to survive termination or expiry of these
+              Terms of Use shall survive termination or expiration of these
+              Terms of Use.{' '}
+            </p>
+            <p>17. No Partnership </p>
+            <p>
+              You agree that no joint venture, partnership, employment or agency
+              relationship exists between us and you as a result of these Terms
+              of Use or your use of the Website.{' '}
+            </p>
+            <p>18. English Language </p>
+            <p>
+              The parties have requested and agree that these Terms of Use and
+              all documents relating thereto be drawn up in English /{' '}
+              <em>
+                Les parties ont demandé que cette convention ainsi que tous les
+                documents qui s’y rattachent soient rédigés en anglais.
+              </em>{' '}
+            </p>
+            <p>19. Notice </p>
+            <p>
+              Notices to you may be made via e-mail, or in cases of changes to
+              these Terms of Use or to the services offered by the Website, by
+              posting notices or links to such notices on the Website itself.{' '}
+            </p>
+            <p>
+              If you have any questions or comments regarding these Terms of Use
+              please contact us at MosaicCommunications@mosaic.com{' '}
+            </p>
+            <p>Last updated January 1, 2021.</p>
           </>
         ),
         fr: FRFPO,

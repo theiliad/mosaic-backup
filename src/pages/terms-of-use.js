@@ -14,7 +14,7 @@ class PrivacyPolicy extends React.Component {
         logo={LOGO_OPTIONS.orangeBlue}
         HeaderExtension={null}
       >
-        <SEO title="TODO" keywords={['TODO']} image={null} />
+        <SEO title="Terms of Use" />
 
         <div className="pages-sup">
           <div className="section-title">
@@ -33,7 +33,7 @@ class PrivacyPolicy extends React.Component {
 
           <div className="section-content content">
             <div className="container">
-              <Text tid="pages.privacy.content" />
+              <Text tid="pages.terms.content" />
             </div>
           </div>
         </div>
