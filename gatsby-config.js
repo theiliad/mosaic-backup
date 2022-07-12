@@ -62,7 +62,7 @@ module.exports = {
             options: {
               // [Optional] Include the following fields, use dot notation for nested fields
               // All fields are included by default
-              include: ['featuredImage'],
+              include: ['featuredImage', 'shareImage'],
             },
           },
           {
@@ -93,10 +93,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        trackingId: 'UA-150249605-1',
-        head: true,
+        id: 'GTM-TR3TTCM',
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+        // Defaults to false
+        enableWebVitalsTracking: true,
       },
     },
     {

@@ -59,6 +59,14 @@ exports.createPages = ({ graphql, actions }) => {
                     )
                   }
                 }
+                shareImage {
+                  childImageSharp {
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
                 posttype
                 bodyEN
                 bodyFR

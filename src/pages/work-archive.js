@@ -40,7 +40,7 @@ class News extends React.Component {
           </div>
         }
       >
-        <SEO title="TODO" keywords={['TODO']} image={null} />
+        <SEO title="Work archive" />
 
         <div className="pages-index">
           <div className="section-cases" style={{ marginTop: '3em' }}>

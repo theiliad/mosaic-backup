@@ -14,11 +14,7 @@ class PrivacyPolicy extends React.Component {
         logo={LOGO_OPTIONS.orangeBlue}
         HeaderExtension={null}
       >
-        <SEO
-          title="TODO"
-          keywords={['TODO']}
-          image="https://mosaic.com/img/logo/share.jpg"
-        />
+        <SEO title="Privacy Policy" />
 
         <div className="pages-sup">
           <div className="section-title">

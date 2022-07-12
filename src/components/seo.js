@@ -46,7 +46,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
               },
               {
                 name: `og:image`,
-                content: image || 'https://mosaic.com/img/logo/share.jpg',
+                content: image || 'https://mosaic.com/static/img/logo/share.jpg',
               },
             ]
               .concat(

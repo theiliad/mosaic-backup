@@ -66,7 +66,7 @@ class Capabilities extends React.Component {
         }
         navIdleLight={true}
       >
-        <SEO title="Capabilities" keywords={['TODO']} description="TODO" />
+        <SEO title="Capabilities" />
 
         <div className="pages-index pages-capabilities">
           <div className="gauge">

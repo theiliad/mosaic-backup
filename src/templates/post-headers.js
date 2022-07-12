@@ -169,8 +169,6 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
     </>
   )
 
-  console.log('geag', frontmatter.featuredImage)
-
   return (
     <>
       <div
@@ -334,7 +332,6 @@ export function PostHeader({ post, play, setPlay }) {
             playing
             url={`https://vimeo.com/${play.id}`}
             loop={true}
-            playing={true}
             autoPlay={true}
             width="100%"
             height={null}
@@ -347,7 +344,6 @@ export function PostHeader({ post, play, setPlay }) {
             playing
             url={[frontmatter.primaryVideoLocalURL]}
             loop={true}
-            playing={true}
             playsinline={true}
             autoPlay={true}
             muted={true}

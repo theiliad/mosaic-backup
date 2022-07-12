@@ -60,6 +60,11 @@ export const pageQuery = graphql`
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+        shareImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
         category
         videoID
       }
