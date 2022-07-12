@@ -264,10 +264,8 @@ class BlogIndex extends React.Component {
               loop
               muted
               width="100%"
-              height="100vh"
+              height="75vh"
               className="cp-hero_video"
-              controlsList="nofullscreen nodownload"
-              controls
             />
 
             <div className="bg">

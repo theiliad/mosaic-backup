@@ -48,6 +48,12 @@ div.pages-index {
 
   div.section-why {
     @include section_padding;
+    @media (max-width: 768px) {
+      @media (prefers-reduced-motion: reduce) {
+        @include section_padding;
+      }
+      padding-top: 5em;
+    }
   }
 
   div.section-cases {

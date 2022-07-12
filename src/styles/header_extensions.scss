@@ -4,6 +4,14 @@
     position: absolute;
     width: 100%;
     top: 0;
+    min-height: 84vh;
+    max-height: 650px;
+    @media (max-width: 768px) {
+      min-height: 87vh;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      display: none;
+    }
     video {
       object-fit: cover;
     }
@@ -98,7 +106,7 @@
           margin-left: -3px;
 
           @media (max-width: 768px) {
-            font-size: 4em;
+            font-size: 2em;
 
             br {
               display: none;

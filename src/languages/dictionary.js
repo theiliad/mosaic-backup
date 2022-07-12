@@ -184,15 +184,19 @@ export default {
       title: {
         en: (
           <>
-            We are Mosaic. <br />
-            We are builders. <br />
+            We are Mosaic.
+            <div />
+            We are builders.
+            <div />
             We build brands in dimension.
           </>
         ),
         fr: (
           <>
-            Nous sommes Mosaic. <br />
-            Nous sommes des bâtisseurs. <br />
+            Nous sommes Mosaic.
+            <div />
+            Nous sommes des bâtisseurs.
+            <div />
             Nous bâtissons des marques multidimensionnelles.
           </>
         ),
