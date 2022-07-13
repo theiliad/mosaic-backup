@@ -367,10 +367,6 @@ div.pages-capabilities {
     .gauge-image {
       display: flex;
       justify-content: center;
-      padding-left: 100px;
-      @media screen and (max-width: 768px) {
-        padding-left: 0;
-      }
     }
   }
   div.section-writeup,

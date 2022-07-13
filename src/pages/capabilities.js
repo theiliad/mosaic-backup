@@ -9,7 +9,7 @@ import PreFooter from '../components/PreFooter'
 import { Text } from '../containers/Language'
 
 // Assets
-import GAUGE from '../img/capabilities/capabilities-guage.svg'
+import GAUGE from '../img/capabilities/gauge.svg'
 import GAUGE_BLUE from '../img/capabilities/gauge-blue.png'
 
 import IMG01 from '../img/capabilities/experiential-marketing.jpg'
@@ -82,7 +82,9 @@ class Capabilities extends React.Component {
                   </p>
                 </div>
 
-                <div className="gauge-image">
+                <div className="column is-1"></div>
+
+                <div className="column is-5 gauge-image">
                   {/* TODO - alt text should be confirmed */}
                   <img src={GAUGE} alt="Image of six strategy steps." />
                 </div>
