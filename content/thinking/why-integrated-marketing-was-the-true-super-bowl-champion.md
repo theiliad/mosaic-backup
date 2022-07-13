@@ -9,6 +9,9 @@ author:
 descriptionEN: 'Reflecting on Super Bowl Sunday’s ‘other’ team sport: Integrated Marketing'
 descriptionFR: 'Reflecting on Super Bowl Sunday’s ‘other’ team sport: Integrated Marketing'
 bodyEN: >-
+  Reflecting on Super Bowl Sunday’s ‘other’ team sport: Integrated Marketing
+
+
   Discussion around Super Bowl ads is as common as Tom Brady’s appearance in the NFL’s championship game - many are quick to call the ‘winners’ and ‘losers’ from the commercial breaks, but more discussion ought to be had around the brand building done offscreen.
 
 
@@ -45,6 +48,9 @@ bodyEN: >-
   We can help your brand develop showstopping integrated marketing programs, email us at info@mosaic.com.
 bodyFR: >-
   Désolé, la traduction de cette publication en français n’est pas disponible.
+
+
+  Reflecting on Super Bowl Sunday’s ‘other’ team sport: Integrated Marketing
 
 
   Discussion around Super Bowl ads is as common as Tom Brady’s appearance in the NFL’s championship game - many are quick to call the ‘winners’ and ‘losers’ from the commercial breaks, but more discussion ought to be had around the brand building done offscreen.

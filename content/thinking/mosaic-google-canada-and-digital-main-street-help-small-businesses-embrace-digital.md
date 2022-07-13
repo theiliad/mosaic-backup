@@ -9,6 +9,9 @@ author:
 descriptionEN: We are fortunate to work with clients that prioritize supporting their local communities. Hear from Director Tracy Markos about how we helped Google Canada and Digital Main Street come together in bringing e-commerce tools to small businesses impacted by the global pandemic.
 descriptionFR: We are fortunate to work with clients that prioritize supporting their local communities. Hear from Director Tracy Markos about how we helped Google Canada and Digital Main Street come together in bringing e-commerce tools to small businesses impacted by the global pandemic.
 bodyEN: >-
+  We are fortunate to work with clients that prioritize supporting their local communities. Hear from Director Tracy Markos about how we helped Google Canada and Digital Main Street come together in bringing e-commerce tools to small businesses impacted by the global pandemic.
+
+
   At the height of the COVID-19 pandemic, Canadian small businesses were faced with unprecedented challenges. As a result, Digital Main Street partnered with organizations like Google, Facebook, MasterCard, and Shopify to focus on how they could support Canadian small businesses. As a result, Digital Main Street created ShopHERE powered by Google: a program that provides independent small businesses with a quick, easy and no-cost solution to get selling online right away. To do this, they paired college students and recent grads with small business owners, providing them with the right tools and resources to get their businesses online and achieve digital transformation.
 
 
@@ -22,10 +25,16 @@ bodyEN: >-
 
 
   We can help your brand build digital programs with a purpose. Email us at info@mosaic.com.
+
+
+  ![alt text](/img/thinking/shophere.png)
 bodyFR: >-
   Désolé, la traduction de cette publication en français n’est pas disponible.
 
 
+  We are fortunate to work with clients that prioritize supporting their local communities. Hear from Director Tracy Markos about how we helped Google Canada and Digital Main Street come together in bringing e-commerce tools to small businesses impacted by the global pandemic.
+
+
   At the height of the COVID-19 pandemic, Canadian small businesses were faced with unprecedented challenges. As a result, Digital Main Street partnered with organizations like Google, Facebook, MasterCard, and Shopify to focus on how they could support Canadian small businesses. As a result, Digital Main Street created ShopHERE powered by Google: a program that provides independent small businesses with a quick, easy and no-cost solution to get selling online right away. To do this, they paired college students and recent grads with small business owners, providing them with the right tools and resources to get their businesses online and achieve digital transformation.
 
 
@@ -39,4 +48,7 @@ bodyFR: >-
 
 
   We can help your brand build digital programs with a purpose. Email us at info@mosaic.com.
+
+
+  ![alt text](/img/thinking/extra-post-1.jpg)
 ---

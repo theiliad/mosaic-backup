@@ -1,5 +1,5 @@
 ---
-posttype: thinking
+posttype: news
 titleEN: 'Mosaic North America Names Jason Dubroy Canadian Commerce Marketing and Retail Lead'
 titleFR: 'Mosaic North America Names Jason Dubroy Canadian Commerce Marketing and Retail Lead'
 date: 2021-02-01T03:14:12.599Z
