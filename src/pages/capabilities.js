@@ -94,7 +94,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
                   {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG01}
@@ -105,7 +105,7 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+                <div className="column is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd writeup-container">
                   <h2>
                     <Text tid="pages.capabilities.content_digital.title" />
                   </h2>
@@ -121,7 +121,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd writeup-container">
                   <h2>
                     <Text tid="pages.capabilities.experiential_marketing.title" />
                   </h2>
@@ -133,7 +133,7 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
                   {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG02}
@@ -148,7 +148,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
                   {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG03}
@@ -159,7 +159,7 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd writeup-container">
                   <h2>
                     <Text tid="pages.capabilities.retail_commerce.title" />
                   </h2>
@@ -175,7 +175,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd writeup-container">
                   <h2>
                     <Text tid="pages.capabilities.b2b.title" />
                   </h2>
@@ -187,7 +187,7 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
                   {/* TODO - alt text should be confirmed */}
                   <img src={IMG04} className="image-below" alt="B2B" />
                 </div>
@@ -198,7 +198,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
-                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
                   {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG05}
@@ -209,7 +209,7 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd writeup-container">
                   <h2>
                     <Text tid="pages.capabilities.assisted_selling.title" />
                   </h2>
@@ -227,7 +227,7 @@ class Capabilities extends React.Component {
           <div className="section-writeup2">
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile ">
-                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+                <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd writeup-container">
                   <h2>
                     <Text tid="pages.capabilities.brand_development.title" />
                   </h2>
@@ -239,7 +239,7 @@ class Capabilities extends React.Component {
 
                 <div className="column is-1"></div>
 
-                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd writeup-image">
+                <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
                   {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG06}

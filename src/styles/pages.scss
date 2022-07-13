@@ -384,9 +384,10 @@ div.pages-capabilities {
       margin: 0;
     }
 
-    .writeup-image {
-      display: grid;
-      place-items: center;
+    .writeup-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     //&:last-child {
