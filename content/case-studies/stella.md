@@ -6,7 +6,7 @@ companyName: Stella
 date: 2021-01-05T20:35:33.876Z
 descriptionEN: How a brand converted a new consumer base into big fans.
 descriptionFR: Comment une marque a-t-elle su transformer une nouvelle base de consommateurs en partisans invétérés?
-category: experiential-marketing
+category: integrated-commerce
 primaryVideoVimeoID: 668405645
 primaryVideoLocalURL: /img/case-studies/stella/hero.mp4
 featuredImage: /img/case-studies/stella/hero.jpg

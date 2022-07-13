@@ -10,6 +10,14 @@ module.exports = {
       en: 'Experiential Marketing',
       fr: 'Marketing expérientiel',
     },
+    'experiential': {
+      en: 'Experiential',
+      fr: 'Expérientiel',
+    },
+    'integrated-commerce': {
+      en: 'Integrated Commerce (NOT EXPERIENTIAL MARKETING)',
+      fr: 'Commerce intégré (CE N’EST PAS DU MARKETING EXPÉRIENTIEL)',
+    },
     'retail-commerce': {
       en: 'Retail & Commerce',
       fr: 'Vente au détail et commerce',
@@ -20,11 +28,11 @@ module.exports = {
     },
     'assisted-selling-training': {
       en: 'Assisted Selling & Training',
-      fr: 'Vente et formation assistées',
+      fr: 'Vente assistée et formation',
     },
     'brand-development-design': {
       en: 'Brand Development & Design',
-      fr: 'Développement et conception de marque',
+      fr: 'Valorisation de la marque et conception',
     },
   },
   thinking: {

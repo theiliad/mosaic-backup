@@ -6,7 +6,7 @@ companyName: Google
 date: 2021-01-04T20:35:33.876Z
 descriptionEN: How an immersive new product launch drove demand.
 descriptionFR: Comment le lancement d’un nouveau produit immersif a-t-il réussi à stimuler la demande?
-category: retail-commerce
+category: experiential
 featuredImage: /img/case-studies/google/hero.jpg
 primaryVideoVimeoID: 579907246
 bodyEN: >-
