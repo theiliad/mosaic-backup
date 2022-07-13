@@ -21,6 +21,13 @@ div.pages-index {
     font-size: 2em;
   }
 
+  @media screen and (max-width: 768px) {
+    .heading_lg {
+      margin-top: -10px;
+      margin-bottom: -64px;
+    }
+  }
+
   p.secondary {
     @include Roobert_Medium;
     font-weight: 500;
