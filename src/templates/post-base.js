@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 
 import { Link } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 // import { MDXRenderer } from 'gatsby-plugin-mdx'
 // import { MDXProvider } from '@mdx-js/react'
@@ -488,10 +488,9 @@ function Post(props) {
                 }}
               >
                 <div className="column is-narrow cp-img">
-                  <GatsbyImage
-                    image={previousPostImage}
-                    style={{ width: '100%' }}
-                    alt={previousPost.frontmatter.titleEN}
+                  <StaticImage
+                    src={'../img/thinking/thinking-default.jpg'}
+                    alt="Mosaic logo background."
                   />
                 </div>
 
