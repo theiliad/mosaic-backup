@@ -17,7 +17,9 @@ const Acosta = () => {
         </p>
       </div>
       <div className="column acosta-logos is-12">
-        <img src={acostaLogo} alt="Acosta logo." />
+        <a href="https://acosta.com/">
+          <img src={acostaLogo} alt="Acosta logo." />
+        </a>
       </div>
     </div>
   )
