@@ -60,7 +60,10 @@ div.pages-index {
     @include section_padding;
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 70px;
+
+    @media (max-width: 768px) {
+      margin-bottom: -127px;
+    }
 
     div.columns {
       font-size: 1em;
