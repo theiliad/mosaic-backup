@@ -68,14 +68,20 @@ div.pages-index {
     padding-top: 0;
     padding-bottom: 0;
 
-    @media (max-width: 768px) {
-      margin-bottom: -127px;
+    .capa {
+      margin-bottom: 82px;
+      @media (max-width: 768px) {
+        margin-bottom: 23px;
+      }
+      .columns.is-mobile > .column.is-8 {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
     }
 
     div.columns {
       font-size: 1em;
-      margin-bottom: 70px;
-
       div.column {
         a.cp-photo,
         div.cp-photo {

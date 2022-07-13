@@ -351,7 +351,7 @@ class BlogIndex extends React.Component {
                   const image = getImage(node.frontmatter.featuredImage)
 
                   return (
-                    <div className="column is-6">
+                    <div className="column is-6 capa">
                       <Link
                         to={`/${node.fields.slug}`}
                         className="cp-photo"

@@ -15,8 +15,8 @@ module.exports = {
       fr: 'Expérientiel',
     },
     'integrated-commerce': {
-      en: 'Integrated Commerce (NOT EXPERIENTIAL MARKETING)',
-      fr: 'Commerce intégré (CE N’EST PAS DU MARKETING EXPÉRIENTIEL)',
+      en: 'Integrated Commerce',
+      fr: 'Commerce intégré',
     },
     'retail-commerce': {
       en: 'Retail & Commerce',
