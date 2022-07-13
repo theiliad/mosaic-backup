@@ -181,10 +181,7 @@ export function ThinkingPostHeader({ post, play, setPlay }) {
           <div
             className="column is-5 cp-image"
             style={{
-              backgroundImage: `url(${get(
-                frontmatter,
-                'featuredImage.childImageSharp.gatsbyImageData.images.fallback.src'
-              )})`,
+              backgroundImage: `url('/img/thinking/thinking-default.jpg')`,
             }}
           ></div>
 
