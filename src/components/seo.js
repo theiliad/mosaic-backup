@@ -13,7 +13,6 @@ function SEO({ description, lang, meta, keywords, title, image }) {
 
         return (
           <Helmet
-            // TODO
             htmlAttributes={{
               lang,
             }}

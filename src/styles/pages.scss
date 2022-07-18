@@ -721,7 +721,7 @@ div.pages-news {
         text-align: right;
         color: $colors_midnight_secondary;
         font-size: 0.5em;
-        margin-top: 0.2em;
+        margin-top: 1rem;
 
         @media screen and (max-width: 768px) {
           text-align: left;
@@ -733,7 +733,7 @@ div.pages-news {
 
       p.cp-title {
         line-height: 1.2em;
-        margin-bottom: 0.5em;
+        margin: 1rem 0;
 
         @media screen and (max-width: 768px) {
           padding-bottom: 0;

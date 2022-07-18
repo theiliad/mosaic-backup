@@ -286,7 +286,6 @@ class BlogIndex extends React.Component {
 
             <div className="bg">
               <div className="cp-hero" id="cp_hero">
-                {/* TODO - alt text should be confirmed */}
                 <img
                   src={HOME_LOGO_AQUAMIDNIGHT}
                   id="cp_hero_logo"
@@ -313,7 +312,6 @@ class BlogIndex extends React.Component {
         <HomeHead />
 
         <div className="pages-index">
-          {/* TODO - alt text should be confirmed */}
           {/* <StaticImage
             src={'../img/home/hero.jpg'}
             style={{ width: '100%' }}
@@ -385,7 +383,6 @@ class BlogIndex extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-5-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <StaticImage
                     src={'../img/home/capabilities.jpg'}
                     className="image-below"
@@ -428,7 +425,7 @@ class BlogIndex extends React.Component {
                   <StaticImage
                     src={'../img/home/oneeighty.jpg'}
                     className="image-below"
-                    alt="OneEighty - TODO"
+                    alt="OneEighty"
                   />
                 </div>
               </div>

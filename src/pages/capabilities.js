@@ -85,7 +85,6 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-5 gauge-image">
-                  {/* TODO - alt text should be confirmed */}
                   <img src={GAUGE} alt="Image of six strategy steps." />
                 </div>
               </div>
@@ -97,7 +96,6 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG01}
                     className="image-below"
@@ -136,7 +134,6 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG02}
                     className="image-below"
@@ -151,7 +148,6 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG03}
                     className="image-below"
@@ -190,7 +186,6 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <img src={IMG04} className="image-below" alt="B2B" />
                 </div>
               </div>
@@ -201,7 +196,6 @@ class Capabilities extends React.Component {
             <div className="container">
               <div className="columns post-single ui-grid home-featured columns-reverse-mobile">
                 <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG05}
                     className="image-below"
@@ -242,7 +236,6 @@ class Capabilities extends React.Component {
                 <div className="column is-1"></div>
 
                 <div className="column is-6-tablet is-6-desktop is-6-widescreen is-6-fullhd">
-                  {/* TODO - alt text should be confirmed */}
                   <img
                     src={IMG06}
                     className="image-below"

@@ -172,7 +172,7 @@ export default {
   news: {
     title: {
       en: 'News',
-      fr: 'Actualités',
+      fr: 'Nouvelles',
     },
     next: {
       en: 'Next in news',
