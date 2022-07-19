@@ -47,8 +47,11 @@
   }
 
   &.home {
-    background: $colors_blue_primary url('../img/matrix.svg') repeat;
-    background-size: 1.5em;
+    background: none;
+    @media (prefers-reduced-motion: reduce) {
+      background: $colors_blue_primary url('../img/matrix.svg') repeat;
+      background-size: 1.5em;
+    }
 
     div.bg {
       position: relative;
