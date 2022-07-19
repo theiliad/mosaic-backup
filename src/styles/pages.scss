@@ -78,6 +78,11 @@ div.pages-index {
           width: 100%;
         }
       }
+      .columns.is-mobile > .column.is-4 {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
     }
 
     div.columns {
